@@ -245,7 +245,7 @@ Pinned in [third_party/README.md](third_party/README.md) and [docs/TOOLCHAIN.md]
 
 https://github.com/MMR000/riscv-pmp-iopmp-compositional-verification
 
-Public snapshot tag: see [docs/PAPER_ARTIFACT_TEXT.md](docs/PAPER_ARTIFACT_TEXT.md).
+Public snapshot tag: [`artifact-v1.0`](https://github.com/MMR000/riscv-pmp-iopmp-compositional-verification/tree/artifact-v1.0). See [docs/PAPER_ARTIFACT_TEXT.md](docs/PAPER_ARTIFACT_TEXT.md).
 
 ## Citation
 

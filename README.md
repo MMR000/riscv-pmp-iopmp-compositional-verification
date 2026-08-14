@@ -247,9 +247,6 @@ https://github.com/MMR000/riscv-pmp-iopmp-compositional-verification
 
 Public snapshot tag: [`artifact-v1.0`](https://github.com/MMR000/riscv-pmp-iopmp-compositional-verification/tree/artifact-v1.0). See [docs/PAPER_ARTIFACT_TEXT.md](docs/PAPER_ARTIFACT_TEXT.md).
 
-## Citation
-
-See [CITATION.cff](CITATION.cff). Paper authors are not recorded in the manuscript source (placeholders only); cite the accompanying paper when published.
 
 ## License
 

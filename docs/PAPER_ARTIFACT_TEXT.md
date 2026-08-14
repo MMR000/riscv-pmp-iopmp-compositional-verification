@@ -16,6 +16,7 @@ The accompanying artifact, including RTL, formal models, real-core experiments, 
 |-------|-------|
 | GitHub | https://github.com/MMR000/riscv-pmp-iopmp-compositional-verification |
 | Public tag | `artifact-v1.0` |
+| Public commit | `5c8e2448c2d02835ce8047e428ee70a43278f881` |
 | Internal scientific freeze | `07ee8931f8e7e75d48168914fffddb31a5e0a091` (`checkpoint-m7-phase-d3-ppa-final`) |
 
 The exact public commit SHA is the peel of `artifact-v1.0` (`git rev-parse artifact-v1.0^{commit}`).

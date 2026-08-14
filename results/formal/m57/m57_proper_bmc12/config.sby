@@ -1,0 +1,28 @@
+[options]
+mode bmc
+depth 12
+expect pass
+
+[engines]
+smtbmc z3
+
+[script]
+read -sv -I vendor -I include axi_pkg.sv
+read -sv -I vendor -I include lint_wrapper_pkg.sv
+read -sv -I vendor -I include rv_iopmp_pkg.sv
+read -sv -I vendor -I include rv_iopmp_axi4_bc.sv
+read -sv -I vendor -I include axi_err_slv.sv
+read -sv -I vendor -I include axi_demux.sv
+read -sv  -I vendor -I include rv_iopmp_data_abstractor_axi.sv
+read -sv -formal -I vendor -I include formal_m57_fullrtl_write_path_tb.sv
+prep -top formal_m57_fullrtl_write_path_tb
+
+[files]
+formal_m57_fullrtl_write_path_tb.sv
+axi_pkg.sv
+lint_wrapper_pkg.sv
+rv_iopmp_pkg.sv
+rv_iopmp_axi4_bc.sv
+axi_err_slv.sv
+axi_demux.sv
+rv_iopmp_data_abstractor_axi.sv

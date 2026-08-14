@@ -1,0 +1,7 @@
+cover_id,task,reachable,notes
+authorized_dma_admission,m3_cover,see log,ST_HOLD authorized
+unauthorized_dma_denial,m3_cover,see log,dma_unauth_admit
+pending_transaction,m3_cover,see log,ST_PENDING
+simultaneous_cpu_dma,sp10_integration,see log,formal_soc_tb covers
+dma_before_secure_ready,sp08_reset,reached,RST-A baseline
+rstb_protected_denial,sp08_reset_rstb,reached,RST-B

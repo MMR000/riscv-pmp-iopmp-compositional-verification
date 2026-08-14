@@ -1,0 +1,4 @@
+assumption_id,description,baseline_status,weakened_status,counterexample,interpretation
+M58-FA-06,single outstanding write,BOUNDED_PASS(COUNTEREXAMPLE),removed,COUNTEREXAMPLE at step 5,needed for sane txn ordering under free inputs
+M58-FA-05,BMC skip 5,stable,skip 0,COUNTEREXAMPLE step 1,reset/anyinit artifact without skip
+M58-FA-TOOL,free AXI inputs,Verilator PASS,BMC free-input,COUNTEREXAMPLE proper,formal env weaker than directed sim

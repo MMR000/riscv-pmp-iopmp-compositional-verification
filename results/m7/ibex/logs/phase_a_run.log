@@ -1,0 +1,95 @@
+=== CSR smoke test ===
+/home/mmr/ricv_paper/third_party/toolchain/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 00010094
+CSR smoke: OK
+=== Clean Ibex build dir ===
+=== FuseSoC setup+build ===
+INFO: Preparing lowrisc:dv:dv_fcov_macros:0
+INFO: Preparing lowrisc:dv:secded_enc:0
+INFO: Preparing lowrisc:dv_verilator:ibex_pcounts:0
+INFO: Preparing lowrisc:dv_verilator:simutil_verilator:0
+INFO: Preparing lowrisc:ibex:ibex_pkg:0.1
+INFO: Preparing lowrisc:prim_generic:ram_1p_pkg:0
+INFO: Preparing lowrisc:prim_generic:ram_2p_pkg:0
+INFO: Preparing lowrisc:prim_generic:rom_pkg:0
+INFO: Preparing lowrisc:prim:util_get_scramble_params:0
+INFO: Preparing lowrisc:prim:util_memload:0
+INFO: Preparing lowrisc:tool:check_tool_requirements:0.1
+INFO: Preparing lowrisc:dv_verilator:memutil_dpi:0
+INFO: Preparing lowrisc:lint:common:0.1
+INFO: Preparing lowrisc:prim_generic:ram_1r1w_pkg:0
+INFO: Preparing lowrisc:dv_verilator:memutil_verilator:0
+INFO: Preparing lowrisc:prim:assert:0.1
+INFO: Preparing lowrisc:prim:cipher_pkg:0.1
+INFO: Preparing lowrisc:prim_generic:and2:0
+INFO: Preparing lowrisc:prim_generic:buf:0
+INFO: Preparing lowrisc:prim_generic:clock_buf:0
+INFO: Preparing lowrisc:prim_generic:clock_gating:0
+INFO: Preparing lowrisc:prim_generic:flop:0
+INFO: Preparing lowrisc:prim_generic:flop_no_rst:0
+INFO: Preparing lowrisc:prim_generic:prim_pkg:0
+INFO: Preparing lowrisc:prim_generic:usb_diff_rx:0
+INFO: Preparing lowrisc:prim_generic:xnor2:0
+INFO: Preparing lowrisc:prim_generic:xor2:0
+INFO: Preparing lowrisc:prim:pad_wrapper_pkg:0
+INFO: Preparing lowrisc:prim:secded:0.1
+INFO: Preparing lowrisc:ibex:ibex_icache:0.1
+INFO: Preparing lowrisc:ibex:ibex_tracer:0.1
+INFO: Preparing lowrisc:prim:cdc_rand_delay:0
+INFO: Preparing lowrisc:prim:cipher:0
+INFO: Preparing lowrisc:prim:count:0
+INFO: Preparing lowrisc:prim_generic:clock_mux2:0
+INFO: Preparing lowrisc:prim_generic:pad_attr:0
+INFO: Preparing lowrisc:prim_generic:pad_wrapper:0
+INFO: Preparing lowrisc:prim_generic:ram_1p:0
+INFO: Preparing lowrisc:prim_generic:ram_1r1w:0
+INFO: Preparing lowrisc:prim_generic:ram_2p:0
+INFO: Preparing lowrisc:prim_generic:rom:0
+INFO: Preparing lowrisc:prim:lfsr:0.1
+INFO: Preparing lowrisc:prim:mubi_pkg:0.1
+INFO: Preparing lowrisc:prim:sec_anchor:0.1
+INFO: Preparing lowrisc:prim:util:0.1
+INFO: Preparing pulp-platform:common_cells:common_cells:0.1
+INFO: Preparing lowrisc:ibex:sim_shared:0
+INFO: Preparing lowrisc:prim_generic:clock_inv:0
+INFO: Preparing lowrisc:prim_generic:flop_2sync:0
+INFO: Preparing lowrisc:prim_generic:flop_en:0
+INFO: Preparing lowrisc:prim:mubi:0.1
+INFO: Preparing lowrisc:prim:onehot:0
+INFO: Preparing lowrisc:prim:onehot_check:0
+INFO: Preparing lowrisc:prim:ram_1p_adv:0.1
+INFO: Preparing lowrisc:ibex:ibex_core:0.1
+INFO: Preparing lowrisc:prim:fifo:0
+INFO: Preparing lowrisc:prim_generic:clock_div:0
+INFO: Preparing lowrisc:prim_generic:rst_sync:0
+INFO: Preparing lowrisc:prim:ram_1p_scr:0.1
+INFO: Preparing lowrisc:prim_generic:all:0.1
+INFO: Preparing lowrisc:ibex:ibex_top:0.1
+INFO: Preparing lowrisc:ibex:ibex_top_tracing:0.1
+INFO: Preparing lowrisc:ibex:ibex_simple_system_core:0
+INFO: Preparing lowrisc:ibex:ibex_simple_system:0
+INFO: Setting up project
+WARNING: This backend is deprecated and will eventually be removed. Please migrate to the flow API instead.  See https://edalize.readthedocs.io/en/latest/ref/migrations.html#migrating-from-the-tool-api-to-the-flow-api for more details.
+INFO: Running pre_build script check_tool_requirements
+INFO: Tool verilator present: Sufficiently recent version (found 5.050; needed 4.210)
+INFO: Tool edalize present: Sufficiently recent version (found 0.6.1; needed 0.2.0)
+INFO: Building simulation model
+simulator=/home/mmr/ricv_paper/third_party/ibex/build/lowrisc_ibex_ibex_simple_system_0/sim-verilator/Vibex_simple_system
+d3e7a79d0a920ce01277fa0f757dafc5c41c8845f6a972a0c85cfb11d4118943  /home/mmr/ricv_paper/third_party/ibex/build/lowrisc_ibex_ibex_simple_system_0/sim-verilator/Vibex_simple_system
+verilator=Verilator 5.050 2026-07-01 rev conda-forge build 0
+fusesoc=2.4.3
+ibex_commit=c61e11c1e416b9ce2d996013b444c8e558d35b2b
+=== Hello test build ===
+make: Entering directory '/home/mmr/ricv_paper/third_party/ibex/examples/sw/simple_system/hello_test'
+rm -f -f /home/mmr/ricv_paper/third_party/ibex/examples/sw/simple_system/common/simple_system_common.o hello_test.o  /home/mmr/ricv_paper/third_party/ibex/examples/sw/simple_system/common/crt0.o /home/mmr/ricv_paper/third_party/ibex/examples/sw/simple_system/common/simple_system_common.d hello_test.d /home/mmr/ricv_paper/third_party/ibex/examples/sw/simple_system/common/crt0.d
+make: Leaving directory '/home/mmr/ricv_paper/third_party/ibex/examples/sw/simple_system/hello_test'
+make: Entering directory '/home/mmr/ricv_paper/third_party/ibex/examples/sw/simple_system/hello_test'
+/home/mmr/ricv_paper/third_party/toolchain/xpack-riscv-none-elf-gcc-14.2.0-3/bin/riscv-none-elf-gcc -march=rv32imc_zicsr -mabi=ilp32 -static -mcmodel=medany -Wall -g -Os -fvisibility=hidden -nostdlib -nostartfiles -ffreestanding  -MMD -c -I/home/mmr/ricv_paper/third_party/ibex/examples/sw/simple_system/common -o /home/mmr/ricv_paper/third_party/ibex/examples/sw/simple_system/common/simple_system_common.o /home/mmr/ricv_paper/third_party/ibex/examples/sw/simple_system/common/simple_system_common.c
+/home/mmr/ricv_paper/third_party/toolchain/xpack-riscv-none-elf-gcc-14.2.0-3/bin/riscv-none-elf-gcc -march=rv32imc_zicsr -mabi=ilp32 -static -mcmodel=medany -Wall -g -Os -fvisibility=hidden -nostdlib -nostartfiles -ffreestanding  -MMD -c -I/home/mmr/ricv_paper/third_party/ibex/examples/sw/simple_system/common -o hello_test.o hello_test.c
+/home/mmr/ricv_paper/third_party/toolchain/xpack-riscv-none-elf-gcc-14.2.0-3/bin/riscv-none-elf-gcc -march=rv32imc_zicsr -mabi=ilp32 -static -mcmodel=medany -Wall -g -Os -fvisibility=hidden -nostdlib -nostartfiles -ffreestanding  -MMD -c -I/home/mmr/ricv_paper/third_party/ibex/examples/sw/simple_system/common -o /home/mmr/ricv_paper/third_party/ibex/examples/sw/simple_system/common/crt0.o /home/mmr/ricv_paper/third_party/ibex/examples/sw/simple_system/common/crt0.S
+/home/mmr/ricv_paper/third_party/toolchain/xpack-riscv-none-elf-gcc-14.2.0-3/bin/riscv-none-elf-gcc -march=rv32imc_zicsr -mabi=ilp32 -static -mcmodel=medany -Wall -g -Os -fvisibility=hidden -nostdlib -nostartfiles -ffreestanding  -T /home/mmr/ricv_paper/third_party/ibex/examples/sw/simple_system/common/link.ld /home/mmr/ricv_paper/third_party/ibex/examples/sw/simple_system/common/simple_system_common.o hello_test.o  /home/mmr/ricv_paper/third_party/ibex/examples/sw/simple_system/common/crt0.o -o hello_test.elf 
+/home/mmr/ricv_paper/third_party/toolchain/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/bin/ld: warning: hello_test.elf has a LOAD segment with RWX permissions
+/home/mmr/ricv_paper/third_party/toolchain/xpack-riscv-none-elf-gcc-14.2.0-3/bin/riscv-none-elf-objcopy -O binary hello_test.elf hello_test.bin
+srec_cat hello_test.bin -binary -offset 0x0000 -byte-swap 4 -o hello_test.vmem -vmem
+make: srec_cat: No such file or directory
+make: *** [/home/mmr/ricv_paper/third_party/ibex/examples/sw/simple_system/hello_test/../common/common.mk:60: hello_test.vmem] Error 127
+make: Leaving directory '/home/mmr/ricv_paper/third_party/ibex/examples/sw/simple_system/hello_test'

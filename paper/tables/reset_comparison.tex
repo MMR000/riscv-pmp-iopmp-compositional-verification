@@ -1,0 +1,14 @@
+% Auto-generated reset model comparison
+\begin{table}[t]
+\centering
+\caption{RST-A (fail-open) vs RST-B (fail-closed) under SP-08. RST-A counterexample is classified as reset-assumption dependency, not a vulnerability.}
+\label{tab:reset-comparison}
+\begin{tabular}{@{}lllll@{}}
+\toprule
+Model & Default & DMA before \texttt{secure\_ready} & Formal & Classification \\
+\midrule
+RST-A & fail-open & reachable (CE) & RESET\_ASSUMPTION\_DEPENDENCY & RESET\_ASSUMPTION\_DEPENDENCY \\
+RST-B & fail-closed & unreachable & k-induction proof & FORMAL\_PROOF \\
+\bottomrule
+\end{tabular}
+\end{table}

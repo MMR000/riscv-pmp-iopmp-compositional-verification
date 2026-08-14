@@ -1,0 +1,5 @@
+=== final layout artifacts (host WORK_HOME; not committed) ===
+-rw-r--r-- 1 mmr mmr  19M Aug 12 16:00 /home/mmr/ricv_paper/third_party/OpenROAD-flow-scripts/flow/results/sky130hd/ibex/base/6_final.def
+-rw-r--r-- 1 mmr mmr  21M Aug 12 16:00 /home/mmr/ricv_paper/third_party/OpenROAD-flow-scripts/flow/results/sky130hd/ibex/base/6_final.gds
+-rw-r--r-- 1 mmr mmr  35M Aug 12 16:00 /home/mmr/ricv_paper/third_party/OpenROAD-flow-scripts/flow/results/sky130hd/ibex/base/6_final.odb
+-rw-r--r-- 1 mmr mmr 1.9M Aug 12 16:00 /home/mmr/ricv_paper/third_party/OpenROAD-flow-scripts/flow/results/sky130hd/ibex/base/6_final.v

@@ -1,0 +1,29 @@
+M7 Phase B complete
+===================
+date: 2026-08-12
+branch: m7-journal-validation
+starting_commit: 574d99c39aed0381f3ed131e882c626aec472922
+phase_a_tag: checkpoint-m7-phase-a-ibex-pmp
+ibex_commit: c61e11c1e416b9ce2d996013b444c8e558d35b2b
+status: COMPLETE (working tree contains Phase B artifacts; not yet committed)
+
+Directed matrix: results/tables/m7_ibex_composed_matrix.csv
+  IBEX-COMP-01..08: 8/8 PASS
+  sha256: 38149283b0ed586c5cc4b9782545f789f2aa1e3bfed5420eb0c11d36c14795bc
+
+Random campaign: results/tables/m7_ibex_composed_random.csv
+  seeds=100 pass=100 fail=0
+  campaign=scenario_space_COMP01_08 (fixed PMP; samples directed compositional scenarios)
+  sha256: 18cd8d402f2528c011b9ca622c4d6cea13a1fc39b439b7c992f9410bdfe882e4
+
+Regressions:
+  make m510-matrix: PASS (exit 0)
+  bash scripts/run/run_m7_phase_a.sh: PASS; Phase A matrix sha256 unchanged
+    a6176844f91613a15845c9eff24c71fd0ec240fef14dab7f57c3cdbb35e09660
+  make m7-reset: PASS (exit 0)
+
+Trusted configuration: harness IOPMP sideband (TRUSTED_CONFIGURATION)
+
+Key harness bug fixed in Phase B:
+  m7_test_sync wrote without rvalid on stores; Ibex LSU hung on SYNC_READY.
+  Fixed to assert rvalid for every req (read or write).

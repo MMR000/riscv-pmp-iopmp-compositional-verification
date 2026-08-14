@@ -1,0 +1,94 @@
+=== CSR smoke test ===
+/home/mmr/ricv_paper/third_party/toolchain/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 00010094
+CSR smoke: OK
+=== Clean Ibex build dir ===
+=== FuseSoC setup+build ===
+INFO: Preparing lowrisc:dv:dv_fcov_macros:0
+INFO: Preparing lowrisc:dv:secded_enc:0
+INFO: Preparing lowrisc:dv_verilator:ibex_pcounts:0
+INFO: Preparing lowrisc:dv_verilator:simutil_verilator:0
+INFO: Preparing lowrisc:ibex:ibex_pkg:0.1
+INFO: Preparing lowrisc:prim_generic:ram_1p_pkg:0
+INFO: Preparing lowrisc:prim_generic:ram_2p_pkg:0
+INFO: Preparing lowrisc:prim_generic:rom_pkg:0
+INFO: Preparing lowrisc:prim:util_get_scramble_params:0
+INFO: Preparing lowrisc:prim:util_memload:0
+INFO: Preparing lowrisc:tool:check_tool_requirements:0.1
+INFO: Preparing lowrisc:dv_verilator:memutil_dpi:0
+INFO: Preparing lowrisc:lint:common:0.1
+INFO: Preparing lowrisc:prim_generic:ram_1r1w_pkg:0
+INFO: Preparing lowrisc:dv_verilator:memutil_verilator:0
+INFO: Preparing lowrisc:prim:assert:0.1
+INFO: Preparing lowrisc:prim:cipher_pkg:0.1
+INFO: Preparing lowrisc:prim_generic:and2:0
+INFO: Preparing lowrisc:prim_generic:buf:0
+INFO: Preparing lowrisc:prim_generic:clock_buf:0
+INFO: Preparing lowrisc:prim_generic:clock_gating:0
+INFO: Preparing lowrisc:prim_generic:flop:0
+INFO: Preparing lowrisc:prim_generic:flop_no_rst:0
+INFO: Preparing lowrisc:prim_generic:prim_pkg:0
+INFO: Preparing lowrisc:prim_generic:usb_diff_rx:0
+INFO: Preparing lowrisc:prim_generic:xnor2:0
+INFO: Preparing lowrisc:prim_generic:xor2:0
+INFO: Preparing lowrisc:prim:pad_wrapper_pkg:0
+INFO: Preparing lowrisc:prim:secded:0.1
+INFO: Preparing lowrisc:ibex:ibex_icache:0.1
+INFO: Preparing lowrisc:ibex:ibex_tracer:0.1
+INFO: Preparing lowrisc:prim:cdc_rand_delay:0
+INFO: Preparing lowrisc:prim:cipher:0
+INFO: Preparing lowrisc:prim:count:0
+INFO: Preparing lowrisc:prim_generic:clock_mux2:0
+INFO: Preparing lowrisc:prim_generic:pad_attr:0
+INFO: Preparing lowrisc:prim_generic:pad_wrapper:0
+INFO: Preparing lowrisc:prim_generic:ram_1p:0
+INFO: Preparing lowrisc:prim_generic:ram_1r1w:0
+INFO: Preparing lowrisc:prim_generic:ram_2p:0
+INFO: Preparing lowrisc:prim_generic:rom:0
+INFO: Preparing lowrisc:prim:lfsr:0.1
+INFO: Preparing lowrisc:prim:mubi_pkg:0.1
+INFO: Preparing lowrisc:prim:sec_anchor:0.1
+INFO: Preparing lowrisc:prim:util:0.1
+INFO: Preparing pulp-platform:common_cells:common_cells:0.1
+INFO: Preparing lowrisc:ibex:sim_shared:0
+INFO: Preparing lowrisc:prim_generic:clock_inv:0
+INFO: Preparing lowrisc:prim_generic:flop_2sync:0
+INFO: Preparing lowrisc:prim_generic:flop_en:0
+INFO: Preparing lowrisc:prim:mubi:0.1
+INFO: Preparing lowrisc:prim:onehot:0
+INFO: Preparing lowrisc:prim:onehot_check:0
+INFO: Preparing lowrisc:prim:ram_1p_adv:0.1
+INFO: Preparing lowrisc:ibex:ibex_core:0.1
+INFO: Preparing lowrisc:prim:fifo:0
+INFO: Preparing lowrisc:prim_generic:clock_div:0
+INFO: Preparing lowrisc:prim_generic:rst_sync:0
+INFO: Preparing lowrisc:prim:ram_1p_scr:0.1
+INFO: Preparing lowrisc:prim_generic:all:0.1
+INFO: Preparing lowrisc:ibex:ibex_top:0.1
+INFO: Preparing lowrisc:ibex:ibex_top_tracing:0.1
+INFO: Preparing lowrisc:ibex:ibex_simple_system_core:0
+INFO: Preparing lowrisc:ibex:ibex_simple_system:0
+INFO: Setting up project
+WARNING: This backend is deprecated and will eventually be removed. Please migrate to the flow API instead.  See https://edalize.readthedocs.io/en/latest/ref/migrations.html#migrating-from-the-tool-api-to-the-flow-api for more details.
+INFO: Running pre_build script check_tool_requirements
+INFO: Tool verilator present: Sufficiently recent version (found 5.050; needed 4.210)
+INFO: Tool edalize present: Sufficiently recent version (found 0.6.1; needed 0.2.0)
+INFO: Building simulation model
+INFO: verilator -f lowrisc_ibex_ibex_simple_system_0.vc -DDISABLE_PRIM_CDC_RAND_DELAY --trace --trace-fst --trace-structs --trace-params --trace-max-array 1024 -CFLAGS "-std=c++17 -Wall -DVM_TRACE_FMT_FST -DTOPLEVEL_NAME=ibex_simple_system -g" -LDFLAGS "-pthread -lutil -lelf" -Wall -Wno-UNOPTFLAT --unroll-count 72
+- V e r i l a t i o n   R e p o r t: Verilator 5.050 2026-07-01 rev conda-forge build 0
+- Verilator: Built from 82.190 MB sources in 153 modules, into 6.979 MB in 18 C++ files needing 0.002 MB
+- Verilator: Walltime 0.957 s (elab=0.146, cvt=0.630, bld=0.000); cpu 0.957 s on 1 threads; allocated 85.988 MB
+make  -f Vibex_simple_system.mk
+make[1]: Entering directory '/home/mmr/ricv_paper/third_party/ibex/build/lowrisc_ibex_ibex_simple_system_0/sim-verilator'
+/home/mmr/miniconda3/bin/x86_64-conda-linux-gnu-c++  -I.  -MMD -I/home/mmr/miniconda3/share/verilator/include -I/home/mmr/miniconda3/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=1 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -Isrc/lowrisc_dv_dv_fcov_macros_0 -Isrc/lowrisc_dv_secded_enc_0 -Isrc/lowrisc_dv_verilator_ibex_pcounts_0/cpp -Isrc/lowrisc_dv_verilator_simutil_verilator_0/cpp -Isrc/lowrisc_prim_util_get_scramble_params_0/rtl -Isrc/lowrisc_prim_util_memload_0/rtl -Isrc/lowrisc_dv_verilator_memutil_dpi_0/cpp -Isrc/lowrisc_dv_verilator_memutil_verilator_0/cpp -Isrc/lowrisc_prim_assert_0.1/rtl -Isrc/lowrisc_prim_secded_0.1/rtl -Isrc/lowrisc_prim_fifo_0/rtl -Isrc/lowrisc_ibex_ibex_simple_system_core_0 -std=c++17 -Wall -DVM_TRACE_FMT_FST -DTOPLEVEL_NAME=ibex_simple_system -g   -Os  -c -o secded_enc.o src/lowrisc_dv_secded_enc_0/secded_enc.c
+/home/mmr/miniconda3/bin/x86_64-conda-linux-gnu-c++  -I.  -MMD -I/home/mmr/miniconda3/share/verilator/include -I/home/mmr/miniconda3/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=1 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -Isrc/lowrisc_dv_dv_fcov_macros_0 -Isrc/lowrisc_dv_secded_enc_0 -Isrc/lowrisc_dv_verilator_ibex_pcounts_0/cpp -Isrc/lowrisc_dv_verilator_simutil_verilator_0/cpp -Isrc/lowrisc_prim_util_get_scramble_params_0/rtl -Isrc/lowrisc_prim_util_memload_0/rtl -Isrc/lowrisc_dv_verilator_memutil_dpi_0/cpp -Isrc/lowrisc_dv_verilator_memutil_verilator_0/cpp -Isrc/lowrisc_prim_assert_0.1/rtl -Isrc/lowrisc_prim_secded_0.1/rtl -Isrc/lowrisc_prim_fifo_0/rtl -Isrc/lowrisc_ibex_ibex_simple_system_core_0 -std=c++17 -Wall -DVM_TRACE_FMT_FST -DTOPLEVEL_NAME=ibex_simple_system -g   -Os  -c -o ibex_pcounts.o src/lowrisc_dv_verilator_ibex_pcounts_0/cpp/ibex_pcounts.cc
+/home/mmr/miniconda3/bin/x86_64-conda-linux-gnu-c++  -I.  -MMD -I/home/mmr/miniconda3/share/verilator/include -I/home/mmr/miniconda3/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=1 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -Isrc/lowrisc_dv_dv_fcov_macros_0 -Isrc/lowrisc_dv_secded_enc_0 -Isrc/lowrisc_dv_verilator_ibex_pcounts_0/cpp -Isrc/lowrisc_dv_verilator_simutil_verilator_0/cpp -Isrc/lowrisc_prim_util_get_scramble_params_0/rtl -Isrc/lowrisc_prim_util_memload_0/rtl -Isrc/lowrisc_dv_verilator_memutil_dpi_0/cpp -Isrc/lowrisc_dv_verilator_memutil_verilator_0/cpp -Isrc/lowrisc_prim_assert_0.1/rtl -Isrc/lowrisc_prim_secded_0.1/rtl -Isrc/lowrisc_prim_fifo_0/rtl -Isrc/lowrisc_ibex_ibex_simple_system_core_0 -std=c++17 -Wall -DVM_TRACE_FMT_FST -DTOPLEVEL_NAME=ibex_simple_system -g   -Os  -c -o dpi_memutil.o src/lowrisc_dv_verilator_memutil_dpi_0/cpp/dpi_memutil.cc
+make[1]: Leaving directory '/home/mmr/ricv_paper/third_party/ibex/build/lowrisc_ibex_ibex_simple_system_0/sim-verilator'
+
+ERROR: src/lowrisc_dv_verilator_memutil_dpi_0/cpp/dpi_memutil.cc:11:10: fatal error: libelf.h: No such file or directory
+   11 | #include <libelf.h>
+      |          ^~~~~~~~~~
+compilation terminated.
+make[1]: *** [Vibex_simple_system.mk:98: dpi_memutil.o] Error 1
+make: *** [Makefile:13: Vibex_simple_system] Error 2
+
+ERROR: Failed to build lowrisc:ibex:ibex_simple_system:0 : '['make']' exited with an error: 2

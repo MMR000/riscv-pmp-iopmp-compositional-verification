@@ -1,0 +1,22 @@
+Program header number 0 in `/home/mmr/ricv_paper/m7/sw/ibex_reset/RC-1.elf' is not of type PT_LOAD; ignoring.
+Program header number 3 in `/home/mmr/ricv_paper/m7/sw/ibex_reset/RC-1.elf' is not of type PT_LOAD; ignoring.
+M7 Ibex reset composed simulation
+TOP.m7_ibex_reset_composed_top.u_ibex.u_ibex_tracer: Instruction trace disabled.
+
+Simulation running, end by pressing CTRL-c.
+M7-RC-HARNESS-FINISH
+- src/local_m7_m7_ibex_reset_composed_0/../rtl/m7_realcore_reset_harness.sv:377: Verilog $finish
+Received $finish() from Verilog, shutting down simulation.
+
+Simulation statistics
+=====================
+Executed cycles:  29
+Wallclock time:   0 s
+Simulation speed: inf cycles/s (inf kHz)
+
+--- m7_ibex_reset_composed.log ---
+
+--- m7_realcore_reset_harness.log ---
+RC_TEST=1
+PHASE=EARLY ERR=0 PEEK=0xdada0001 SECURE=0 EN=0 RULEV=0
+DONE PEEK=0xdada0001 CPU_REL=0 DMA_REL=3 IOPMP_REL=2 PMP_RDY=0 IOPMP_RDY=0 SECURE=0 DMA_REQ=13 COMMIT=10 RESULT=0x600d0001

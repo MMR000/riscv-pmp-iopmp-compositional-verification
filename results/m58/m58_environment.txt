@@ -1,0 +1,20 @@
+M5.8 starting state
+===================
+date: 2026-08-11
+branch: m58-fullrtl-formal-proof
+starting_commit: fcf7495
+parent_tag: checkpoint-m57-fullrtl-validation
+m56_commit: 096a984
+m56_tag: checkpoint-m56-write-path-repair
+
+tool_versions:
+  yosys: 0.68+ (conda-forge, built-in read_slang)
+  symbiyosys: local tools/SymbiYosys
+  z3: 5.0.0
+  verilator: 5.050
+  yosys-slang_plugin: built at tools/yosys-slang/build/slang.so (backup; primary frontend is Yosys 0.68 integrated read_slang)
+  verific: VERIFIC_NOT_AVAILABLE
+  abc: bundled with yosys
+  yices: not installed (PDR witness replay blocked)
+
+host: linux x86_64

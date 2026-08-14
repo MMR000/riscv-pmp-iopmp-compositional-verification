@@ -1,0 +1,2 @@
+campaign_id,seed,configuration,git_commit,testbench_version,iopmp_in_path,operation,address,requester_id,policy_valid,reset_sequence,secure_ready,expected,observed,property,result,classification,dma_error,mem_after
+m4_random_v2,96,C0,297df920dab05466b1fc3fc6711346364cd0c459,94408de554e6,True,write,0x20000000,1,True,global_pulse,True,no unauthorized protected effect,PASS,SP-08/SP-13,PASS,EXPECTED_BY_MODEL,0,0xcafebabe

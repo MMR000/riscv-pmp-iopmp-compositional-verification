@@ -1,0 +1,146 @@
+=== M7 reset config C0 ===
+F                                                                        [100%]
+=================================== FAILURES ===================================
+_____________________________ test_m7_reset_matrix _____________________________
+
+    def test_m7_reset_matrix():
+        cfg = os.environ.get("M7_RESET_CONFIG", "C0")
+>       run(
+            verilog_sources=_sources(cfg),
+            includes=[str(RTL / "common")],
+            toplevel="m7_reset_top",
+            module="test_m7_reset",
+            simulator="icarus",
+            extra_args=["-g2012"] + CONFIG_DEFINES.get(cfg, []),
+        )
+E       SystemExit: FAILED 1 tests.
+
+test_m7_reset_runner.py:38: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     cocotb:simulator.py:295 Running command: iverilog -o /home/mmr/ricv_paper/tb/cocotb/sim_build/m7_reset_top.vvp -D COCOTB_SIM=1 -g2012 -s m7_reset_top -I/home/mmr/ricv_paper/rtl/common -g2012 /home/mmr/ricv_paper/rtl/memory/sram.v /home/mmr/ricv_paper/rtl/cpu_master/cpu_master.v /home/mmr/ricv_paper/rtl/dma/dma_master.v /home/mmr/ricv_paper/rtl/pmp/pmp.v /home/mmr/ricv_paper/rtl/iopmp/iopmp.v /home/mmr/ricv_paper/rtl/interconnect/interconnect.v /home/mmr/ricv_paper/rtl/soc/security_config.v /home/mmr/ricv_paper/rtl/soc/soc_top.v /home/mmr/ricv_paper/rtl/soc/m7_reset_top.v
+INFO     cocotb:simulator.py:295 Running command: vvp -M /home/mmr/miniconda3/lib/python3.13/site-packages/cocotb/libs -m libcocotbvpi_icarus /home/mmr/ricv_paper/tb/cocotb/sim_build/m7_reset_top.vvp
+INFO     cocotb:simulator.py:266      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.13.0rc1 interpreter at /home/mmr/miniconda3/bin/python3
+INFO     cocotb:simulator.py:266      -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+INFO     cocotb:simulator.py:266      0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+INFO     cocotb:simulator.py:266      0.00ns INFO     cocotb                             Seeding Python random module with 1786447573
+INFO     cocotb:simulator.py:266      0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /home/mmr/miniconda3/lib/python3.13/site-packages/cocotb
+INFO     cocotb:simulator.py:266      0.00ns INFO     cocotb                             Running tests
+INFO     cocotb:simulator.py:266      0.00ns INFO     cocotb.regression                  running test_m7_reset.m7_reset_matrix (1/1)
+INFO     cocotb:simulator.py:266    280.00ns WARNING  .. m7_reset_matrix.m7_reset_matrix m7_reset_top contains no child object named dma_rdata
+INFO     cocotb:simulator.py:266                                                         Traceback (most recent call last):
+INFO     cocotb:simulator.py:266                                                           File "/home/mmr/ricv_paper/tb/cocotb/test_m7_reset.py", line 23, in m7_reset_matrix
+INFO     cocotb:simulator.py:266                                                             res = await fn(dut)
+INFO     cocotb:simulator.py:266                                                                   ^^^^^^^^^^^^^
+INFO     cocotb:simulator.py:266                                                           File "/home/mmr/ricv_paper/tb/cocotb/m7_reset_lib.py", line 91, in run_rst_a_r1
+INFO     cocotb:simulator.py:266                                                             err, _ = await dma_write(dut, ADDR_PROTECT, WRITE_PATTERN, AUTH_RID)
+INFO     cocotb:simulator.py:266                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+INFO     cocotb:simulator.py:266                                                           File "/home/mmr/ricv_paper/tb/cocotb/soc_test_lib.py", line 181, in dma_write
+INFO     cocotb:simulator.py:266                                                             return await finish_dma(dut)
+INFO     cocotb:simulator.py:266                                                                    ^^^^^^^^^^^^^^^^^^^^^
+INFO     cocotb:simulator.py:266                                                           File "/home/mmr/ricv_paper/tb/cocotb/soc_test_lib.py", line 160, in finish_dma
+INFO     cocotb:simulator.py:266                                                             rdata = int(dut.dma_rdata.value)
+INFO     cocotb:simulator.py:266                                                                         ^^^^^^^^^^^^^
+INFO     cocotb:simulator.py:266                                                           File "/home/mmr/miniconda3/lib/python3.13/site-packages/cocotb/handle.py", line 484, in __getattr__
+INFO     cocotb:simulator.py:266                                                             raise AttributeError(f"{self._path} contains no child object named {name}")
+INFO     cocotb:simulator.py:266                                                         AttributeError: m7_reset_top contains no child object named dma_rdata. Did you mean: 'dma_wdata'?
+INFO     cocotb:simulator.py:266    280.00ns WARNING  cocotb.regression                  test_m7_reset.m7_reset_matrix failed
+INFO     cocotb:simulator.py:266    280.00ns INFO     cocotb.regression                  ***************************************************************************************
+INFO     cocotb:simulator.py:266                                                         ** TEST                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+INFO     cocotb:simulator.py:266                                                         ***************************************************************************************
+INFO     cocotb:simulator.py:266                                                         ** test_m7_reset.m7_reset_matrix   FAIL         280.00           0.01      31329.17  **
+INFO     cocotb:simulator.py:266                                                         ***************************************************************************************
+INFO     cocotb:simulator.py:266                                                         ** TESTS=1 PASS=0 FAIL=1 SKIP=0                 280.00           0.01      24932.70  **
+INFO     cocotb:simulator.py:266                                                         ***************************************************************************************
+ERROR    cocotb:simulator.py:217 Failed: test_m7_reset::m7_reset_matrix
+=========================== short test summary info ============================
+FAILED test_m7_reset_runner.py::test_m7_reset_matrix - SystemExit: FAILED 1 t...
+1 failed in 0.21s
+=== M7 reset config C0 ===
+F                                                                        [100%]
+=================================== FAILURES ===================================
+_____________________________ test_m7_reset_matrix _____________________________
+
+    def test_m7_reset_matrix():
+        cfg = os.environ.get("M7_RESET_CONFIG", "C0")
+>       run(
+            verilog_sources=_sources(cfg),
+            includes=[str(RTL / "common")],
+            toplevel="m7_reset_top",
+            module="test_m7_reset",
+            simulator="icarus",
+            extra_args=["-g2012"] + CONFIG_DEFINES.get(cfg, []),
+        )
+E       SystemExit: FAILED 1 tests.
+
+test_m7_reset_runner.py:38: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     cocotb:simulator.py:295 Running command: iverilog -o /home/mmr/ricv_paper/tb/cocotb/sim_build/m7_reset_top.vvp -D COCOTB_SIM=1 -g2012 -s m7_reset_top -I/home/mmr/ricv_paper/rtl/common -g2012 /home/mmr/ricv_paper/rtl/memory/sram.v /home/mmr/ricv_paper/rtl/cpu_master/cpu_master.v /home/mmr/ricv_paper/rtl/dma/dma_master.v /home/mmr/ricv_paper/rtl/pmp/pmp.v /home/mmr/ricv_paper/rtl/iopmp/iopmp.v /home/mmr/ricv_paper/rtl/interconnect/interconnect.v /home/mmr/ricv_paper/rtl/soc/security_config.v /home/mmr/ricv_paper/rtl/soc/soc_top.v /home/mmr/ricv_paper/rtl/soc/m7_reset_top.v
+INFO     cocotb:simulator.py:295 Running command: vvp -M /home/mmr/miniconda3/lib/python3.13/site-packages/cocotb/libs -m libcocotbvpi_icarus /home/mmr/ricv_paper/tb/cocotb/sim_build/m7_reset_top.vvp
+INFO     cocotb:simulator.py:266      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.13.0rc1 interpreter at /home/mmr/miniconda3/bin/python3
+INFO     cocotb:simulator.py:266      -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+INFO     cocotb:simulator.py:266      0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+INFO     cocotb:simulator.py:266      0.00ns INFO     cocotb                             Seeding Python random module with 1786447581
+INFO     cocotb:simulator.py:266      0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /home/mmr/miniconda3/lib/python3.13/site-packages/cocotb
+INFO     cocotb:simulator.py:266      0.00ns INFO     cocotb                             Running tests
+INFO     cocotb:simulator.py:266      0.00ns INFO     cocotb.regression                  running test_m7_reset.m7_reset_matrix (1/1)
+INFO     cocotb:simulator.py:266   1370.00ns WARNING  .. m7_reset_matrix.m7_reset_matrix Attempting settings a value during the ReadOnly phase.
+INFO     cocotb:simulator.py:266                                                         Traceback (most recent call last):
+INFO     cocotb:simulator.py:266                                                           File "/home/mmr/ricv_paper/tb/cocotb/test_m7_reset.py", line 23, in m7_reset_matrix
+INFO     cocotb:simulator.py:266                                                             res = await fn(dut)
+INFO     cocotb:simulator.py:266                                                                   ^^^^^^^^^^^^^
+INFO     cocotb:simulator.py:266                                                           File "/home/mmr/ricv_paper/tb/cocotb/m7_reset_lib.py", line 116, in run_staggered_release
+INFO     cocotb:simulator.py:266                                                             await _all_reset(dut)
+INFO     cocotb:simulator.py:266                                                           File "/home/mmr/ricv_paper/tb/cocotb/m7_reset_lib.py", line 68, in _all_reset
+INFO     cocotb:simulator.py:266                                                             dut.rst_n.value = 0
+INFO     cocotb:simulator.py:266                                                             ^^^^^^^^^^^^^^^
+INFO     cocotb:simulator.py:266                                                           File "/home/mmr/miniconda3/lib/python3.13/site-packages/cocotb/handle.py", line 876, in value
+INFO     cocotb:simulator.py:266                                                             self.set(value)
+INFO     cocotb:simulator.py:266                                                             ~~~~~~~~^^^^^^^
+INFO     cocotb:simulator.py:266                                                           File "/home/mmr/miniconda3/lib/python3.13/site-packages/cocotb/handle.py", line 1202, in set
+INFO     cocotb:simulator.py:266                                                             super().set(value)
+INFO     cocotb:simulator.py:266                                                             ~~~~~~~~~~~^^^^^^^
+INFO     cocotb:simulator.py:266                                                           File "/home/mmr/miniconda3/lib/python3.13/site-packages/cocotb/handle.py", line 907, in set
+INFO     cocotb:simulator.py:266                                                             raise RuntimeError("Attempting settings a value during the ReadOnly phase.")
+INFO     cocotb:simulator.py:266                                                         RuntimeError: Attempting settings a value during the ReadOnly phase.
+INFO     cocotb:simulator.py:266   1370.00ns WARNING  cocotb.regression                  test_m7_reset.m7_reset_matrix failed
+INFO     cocotb:simulator.py:266   1370.00ns INFO     cocotb.regression                  ***************************************************************************************
+INFO     cocotb:simulator.py:266                                                         ** TEST                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+INFO     cocotb:simulator.py:266                                                         ***************************************************************************************
+INFO     cocotb:simulator.py:266                                                         ** test_m7_reset.m7_reset_matrix   FAIL        1370.00           0.00     282229.69  **
+INFO     cocotb:simulator.py:266                                                         ***************************************************************************************
+INFO     cocotb:simulator.py:266                                                         ** TESTS=1 PASS=0 FAIL=1 SKIP=0                1370.00           0.01     190441.67  **
+INFO     cocotb:simulator.py:266                                                         ***************************************************************************************
+ERROR    cocotb:simulator.py:217 Failed: test_m7_reset::m7_reset_matrix
+=========================== short test summary info ============================
+FAILED test_m7_reset_runner.py::test_m7_reset_matrix - SystemExit: FAILED 1 t...
+1 failed in 0.19s
+=== M7 reset config C0 ===
+.                                                                        [100%]
+1 passed in 0.22s
+=== M7 reset config C1 ===
+.                                                                        [100%]
+1 passed in 0.22s
+=== M7 reset config C0 ===
+.                                                                        [100%]
+1 passed in 0.27s
+=== M7 reset config C1 ===
+.                                                                        [100%]
+1 passed in 0.18s
+=== M7 reset config C0 ===
+.                                                                        [100%]
+1 passed in 0.24s
+=== M7 reset config C1 ===
+.                                                                        [100%]
+1 passed in 0.22s
+=== M7 reset config C0 ===
+.                                                                        [100%]
+1 passed in 0.22s
+=== M7 reset config C1 ===
+.                                                                        [100%]
+1 passed in 0.22s
+=== M7 reset config C0 ===
+.                                                                        [100%]
+1 passed in 0.21s
+=== M7 reset config C1 ===
+.                                                                        [100%]
+1 passed in 0.21s

@@ -1,0 +1,7 @@
+=== M7 reset config C0 ===
+.                                                                        [100%]
+1 passed in 0.24s
+=== M7 reset config C1 ===
+.                                                                        [100%]
+1 passed in 0.22s
+Wrote /home/mmr/ricv_paper/results/tables/m7_reset_matrix.csv (72 rows)

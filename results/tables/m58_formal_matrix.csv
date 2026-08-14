@@ -1,0 +1,7 @@
+property,variant,frontend,engine,method,depth,result,runtime,memory,assumptions,counterexample_path,notes
+M57-FP-04,FIX-0,read_slang/yosys-0.68,smtbmc,bmc,64,EXPECTED_PRE_FIX_COUNTEREXAMPLE,1,,M58-FA-01..06,results/formal/m58/counterexamples/M57-FP-04_FIX0/trace.vcd,step 5 skip 5
+M57-FP-04,FIX-2,read_slang/yosys-0.68,smtbmc,bmc,64,COUNTEREXAMPLE,1,,M58-FA-01..06,results/formal/m58/m58_proper_bmc64/engine_0/trace.vcd,ASSUMPTION_GAP vs Verilator
+M57-FP-04,FIX-2,read_slang/yosys-0.68,abc,pdr,32,COUNTEREXAMPLE,1,,M58-FA-01..06,,PDR FAIL 2 steps; yices missing for witness
+M57-FP-04,FIX-2,verilator,verilator,assert,directed,BOUNDED_EVIDENCE,,,M57-FA,directed auth-deny,M5.7 baseline retained
+M57-FP-04,FIX-0,verilator,verilator,sim,replay,REPRODUCED_IN_RTL_SIMULATION,,,m56 policy,M56-BEFORE-CE.txt,simulation cross-check
+M57-FP-04,original,read_slang/yosys-0.68,smtbmc,bmc,64,TOOL_ERROR,0,,M58-FA-01..04,/home/mmr/ricv_paper/results/formal/m58/counterexamples/M57-FP-04_FIX0/trace.vcd,m58_original_bmc64

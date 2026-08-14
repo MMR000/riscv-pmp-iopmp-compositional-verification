@@ -1,0 +1,22 @@
+diff --git a/examples/simple_system/ibex_simple_system.core b/examples/simple_system/ibex_simple_system.core
+index ad773ac..3393659 100644
+--- a/examples/simple_system/ibex_simple_system.core
++++ b/examples/simple_system/ibex_simple_system.core
+@@ -167,6 +167,8 @@ targets:
+         mode: lint-only
+         verilator_options:
+           - "-Wall"
++          # M7 build-only: Verilator 5.050 UNOPTFLAT on ibex_id_stage.en_wb_o (simulator warning handling only)
++          - "-Wno-UNOPTFLAT"
+           # RAM primitives wider than 64bit (required for ECC) fail to build in
+           # Verilator without increasing the unroll count (see Verilator#1266)
+           - "--unroll-count 72"
+@@ -192,6 +194,8 @@ targets:
+           - '-CFLAGS "-std=c++17 -Wall -DVM_TRACE_FMT_FST -DTOPLEVEL_NAME=ibex_simple_system -g"'
+           - '-LDFLAGS "-pthread -lutil -lelf"'
+           - "-Wall"
++          # M7 build-only: Verilator 5.050 UNOPTFLAT on ibex_id_stage.en_wb_o (simulator warning handling only)
++          - "-Wno-UNOPTFLAT"
+           # RAM primitives wider than 64bit (required for ECC) fail to build in
+           # Verilator without increasing the unroll count (see Verilator#1266)
+           - "--unroll-count 72"

@@ -1,0 +1,11 @@
+\section{Background}
+\label{sec:background}
+
+% VERIFIED: RISC-V PMP restricts CPU accesses; project uses abstract CPU master (not Ibex).
+% TODO(PROSE): PMP overview.
+
+% VERIFIED: Research IOPMP-style model for DMA; not claimed fully standards-compliant unless demonstrated.
+% TODO(PROSE): IOPMP / DMA mediation.
+
+% VERIFIED: secure_ready = pmp_enable && iopmp_enable && rule0_valid
+% EVIDENCE: rtl/soc/security_config.v

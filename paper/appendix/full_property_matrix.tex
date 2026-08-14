@@ -1,0 +1,20 @@
+\section{Full Property Matrix}
+\label{app:full-matrix}
+
+% SOURCE: results/tables/m510_guarantee_matrix.csv
+\footnotesize
+\begin{tabular}{@{}lllll@{}}
+\toprule
+Property & Sim & BMC & PDR & Classification \\
+\midrule
+SP-01 & PASS & BOUNDED\_EVIDENCE & NOT\_RUN & BOUNDED\_EVIDENCE \\
+SP-02 & PASS & FORMAL\_PROOF & FORMAL\_PROOF & FORMAL\_PROOF \\
+SP-03 & PASS & BOUNDED\_EVIDENCE & NOT\_RUN & BOUNDED\_EVIDENCE \\
+SP-04 & PASS & FORMAL\_PROOF & FORMAL\_PROOF & FORMAL\_PROOF \\
+SP-08-RST-A & COUNTEREXAMPLE & RESET\_ASSUMPTION\_DEP. & NOT\_RUN & RESET\_ASSUMPTION\_DEPENDENCY \\
+SP-08-RST-B & PASS & FORMAL\_PROOF & FORMAL\_PROOF & FORMAL\_PROOF \\
+M57-FP-04-FIX2 & BOUNDED\_PASS & BOUNDED\_PASS & FAIL (raw) & BOUNDED\_EVIDENCE \\
+\bottomrule
+\end{tabular}
+
+% Full CSV: repository results/tables/m510\_guarantee\_matrix.csv

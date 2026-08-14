@@ -1,0 +1,40 @@
+delta HPWL                    2 %
+
+Took 5 seconds: detailed_placement
+check_placement -verbose
+global_route -end_incremental -congestion_report_file /work/reports/sky130hd/m7_j1/base/congestion_post_repair_timing.rpt
+[INFO DPL-0006] Core area: 416927.37 um^2
+[INFO DPL-0007] Movable instances area: 258753.16 um^2
+[INFO DPL-0008] Fixed instances area within core: 6877.85 um^2
+[INFO DPL-0009] Utilization: 63.7%
+[INFO DPL-0005] Diamond search max displacement: +/- 500 sites horizontally, +/- 100 rows vertically.
+[INFO DPL-1102] Legalizing using negotiation legalizer.
+[INFO DPL-1103] Negotiation base search window: +/-20 sites horizontally, +/-5 rows vertically 
+	Automatic search window extension enabled.
+	Search window extendable up to the max displacement cap of +/-500 sites, +/-100 rows near walls.
+[INFO DPL-1104] NegotiationLegalizer DRC penalty: 5.
+[INFO DPL-0392] Negotiation cell height distribution (1 unique row-count(s)):
+[INFO DPL-0393]   height 1 row(s): 35226 cells
+[INFO DPL-0500] Runtime: 0.20s
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Congestion
+---------------------------------------------------------------------------------------
+li1                  0             0            0.00%             0 /  0 /  0
+met1             87814         64190           73.10%             1 /  1 / 29
+met2             86769         74888           86.31%             0 /  2 / 72
+met3             64790         35018           54.05%             1 /  1 / 39
+met4             39804         27136           68.17%             1 /  2 / 71
+met5              8835          2012           22.77%             1 /  1 /  5
+---------------------------------------------------------------------------------------
+Total           288012        203244           70.57%             4 /  7 / 216
+
+[WARNING GRT-0704] Try reduce the layer adjustment from 20% to 8%
+[ERROR GRT-0232] Routing congestion too high. Check the congestion heatmap in the GUI.
+Error: global_route.tcl, 156 GRT-0232
+Elapsed time: 7:41.75[h:]min:sec. CPU time: user 3246.97 sys 124.32 (730%). Peak memory: 984136KB.
+make[1]: *** [Makefile:581: do-5_1_grt] Error 1
+make: *** [Makefile:581: /work/results/sky130hd/m7_j1/base/5_1_grt.odb] Error 2
+END_UTC=2026-08-12T11:56:52Z
+ELAPSED_SEC=828
+EXIT_CODE=2

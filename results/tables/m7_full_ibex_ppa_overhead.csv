@@ -1,0 +1,18 @@
+comparison,metric,baseline,variant,raw_delta,pct_delta,notes
+J1_vs_J0,synth_cells,15267,25220,9953,65.19,architectural PMP increment; synth-level; both completed synthesis under identical 10 ns sky130hd flow
+J1_vs_J0,synth_area_um2,136479.6448,209766.1824,73286.5376,53.70,architectural PMP increment; Yosys chip area of top module
+J1_vs_J0,place_stdcell_area_um2,155626,249322,93696,60.21,architectural PMP increment; post-detailed-place stdcell area
+J1_vs_J0,route_stdcell_area_um2,165439,N/A,N/A,N/A,J1 has no post-route result (GRT congestion)
+J1_vs_J0,postroute_setup_wns_ns,0.0818838,N/A,N/A,N/A,J1 has no post-route timing
+J2_vs_J1,synth_cells,25220,28594,3374,13.38,DMA/IOPMP/adapter/arbiter increment; synth-level
+J2_vs_J1,synth_area_um2,209766.1824,242463.792,32697.6096,15.59,DMA/IOPMP composition increment
+J2_vs_J1,place_stdcell_area_um2,249322,287311,37989,15.24,DMA/IOPMP composition increment
+J2_vs_J1,route_stdcell_area_um2,N/A,304870,N/A,N/A,J1 missing post-route; cannot form post-route J2-J1 delta
+J3_vs_J2,synth_cells,28594,28130,-464,-1.62,fail-closed RST-B + domain-reset increment; synth cell count decreased (ABC mapping / constant reset default); do not interpret as logic removal of IOPMP
+J3_vs_J2,synth_area_um2,242463.792,242662.7328,198.9408,0.08,fail-closed RST-B + domain-reset increment
+J3_vs_J2,place_stdcell_area_um2,287311,288225,914,0.32,fail-closed RST-B + domain-reset increment
+J3_vs_J2,route_stdcell_area_um2,304870,N/A,N/A,N/A,J3 has no post-route result (GRT congestion)
+J3_vs_J0,synth_cells,15267,28130,12863,84.25,complete evaluated security composition increment at synth
+J3_vs_J0,synth_area_um2,136479.6448,242662.7328,106183.088,77.80,complete evaluated security composition increment at synth
+J3_vs_J0,place_stdcell_area_um2,155626,288225,132599,85.20,complete evaluated security composition increment at place
+J2_vs_J0,route_stdcell_area_um2,165439,304870,139431,84.28,only pair with post-route area; includes PMP+composition; not a single-mechanism increment

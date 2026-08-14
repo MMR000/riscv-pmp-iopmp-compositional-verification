@@ -1,0 +1,19 @@
+% Auto-generated claims-to-evidence (main paper subset)
+\begin{table*}[t]
+\centering
+\caption{Claims-to-evidence mapping (subset). Full register: \texttt{results/m6/claims\_evidence.csv}.}
+\label{tab:claims-evidence}
+\footnotesize
+\begin{tabularx}{\textwidth}{@{}lXll@{}}
+\toprule
+ID & Claim & Status & Evidence \\
+\midrule
+CL-01 & CPU unauthorized protected-memory writes blocked by modeled PMP under stated ass... & FORMAL\_PROOF & results/tables/m510\_guarantee\_matrix.csv \\
+CL-02 & Unauthorized DMA protected-memory writes blocked by modeled IOPMP under stated a... & FORMAL\_PROOF & results/tables/m510\_guarantee\_matrix.csv \\
+CL-03 & Fail-open reset model permits reachable early-DMA protected-memory state before ... & RESET\_ASSUMPTION\_DEPENDENCY & results/formal/counterexamples/SP-08/ \\
+CL-04 & Fail-closed reset model excludes corresponding unsafe state under formal model a... & FORMAL\_PROOF & results/formal/sp08\_rstb\_prove/logfile.t \\
+CL-05 & Requester identity participates in access-control decisions... & PASS (simulation) & results/tables/security\_matrix.csv \\
+CL-06 & M57-FP-04 write-binding on repaired RTL has bounded evidence, not unbounded proo... & BOUNDED\_EVIDENCE & results/tables/m510\_guarantee\_matrix.csv \\
+\bottomrule
+\end{tabularx}
+\end{table*}

@@ -1,0 +1,25 @@
+Program header number 0 in `/home/mmr/ricv_paper/m7/sw/ibex_composed/IBEX-COMP-07.elf' is not of type PT_LOAD; ignoring.
+Program header number 3 in `/home/mmr/ricv_paper/m7/sw/ibex_composed/IBEX-COMP-07.elf' is not of type PT_LOAD; ignoring.
+M7 Ibex composed simulation
+
+Simulation running, end by pressing CTRL-c.
+TOP.m7_ibex_composed_top.u_ibex.u_ibex_tracer.unnamedblk2.unnamedblk3: Writing execution trace to trace_core_00000000.log
+Terminating simulation by software request.
+- src/lowrisc_ibex_sim_shared_0/rtl/sim/simulator_ctrl.sv:93: Verilog $finish
+Received $finish() from Verilog, shutting down simulation.
+
+Simulation statistics
+=====================
+Executed cycles:  1231
+Wallclock time:   0.004 s
+Simulation speed: 307750 cycles/s (307.75 kHz)
+
+--- m7_ibex_composed.log ---
+M7-COMP-TRAP
+MCAUSE: 0x00000007
+MEPc: 0x00100188
+MTVAL: 0x20000100
+MEM_AFTER: 0xD00D0007
+
+--- m7_composed_harness.log ---
+TEST=7 DMA_CYCLE=146 ERR=0 AUTH=1 RID=0x01 PEEK=0xd00d0007

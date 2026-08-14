@@ -1,0 +1,4 @@
+assumption_id,description,baseline,variant,property,result,counterexample,interpretation
+M57-FA-05,bounded IOPMP grant,##[1:8],removed,M57-FP-04,INCONCLUSIVE,no,state space blow-up without grant bound
+M57-FA-07,single outstanding write,enforced,overlap allowed,M57-FP-04,INCONCLUSIVE,no,harness assumes sequential writes
+M57-FA-06,B fairness ##[1:16],enforced,no B stall,M57-FP-08,BOUNDED_PASS,no,liveness not tested without fairness

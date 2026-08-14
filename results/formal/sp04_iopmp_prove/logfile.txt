@@ -1,0 +1,424 @@
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] Removing directory '/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove'.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] Copy '/home/mmr/ricv_paper/formal/sby/../../rtl/common/bus_pkg.vh' to '/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove/src/bus_pkg.vh'.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] Copy '/home/mmr/ricv_paper/formal/sby/../../rtl/iopmp/iopmp.v' to '/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove/src/iopmp.v'.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] Copy '/home/mmr/ricv_paper/formal/sby/../harness/formal_bus_stub.v' to '/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove/src/formal_bus_stub.v'.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] Copy '/home/mmr/ricv_paper/formal/sby/../harness/formal_helpers.vh' to '/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove/src/formal_helpers.vh'.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] Copy '/home/mmr/ricv_paper/formal/sby/../harness/formal_iopmp_tb.v' to '/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove/src/formal_iopmp_tb.v'.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0: smtbmc z3
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: starting process "cd /home/mmr/ricv_paper/results/formal/sp04_iopmp_prove/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: formal_iopmp_tb.v:72: Warning: Identifier `\u_dut.state' is implicitly declared.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: formal_iopmp_tb.v:73: Warning: Identifier `\u_dut.hold_authorized' is implicitly declared.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: formal_iopmp_tb.v:74: Warning: Identifier `\u_dut.hold_rid' is implicitly declared.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: formal_iopmp_tb.v:75: Warning: Identifier `\u_dut.hold_addr' is implicitly declared.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: formal_iopmp_tb.v:76: Warning: Identifier `\u_dut.hold_write' is implicitly declared.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_wdata [31] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_wdata [30] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_wdata [29] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_wdata [28] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_wdata [27] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_wdata [26] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_wdata [25] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_wdata [24] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_wdata [23] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_wdata [22] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_wdata [21] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_wdata [20] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_wdata [19] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_wdata [18] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_wdata [17] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_wdata [16] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_wdata [15] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_wdata [14] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_wdata [13] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_wdata [12] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_wdata [11] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_wdata [10] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_wdata [9] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_wdata [8] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_wdata [7] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_wdata [6] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_wdata [5] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_wdata [4] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_wdata [3] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_wdata [2] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_wdata [1] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_wdata [0] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_length [15] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_length [14] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_length [13] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_length [12] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_length [11] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_length [10] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_length [9] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_length [8] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_length [7] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_length [6] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_length [5] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_length [4] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_length [3] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_length [2] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_length [1] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_length [0] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_re is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_req is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_write is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_requester_id [7] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_requester_id [6] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_requester_id [5] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_requester_id [4] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_requester_id [3] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_requester_id [2] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_requester_id [1] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_requester_id [0] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_rid [7] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_rid [6] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_rid [5] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_rid [4] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_rid [3] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_rid [2] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_rid [1] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_rid [0] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_we is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\enable is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_base [31] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_base [30] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_base [29] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_base [28] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_base [27] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_base [26] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_base [25] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_base [24] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_base [23] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_base [22] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_base [21] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_base [20] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_base [19] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_base [18] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_base [17] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_base [16] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_base [15] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_base [14] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_base [13] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_base [12] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_base [11] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_base [10] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_base [9] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_base [8] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_base [7] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_base [6] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_base [5] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_base [4] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_base [3] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_base [2] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_base [1] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_base [0] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_limit [31] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_limit [30] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_limit [29] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_limit [28] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_limit [27] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_limit [26] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_limit [25] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_limit [24] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_limit [23] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_limit [22] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_limit [21] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_limit [20] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_limit [19] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_limit [18] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_limit [17] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_limit [16] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_limit [15] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_limit [14] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_limit [13] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_limit [12] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_limit [11] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_limit [10] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_limit [9] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_limit [8] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_limit [7] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_limit [6] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_limit [5] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_limit [4] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_limit [3] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_limit [2] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_limit [1] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_limit [0] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_addr [31] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_addr [30] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_addr [29] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_addr [28] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_addr [27] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_addr [26] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_addr [25] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_addr [24] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_addr [23] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_addr [22] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_addr [21] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_addr [20] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_addr [19] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_addr [18] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_addr [17] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_addr [16] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_addr [15] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_addr [14] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_addr [13] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_addr [12] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_addr [11] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_addr [10] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_addr [9] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_addr [8] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_addr [7] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_addr [6] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_addr [5] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_addr [4] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_addr [3] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_addr [2] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_addr [1] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\dma_addr [0] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\rule0_valid is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\iopmp_state [0] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\iopmp_hold_authorized is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\iopmp_hold_write is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\iopmp_hold_addr [0] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: Warning: Wire formal_iopmp_tb.\iopmp_hold_rid [0] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] base: finished (returncode=0)
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: starting process "cd /home/mmr/ricv_paper/results/formal/sp04_iopmp_prove/model; yosys -ql design_prep.log design_prep.ys"
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_we is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_rid [7] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_rid [6] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_rid [5] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_rid [4] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_rid [3] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_rid [2] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_rid [1] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_rid [0] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_re is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_write is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_wdata [31] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_wdata [30] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_wdata [29] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_wdata [28] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_wdata [27] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_wdata [26] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_wdata [25] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_wdata [24] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_wdata [23] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_wdata [22] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_wdata [21] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_wdata [20] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_wdata [19] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_wdata [18] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_wdata [17] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_wdata [16] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_wdata [15] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_wdata [14] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_wdata [13] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_wdata [12] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_wdata [11] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_wdata [10] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_wdata [9] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_wdata [8] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_wdata [7] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_wdata [6] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_wdata [5] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_wdata [4] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_wdata [3] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_wdata [2] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_wdata [1] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_wdata [0] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_requester_id [7] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_requester_id [6] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_requester_id [5] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_requester_id [4] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_requester_id [3] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_requester_id [2] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_requester_id [1] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_requester_id [0] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_req is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_length [15] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_length [14] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_length [13] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_length [12] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_length [11] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_length [10] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_length [9] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_length [8] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_length [7] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_length [6] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_length [5] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_length [4] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_length [3] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_length [2] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_length [1] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_length [0] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\enable is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_valid is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\iopmp_state [0] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_addr [31] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_addr [30] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_addr [29] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_addr [28] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_addr [27] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_addr [26] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_addr [25] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_addr [24] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_addr [23] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_addr [22] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_addr [21] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_addr [20] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_addr [19] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_addr [18] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_addr [17] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_addr [16] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_addr [15] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_addr [14] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_addr [13] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_addr [12] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_addr [11] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_addr [10] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_addr [9] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_addr [8] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_addr [7] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_addr [6] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_addr [5] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_addr [4] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_addr [3] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_addr [2] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_addr [1] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\dma_addr [0] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\iopmp_hold_rid [0] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_limit [31] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_limit [30] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_limit [29] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_limit [28] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_limit [27] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_limit [26] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_limit [25] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_limit [24] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_limit [23] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_limit [22] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_limit [21] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_limit [20] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_limit [19] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_limit [18] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_limit [17] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_limit [16] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_limit [15] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_limit [14] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_limit [13] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_limit [12] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_limit [11] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_limit [10] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_limit [9] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_limit [8] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_limit [7] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_limit [6] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_limit [5] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_limit [4] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_limit [3] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_limit [2] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_limit [1] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_limit [0] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_base [31] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_base [30] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_base [29] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_base [28] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_base [27] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_base [26] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_base [25] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_base [24] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_base [23] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_base [22] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_base [21] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_base [20] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_base [19] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_base [18] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_base [17] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_base [16] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_base [15] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_base [14] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_base [13] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_base [12] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_base [11] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_base [10] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_base [9] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_base [8] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_base [7] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_base [6] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_base [5] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_base [4] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_base [3] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_base [2] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_base [1] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\rule0_base [0] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\iopmp_hold_addr [0] is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\iopmp_hold_authorized is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: Warning: Wire formal_iopmp_tb.\iopmp_hold_write is used but has no driver.
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] prep: finished (returncode=0)
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] smt2: starting process "cd /home/mmr/ricv_paper/results/formal/sp04_iopmp_prove/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] smt2: finished (returncode=0)
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.basecase: starting process "cd /home/mmr/ricv_paper/results/formal/sp04_iopmp_prove; yosys-smtbmc -s z3 --presat --noprogress -t 20  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2"
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.induction: starting process "cd /home/mmr/ricv_paper/results/formal/sp04_iopmp_prove; yosys-smtbmc -s z3 --presat -i --noprogress -t 20  --append 0 --dump-vcd engine_0/trace_induct.vcd --dump-yw engine_0/trace_induct.yw --dump-vlogtb engine_0/trace_induct_tb.v --dump-smtc engine_0/trace_induct.smtc model/design_smt2.smt2"
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.basecase: ##   0:00:00  Solver: z3
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.induction: ##   0:00:00  Solver: z3
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 0..
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 0..
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 1..
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 1..
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 2..
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.induction: ##   0:00:00  Trying induction in step 20..
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 2..
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 3..
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.induction: ##   0:00:00  Trying induction in step 19..
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 3..
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 4..
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 4..
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 5..
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.induction: ##   0:00:00  Trying induction in step 18..
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 5..
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 6..
+SBY 22:59:03 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.induction: ##   0:00:00  Trying induction in step 17..
+SBY 22:59:04 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 6..
+SBY 22:59:04 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 7..
+SBY 22:59:04 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.induction: ##   0:00:00  Trying induction in step 16..
+SBY 22:59:04 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 7..
+SBY 22:59:04 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 8..
+SBY 22:59:04 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.induction: ##   0:00:00  Trying induction in step 15..
+SBY 22:59:04 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 8..
+SBY 22:59:04 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.induction: ##   0:00:00  Temporal induction successful.
+SBY 22:59:04 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 9..
+SBY 22:59:04 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.induction: ##   0:00:00  Status: passed
+SBY 22:59:04 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.induction: finished (returncode=0)
+SBY 22:59:04 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.induction: Status returned by engine for induction: pass
+SBY 22:59:04 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 9..
+SBY 22:59:04 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 10..
+SBY 22:59:04 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 10..
+SBY 22:59:04 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 11..
+SBY 22:59:04 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 11..
+SBY 22:59:04 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 12..
+SBY 22:59:04 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 12..
+SBY 22:59:04 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 13..
+SBY 22:59:04 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 13..
+SBY 22:59:04 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 14..
+SBY 22:59:04 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 14..
+SBY 22:59:04 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 15..
+SBY 22:59:04 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 15..
+SBY 22:59:04 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 16..
+SBY 22:59:04 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 16..
+SBY 22:59:04 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 17..
+SBY 22:59:04 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 17..
+SBY 22:59:04 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 18..
+SBY 22:59:04 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 18..
+SBY 22:59:04 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 19..
+SBY 22:59:04 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 19..
+SBY 22:59:04 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.basecase: ##   0:00:00  Status: passed
+SBY 22:59:04 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.basecase: finished (returncode=0)
+SBY 22:59:04 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] engine_0.basecase: Status returned by engine for basecase: pass
+SBY 22:59:04 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 22:59:04 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 22:59:04 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] summary: engine_0 (smtbmc z3) returned pass for basecase
+SBY 22:59:04 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] summary: engine_0 (smtbmc z3) returned pass for induction
+SBY 22:59:04 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] summary: engine_0 did not produce any traces
+SBY 22:59:04 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] summary: successful proof by k-induction.
+SBY 22:59:04 [/home/mmr/ricv_paper/results/formal/sp04_iopmp_prove] DONE (PASS, rc=0)

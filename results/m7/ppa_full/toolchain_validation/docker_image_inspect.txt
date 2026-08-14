@@ -1,0 +1,14 @@
+=== docker version ===
+Docker version 29.7.2, build a7dcaa6
+
+=== image inspect (selected) ===
+Id: sha256:817b608c69a71fafc7b61baec11b4dc073fb8efb9d2714f9bd3316db4beba277
+RepoTags: ["openroad/orfs:latest"]
+RepoDigests: ["openroad/orfs@sha256:817b608c69a71fafc7b61baec11b4dc073fb8efb9d2714f9bd3316db4beba277"]
+Created: 2026-08-11T21:29:36.590966244Z
+Size: 1593823105
+Architecture: amd64
+Os: linux
+
+Note: docker image inspect Id equals the user-reported digest
+openroad/orfs:latest @ sha256:817b608c69a71fafc7b61baec11b4dc073fb8efb9d2714f9bd3316db4beba277

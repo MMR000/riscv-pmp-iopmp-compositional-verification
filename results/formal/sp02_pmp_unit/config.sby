@@ -1,0 +1,23 @@
+[options]
+mode bmc
+depth 16
+expect pass
+wait on
+
+[engines]
+smtbmc z3
+
+[script]
+read -incdir . -formal formal_helpers.vh
+read -incdir . -formal bus_pkg.vh
+read -formal -D FORMAL pmp.v
+read -formal formal_bus_stub.v
+read -formal formal_pmp_tb.v
+prep -top formal_pmp_tb
+
+[files]
+../../rtl/common/bus_pkg.vh
+../../rtl/pmp/pmp.v
+../harness/formal_bus_stub.v
+../harness/formal_helpers.vh
+../harness/formal_pmp_tb.v

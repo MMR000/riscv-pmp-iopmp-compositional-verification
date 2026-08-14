@@ -1,0 +1,6 @@
+make[1]: Entering directory '/home/mmr/ricv_paper/third_party/zero-day-labs-riscv-iopmp'
+verilator --lint-only lint_checks.sv -I./packages/dependencies -I./packages/rv_iopmp -I./vendor -I./include -I./rtl -I./rtl/matching_logic -I./rtl/interfaces -I./rtl/interfaces/axi_support -I./rtl/interfaces/regmap -Wno-MULTITOP -Wno-UNOPTFLAT -Wno-CASEINCOMPLETE -Wno-UNSIGNED -Wno-CMPCONST -Wno-SYMRSVDWORD -Wno-LATCH
+- V e r i l a t i o n   R e p o r t: Verilator 5.050 2026-07-01 rev conda-forge build 0
+- Verilator: Built from 0.343 MB sources in 48 modules, into 2.043 MB in 8 C++ files needing 0.000 MB
+- Verilator: Walltime 0.415 s (elab=0.052, cvt=0.290, bld=0.000); cpu 0.415 s on 1 threads; allocated 48.289 MB
+make[1]: Leaving directory '/home/mmr/ricv_paper/third_party/zero-day-labs-riscv-iopmp'

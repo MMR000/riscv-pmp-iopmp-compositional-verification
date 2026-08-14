@@ -1,0 +1,373 @@
+SBY 17:39:26 [/home/mmr/ricv_paper/results/formal/sp10_integration] Removing directory '/home/mmr/ricv_paper/results/formal/sp10_integration'.
+SBY 17:39:26 [/home/mmr/ricv_paper/results/formal/sp10_integration] Copy '/home/mmr/ricv_paper/formal/sby/../../rtl/common/bus_pkg.vh' to '/home/mmr/ricv_paper/results/formal/sp10_integration/src/bus_pkg.vh'.
+SBY 17:39:26 [/home/mmr/ricv_paper/results/formal/sp10_integration] Copy '/home/mmr/ricv_paper/formal/sby/../../rtl/soc/security_config.v' to '/home/mmr/ricv_paper/results/formal/sp10_integration/src/security_config.v'.
+SBY 17:39:26 [/home/mmr/ricv_paper/results/formal/sp10_integration] Copy '/home/mmr/ricv_paper/formal/sby/../../rtl/pmp/pmp.v' to '/home/mmr/ricv_paper/results/formal/sp10_integration/src/pmp.v'.
+SBY 17:39:26 [/home/mmr/ricv_paper/results/formal/sp10_integration] Copy '/home/mmr/ricv_paper/formal/sby/../../rtl/iopmp/iopmp.v' to '/home/mmr/ricv_paper/results/formal/sp10_integration/src/iopmp.v'.
+SBY 17:39:26 [/home/mmr/ricv_paper/results/formal/sp10_integration] Copy '/home/mmr/ricv_paper/formal/sby/../../rtl/interconnect/interconnect.v' to '/home/mmr/ricv_paper/results/formal/sp10_integration/src/interconnect.v'.
+SBY 17:39:26 [/home/mmr/ricv_paper/results/formal/sp10_integration] Copy '/home/mmr/ricv_paper/formal/sby/../../rtl/memory/sram.v' to '/home/mmr/ricv_paper/results/formal/sp10_integration/src/sram.v'.
+SBY 17:39:26 [/home/mmr/ricv_paper/results/formal/sp10_integration] Copy '/home/mmr/ricv_paper/formal/sby/../harness/formal_helpers.vh' to '/home/mmr/ricv_paper/results/formal/sp10_integration/src/formal_helpers.vh'.
+SBY 17:39:26 [/home/mmr/ricv_paper/results/formal/sp10_integration] Copy '/home/mmr/ricv_paper/formal/sby/../harness/formal_soc_tb.v' to '/home/mmr/ricv_paper/results/formal/sp10_integration/src/formal_soc_tb.v'.
+SBY 17:39:26 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: smtbmc z3
+SBY 17:39:26 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: starting process "cd /home/mmr/ricv_paper/results/formal/sp10_integration/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 17:39:26 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: wire '\cfg_write' is assigned in a block at formal_soc_tb.v:145.9-145.32.
+SBY 17:39:26 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: wire '\cfg_addr' is assigned in a block at formal_soc_tb.v:146.9-147.75.
+SBY 17:39:26 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: wire '\cfg_wdata' is assigned in a block at formal_soc_tb.v:148.9-149.57.
+SBY 17:39:26 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: formal_soc_tb.v:129: Warning: Identifier `\u_iopmp.hold_authorized' is implicitly declared.
+SBY 17:39:26 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: formal_soc_tb.v:130: Warning: Identifier `\u_iopmp.state' is implicitly declared.
+SBY 17:39:26 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: formal_soc_tb.v:154: Warning: Identifier `\u_pmp.pending' is implicitly declared.
+SBY 17:39:26 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: formal_soc_tb.v:175: Warning: Identifier `\u_pmp.cpu_error' is implicitly declared.
+SBY 17:39:26 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Replacing memory \mem with list of registers. See sram.v:48
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_wdata [31] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_wdata [30] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_wdata [29] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_wdata [28] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_wdata [27] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_wdata [26] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_wdata [25] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_wdata [24] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_wdata [23] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_wdata [22] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_wdata [21] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_wdata [20] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_wdata [19] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_wdata [18] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_wdata [17] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_wdata [16] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_wdata [15] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_wdata [14] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_wdata [13] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_wdata [12] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_wdata [11] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_wdata [10] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_wdata [9] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_wdata [8] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_wdata [7] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_wdata [6] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_wdata [5] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_wdata [4] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_wdata [3] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_wdata [2] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_wdata [1] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_wdata [0] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_wdata [31] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_wdata [30] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_wdata [29] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_wdata [28] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_wdata [27] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_wdata [26] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_wdata [25] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_wdata [24] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_wdata [23] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_wdata [22] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_wdata [21] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_wdata [20] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_wdata [19] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_wdata [18] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_wdata [17] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_wdata [16] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_wdata [15] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_wdata [14] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_wdata [13] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_wdata [12] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_wdata [11] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_wdata [10] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_wdata [9] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_wdata [8] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_wdata [7] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_wdata [6] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_wdata [5] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_wdata [4] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_wdata [3] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_wdata [2] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_wdata [1] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_wdata [0] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_length [15] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_length [14] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_length [13] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_length [12] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_length [11] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_length [10] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_length [9] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_length [8] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_length [7] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_length [6] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_length [5] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_length [4] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_length [3] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_length [2] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_length [1] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_length [0] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\iopmp_hold_authorized is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\pmp_pending is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_privilege is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_addr [31] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_addr [30] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_addr [29] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_addr [28] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_addr [27] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_addr [26] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_addr [25] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_addr [24] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_addr [23] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_addr [22] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_addr [21] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_addr [20] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_addr [19] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_addr [18] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_addr [17] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_addr [16] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_addr [15] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_addr [14] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_addr [13] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_addr [12] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_addr [11] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_addr [10] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_addr [9] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_addr [8] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_addr [7] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_addr [6] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_addr [5] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_addr [4] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_addr [3] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_addr [2] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_addr [1] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_addr [0] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_write is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\iopmp_busy is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_requester_id [7] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_requester_id [6] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_requester_id [5] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_requester_id [4] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_requester_id [3] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_requester_id [2] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_requester_id [1] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_requester_id [0] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_addr [31] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_addr [30] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_addr [29] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_addr [28] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_addr [27] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_addr [26] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_addr [25] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_addr [24] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_addr [23] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_addr [22] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_addr [21] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_addr [20] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_addr [19] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_addr [18] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_addr [17] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_addr [16] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_addr [15] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_addr [14] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_addr [13] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_addr [12] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_addr [11] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_addr [10] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_addr [9] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_addr [8] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_addr [7] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_addr [6] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_addr [5] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_addr [4] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_addr [3] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_addr [2] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_addr [1] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_addr [0] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_write is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\cpu_req is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\dma_req is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: finished (returncode=0)
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: starting process "cd /home/mmr/ricv_paper/results/formal/sp10_integration/model; yosys -ql design_prep.log design_prep.ys"
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_wdata [31] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_wdata [30] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_wdata [29] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_wdata [28] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_wdata [27] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_wdata [26] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_wdata [25] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_wdata [24] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_wdata [23] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_wdata [22] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_wdata [21] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_wdata [20] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_wdata [19] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_wdata [18] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_wdata [17] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_wdata [16] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_wdata [15] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_wdata [14] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_wdata [13] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_wdata [12] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_wdata [11] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_wdata [10] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_wdata [9] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_wdata [8] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_wdata [7] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_wdata [6] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_wdata [5] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_wdata [4] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_wdata [3] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_wdata [2] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_wdata [1] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_wdata [0] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_req is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_wdata [31] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_wdata [30] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_wdata [29] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_wdata [28] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_wdata [27] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_wdata [26] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_wdata [25] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_wdata [24] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_wdata [23] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_wdata [22] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_wdata [21] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_wdata [20] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_wdata [19] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_wdata [18] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_wdata [17] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_wdata [16] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_wdata [15] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_wdata [14] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_wdata [13] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_wdata [12] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_wdata [11] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_wdata [10] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_wdata [9] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_wdata [8] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_wdata [7] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_wdata [6] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_wdata [5] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_wdata [4] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_wdata [3] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_wdata [2] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_wdata [1] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_wdata [0] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_req is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_length [15] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_length [14] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_length [13] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_length [12] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_length [11] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_length [10] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_length [9] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_length [8] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_length [7] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_length [6] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_length [5] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_length [4] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_length [3] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_length [2] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_length [1] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_length [0] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_write is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_requester_id [7] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_requester_id [6] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_requester_id [5] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_requester_id [4] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_requester_id [3] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_requester_id [2] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_requester_id [1] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_requester_id [0] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_write is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\iopmp_busy is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\pmp_pending is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\iopmp_hold_authorized is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_privilege is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_addr [31] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_addr [30] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_addr [29] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_addr [28] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_addr [27] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_addr [26] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_addr [25] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_addr [24] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_addr [23] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_addr [22] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_addr [21] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_addr [20] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_addr [19] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_addr [18] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_addr [17] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_addr [16] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_addr [15] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_addr [14] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_addr [13] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_addr [12] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_addr [11] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_addr [10] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_addr [9] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_addr [8] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_addr [7] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_addr [6] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_addr [5] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_addr [4] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_addr [3] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_addr [2] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_addr [1] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\dma_addr [0] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_addr [31] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_addr [30] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_addr [29] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_addr [28] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_addr [27] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_addr [26] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_addr [25] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_addr [24] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_addr [23] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_addr [22] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_addr [21] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_addr [20] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_addr [19] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_addr [18] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_addr [17] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_addr [16] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_addr [15] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_addr [14] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_addr [13] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_addr [12] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_addr [11] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_addr [10] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_addr [9] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_addr [8] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_addr [7] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_addr [6] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_addr [5] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_addr [4] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_addr [3] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_addr [2] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_addr [1] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\cpu_addr [0] is used but has no driver.
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: finished (returncode=0)
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] smt2: starting process "cd /home/mmr/ricv_paper/results/formal/sp10_integration/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] smt2: finished (returncode=0)
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: starting process "cd /home/mmr/ricv_paper/results/formal/sp10_integration; yosys-smtbmc -s z3 --presat --noprogress -t 32  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2"
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:00  Solver: z3
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:00  Checking assumptions in step 0..
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:00  Checking assertions in step 0..
+SBY 17:39:27 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:00  Checking assumptions in step 1..
+SBY 17:39:28 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:00  Checking assertions in step 1..
+SBY 17:39:28 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:00  Checking assumptions in step 2..
+SBY 17:39:28 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:00  Checking assertions in step 2..
+SBY 17:39:28 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:00  Checking assumptions in step 3..
+SBY 17:39:28 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:00  Checking assertions in step 3..
+SBY 17:39:28 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:00  Checking assumptions in step 4..
+SBY 17:39:28 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:00  Checking assertions in step 4..
+SBY 17:39:28 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:00  Checking assumptions in step 5..
+SBY 17:39:28 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:00  Checking assertions in step 5..
+SBY 17:39:28 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:00  BMC failed!
+SBY 17:39:28 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:00  Assert failed in formal_soc_tb.u_pmp: pmp.v:96.13-96.34 (_witness_.check_assert_pmp_v_96_732)
+SBY 17:39:28 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace.vcd
+SBY 17:39:28 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace_tb.v
+SBY 17:39:28 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace.smtc
+SBY 17:39:28 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace.yw
+SBY 17:39:28 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:00  Status: failed
+SBY 17:39:28 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: finished (returncode=1)
+SBY 17:39:28 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: Status returned by engine: FAIL
+SBY 17:39:28 [/home/mmr/ricv_paper/results/formal/sp10_integration] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:01 (1)
+SBY 17:39:28 [/home/mmr/ricv_paper/results/formal/sp10_integration] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:01 (1)
+SBY 17:39:28 [/home/mmr/ricv_paper/results/formal/sp10_integration] summary: engine_0 (smtbmc z3) returned FAIL
+SBY 17:39:28 [/home/mmr/ricv_paper/results/formal/sp10_integration] summary: counterexample trace: /home/mmr/ricv_paper/results/formal/sp10_integration/engine_0/trace.vcd
+SBY 17:39:28 [/home/mmr/ricv_paper/results/formal/sp10_integration] summary:   failed assertion formal_soc_tb.u_pmp._witness_.check_assert_pmp_v_96_732 at pmp.v:96.13-96.34 step 5
+SBY 17:39:28 [/home/mmr/ricv_paper/results/formal/sp10_integration] DONE (FAIL, rc=2)

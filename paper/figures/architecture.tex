@@ -1,0 +1,28 @@
+% Architecture figure — abstract research model (not Ibex)
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[
+  node distance=1.1cm and 1.4cm,
+  box/.style={draw, rounded corners, minimum width=2.2cm, minimum height=0.7cm, align=center, font=\small},
+  arr/.style={-{Stealth[length=2mm]}, thick}
+]
+  \node[box] (cpu) {Abstract\\CPU Master};
+  \node[box, below=of cpu] (pmp) {PMP};
+  \node[box, right=3.2cm of pmp] (ic) {Interconnect};
+  \node[box, right=of ic] (sram) {Protected\\SRAM};
+  \node[box, below=of pmp] (iopmp) {IOPMP-style\\mediator};
+  \node[box, below=of iopmp] (dma) {DMA Master};
+  \node[box, above=of ic] (sec) {security\_config\\secure\_ready};
+
+  \draw[arr] (cpu) -- (pmp);
+  \draw[arr] (pmp) -| (ic);
+  \draw[arr] (dma) -- (iopmp);
+  \draw[arr] (iopmp) -- (ic);
+  \draw[arr] (ic) -- (sram);
+  \draw[dashed] (sec) -- (iopmp);
+  \draw[dashed] (sec) -- (pmp);
+  \node[font=\scriptsize, above=0.1cm of dma] {requester\_id};
+\end{tikzpicture}
+\caption{Abstract compositional model: CPU path via PMP; DMA path via IOPMP-style mediation. \texttt{secure\_ready} gates secure operation.}
+\label{fig:architecture}
+\end{figure}

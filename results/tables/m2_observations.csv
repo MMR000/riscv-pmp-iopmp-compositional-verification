@@ -1,0 +1,7 @@
+observation_id,experiment_id,description,expected_by_model,security_property,classification,reproducible,waveform,interpretation,requires_followup
+OBS-B5,M2-BND-B5,Read at exact lower boundary,yes,SP-03,EXPECTED_BY_MODEL,yes,m2_soc_top.fst,,no
+OBS-B7,M2-BND-B7,Cross upper boundary denied; protected memory unchanged,yes,SP-05,EXPECTED_BY_MODEL,yes,m2_soc_top.fst,Complete-transfer containment enforced at admission,no
+OBS-ATOM,M2-RANGE-ATOMICITY-01,Denied cross-boundary write leaves protected memory unchanged,yes,SP-05,EXPECTED_BY_MODEL,yes,m2_soc_top.fst,Range checked at admission; denied transfers never reach bus,no
+OBS-CON,M2-CON-C8,Concurrent CPU+DMA same-address writes; CPU priority serializes access,yes,SP-10,EXPECTED_BY_MODEL,yes,m2_soc_top.fst,No compositional integrity violation vs independent masters,no
+OBS-PT3,M2-PT-PT3,Admitted DMA completes after ALLOW->DENY,yes,SP-09,EXPECTED_BY_MODEL,yes,m2_soc_top.fst,Admission-time semantics: Model A behavior,no
+OBS-RID4,M2-RID-RID4,Pending transaction retains admitted requester ID after rule RID change,yes,SP-06,EXPECTED_BY_MODEL,yes,m2_soc_top.fst,Metadata latched at admission; live cfg change does not resample,no

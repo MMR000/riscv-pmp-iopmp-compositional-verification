@@ -1,0 +1,44 @@
+=== Deterministic ORD-A..H × RST-A/B ===
+  ORD-A RST-A (25, 30, 10, 12, 15)
+    -> PASS early_err=0 post_u=1 post_a=0 mcause=7
+  ORD-A RST-B (25, 30, 10, 12, 15)
+    -> PASS early_err=1 post_u=1 post_a=0 mcause=7
+  ORD-B RST-A (10, 30, 15, 18, 22)
+    -> PASS early_err=0 post_u=1 post_a=0 mcause=7
+  ORD-B RST-B (10, 30, 15, 18, 22)
+    -> PASS early_err=1 post_u=1 post_a=0 mcause=7
+  ORD-C RST-A (20, 10, 25, 28, 32)
+    -> PASS early_err=0 post_u=1 post_a=0 mcause=7
+  ORD-C RST-B (20, 10, 25, 28, 32)
+    -> PASS early_err=1 post_u=1 post_a=0 mcause=7
+  ORD-D RST-A (30, 10, 15, 18, 22)
+    -> PASS early_err=0 post_u=1 post_a=0 mcause=7
+  ORD-D RST-B (30, 10, 15, 18, 22)
+    -> PASS early_err=1 post_u=1 post_a=0 mcause=7
+  ORD-E RST-A (15, 15, 15, 15, 15)
+    -> PASS early_err=0 post_u=1 post_a=0 mcause=7
+  ORD-E RST-B (15, 15, 15, 15, 15)
+    -> PASS early_err=1 post_u=1 post_a=0 mcause=7
+  ORD-F RST-A (10, 12, 30, 25, 18)
+    -> PASS early_err=0 post_u=1 post_a=0 mcause=7
+  ORD-F RST-B (10, 12, 30, 25, 18)
+    -> PASS early_err=1 post_u=1 post_a=0 mcause=7
+  ORD-G RST-A (10, 14, 12, 30, 16)
+    -> PASS early_err=0 post_u=1 post_a=0 mcause=7
+  ORD-G RST-B (10, 14, 12, 30, 16)
+    -> PASS early_err=1 post_u=1 post_a=0 mcause=7
+  ORD-H RST-A (10, 14, 12, 16, 30)
+    -> PASS early_err=0 post_u=1 post_a=0 mcause=7
+  ORD-H RST-B (10, 14, 12, 16, 30)
+    -> PASS early_err=1 post_u=1 post_a=0 mcause=7
+=== Random release-order (200 seeds) ===
+  seed=0 RST-A PASS
+  seed=25 RST-B PASS
+  seed=50 RST-A PASS
+  seed=75 RST-B PASS
+  seed=100 RST-A PASS
+  seed=125 RST-B PASS
+  seed=150 RST-A PASS
+  seed=175 RST-B PASS
+Wrote /home/mmr/ricv_paper/results/tables/m7_realcore_release_order_matrix.csv
+Wrote /home/mmr/ricv_paper/results/tables/m7_reset_evidence_levels.csv

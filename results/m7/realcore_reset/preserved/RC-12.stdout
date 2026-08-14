@@ -1,0 +1,15 @@
+Program header number 0 in `/home/mmr/ricv_paper/m7/sw/ibex_reset/RC-12.elf' is not of type PT_LOAD; ignoring.
+Program header number 3 in `/home/mmr/ricv_paper/m7/sw/ibex_reset/RC-12.elf' is not of type PT_LOAD; ignoring.
+M7 Ibex reset composed simulation
+TOP.m7_ibex_reset_composed_top.u_ibex.u_ibex_tracer: Instruction trace disabled.
+
+Simulation running, end by pressing CTRL-c.
+Terminating simulation by software request.
+- src/lowrisc_ibex_sim_shared_0/rtl/sim/simulator_ctrl.sv:93: Verilog $finish
+Received $finish() from Verilog, shutting down simulation.
+
+Simulation statistics
+=====================
+Executed cycles:  1370
+Wallclock time:   0.002 s
+Simulation speed: 685000 cycles/s (685 kHz)

@@ -1,0 +1,7 @@
+assumption_id,present_in_minimal_set,result_if_removed,counterexample_depth,classification
+M59-FA-04,yes,CE returns step 5,5,reset/anyinit artifact
+M59-FA-11,yes,FIX-2 primary CE,10,master quiescence required
+M59-FA-10,yes,txn_active anyinit CE,10,observer consistency
+M59-FA-07,yes,spurious ini_w at reset edge,4,post-reset idle
+M59-FA-01,yes,illegal AW morphing,variable,protocol-required
+M59-FA-05,no,W without txn CE,variable,implementation sequencing

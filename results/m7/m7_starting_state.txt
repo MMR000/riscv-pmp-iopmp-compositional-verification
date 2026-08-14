@@ -1,0 +1,9 @@
+M7 starting state
+================
+date: 2026-08-11
+branch_at_start: m6-publication-freeze
+head_at_start: b0d66661b938ab55075fee650be0bfa55ec5249a
+m510_checkpoint_tag: checkpoint-m510-complete on 681b2bd
+m6_paper_pdf: paper/build/main.pdf (generated on m6-publication-freeze)
+m59_preserve: results/m510/preserve/ (do not modify)
+working_tree_note: M6 paper/Makefile changes present but uncommitted at branch creation

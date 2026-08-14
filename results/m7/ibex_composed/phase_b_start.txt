@@ -1,0 +1,14 @@
+M7 Phase B start
+================
+date: 2026-08-12
+branch: m7-journal-validation
+project_commit: 574d99c39aed0381f3ed131e882c626aec472922
+phase_a_tag: checkpoint-m7-phase-a-ibex-pmp
+phase_a_commit: 574d99c39aed0381f3ed131e882c626aec472922
+ibex_commit: c61e11c1e416b9ce2d996013b444c8e558d35b2b
+verilator: Verilator 5.050 2026-07-01 rev conda-forge build 0
+fusesoc: 2.4.3
+gcc: riscv-none-elf-gcc (xPack GNU RISC-V Embedded GCC x86_64) 14.2.0
+phase_a_matrix: results/tables/m7_ibex_pmp_matrix.csv
+phase_a_matrix_sha256: a6176844f91613a15845c9eff24c71fd0ec240fef14dab7f57c3cdbb35e09660
+note: Phase A evidence not modified. Phase B begins from this checkpoint.

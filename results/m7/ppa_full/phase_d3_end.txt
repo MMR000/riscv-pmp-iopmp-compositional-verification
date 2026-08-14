@@ -1,0 +1,34 @@
+M7 Phase D.3 end freeze
+UTC=2026-08-13T21:29:23Z
+HEAD=7500156fbf076766a283a280465046e8b9ff02b9
+BRANCH=m7-journal-validation
+--- artifact SHA256 ---
+83d11de4cc07408393ea3084d9fbff56e7b3729fbba51f2e204229625a3ea924  results/tables/m7_full_ibex_ppa_20ns.csv
+30d71d890799f2a4c44a14650089a6d287cb624b27fa4246af51fe322d9a48f1  results/tables/m7_full_ibex_ppa_20ns_overhead.csv
+82be06dd1150006bf84a255806a24bedce1b9714d79eedb38ba3771fa83ce7b0  results/tables/m7_full_ibex_fmax_sweep.csv
+1d6fe0082fbb6116ce08e3d72fa55a75fdcd0a1c1b3624cc07bb00d56341ffbd  results/tables/m7_critical_paths.csv
+ab7a29e2b91d24e148c503bbb1dda2aa3689b7d4f1aecb496a8af3c1b1b673ea  results/tables/m7_journal_ppa_main.csv
+7e00b893f78569fa6cdb7a1c1a4a7dbe9605946ed47201b746b1704b80a3e3cf  results/tables/m7_journal_timing_summary.csv
+b8ae902beabf966fa8be302b951fca69b6a2001bf529cfb3399ee71b1260be97  results/tables/m7_journal_performance_summary.csv
+b09b72aca6603a08457051dec2e0d359865232f240663676fa3049f592c3c8f1  docs/m7_j1_timing_anomaly_audit.md
+8e1e291894fa993bb63892c7d1136e036e3949867a0aed105808352c68b4d94e  results/m7/ppa_full/fairness_check_final.md
+--- J1 Fmax refine ---
+shortest_demonstrated_PASS_ns=16.5
+demonstrated_fmax_mhz=60.61
+prior_fail_ns=16.0
+resolution_ns=0.5
+repro_rule=first_run
+repro_run1_flow=d3_j1_p16p5 WNS=0.0653468 area=241378 buf=1328 PASS
+repro_run2_flow=d3_j1_p16p5_rep2 WNS=0.0653468 area=241378 buf=1328 PASS (GDS sha differs; timing/area metrics match)
+--- 20ns common ---
+J0 cells=15267 route_area=157366 core=271002 wns=4.53151 drc=0 gds=YES
+J1 cells=25220 route_area=241200 core=416927 wns=2.12892 drc=0 gds=YES
+J2 cells=28594 route_area=279752 core=482413 wns=0.473616 drc=0 gds=YES
+J3 cells=28130 route_area=280749 core=482732 wns=2.28898 drc=0 gds=YES
+--- regressions ---
+m510-matrix: OK
+phase_a: OK (pmp matrix hash unchanged)
+m7-ibex-composed: OK (100/100 PASS; csv metadata churn vs freeze hash)
+m7-ibex-reset: OK (PASS rows unchanged; 3 INCONCLUSIVE RC-IF deferred as before)
+FAIRNESS=PASS
+EXPERIMENTAL_FREEZE_RECOMMENDED=YES

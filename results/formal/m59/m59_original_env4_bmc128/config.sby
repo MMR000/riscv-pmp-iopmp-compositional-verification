@@ -1,0 +1,13 @@
+[options]
+mode bmc
+depth 128
+expect fail
+wait on
+skip 5
+
+[engines]
+smtbmc z3
+
+[script]
+read_slang -I/home/mmr/ricv_paper/formal/build/m59/src -I/home/mmr/ricv_paper/formal/build/m59/src/vendor -I/home/mmr/ricv_paper/formal/build/m59/src/include -DFORMAL -DM59_ENV_LEVEL=4 -DM57_VARIANT_ORIGINAL /home/mmr/ricv_paper/formal/build/m59/src/rv_iopmp_reg_pkg.sv /home/mmr/ricv_paper/formal/build/m59/src/lint_wrapper_pkg.sv /home/mmr/ricv_paper/formal/build/m59/src/rv_iopmp_pkg.sv /home/mmr/ricv_paper/formal/build/m59/src/vendor/apb_to_reg.sv /home/mmr/ricv_paper/formal/build/m59/src/vendor/axi2apb_64_32.sv /home/mmr/ricv_paper/formal/build/m59/src/vendor/axi_ar_buffer.sv /home/mmr/ricv_paper/formal/build/m59/src/vendor/axi_atop_filter.sv /home/mmr/ricv_paper/formal/build/m59/src/vendor/axi_aw_buffer.sv /home/mmr/ricv_paper/formal/build/m59/src/vendor/axi_b_buffer.sv /home/mmr/ricv_paper/formal/build/m59/src/vendor/axi_demux.sv /home/mmr/ricv_paper/formal/build/m59/src/vendor/axi_err_slv.sv /home/mmr/ricv_paper/formal/build/m59/src/vendor/axi_r_buffer.sv /home/mmr/ricv_paper/formal/build/m59/src/vendor/axi_single_slice.sv /home/mmr/ricv_paper/formal/build/m59/src/vendor/axi_w_buffer.sv /home/mmr/ricv_paper/formal/build/m59/src/vendor/counter.sv /home/mmr/ricv_paper/formal/build/m59/src/vendor/delta_counter.sv /home/mmr/ricv_paper/formal/build/m59/src/vendor/fifo.sv /home/mmr/ricv_paper/formal/build/m59/src/vendor/fifo_v2.sv /home/mmr/ricv_paper/formal/build/m59/src/vendor/fifo_v3.sv /home/mmr/ricv_paper/formal/build/m59/src/vendor/lzc.sv /home/mmr/ricv_paper/formal/build/m59/src/vendor/REG_BUS.sv /home/mmr/ricv_paper/formal/build/m59/src/vendor/rr_arb_tree.sv /home/mmr/ricv_paper/formal/build/m59/src/vendor/spill_register_flushable.sv /home/mmr/ricv_paper/formal/build/m59/src/vendor/spill_register.sv /home/mmr/ricv_paper/formal/build/m59/src/vendor/stream_arbiter_flushable.sv /home/mmr/ricv_paper/formal/build/m59/src/vendor/stream_arbiter.sv /home/mmr/ricv_paper/formal/build/m59/src/vendor/stream_mux.sv /home/mmr/ricv_paper/formal/build/m59/src/vendor/stream_register.sv /home/mmr/ricv_paper/formal/build/m59/src/vendor/tc_sram.sv /home/mmr/ricv_paper/formal/build/m59/src/vendor/tc_sram_wrapper.sv  /home/mmr/ricv_paper/formal/build/m59/src/rv_iopmp_axi4_bc.sv /home/mmr/ricv_paper/formal/build/m59/src/rv_iopmp_data_abstractor_axi.sv /home/mmr/ricv_paper/formal/build/m59/src/formal_m57_fullrtl_write_path_tb.sv --top formal_m57_fullrtl_write_path_tb
+prep -top formal_m57_fullrtl_write_path_tb

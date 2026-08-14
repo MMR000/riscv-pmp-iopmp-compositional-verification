@@ -1,0 +1,9 @@
+case,nsaid,READ_result,WRITE_result,RRESP,BRESP,memory_modified
+matching_entry_auth,0,ALLOW,,,0,,
+matching_entry_auth,,,ALLOW,,0,1
+matching_entry_unauth,1,ALLOW,,,0,,
+matching_entry_unauth,,,DENY,,2,0
+no_matching_entry,0,DENY,,,2,,
+no_matching_entry,,,DENY,,2,0
+no_entry_enable,0,DENY,,,2,,
+no_entry_enable,,,DENY,,2,0

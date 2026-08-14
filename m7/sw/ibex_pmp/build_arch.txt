@@ -1,0 +1,2 @@
+ARCH=rv32imc_zicsr
+riscv-none-elf-gcc (xPack GNU RISC-V Embedded GCC x86_64) 14.2.0

@@ -1,0 +1,72 @@
+=== In-flight RC-IF ===
+  IF01-A RST-B delay=8 ...
+    -> INCONCLUSIVE [INCONCLUSIVE] admit=29 commit_auth=44 rst=29 peek=0x11111111 n_auth_commits=2;admit_window_zer
+  IF01-B RST-B delay=8 ...
+    -> PASS [SIMULATION_EVIDENCE] admit=29 commit_auth=44 rst=31 peek=0x11111111 n_auth_commits=2;ModelA_completes
+  IF01-C RST-B delay=8 ...
+    -> PASS [SIMULATION_EVIDENCE] admit=29 commit_auth=44 rst=35 peek=0x11111111 n_auth_commits=2;ModelA_completes
+  IF01-D RST-B delay=8 ...
+    -> PASS [SIMULATION_EVIDENCE] admit=29 commit_auth=0 rst=30 peek=0x5151A5A5 n_auth_commits=0;no_auth_commit_af
+  IF02-A RST-B delay=8 ...
+    -> PASS [SIMULATION_EVIDENCE] auth_cpu_commits=1 before_rst=0 after_rst=1 rst=123 peek=0xB0040004;ModelA_or_sa
+  IF02-B RST-B delay=8 ...
+    -> PASS [SIMULATION_EVIDENCE] auth_cpu_commits=1 before_rst=0 after_rst=1 rst=126 peek=0xB0040004;ModelA_or_sa
+  IF02-C RST-B delay=8 ...
+    -> PASS [SIMULATION_EVIDENCE] auth_cpu_commits=1 before_rst=1 after_rst=0 rst=137 peek=0xB0040004;ModelA_or_sa
+  IF03-A RST-A delay=0 ...
+    -> PASS [RESET_ASSUMPTION_DEPENDENCY] err=0 peek=0xDADA0120 model=RST-A
+  IF03-A RST-B delay=0 ...
+    -> PASS [SIMULATION_EVIDENCE] err=1 peek=0x5151A5A5 model=RST-B
+  IF03-B RST-B delay=0 ...
+    -> PASS [SIMULATION_EVIDENCE] err=1 peek=0x5151A5A5 model=RST-B
+  IF03-C RST-B delay=0 ...
+    -> PASS [SIMULATION_EVIDENCE] err= peek=0x5151A5A5 model=RST-B;ic_down
+  IF03-D RST-B delay=0 ...
+    -> PASS [SIMULATION_EVIDENCE] err= peek=0x5151A5A5 model=RST-B;sec_reset_after_pmp
+  STALE-01 RST-B delay=8 ...
+    -> PASS [SIMULATION_EVIDENCE] stale_post_err=1;no_stale_allow
+Wrote /home/mmr/ricv_paper/results/tables/m7_inflight_reset_matrix.csv
+=== Deterministic ORD-A..H × RST-A/B ===
+  ORD-A RST-A (25, 30, 10, 12, 15)
+    -> PASS early_err=0 post_u=1 post_a=0 mcause=7
+  ORD-A RST-B (25, 30, 10, 12, 15)
+    -> PASS early_err=1 post_u=1 post_a=0 mcause=7
+  ORD-B RST-A (10, 30, 15, 18, 22)
+    -> PASS early_err=0 post_u=1 post_a=0 mcause=7
+  ORD-B RST-B (10, 30, 15, 18, 22)
+    -> PASS early_err=1 post_u=1 post_a=0 mcause=7
+  ORD-C RST-A (20, 10, 25, 28, 32)
+    -> PASS early_err=0 post_u=1 post_a=0 mcause=7
+  ORD-C RST-B (20, 10, 25, 28, 32)
+    -> PASS early_err=1 post_u=1 post_a=0 mcause=7
+  ORD-D RST-A (30, 10, 15, 18, 22)
+    -> PASS early_err=0 post_u=1 post_a=0 mcause=7
+  ORD-D RST-B (30, 10, 15, 18, 22)
+    -> PASS early_err=1 post_u=1 post_a=0 mcause=7
+  ORD-E RST-A (15, 15, 15, 15, 15)
+    -> PASS early_err=0 post_u=1 post_a=0 mcause=7
+  ORD-E RST-B (15, 15, 15, 15, 15)
+    -> PASS early_err=1 post_u=1 post_a=0 mcause=7
+  ORD-F RST-A (10, 12, 30, 25, 18)
+    -> PASS early_err=0 post_u=1 post_a=0 mcause=7
+  ORD-F RST-B (10, 12, 30, 25, 18)
+    -> PASS early_err=1 post_u=1 post_a=0 mcause=7
+  ORD-G RST-A (10, 14, 12, 30, 16)
+    -> PASS early_err=0 post_u=1 post_a=0 mcause=7
+  ORD-G RST-B (10, 14, 12, 30, 16)
+    -> PASS early_err=1 post_u=1 post_a=0 mcause=7
+  ORD-H RST-A (10, 14, 12, 16, 30)
+    -> PASS early_err=0 post_u=1 post_a=0 mcause=7
+  ORD-H RST-B (10, 14, 12, 16, 30)
+    -> PASS early_err=1 post_u=1 post_a=0 mcause=7
+=== Random release-order (200 seeds) ===
+  seed=0 RST-A PASS
+  seed=25 RST-B PASS
+  seed=50 RST-A PASS
+  seed=75 RST-B PASS
+  seed=100 RST-A PASS
+  seed=125 RST-B PASS
+  seed=150 RST-A PASS
+  seed=175 RST-B PASS
+Wrote /home/mmr/ricv_paper/results/tables/m7_realcore_release_order_matrix.csv
+Wrote /home/mmr/ricv_paper/results/tables/m7_reset_evidence_levels.csv

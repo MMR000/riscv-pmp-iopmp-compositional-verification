@@ -1,0 +1,7 @@
+Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+engine_0 (smtbmc z3) returned FAIL
+counterexample trace: engine_0/trace.vcd
+counterexample trace: engine_0/trace.yw
+  failed assertion formal_m57_fullrtl_write_path_tb._witness_.check_2651 at ../../../../../formal/build/m59/src/formal_m57_fullrtl_write_path_tb.sv:381.47-381.57 step 5
+  failed assertion formal_m57_fullrtl_write_path_tb._witness_.check_2658 at ../../../../../formal/build/m59/src/formal_m57_fullrtl_write_path_tb.sv:383.11-383.21 step 5

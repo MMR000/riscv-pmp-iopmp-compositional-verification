@@ -1,0 +1,15 @@
+M7 Phase C.5 start
+==================
+date: 2026-08-12T10:40:49+05:00
+branch: m7-journal-validation
+project_commit: 586fdd5781890d2b24417227de2428f271260a45
+phase_c_tag: checkpoint-m7-phase-c-realcore-reset
+ibex_commit: c61e11c1e416b9ce2d996013b444c8e558d35b2b
+verilator: Verilator 5.050 2026-07-01 rev conda-forge build 0
+fusesoc: 2.4.3
+phase_a_matrix_sha256: a6176844f91613a15845c9eff24c71fd0ec240fef14dab7f57c3cdbb35e09660
+phase_b_matrix_sha256: 38149283b0ed586c5cc4b9782545f789f2aa1e3bfed5420eb0c11d36c14795bc
+phase_c_matrix_sha256: 3953e814a318a15a738b5c2c88e15e219e0eaacb0e6c39c63dfd796794aa05fd
+phase_c_random_sha256: 0dec98e4d2000ac55d67b9ea30e5728be4e1f0ae045d68c4de9e2a6bb608bb33
+phase_c_latency_sha256: 5774971b4880bc17f62a217678568e4e3b10c2fc0ae60ef367d6ba33983e1591
+note: Phase A/B/C evidence immutable. Phase C.5 begins.

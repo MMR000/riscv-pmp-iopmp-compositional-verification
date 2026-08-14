@@ -1,0 +1,31 @@
+M7 Phase C complete
+===================
+date: 2026-08-12T10:34:18+05:00
+branch: m7-journal-validation
+project_commit_start: eba4cae1c4d440972f03358ce27f62369c4dc6ae
+project_commit_now: eba4cae1c4d440972f03358ce27f62369c4dc6ae
+describe: checkpoint-m7-phase-b-realcore-composition
+ibex_commit: c61e11c1e416b9ce2d996013b444c8e558d35b2b
+phase_a_matrix_sha256: a6176844f91613a15845c9eff24c71fd0ec240fef14dab7f57c3cdbb35e09660
+phase_b_matrix_sha256: 38149283b0ed586c5cc4b9782545f789f2aa1e3bfed5420eb0c11d36c14795bc
+phase_c_matrix_sha256: 3953e814a318a15a738b5c2c88e15e219e0eaacb0e6c39c63dfd796794aa05fd
+phase_c_random_sha256: 0dec98e4d2000ac55d67b9ea30e5728be4e1f0ae045d68c4de9e2a6bb608bb33
+phase_c_latency_sha256: 5774971b4880bc17f62a217678568e4e3b10c2fc0ae60ef367d6ba33983e1591
+rc_01_12: PASS (12/12)
+rc_ord: PASS (6/6 functional; order permutation limited — see docs)
+rc_if: INCONCLUSIVE (3/3)
+random: 100/100 PASS
+classification_rsta_early: RESET_ASSUMPTION_DEPENDENCY
+classification_rstb: SIMULATION_EVIDENCE
+vulnerability_claim: NONE
+m510_formal_altered: NO
+
+=== Regression notes ===
+m510-matrix: PASS
+phase_a_rebuild: FAIL_TOOLING (libelf.h missing during fusesoc rebuild); matrix SHA preserved a6176844...
+m7-ibex-composed: PASS functional (100/100 random); composed_matrix.csv restored to frozen SHA 38149283... after runner rewrote commit metadata
+m7-reset: PASS
+m7-ibex-reset: PASS (full rebuild + matrix)
+phase_a_matrix_sha256_final: a6176844f91613a15845c9eff24c71fd0ec240fef14dab7f57c3cdbb35e09660
+phase_b_matrix_sha256_final: 38149283b0ed586c5cc4b9782545f789f2aa1e3bfed5420eb0c11d36c14795bc
+phase_c_matrix_sha256_final: 3953e814a318a15a738b5c2c88e15e219e0eaacb0e6c39c63dfd796794aa05fd

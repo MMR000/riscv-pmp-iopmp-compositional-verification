@@ -1,0 +1,11 @@
+ORFS_PATH=third_party/OpenROAD-flow-scripts
+ORFS_COMMIT=f9ec54a6de7b2bc69fd586015f6ebdab34eca69c
+ORFS_STATUS:
+## master...origin/master
+SUBMODULES (not initialized; Docker image supplies tools):
+-ab6fd26351dc449e69059684dc6aa9ae9046eb36 tools/OpenROAD
+-9dd032c6ffb885c232801bc20f39cd5c80dc05fe tools/kepler-formal
+-a5af9d690a43744bf6b2cc3dea2717c16b54621c tools/yosys
+DOCKER_IMAGE=openroad/orfs:latest
+DOCKER_IMAGE_DIGEST=sha256:817b608c69a71fafc7b61baec11b4dc073fb8efb9d2714f9bd3316db4beba277
+NOTE=Host submodule init/build was not required for util/docker_shell flows.

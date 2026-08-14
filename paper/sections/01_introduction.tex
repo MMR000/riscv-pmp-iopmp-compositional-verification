@@ -1,0 +1,22 @@
+% SOURCE: results/m510/m510_summary.md
+\section{Introduction}
+\label{sec:intro}
+
+% VERIFIED FACT: PMP mediates CPU-originated accesses; IOPMP-style logic mediates DMA/I/O.
+% TODO(PROSE): Motivation paragraph.
+
+% VERIFIED FACT: Local SP-02/SP-04 proofs do not automatically imply compositional guarantees.
+% TODO(PROSE): Research gap.
+
+\subsection{Research Question}
+% TODO(PROSE): End-to-end compositional isolation under reset/initialization/admission.
+
+\subsection{Contributions (PROVISIONAL --- pending literature review)}
+\begin{itemize}
+  \item \textbf{C1:} Compositional security model spanning PMP, IOPMP-style mediation, requester identity, admission, protected memory, reset state. % EVIDENCE: docs/security_properties.md
+  \item \textbf{C2:} Reproducible workflow: simulation + BMC + induction where applicable. % EVIDENCE: Makefile m510
+  \item \textbf{C3:} Reset-ordering characterization: RST-A reachable unsafe state vs RST-B excluded. % EVIDENCE: SP-08
+  \item \textbf{C4:} Assumption-sensitivity analysis (initialization, identity, transaction invariants). % EVIDENCE: m510_assumption_sensitivity.csv
+\end{itemize}
+
+% Do not claim ``first'' without literature support.

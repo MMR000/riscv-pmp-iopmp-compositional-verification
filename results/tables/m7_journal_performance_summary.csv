@@ -1,0 +1,14 @@
+metric,value,notes
+cpu_authorized_load_cycles,5,Phase A mcycle
+cpu_authorized_store_cycles,5,Phase A mcycle
+cpu_umode_load_fault_cycles,28,mcause=5
+cpu_umode_store_fault_cycles,30,mcause=7
+dma_admit_to_first_commit_cycles,5,authorized endpoint
+dma_admit_to_completion_cycles,7,authorized endpoint
+dma_admit_to_last_commit_strobe_cycles,9,authorized endpoint
+dma_deny_to_response_cycles,0,same-cycle deny
+dma_throughput_N16_cycles_per_xfer,14.75,MEASURED sequential
+dma_throughput_N64_cycles_per_xfer,14.9375,MEASURED sequential
+dma_throughput_N256_cycles_per_xfer,14.9844,MEASURED sequential
+dma_auth_seeds_500_completion_cycles,7,all 500
+dma_deny_seeds_500_response_cycles,0,all 500

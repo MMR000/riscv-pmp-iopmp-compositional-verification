@@ -1,0 +1,2 @@
+metric,config,cycles,clock_mhz,source,classification
+m4,C1,NOT_RUN,NOT_RECORDED,/home/mmr/ricv_paper/results/m7/performance/m4_baseline_cycles.csv,SIMULATION_EVIDENCE

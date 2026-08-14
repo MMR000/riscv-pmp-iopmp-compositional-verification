@@ -1,0 +1,5 @@
+ibex_commit=c61e11c1e416b9ce2d996013b444c8e558d35b2b
+ibex_remote=https://github.com/lowRISC/ibex.git
+riscv_gcc=riscv-none-elf-gcc (xPack GNU RISC-V Embedded GCC x86_64) 14.2.0
+verilator=Verilator 5.050 2026-07-01 rev conda-forge build 0
+fusesoc=2.4.3

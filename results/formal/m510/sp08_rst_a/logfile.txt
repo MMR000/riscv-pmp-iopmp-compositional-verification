@@ -1,0 +1,2 @@
+SBY 10:11:51 [results/formal/m510/sp08_rst_a] Removing directory '/home/mmr/ricv_paper/results/formal/m510/sp08_rst_a'.
+SBY 10:11:51 [results/formal/m510/sp08_rst_a] Copy '/home/mmr/ricv_paper/../../rtl/common/bus_pkg.vh' to '/home/mmr/ricv_paper/results/formal/m510/sp08_rst_a/src/bus_pkg.vh'.

@@ -1,0 +1,1285 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.68+ (git sha1 832843ad0-dirty, Release, GNU /home/conda/feedstock_root/build_artifacts/yosys_1785933756519/_build_env/bin/x86_64-conda-linux-gnu-c++ 14.4.0) [github.com/conda-forge/yosys-feedstock at main]
+
+-- Running command `read_slang -I. -Ivendor -Iinclude -DFORMAL -DM57_VARIANT_ORIGINAL rv_iopmp_reg_pkg.sv lint_wrapper_pkg.sv rv_iopmp_pkg.sv vendor/apb_to_reg.sv vendor/axi2apb_64_32.sv vendor/axi_ar_buffer.sv vendor/axi_atop_filter.sv vendor/axi_aw_buffer.sv vendor/axi_b_buffer.sv vendor/axi_demux.sv vendor/axi_err_slv.sv vendor/axi_r_buffer.sv vendor/axi_single_slice.sv vendor/axi_w_buffer.sv vendor/counter.sv vendor/delta_counter.sv vendor/fifo.sv vendor/fifo_v2.sv vendor/fifo_v3.sv vendor/lzc.sv vendor/REG_BUS.sv vendor/rr_arb_tree.sv vendor/spill_register_flushable.sv vendor/spill_register.sv vendor/stream_arbiter_flushable.sv vendor/stream_arbiter.sv vendor/stream_mux.sv vendor/stream_register.sv vendor/tc_sram.sv vendor/tc_sram_wrapper.sv  rv_iopmp_axi4_bc.sv rv_iopmp_data_abstractor_axi.sv formal_m57_fullrtl_write_path_tb.sv --top formal_m57_fullrtl_write_path_tb; hierarchy -check; stat' --
+
+1. Executing SLANG frontend.
+Top level design units:
+    formal_m57_fullrtl_write_path_tb
+
+
+Build succeeded: 0 errors, 0 warnings
+
+1.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$2445'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$2350'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$2342'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$2336'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$2311'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$2296'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$2290'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$2257'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$2237'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$2222'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$2216'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$2181'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$2162'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$2147'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$2141'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$2098'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$2034'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$2028'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1995'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1980'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1964'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1938'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1935'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1875'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1821'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1778'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1757'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1740'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1728'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1724'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1677'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1659'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1651'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1644'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1640'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1622'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1614'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1607'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1603'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1585'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1577'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1570'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1566'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1548'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1540'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1533'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1529'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1511'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1503'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1496'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1492'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1474'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1466'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1459'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1455'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1437'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1429'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1422'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1418'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1400'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1392'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1385'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1381'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1363'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1355'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1348'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1344'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1326'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1318'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1311'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1307'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1289'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1281'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1274'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1270'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1252'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1244'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1237'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1233'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1215'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1207'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1200'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1196'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1178'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1170'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1163'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1159'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1141'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1133'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1126'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1122'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1104'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1096'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1089'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1066'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1036'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$981'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$960'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$943'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$931'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$927'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$864'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$858'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$823'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$797'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$779'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$771'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$764'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$760'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$742'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$734'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$727'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$723'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$705'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$697'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$690'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$686'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$668'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$660'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$653'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$649'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$631'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$623'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$616'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$612'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$594'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$586'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$579'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$575'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$557'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$549'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$542'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$538'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$520'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$512'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$505'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$501'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$483'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$475'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$468'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$464'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$446'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$438'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$431'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$427'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$409'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$401'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$394'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$390'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$372'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$364'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$357'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$353'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$335'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$327'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$320'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$316'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$298'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$290'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$283'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$279'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$261'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$253'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$246'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$242'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$224'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$216'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$209'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$186'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$149'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$80'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$77'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$42'.
+Cleaned up 133 empty switches.
+<suppressed ~1141 debug messages>
+
+1.2. Executing TRIBUF pass.
+
+1.3. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 6 switch rules as full_case in process $1577 in module formal_m57_fullrtl_write_path_tb.
+Marked 1 switch rules as full_case in process $2290 in module formal_m57_fullrtl_write_path_tb.
+Marked 6 switch rules as full_case in process $1540 in module formal_m57_fullrtl_write_path_tb.
+Marked 6 switch rules as full_case in process $2257 in module formal_m57_fullrtl_write_path_tb.
+Marked 6 switch rules as full_case in process $1503 in module formal_m57_fullrtl_write_path_tb.
+Marked 6 switch rules as full_case in process $1466 in module formal_m57_fullrtl_write_path_tb.
+Marked 6 switch rules as full_case in process $1429 in module formal_m57_fullrtl_write_path_tb.
+Marked 1 switch rules as full_case in process $2216 in module formal_m57_fullrtl_write_path_tb.
+Marked 6 switch rules as full_case in process $1392 in module formal_m57_fullrtl_write_path_tb.
+Marked 6 switch rules as full_case in process $2181 in module formal_m57_fullrtl_write_path_tb.
+Marked 6 switch rules as full_case in process $1355 in module formal_m57_fullrtl_write_path_tb.
+Marked 1 switch rules as full_case in process $2162 in module formal_m57_fullrtl_write_path_tb.
+Marked 6 switch rules as full_case in process $1318 in module formal_m57_fullrtl_write_path_tb.
+Marked 6 switch rules as full_case in process $1281 in module formal_m57_fullrtl_write_path_tb.
+Marked 1 switch rules as full_case in process $2141 in module formal_m57_fullrtl_write_path_tb.
+Marked 6 switch rules as full_case in process $1244 in module formal_m57_fullrtl_write_path_tb.
+Marked 8 switch rules as full_case in process $2098 in module formal_m57_fullrtl_write_path_tb.
+Marked 6 switch rules as full_case in process $1207 in module formal_m57_fullrtl_write_path_tb.
+Marked 6 switch rules as full_case in process $1170 in module formal_m57_fullrtl_write_path_tb.
+Marked 1 switch rules as full_case in process $2028 in module formal_m57_fullrtl_write_path_tb.
+Marked 6 switch rules as full_case in process $1133 in module formal_m57_fullrtl_write_path_tb.
+Marked 6 switch rules as full_case in process $1995 in module formal_m57_fullrtl_write_path_tb.
+Marked 6 switch rules as full_case in process $1096 in module formal_m57_fullrtl_write_path_tb.
+Marked 6 switch rules as full_case in process $1036 in module formal_m57_fullrtl_write_path_tb.
+Marked 1 switch rules as full_case in process $981 in module formal_m57_fullrtl_write_path_tb.
+Marked 4 switch rules as full_case in process $1964 in module formal_m57_fullrtl_write_path_tb.
+Marked 1 switch rules as full_case in process $931 in module formal_m57_fullrtl_write_path_tb.
+Marked 1 switch rules as full_case in process $927 in module formal_m57_fullrtl_write_path_tb.
+Marked 1 switch rules as full_case in process $858 in module formal_m57_fullrtl_write_path_tb.
+Marked 6 switch rules as full_case in process $823 in module formal_m57_fullrtl_write_path_tb.
+Marked 7 switch rules as full_case in process $1938 in module formal_m57_fullrtl_write_path_tb.
+Marked 6 switch rules as full_case in process $771 in module formal_m57_fullrtl_write_path_tb.
+Marked 9 switch rules as full_case in process $2445 in module formal_m57_fullrtl_write_path_tb.
+Marked 6 switch rules as full_case in process $734 in module formal_m57_fullrtl_write_path_tb.
+Marked 24 switch rules as full_case in process $1875 in module formal_m57_fullrtl_write_path_tb.
+Marked 6 switch rules as full_case in process $697 in module formal_m57_fullrtl_write_path_tb.
+Marked 5 switch rules as full_case in process $1821 in module formal_m57_fullrtl_write_path_tb.
+Marked 6 switch rules as full_case in process $660 in module formal_m57_fullrtl_write_path_tb.
+Marked 1 switch rules as full_case in process $1778 in module formal_m57_fullrtl_write_path_tb.
+Marked 6 switch rules as full_case in process $623 in module formal_m57_fullrtl_write_path_tb.
+Marked 6 switch rules as full_case in process $586 in module formal_m57_fullrtl_write_path_tb.
+Marked 6 switch rules as full_case in process $2342 in module formal_m57_fullrtl_write_path_tb.
+Marked 6 switch rules as full_case in process $549 in module formal_m57_fullrtl_write_path_tb.
+Marked 1 switch rules as full_case in process $1728 in module formal_m57_fullrtl_write_path_tb.
+Marked 6 switch rules as full_case in process $512 in module formal_m57_fullrtl_write_path_tb.
+Marked 1 switch rules as full_case in process $1724 in module formal_m57_fullrtl_write_path_tb.
+Marked 6 switch rules as full_case in process $475 in module formal_m57_fullrtl_write_path_tb.
+Marked 6 switch rules as full_case in process $438 in module formal_m57_fullrtl_write_path_tb.
+Marked 6 switch rules as full_case in process $401 in module formal_m57_fullrtl_write_path_tb.
+Marked 6 switch rules as full_case in process $1651 in module formal_m57_fullrtl_write_path_tb.
+Marked 6 switch rules as full_case in process $364 in module formal_m57_fullrtl_write_path_tb.
+Marked 6 switch rules as full_case in process $327 in module formal_m57_fullrtl_write_path_tb.
+Marked 6 switch rules as full_case in process $290 in module formal_m57_fullrtl_write_path_tb.
+Marked 4 switch rules as full_case in process $2311 in module formal_m57_fullrtl_write_path_tb.
+Marked 6 switch rules as full_case in process $253 in module formal_m57_fullrtl_write_path_tb.
+Marked 6 switch rules as full_case in process $1614 in module formal_m57_fullrtl_write_path_tb.
+Marked 6 switch rules as full_case in process $216 in module formal_m57_fullrtl_write_path_tb.
+Marked 6 switch rules as full_case in process $149 in module formal_m57_fullrtl_write_path_tb.
+Marked 9 switch rules as full_case in process $80 in module formal_m57_fullrtl_write_path_tb.
+Marked 2 switch rules as full_case in process $42 in module formal_m57_fullrtl_write_path_tb.
+Removed a total of 0 dead cases.
+
+1.4. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 253 redundant assignments.
+Promoted 0 assignments to connections.
+
+1.5. Executing PROC_INIT pass (extract init attributes).
+
+1.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~497 debug messages>
+
+1.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1603'.
+     1/1: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.mst_select_q[13]$1606
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$2296'.
+     1/1: $dut.i_axi_err_slv.i_r_fifo.mem_q$2300
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1577'.
+     1/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[13].i_in_flight_cnt.counter_d$1580
+     2/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[13].i_in_flight_cnt.counter_d$1581
+     3/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[13].i_in_flight_cnt.counter_d$1582
+     4/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[13].i_in_flight_cnt.counter_d$1583
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1570'.
+     1/3: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[13].cnt_delta$1573
+     2/3: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[13].cnt_down$1572
+     3/3: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[13].cnt_en$1571
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1566'.
+     1/1: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.mst_select_q[12]$1569
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$2290'.
+     1/3: $dut.i_axi_err_slv.i_r_fifo.status_cnt_q$2295
+     2/3: $dut.i_axi_err_slv.i_r_fifo.write_pointer_q$2294
+     3/3: $dut.i_axi_err_slv.i_r_fifo.read_pointer_q$2293
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1540'.
+     1/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[12].i_in_flight_cnt.counter_d$1543
+     2/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[12].i_in_flight_cnt.counter_d$1544
+     3/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[12].i_in_flight_cnt.counter_d$1545
+     4/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[12].i_in_flight_cnt.counter_d$1546
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1533'.
+     1/3: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[12].cnt_delta$1536
+     2/3: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[12].cnt_down$1535
+     3/3: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[12].cnt_en$1534
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1529'.
+     1/1: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.mst_select_q[11]$1532
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$2257'.
+     1/9: $dut.i_axi_err_slv.i_r_fifo.status_cnt_n$2288
+     2/9: $dut.i_axi_err_slv.i_r_fifo.read_pointer_n$2279
+     3/9: $dut.i_axi_err_slv.i_r_fifo.status_cnt_n$2282
+     4/9: $dut.i_axi_err_slv.i_r_fifo.read_pointer_n$2281
+     5/9: $dut.i_axi_err_slv.i_r_fifo.write_pointer_n$2269
+     6/9: $dut.i_axi_err_slv.i_r_fifo.mem_n$2274
+     7/9: $dut.i_axi_err_slv.i_r_fifo.status_cnt_n$2273
+     8/9: $dut.i_axi_err_slv.i_r_fifo.write_pointer_n$2272
+     9/9: $dut.i_axi_err_slv.i_r_fifo.gate_clock$2271
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1503'.
+     1/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[11].i_in_flight_cnt.counter_d$1506
+     2/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[11].i_in_flight_cnt.counter_d$1507
+     3/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[11].i_in_flight_cnt.counter_d$1508
+     4/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[11].i_in_flight_cnt.counter_d$1509
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1496'.
+     1/3: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[11].cnt_delta$1499
+     2/3: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[11].cnt_down$1498
+     3/3: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[11].cnt_en$1497
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1492'.
+     1/1: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.mst_select_q[10]$1495
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$2237'.
+     1/2: $dut.i_axi_err_slv.b_fifo_pop$2240
+     2/2: $dut.i_axi_err_slv.err_resp[80]$2239
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1466'.
+     1/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[10].i_in_flight_cnt.counter_d$1469
+     2/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[10].i_in_flight_cnt.counter_d$1470
+     3/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[10].i_in_flight_cnt.counter_d$1471
+     4/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[10].i_in_flight_cnt.counter_d$1472
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1459'.
+     1/3: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[10].cnt_delta$1462
+     2/3: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[10].cnt_down$1461
+     3/3: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[10].cnt_en$1460
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1455'.
+     1/1: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.mst_select_q[9]$1458
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$2222'.
+     1/1: $dut.i_axi_err_slv.i_b_fifo.mem_q$2226
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1429'.
+     1/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[9].i_in_flight_cnt.counter_d$1432
+     2/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[9].i_in_flight_cnt.counter_d$1433
+     3/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[9].i_in_flight_cnt.counter_d$1434
+     4/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[9].i_in_flight_cnt.counter_d$1435
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1422'.
+     1/3: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[9].cnt_delta$1425
+     2/3: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[9].cnt_down$1424
+     3/3: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[9].cnt_en$1423
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1418'.
+     1/1: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.mst_select_q[8]$1421
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$2216'.
+     1/3: $dut.i_axi_err_slv.i_b_fifo.status_cnt_q$2221
+     2/3: $dut.i_axi_err_slv.i_b_fifo.write_pointer_q$2220
+     3/3: $dut.i_axi_err_slv.i_b_fifo.read_pointer_q$2219
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1392'.
+     1/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[8].i_in_flight_cnt.counter_d$1395
+     2/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[8].i_in_flight_cnt.counter_d$1396
+     3/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[8].i_in_flight_cnt.counter_d$1397
+     4/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[8].i_in_flight_cnt.counter_d$1398
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1385'.
+     1/3: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[8].cnt_delta$1388
+     2/3: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[8].cnt_down$1387
+     3/3: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[8].cnt_en$1386
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1381'.
+     1/1: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.mst_select_q[7]$1384
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$2181'.
+     1/9: $dut.i_axi_err_slv.i_b_fifo.status_cnt_n$2214
+     2/9: $dut.i_axi_err_slv.i_b_fifo.read_pointer_n$2205
+     3/9: $dut.i_axi_err_slv.i_b_fifo.status_cnt_n$2208
+     4/9: $dut.i_axi_err_slv.i_b_fifo.read_pointer_n$2207
+     5/9: $dut.i_axi_err_slv.i_b_fifo.write_pointer_n$2195
+     6/9: $dut.i_axi_err_slv.i_b_fifo.mem_n$2200
+     7/9: $dut.i_axi_err_slv.i_b_fifo.status_cnt_n$2199
+     8/9: $dut.i_axi_err_slv.i_b_fifo.write_pointer_n$2198
+     9/9: $dut.i_axi_err_slv.i_b_fifo.gate_clock$2197
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1355'.
+     1/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[7].i_in_flight_cnt.counter_d$1358
+     2/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[7].i_in_flight_cnt.counter_d$1359
+     3/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[7].i_in_flight_cnt.counter_d$1360
+     4/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[7].i_in_flight_cnt.counter_d$1361
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1348'.
+     1/3: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[7].cnt_delta$1351
+     2/3: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[7].cnt_down$1350
+     3/3: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[7].cnt_en$1349
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1344'.
+     1/1: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.mst_select_q[6]$1347
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$2162'.
+     1/5: $dut.i_axi_err_slv.b_fifo_push$2168
+     2/5: $dut.i_axi_err_slv.w_fifo_pop$2167
+     3/5: $dut.i_axi_err_slv.b_fifo_push$2171
+     4/5: $dut.i_axi_err_slv.w_fifo_pop$2170
+     5/5: $dut.i_axi_err_slv.err_resp[81]$2169
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1318'.
+     1/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[6].i_in_flight_cnt.counter_d$1321
+     2/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[6].i_in_flight_cnt.counter_d$1322
+     3/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[6].i_in_flight_cnt.counter_d$1323
+     4/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[6].i_in_flight_cnt.counter_d$1324
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1311'.
+     1/3: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[6].cnt_delta$1314
+     2/3: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[6].cnt_down$1313
+     3/3: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[6].cnt_en$1312
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1307'.
+     1/1: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.mst_select_q[5]$1310
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$2147'.
+     1/1: $dut.i_axi_err_slv.i_w_fifo.mem_q$2151
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1281'.
+     1/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[5].i_in_flight_cnt.counter_d$1284
+     2/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[5].i_in_flight_cnt.counter_d$1285
+     3/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[5].i_in_flight_cnt.counter_d$1286
+     4/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[5].i_in_flight_cnt.counter_d$1287
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1274'.
+     1/3: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[5].cnt_delta$1277
+     2/3: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[5].cnt_down$1276
+     3/3: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[5].cnt_en$1275
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1270'.
+     1/1: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.mst_select_q[4]$1273
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$2141'.
+     1/3: $dut.i_axi_err_slv.i_w_fifo.status_cnt_q$2146
+     2/3: $dut.i_axi_err_slv.i_w_fifo.write_pointer_q$2145
+     3/3: $dut.i_axi_err_slv.i_w_fifo.read_pointer_q$2144
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1244'.
+     1/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[4].i_in_flight_cnt.counter_d$1247
+     2/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[4].i_in_flight_cnt.counter_d$1248
+     3/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[4].i_in_flight_cnt.counter_d$1249
+     4/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[4].i_in_flight_cnt.counter_d$1250
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1237'.
+     1/3: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[4].cnt_delta$1240
+     2/3: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[4].cnt_down$1239
+     3/3: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[4].cnt_en$1238
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1233'.
+     1/1: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.mst_select_q[3]$1236
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$2098'.
+     1/16: $dut.i_axi_err_slv.i_w_fifo.status_cnt_n$2135
+     2/16: $dut.i_axi_err_slv.i_w_fifo.write_pointer_n$2134
+     3/16: $dut.i_axi_err_slv.i_w_fifo.read_pointer_n$2133
+     4/16: $dut.i_axi_err_slv.i_w_fifo.status_cnt_n$2139
+     5/16: $dut.i_axi_err_slv.i_w_fifo.write_pointer_n$2138
+     6/16: $dut.i_axi_err_slv.i_w_fifo.read_pointer_n$2137
+     7/16: $dut.i_axi_err_slv.i_w_fifo.data_o$2136
+     8/16: $dut.i_axi_err_slv.i_w_fifo.status_cnt_n$2129
+     9/16: $dut.i_axi_err_slv.i_w_fifo.read_pointer_n$2120
+    10/16: $dut.i_axi_err_slv.i_w_fifo.status_cnt_n$2123
+    11/16: $dut.i_axi_err_slv.i_w_fifo.read_pointer_n$2122
+    12/16: $dut.i_axi_err_slv.i_w_fifo.write_pointer_n$2110
+    13/16: $dut.i_axi_err_slv.i_w_fifo.mem_n$2115
+    14/16: $dut.i_axi_err_slv.i_w_fifo.status_cnt_n$2114
+    15/16: $dut.i_axi_err_slv.i_w_fifo.write_pointer_n$2113
+    16/16: $dut.i_axi_err_slv.i_w_fifo.gate_clock$2112
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1207'.
+     1/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[3].i_in_flight_cnt.counter_d$1210
+     2/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[3].i_in_flight_cnt.counter_d$1211
+     3/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[3].i_in_flight_cnt.counter_d$1212
+     4/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[3].i_in_flight_cnt.counter_d$1213
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1200'.
+     1/3: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[3].cnt_delta$1203
+     2/3: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[3].cnt_down$1202
+     3/3: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[3].cnt_en$1201
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1196'.
+     1/1: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.mst_select_q[2]$1199
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$2034'.
+     1/1: $dut.i_axi_err_slv.genblk1.i_atop_filter.r_resp_cmd.i_fifo.i_fifo_v3.mem_q$2038
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1170'.
+     1/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[2].i_in_flight_cnt.counter_d$1173
+     2/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[2].i_in_flight_cnt.counter_d$1174
+     3/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[2].i_in_flight_cnt.counter_d$1175
+     4/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[2].i_in_flight_cnt.counter_d$1176
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1163'.
+     1/3: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[2].cnt_delta$1166
+     2/3: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[2].cnt_down$1165
+     3/3: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[2].cnt_en$1164
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1159'.
+     1/1: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.mst_select_q[1]$1162
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$2028'.
+     1/3: $dut.i_axi_err_slv.genblk1.i_atop_filter.r_resp_cmd.i_fifo.i_fifo_v3.status_cnt_q$2033
+     2/3: $dut.i_axi_err_slv.genblk1.i_atop_filter.r_resp_cmd.i_fifo.i_fifo_v3.write_pointer_q$2032
+     3/3: $dut.i_axi_err_slv.genblk1.i_atop_filter.r_resp_cmd.i_fifo.i_fifo_v3.read_pointer_q$2031
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1133'.
+     1/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[1].i_in_flight_cnt.counter_d$1136
+     2/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[1].i_in_flight_cnt.counter_d$1137
+     3/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[1].i_in_flight_cnt.counter_d$1138
+     4/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[1].i_in_flight_cnt.counter_d$1139
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1126'.
+     1/3: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[1].cnt_delta$1129
+     2/3: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[1].cnt_down$1128
+     3/3: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[1].cnt_en$1127
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1122'.
+     1/1: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.mst_select_q[0]$1125
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1995'.
+     1/9: $dut.i_axi_err_slv.genblk1.i_atop_filter.r_resp_cmd.i_fifo.i_fifo_v3.status_cnt_n$2026
+     2/9: $dut.i_axi_err_slv.genblk1.i_atop_filter.r_resp_cmd.i_fifo.i_fifo_v3.read_pointer_n$2017
+     3/9: $dut.i_axi_err_slv.genblk1.i_atop_filter.r_resp_cmd.i_fifo.i_fifo_v3.status_cnt_n$2020
+     4/9: $dut.i_axi_err_slv.genblk1.i_atop_filter.r_resp_cmd.i_fifo.i_fifo_v3.read_pointer_n$2019
+     5/9: $dut.i_axi_err_slv.genblk1.i_atop_filter.r_resp_cmd.i_fifo.i_fifo_v3.write_pointer_n$2007
+     6/9: $dut.i_axi_err_slv.genblk1.i_atop_filter.r_resp_cmd.i_fifo.i_fifo_v3.mem_n$2012
+     7/9: $dut.i_axi_err_slv.genblk1.i_atop_filter.r_resp_cmd.i_fifo.i_fifo_v3.status_cnt_n$2011
+     8/9: $dut.i_axi_err_slv.genblk1.i_atop_filter.r_resp_cmd.i_fifo.i_fifo_v3.write_pointer_n$2010
+     9/9: $dut.i_axi_err_slv.genblk1.i_atop_filter.r_resp_cmd.i_fifo.i_fifo_v3.gate_clock$2009
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1096'.
+     1/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[0].i_in_flight_cnt.counter_d$1099
+     2/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[0].i_in_flight_cnt.counter_d$1100
+     3/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[0].i_in_flight_cnt.counter_d$1101
+     4/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[0].i_in_flight_cnt.counter_d$1102
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1089'.
+     1/3: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[0].cnt_delta$1092
+     2/3: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[0].cnt_down$1091
+     3/3: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[0].cnt_en$1090
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1066'.
+     1/1: $dut.i_axi_demux.gen_demux.lock_ar_valid_q$1069
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1036'.
+     1/23: $dut.i_axi_demux.gen_demux.load_ar_lock$1049
+     2/23: $dut.i_axi_demux.gen_demux.lock_ar_valid_d$1048
+     3/23: $dut.i_axi_demux.gen_demux.ar_push$1047
+     4/23: $dut.i_axi_demux.gen_demux.slv_ar_ready$1046
+     5/23: $dut.i_axi_demux.gen_demux.ar_valid$1054
+     6/23: $dut.i_axi_demux.gen_demux.load_ar_lock$1053
+     7/23: $dut.i_axi_demux.gen_demux.lock_ar_valid_d$1052
+     8/23: $dut.i_axi_demux.gen_demux.ar_push$1051
+     9/23: $dut.i_axi_demux.gen_demux.slv_ar_ready$1050
+    10/23: $dut.i_axi_demux.gen_demux.ar_valid$1059
+    11/23: $dut.i_axi_demux.gen_demux.load_ar_lock$1058
+    12/23: $dut.i_axi_demux.gen_demux.lock_ar_valid_d$1057
+    13/23: $dut.i_axi_demux.gen_demux.ar_push$1056
+    14/23: $dut.i_axi_demux.gen_demux.slv_ar_ready$1055
+    15/23: $dut.i_axi_demux.gen_demux.ar_valid$1064
+    16/23: $dut.i_axi_demux.gen_demux.load_ar_lock$1063
+    17/23: $dut.i_axi_demux.gen_demux.lock_ar_valid_d$1062
+    18/23: $dut.i_axi_demux.gen_demux.ar_push$1061
+    19/23: $dut.i_axi_demux.gen_demux.slv_ar_ready$1060
+    20/23: $dut.i_axi_demux.gen_demux.load_ar_lock$1040
+    21/23: $dut.i_axi_demux.gen_demux.lock_ar_valid_d$1039
+    22/23: $dut.i_axi_demux.gen_demux.ar_push$1038
+    23/23: $dut.i_axi_demux.gen_demux.slv_ar_ready$1037
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$981'.
+     1/1: $dut.i_axi_demux.gen_demux.i_b_mux.gen_arbiter.rr_q$984
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$2488'.
+     1/4: $2505
+     2/4: $2498
+     3/4: $2494
+     4/4: $2492
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1964'.
+     1/4: $dut.i_axi_err_slv.genblk1.i_atop_filter.w_cnt_d[2]$1977
+     2/4: $dut.i_axi_err_slv.genblk1.i_atop_filter.w_cnt_d[2]$1978
+     3/4: $dut.i_axi_err_slv.genblk1.i_atop_filter.w_cnt_d[1:0]$1971
+     4/4: $dut.i_axi_err_slv.genblk1.i_atop_filter.w_cnt_d[1:0]$1967
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$931'.
+     1/1: $dut.i_axi_demux.gen_demux.i_b_mux.gen_arbiter.gen_int_rr.gen_lock.req_q$934
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$927'.
+     1/1: $dut.i_axi_demux.gen_demux.i_b_mux.gen_arbiter.gen_int_rr.gen_lock.lock_q$930
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$864'.
+     1/1: $dut.i_axi_demux.gen_demux.i_w_fifo.mem_q$868
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$858'.
+     1/3: $dut.i_axi_demux.gen_demux.i_w_fifo.status_cnt_q$863
+     2/3: $dut.i_axi_demux.gen_demux.i_w_fifo.write_pointer_q$862
+     3/3: $dut.i_axi_demux.gen_demux.i_w_fifo.read_pointer_q$861
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$823'.
+     1/9: $dut.i_axi_demux.gen_demux.i_w_fifo.status_cnt_n$856
+     2/9: $dut.i_axi_demux.gen_demux.i_w_fifo.read_pointer_n$847
+     3/9: $dut.i_axi_demux.gen_demux.i_w_fifo.status_cnt_n$850
+     4/9: $dut.i_axi_demux.gen_demux.i_w_fifo.read_pointer_n$849
+     5/9: $dut.i_axi_demux.gen_demux.i_w_fifo.write_pointer_n$837
+     6/9: $dut.i_axi_demux.gen_demux.i_w_fifo.mem_n$842
+     7/9: $dut.i_axi_demux.gen_demux.i_w_fifo.status_cnt_n$841
+     8/9: $dut.i_axi_demux.gen_demux.i_w_fifo.write_pointer_n$840
+     9/9: $dut.i_axi_demux.gen_demux.i_w_fifo.gate_clock$839
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$797'.
+     1/1: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.mst_select_q[15]$800
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1938'.
+     1/16: $dut.i_axi_err_slv.genblk1.i_atop_filter.r_state_d$1954
+     2/16: $dut.i_axi_err_slv.genblk1.i_atop_filter.r_resp_cmd_pop_ready$1949
+     3/16: $dut.i_axi_err_slv.genblk1.i_atop_filter.r_beats_d$1948
+     4/16: $dut.i_axi_err_slv.genblk1.i_atop_filter.r_state_d$1947
+     5/16: $dut.i_axi_err_slv.genblk1.i_atop_filter.r_resp_cmd_pop_ready$1952
+     6/16: $dut.i_axi_err_slv.genblk1.i_atop_filter.r_beats_d$1951
+     7/16: $dut.i_axi_err_slv.genblk1.i_atop_filter.r_state_d$1950
+     8/16: $dut.i_axi_err_slv.genblk1.i_atop_filter.r_state_d$1957
+     9/16: $dut.i_axi_err_slv.genblk1.i_atop_filter.r_beats_d$1942
+    10/16: $dut.i_axi_err_slv.genblk1.i_atop_filter.r_state_d$1941
+    11/16: $dut.i_axi_err_slv.genblk1.i_atop_filter.r_state_d$1943
+    12/16: $dut.i_axi_err_slv.genblk1.i_atop_filter.r_beats_d$1944
+    13/16: $dut.i_axi_err_slv.genblk1.i_atop_filter.r_resp_cmd_pop_ready$1959
+    14/16: $dut.i_axi_err_slv.genblk1.i_atop_filter.r_beats_d$1958
+    15/16: $dut.i_axi_err_slv.genblk1.i_atop_filter.mst_req_o[0]$1956
+    16/16: $dut.i_axi_err_slv.genblk1.i_atop_filter.slv_resp_o[72:0]$1955
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$771'.
+     1/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[15].i_in_flight_cnt.counter_d$774
+     2/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[15].i_in_flight_cnt.counter_d$775
+     3/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[15].i_in_flight_cnt.counter_d$776
+     4/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[15].i_in_flight_cnt.counter_d$777
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$764'.
+     1/3: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[15].cnt_delta$767
+     2/3: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[15].cnt_down$766
+     3/3: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[15].cnt_en$765
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$760'.
+     1/1: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.mst_select_q[14]$763
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$2445'.
+     1/22: $env_grant_valid$2479
+     2/22: $env_grant_valid$2478
+     3/22: $txn_b_done_src$2473
+     4/22: $txn_active$2472
+     5/22: $env_grant_valid$2471
+     6/22: $txn_w_done_src$2470
+     7/22: $txn_aw_done_src$2469
+     8/22: $mem_written$2468
+     9/22: $txn_seq$2467
+    10/22: $txn_b_done_src$2466
+    11/22: $txn_w_done_src$2465
+    12/22: $txn_aw_done_src$2464
+    13/22: $txn_authorized$2463
+    14/22: $txn_active$2462
+    15/22: $env_grant_valid$2461
+    16/22: $grant_allow$2455
+    17/22: $grant_seq$2454
+    18/22: $grant_allow$2453
+    19/22: $grant_seq$2452
+    20/22: $auth_seq$2451
+    21/22: $txn_authorized$2450
+    22/22: $mem_written$2448
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$734'.
+     1/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[14].i_in_flight_cnt.counter_d$737
+     2/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[14].i_in_flight_cnt.counter_d$738
+     3/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[14].i_in_flight_cnt.counter_d$739
+     4/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[14].i_in_flight_cnt.counter_d$740
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$727'.
+     1/3: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[14].cnt_delta$730
+     2/3: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[14].cnt_down$729
+     3/3: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[14].cnt_en$728
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$723'.
+     1/1: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.mst_select_q[13]$726
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1875'.
+     1/37: $dut.i_axi_err_slv.genblk1.i_atop_filter.w_state_d$1926
+     2/37: $dut.i_axi_err_slv.genblk1.i_atop_filter.w_state_d$1923
+     3/37: $dut.i_axi_err_slv.genblk1.i_atop_filter.w_state_d$1924
+     4/37: $dut.i_axi_err_slv.genblk1.i_atop_filter.w_state_d$1920
+     5/37: $dut.i_axi_err_slv.genblk1.i_atop_filter.w_state_d$1917
+     6/37: $dut.i_axi_err_slv.genblk1.i_atop_filter.w_state_d$1918
+     7/37: $dut.i_axi_err_slv.genblk1.i_atop_filter.w_state_d$1910
+     8/37: $dut.i_axi_err_slv.genblk1.i_atop_filter.w_state_d$1909
+     9/37: $dut.i_axi_err_slv.genblk1.i_atop_filter.slv_resp_o[81]$1911
+    10/37: $dut.i_axi_err_slv.genblk1.i_atop_filter.w_state_d$1913
+    11/37: $dut.i_axi_err_slv.genblk1.i_atop_filter.mst_req_o[101]$1912
+    12/37: $dut.i_axi_err_slv.genblk1.i_atop_filter.w_state_d$1931
+    13/37: $dut.i_axi_err_slv.genblk1.i_atop_filter.mst_req_o[101:100]$1929 [1]
+    14/37: $dut.i_axi_err_slv.genblk1.i_atop_filter.mst_req_o[101:100]$1929 [0]
+    15/37: $dut.i_axi_err_slv.genblk1.i_atop_filter.slv_resp_o[81:73]$1927 [7:0]
+    16/37: $dut.i_axi_err_slv.genblk1.i_atop_filter.w_state_d$1894
+    17/37: $dut.i_axi_err_slv.genblk1.i_atop_filter.w_state_d$1898
+    18/37: $dut.i_axi_err_slv.genblk1.i_atop_filter.mst_req_o[101]$1897
+    19/37: $dut.i_axi_err_slv.genblk1.i_atop_filter.slv_resp_o[81]$1896
+    20/37: $dut.i_axi_err_slv.genblk1.i_atop_filter.r_resp_cmd_push_valid$1890
+    21/37: $dut.i_axi_err_slv.genblk1.i_atop_filter.r_resp_cmd_push_valid$1905
+    22/37: $dut.i_axi_err_slv.genblk1.i_atop_filter.id_d$1904
+    23/37: $dut.i_axi_err_slv.genblk1.i_atop_filter.w_state_d$1903
+    24/37: $dut.i_axi_err_slv.genblk1.i_atop_filter.mst_req_o[176]$1902
+    25/37: $dut.i_axi_err_slv.genblk1.i_atop_filter.mst_req_o[101]$1901
+    26/37: $dut.i_axi_err_slv.genblk1.i_atop_filter.slv_resp_o[83]$1900
+    27/37: $dut.i_axi_err_slv.genblk1.i_atop_filter.slv_resp_o[81]$1899
+    28/37: $dut.i_axi_err_slv.genblk1.i_atop_filter.mst_req_o[101]$1886
+    29/37: $dut.i_axi_err_slv.genblk1.i_atop_filter.slv_resp_o[81]$1885
+    30/37: $dut.i_axi_err_slv.genblk1.i_atop_filter.mst_req_o[176]$1879
+    31/37: $dut.i_axi_err_slv.genblk1.i_atop_filter.slv_resp_o[83]$1878
+    32/37: $dut.i_axi_err_slv.genblk1.i_atop_filter.r_resp_cmd_push_valid$1933
+    33/37: $dut.i_axi_err_slv.genblk1.i_atop_filter.id_d$1932
+    34/37: $dut.i_axi_err_slv.genblk1.i_atop_filter.mst_req_o[176]$1930
+    35/37: $dut.i_axi_err_slv.genblk1.i_atop_filter.slv_resp_o[81:73]$1927 [8]
+    36/37: $dut.i_axi_err_slv.genblk1.i_atop_filter.slv_resp_o[83]$1928
+    37/37: $dut.i_axi_err_slv.genblk1.i_atop_filter.w_state_d$1895
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$697'.
+     1/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[13].i_in_flight_cnt.counter_d$700
+     2/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[13].i_in_flight_cnt.counter_d$701
+     3/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[13].i_in_flight_cnt.counter_d$702
+     4/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[13].i_in_flight_cnt.counter_d$703
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$690'.
+     1/3: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[13].cnt_delta$693
+     2/3: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[13].cnt_down$692
+     3/3: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[13].cnt_en$691
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$686'.
+     1/1: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.mst_select_q[12]$689
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1821'.
+     1/10: $dut.i_axi_demux.mst_reqs_o[282]$1849
+     2/10: $dut.i_axi_demux.gen_demux.slv_w_ready$1846
+     3/10: $dut.i_axi_demux.gen_demux.w_fifo_pop$1845
+     4/10: $dut.i_axi_demux.mst_reqs_o[382]$1844
+     5/10: $dut.i_axi_demux.mst_reqs_o[457]$1838
+     6/10: $dut.i_axi_demux.mst_reqs_o[1]$1835
+     7/10: $dut.i_axi_demux.gen_demux.slv_w_ready$1832
+     8/10: $dut.i_axi_demux.gen_demux.w_fifo_pop$1831
+     9/10: $dut.i_axi_demux.mst_reqs_o[101]$1830
+    10/10: $dut.i_axi_demux.mst_reqs_o[176]$1824
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$660'.
+     1/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[12].i_in_flight_cnt.counter_d$663
+     2/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[12].i_in_flight_cnt.counter_d$664
+     3/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[12].i_in_flight_cnt.counter_d$665
+     4/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[12].i_in_flight_cnt.counter_d$666
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$653'.
+     1/3: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[12].cnt_delta$656
+     2/3: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[12].cnt_down$655
+     3/3: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[12].cnt_en$654
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$649'.
+     1/1: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.mst_select_q[11]$652
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1778'.
+     1/1: $dut.i_axi_demux.gen_demux.i_r_mux.gen_arbiter.rr_q$1781
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$623'.
+     1/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[11].i_in_flight_cnt.counter_d$626
+     2/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[11].i_in_flight_cnt.counter_d$627
+     3/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[11].i_in_flight_cnt.counter_d$628
+     4/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[11].i_in_flight_cnt.counter_d$629
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$616'.
+     1/3: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[11].cnt_delta$619
+     2/3: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[11].cnt_down$618
+     3/3: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[11].cnt_en$617
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$612'.
+     1/1: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.mst_select_q[10]$615
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$2506'.
+     1/6: $2529
+     2/6: $2523
+     3/6: $2520
+     4/6: $2516
+     5/6: $2513
+     6/6: $2509
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$586'.
+     1/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[10].i_in_flight_cnt.counter_d$589
+     2/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[10].i_in_flight_cnt.counter_d$590
+     3/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[10].i_in_flight_cnt.counter_d$591
+     4/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[10].i_in_flight_cnt.counter_d$592
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$579'.
+     1/3: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[10].cnt_delta$582
+     2/3: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[10].cnt_down$581
+     3/3: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[10].cnt_en$580
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$575'.
+     1/1: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.mst_select_q[9]$578
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$2342'.
+     1/4: $dut.i_axi_err_slv.i_r_counter.i_counter.counter_d$2345
+     2/4: $dut.i_axi_err_slv.i_r_counter.i_counter.counter_d$2346
+     3/4: $dut.i_axi_err_slv.i_r_counter.i_counter.counter_d$2347
+     4/4: $dut.i_axi_err_slv.i_r_counter.i_counter.counter_d$2348
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$549'.
+     1/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[9].i_in_flight_cnt.counter_d$552
+     2/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[9].i_in_flight_cnt.counter_d$553
+     3/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[9].i_in_flight_cnt.counter_d$554
+     4/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[9].i_in_flight_cnt.counter_d$555
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$542'.
+     1/3: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[9].cnt_delta$545
+     2/3: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[9].cnt_down$544
+     3/3: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[9].cnt_en$543
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$538'.
+     1/1: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.mst_select_q[8]$541
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1728'.
+     1/1: $dut.i_axi_demux.gen_demux.i_r_mux.gen_arbiter.gen_int_rr.gen_lock.req_q$1731
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$512'.
+     1/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[8].i_in_flight_cnt.counter_d$515
+     2/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[8].i_in_flight_cnt.counter_d$516
+     3/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[8].i_in_flight_cnt.counter_d$517
+     4/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[8].i_in_flight_cnt.counter_d$518
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$505'.
+     1/3: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[8].cnt_delta$508
+     2/3: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[8].cnt_down$507
+     3/3: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[8].cnt_en$506
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$501'.
+     1/1: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.mst_select_q[7]$504
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1724'.
+     1/1: $dut.i_axi_demux.gen_demux.i_r_mux.gen_arbiter.gen_int_rr.gen_lock.lock_q$1727
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$475'.
+     1/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[7].i_in_flight_cnt.counter_d$478
+     2/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[7].i_in_flight_cnt.counter_d$479
+     3/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[7].i_in_flight_cnt.counter_d$480
+     4/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[7].i_in_flight_cnt.counter_d$481
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$468'.
+     1/3: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[7].cnt_delta$471
+     2/3: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[7].cnt_down$470
+     3/3: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[7].cnt_en$469
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$464'.
+     1/1: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.mst_select_q[6]$467
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1677'.
+     1/1: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.mst_select_q[15]$1680
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$438'.
+     1/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[6].i_in_flight_cnt.counter_d$441
+     2/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[6].i_in_flight_cnt.counter_d$442
+     3/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[6].i_in_flight_cnt.counter_d$443
+     4/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[6].i_in_flight_cnt.counter_d$444
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$431'.
+     1/3: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[6].cnt_delta$434
+     2/3: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[6].cnt_down$433
+     3/3: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[6].cnt_en$432
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$427'.
+     1/1: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.mst_select_q[5]$430
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$2336'.
+     1/1: $dut.i_axi_err_slv.r_busy_q$2339
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$401'.
+     1/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[5].i_in_flight_cnt.counter_d$404
+     2/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[5].i_in_flight_cnt.counter_d$405
+     3/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[5].i_in_flight_cnt.counter_d$406
+     4/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[5].i_in_flight_cnt.counter_d$407
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$394'.
+     1/3: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[5].cnt_delta$397
+     2/3: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[5].cnt_down$396
+     3/3: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[5].cnt_en$395
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$390'.
+     1/1: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.mst_select_q[4]$393
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1651'.
+     1/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[15].i_in_flight_cnt.counter_d$1654
+     2/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[15].i_in_flight_cnt.counter_d$1655
+     3/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[15].i_in_flight_cnt.counter_d$1656
+     4/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[15].i_in_flight_cnt.counter_d$1657
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$364'.
+     1/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[4].i_in_flight_cnt.counter_d$367
+     2/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[4].i_in_flight_cnt.counter_d$368
+     3/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[4].i_in_flight_cnt.counter_d$369
+     4/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[4].i_in_flight_cnt.counter_d$370
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$357'.
+     1/3: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[4].cnt_delta$360
+     2/3: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[4].cnt_down$359
+     3/3: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[4].cnt_en$358
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$353'.
+     1/1: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.mst_select_q[3]$356
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1644'.
+     1/3: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[15].cnt_delta$1647
+     2/3: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[15].cnt_down$1646
+     3/3: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[15].cnt_en$1645
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$327'.
+     1/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[3].i_in_flight_cnt.counter_d$330
+     2/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[3].i_in_flight_cnt.counter_d$331
+     3/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[3].i_in_flight_cnt.counter_d$332
+     4/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[3].i_in_flight_cnt.counter_d$333
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$320'.
+     1/3: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[3].cnt_delta$323
+     2/3: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[3].cnt_down$322
+     3/3: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[3].cnt_en$321
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$316'.
+     1/1: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.mst_select_q[2]$319
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1640'.
+     1/1: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.mst_select_q[14]$1643
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$290'.
+     1/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[2].i_in_flight_cnt.counter_d$293
+     2/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[2].i_in_flight_cnt.counter_d$294
+     3/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[2].i_in_flight_cnt.counter_d$295
+     4/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[2].i_in_flight_cnt.counter_d$296
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$283'.
+     1/3: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[2].cnt_delta$286
+     2/3: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[2].cnt_down$285
+     3/3: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[2].cnt_en$284
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$279'.
+     1/1: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.mst_select_q[1]$282
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$2311'.
+     1/20: $dut.i_axi_err_slv.r_busy_load$2326
+     2/20: $dut.i_axi_err_slv.r_busy_d$2325
+     3/20: $dut.i_axi_err_slv.r_cnt_load$2324
+     4/20: $dut.i_axi_err_slv.r_busy_load$2334
+     5/20: $dut.i_axi_err_slv.r_busy_d$2333
+     6/20: $dut.i_axi_err_slv.r_busy_load$2317
+     7/20: $dut.i_axi_err_slv.r_busy_d$2316
+     8/20: $dut.i_axi_err_slv.r_cnt_clear$2315
+     9/20: $dut.i_axi_err_slv.r_fifo_pop$2314
+    10/20: $dut.i_axi_err_slv.r_busy_load$2322
+    11/20: $dut.i_axi_err_slv.r_busy_d$2321
+    12/20: $dut.i_axi_err_slv.r_cnt_en$2320
+    13/20: $dut.i_axi_err_slv.r_cnt_clear$2319
+    14/20: $dut.i_axi_err_slv.r_fifo_pop$2318
+    15/20: $dut.i_axi_err_slv.r_cnt_load$2332
+    16/20: $dut.i_axi_err_slv.r_cnt_en$2331
+    17/20: $dut.i_axi_err_slv.r_cnt_clear$2330
+    18/20: $dut.i_axi_err_slv.r_fifo_pop$2329
+    19/20: $dut.i_axi_err_slv.err_resp[72]$2328
+    20/20: $dut.i_axi_err_slv.err_resp[1]$2327
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$253'.
+     1/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[1].i_in_flight_cnt.counter_d$256
+     2/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[1].i_in_flight_cnt.counter_d$257
+     3/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[1].i_in_flight_cnt.counter_d$258
+     4/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[1].i_in_flight_cnt.counter_d$259
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$246'.
+     1/3: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[1].cnt_delta$249
+     2/3: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[1].cnt_down$248
+     3/3: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[1].cnt_en$247
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$242'.
+     1/1: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.mst_select_q[0]$245
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1614'.
+     1/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[14].i_in_flight_cnt.counter_d$1617
+     2/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[14].i_in_flight_cnt.counter_d$1618
+     3/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[14].i_in_flight_cnt.counter_d$1619
+     4/4: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[14].i_in_flight_cnt.counter_d$1620
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$216'.
+     1/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[0].i_in_flight_cnt.counter_d$219
+     2/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[0].i_in_flight_cnt.counter_d$220
+     3/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[0].i_in_flight_cnt.counter_d$221
+     4/4: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[0].i_in_flight_cnt.counter_d$222
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$209'.
+     1/3: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[0].cnt_delta$212
+     2/3: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[0].cnt_down$211
+     3/3: $dut.i_axi_demux.gen_demux.gen_aw_id_counter.i_aw_id_counter.gen_counters[0].cnt_en$210
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$186'.
+     1/1: $dut.i_axi_demux.gen_demux.lock_aw_valid_q$189
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$149'.
+     1/26: $dut.i_axi_demux.gen_demux.load_aw_lock$166
+     2/26: $dut.i_axi_demux.gen_demux.lock_aw_valid_d$165
+     3/26: $dut.i_axi_demux.gen_demux.atop_inject$164
+     4/26: $dut.i_axi_demux.gen_demux.slv_aw_ready$163
+     5/26: $dut.i_axi_demux.gen_demux.aw_valid$172
+     6/26: $dut.i_axi_demux.gen_demux.load_aw_lock$171
+     7/26: $dut.i_axi_demux.gen_demux.lock_aw_valid_d$170
+     8/26: $dut.i_axi_demux.gen_demux.atop_inject$169
+     9/26: $dut.i_axi_demux.gen_demux.aw_push$168
+    10/26: $dut.i_axi_demux.gen_demux.slv_aw_ready$167
+    11/26: $dut.i_axi_demux.gen_demux.aw_valid$178
+    12/26: $dut.i_axi_demux.gen_demux.load_aw_lock$177
+    13/26: $dut.i_axi_demux.gen_demux.lock_aw_valid_d$176
+    14/26: $dut.i_axi_demux.gen_demux.atop_inject$175
+    15/26: $dut.i_axi_demux.gen_demux.aw_push$174
+    16/26: $dut.i_axi_demux.gen_demux.slv_aw_ready$173
+    17/26: $dut.i_axi_demux.gen_demux.aw_valid$184
+    18/26: $dut.i_axi_demux.gen_demux.load_aw_lock$183
+    19/26: $dut.i_axi_demux.gen_demux.lock_aw_valid_d$182
+    20/26: $dut.i_axi_demux.gen_demux.atop_inject$181
+    21/26: $dut.i_axi_demux.gen_demux.slv_aw_ready$179
+    22/26: $dut.i_axi_demux.gen_demux.load_aw_lock$153
+    23/26: $dut.i_axi_demux.gen_demux.lock_aw_valid_d$152
+    24/26: $dut.i_axi_demux.gen_demux.atop_inject$151
+    25/26: $dut.i_axi_demux.gen_demux.slv_aw_ready$150
+    26/26: $dut.i_axi_demux.gen_demux.aw_push$180
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$80'.
+     1/15: $dut.i_rv_iopmp_axi4_bc.bound_violation_o$108
+     2/15: $dut.i_rv_iopmp_axi4_bc.allow_request_o$107
+     3/15: $dut.i_rv_iopmp_axi4_bc.bound_violation_o$101
+     4/15: $dut.i_rv_iopmp_axi4_bc.allow_request_o$100
+     5/15: $dut.i_rv_iopmp_axi4_bc.boundary_check.$1.log2_len$87
+     6/15: $dut.i_rv_iopmp_axi4_bc.bound_violation_o$86
+     7/15: $dut.i_rv_iopmp_axi4_bc.allow_request_o$85
+     8/15: $dut.i_rv_iopmp_axi4_bc.boundary_check.$1.log2_len$112
+     9/15: $dut.i_rv_iopmp_axi4_bc.wrap_boundary_o$111
+    10/15: $dut.i_rv_iopmp_axi4_bc.bound_violation_o$110
+    11/15: $dut.i_rv_iopmp_axi4_bc.allow_request_o$109
+    12/15: $dut.i_rv_iopmp_axi4_bc.boundary_check.$1.log2_len$116
+    13/15: $dut.i_rv_iopmp_axi4_bc.wrap_boundary_o$115
+    14/15: $dut.i_rv_iopmp_axi4_bc.bound_violation_o$114
+    15/15: $dut.i_rv_iopmp_axi4_bc.allow_request_o$113
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$1607'.
+     1/3: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[14].cnt_delta$1610
+     2/3: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[14].cnt_down$1609
+     3/3: $dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[14].cnt_en$1608
+Creating decoders for process `\formal_m57_fullrtl_write_path_tb.$42'.
+     1/14: $dut.state_n$59
+     2/14: $dut.transaction_en_o$58
+     3/14: $dut.state_n$75
+     4/14: $dut.size_n$74
+     5/14: $dut.burst_length_n$73
+     6/14: $dut.burst_type_n$72
+     7/14: $dut.num_bytes_n$71
+     8/14: $dut.addr_to_check_n$70
+     9/14: $dut.total_length_n$69
+    10/14: $dut.addr_n$68
+    11/14: $dut.ar_request_n$67
+    12/14: $dut.aw_request_n$66
+    13/14: $dut.transaction_allowed_n$65
+    14/14: $dut.transaction_en_o$64
+
+1.8. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1603'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1603'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$2296'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$2296'.
+Found and cleaned up 7 empty switches in `\formal_m57_fullrtl_write_path_tb.$1577'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1577'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1570'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1570'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1566'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1566'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$2290'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$2290'.
+Found and cleaned up 7 empty switches in `\formal_m57_fullrtl_write_path_tb.$1540'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1540'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1533'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1533'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1529'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1529'.
+Found and cleaned up 9 empty switches in `\formal_m57_fullrtl_write_path_tb.$2257'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$2257'.
+Found and cleaned up 7 empty switches in `\formal_m57_fullrtl_write_path_tb.$1503'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1503'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1496'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1496'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1492'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1492'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$2237'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$2237'.
+Found and cleaned up 7 empty switches in `\formal_m57_fullrtl_write_path_tb.$1466'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1466'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1459'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1459'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1455'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1455'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$2222'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$2222'.
+Found and cleaned up 7 empty switches in `\formal_m57_fullrtl_write_path_tb.$1429'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1429'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1422'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1422'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1418'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1418'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$2216'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$2216'.
+Found and cleaned up 7 empty switches in `\formal_m57_fullrtl_write_path_tb.$1392'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1392'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1385'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1385'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1381'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1381'.
+Found and cleaned up 9 empty switches in `\formal_m57_fullrtl_write_path_tb.$2181'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$2181'.
+Found and cleaned up 7 empty switches in `\formal_m57_fullrtl_write_path_tb.$1355'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1355'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1348'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1348'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1344'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1344'.
+Found and cleaned up 3 empty switches in `\formal_m57_fullrtl_write_path_tb.$2162'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$2162'.
+Found and cleaned up 7 empty switches in `\formal_m57_fullrtl_write_path_tb.$1318'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1318'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1311'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1311'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1307'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1307'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$2147'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$2147'.
+Found and cleaned up 7 empty switches in `\formal_m57_fullrtl_write_path_tb.$1281'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1281'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1274'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1274'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1270'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1270'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$2141'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$2141'.
+Found and cleaned up 7 empty switches in `\formal_m57_fullrtl_write_path_tb.$1244'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1244'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1237'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1237'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1233'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1233'.
+Found and cleaned up 13 empty switches in `\formal_m57_fullrtl_write_path_tb.$2098'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$2098'.
+Found and cleaned up 7 empty switches in `\formal_m57_fullrtl_write_path_tb.$1207'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1207'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1200'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1200'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1196'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1196'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$2034'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$2034'.
+Found and cleaned up 7 empty switches in `\formal_m57_fullrtl_write_path_tb.$1170'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1170'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1163'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1163'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1159'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1159'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$2028'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$2028'.
+Found and cleaned up 7 empty switches in `\formal_m57_fullrtl_write_path_tb.$1133'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1133'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1126'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1126'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1122'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1122'.
+Found and cleaned up 9 empty switches in `\formal_m57_fullrtl_write_path_tb.$1995'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1995'.
+Found and cleaned up 7 empty switches in `\formal_m57_fullrtl_write_path_tb.$1096'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1096'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1089'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1089'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1066'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1066'.
+Found and cleaned up 9 empty switches in `\formal_m57_fullrtl_write_path_tb.$1036'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1036'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$981'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$981'.
+Found and cleaned up 5 empty switches in `\formal_m57_fullrtl_write_path_tb.$2488'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$2488'.
+Found and cleaned up 7 empty switches in `\formal_m57_fullrtl_write_path_tb.$1964'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1964'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$931'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$931'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$927'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$927'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$864'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$864'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$858'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$858'.
+Found and cleaned up 9 empty switches in `\formal_m57_fullrtl_write_path_tb.$823'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$823'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$797'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$797'.
+Found and cleaned up 11 empty switches in `\formal_m57_fullrtl_write_path_tb.$1938'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1938'.
+Found and cleaned up 7 empty switches in `\formal_m57_fullrtl_write_path_tb.$771'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$771'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$764'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$764'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$760'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$760'.
+Found and cleaned up 17 empty switches in `\formal_m57_fullrtl_write_path_tb.$2445'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$2445'.
+Found and cleaned up 7 empty switches in `\formal_m57_fullrtl_write_path_tb.$734'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$734'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$727'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$727'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$723'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$723'.
+Found and cleaned up 33 empty switches in `\formal_m57_fullrtl_write_path_tb.$1875'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1875'.
+Found and cleaned up 7 empty switches in `\formal_m57_fullrtl_write_path_tb.$697'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$697'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$690'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$690'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$686'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$686'.
+Found and cleaned up 11 empty switches in `\formal_m57_fullrtl_write_path_tb.$1821'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1821'.
+Found and cleaned up 7 empty switches in `\formal_m57_fullrtl_write_path_tb.$660'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$660'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$653'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$653'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$649'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$649'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1778'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1778'.
+Found and cleaned up 7 empty switches in `\formal_m57_fullrtl_write_path_tb.$623'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$623'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$616'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$616'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$612'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$612'.
+Found and cleaned up 7 empty switches in `\formal_m57_fullrtl_write_path_tb.$2506'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$2506'.
+Found and cleaned up 7 empty switches in `\formal_m57_fullrtl_write_path_tb.$586'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$586'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$579'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$579'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$575'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$575'.
+Found and cleaned up 7 empty switches in `\formal_m57_fullrtl_write_path_tb.$2342'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$2342'.
+Found and cleaned up 7 empty switches in `\formal_m57_fullrtl_write_path_tb.$549'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$549'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$542'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$542'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$538'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$538'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1728'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1728'.
+Found and cleaned up 7 empty switches in `\formal_m57_fullrtl_write_path_tb.$512'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$512'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$505'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$505'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$501'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$501'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1724'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1724'.
+Found and cleaned up 7 empty switches in `\formal_m57_fullrtl_write_path_tb.$475'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$475'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$468'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$468'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$464'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$464'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1677'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1677'.
+Found and cleaned up 7 empty switches in `\formal_m57_fullrtl_write_path_tb.$438'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$438'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$431'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$431'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$427'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$427'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$2336'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$2336'.
+Found and cleaned up 7 empty switches in `\formal_m57_fullrtl_write_path_tb.$401'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$401'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$394'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$394'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$390'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$390'.
+Found and cleaned up 7 empty switches in `\formal_m57_fullrtl_write_path_tb.$1651'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1651'.
+Found and cleaned up 7 empty switches in `\formal_m57_fullrtl_write_path_tb.$364'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$364'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$357'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$357'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$353'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$353'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1644'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1644'.
+Found and cleaned up 7 empty switches in `\formal_m57_fullrtl_write_path_tb.$327'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$327'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$320'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$320'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$316'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$316'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1640'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1640'.
+Found and cleaned up 7 empty switches in `\formal_m57_fullrtl_write_path_tb.$290'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$290'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$283'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$283'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$279'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$279'.
+Found and cleaned up 7 empty switches in `\formal_m57_fullrtl_write_path_tb.$2311'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$2311'.
+Found and cleaned up 7 empty switches in `\formal_m57_fullrtl_write_path_tb.$253'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$253'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$246'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$246'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$242'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$242'.
+Found and cleaned up 7 empty switches in `\formal_m57_fullrtl_write_path_tb.$1614'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1614'.
+Found and cleaned up 7 empty switches in `\formal_m57_fullrtl_write_path_tb.$216'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$216'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$209'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$209'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$186'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$186'.
+Found and cleaned up 9 empty switches in `\formal_m57_fullrtl_write_path_tb.$149'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$149'.
+Found and cleaned up 11 empty switches in `\formal_m57_fullrtl_write_path_tb.$80'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$80'.
+Found and cleaned up 1 empty switch in `\formal_m57_fullrtl_write_path_tb.$1607'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$1607'.
+Found and cleaned up 3 empty switches in `\formal_m57_fullrtl_write_path_tb.$42'.
+Removing empty process `formal_m57_fullrtl_write_path_tb.$42'.
+Cleaned up 497 empty switches.
+
+1.9. Executing OPT_EXPR pass (perform const folding).
+Optimizing module formal_m57_fullrtl_write_path_tb.
+Couldn't topologically sort cells, optimizing module formal_m57_fullrtl_write_path_tb may take a longer time.
+Couldn't topologically sort cells, optimizing module formal_m57_fullrtl_write_path_tb may take a longer time.
+Couldn't topologically sort cells, optimizing module formal_m57_fullrtl_write_path_tb may take a longer time.
+<suppressed ~226 debug messages>
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `formal_m57_fullrtl_write_path_tb'. Setting top module to formal_m57_fullrtl_write_path_tb.
+
+2.1. Analyzing design hierarchy..
+Top module:  \formal_m57_fullrtl_write_path_tb
+
+2.2. Analyzing design hierarchy..
+Top module:  \formal_m57_fullrtl_write_path_tb
+Removed 0 unused modules.
+Module formal_m57_fullrtl_write_path_tb directly or indirectly contains formal properties -> setting "keep" attribute.
+
+3. Printing statistics.
+
+=== formal_m57_fullrtl_write_path_tb ===
+
+        +----------Local Count, excluding submodules.
+        | 
+     4598 wires
+    20148 wire bits
+     1140 public wires
+    10534 public wire bits
+     3253 cells
+       58   $add
+      132   $aldff
+       24   $and
+        8   $bmux
+     1079   $buf
+        5   $bwmux
+       10   $check
+        2   $demux
+      421   $eq
+        6   $ge
+        3   $gt
+        3   $le
+       92   $logic_and
+      182   $logic_not
+        4   $logic_or
+       20   $lt
+        1   $mul
+      906   $mux
+        1   $ne
+       52   $not
+       43   $or
+       74   $pmux
+       35   $reduce_and
+        1   $reduce_bool
+       38   $reduce_or
+       12   $shl
+        1   $shr
+       40   $sub
+
+End of script. Logfile hash: eb4474027d, time: 0.04s, user: 0.05s, system: 0.01s, MEM: 35.50 MB peak
+Yosys 0.68+ (git sha1 832843ad0-dirty, Release, GNU /home/conda/feedstock_root/build_artifacts/yosys_1785933756519/_build_env/bin/x86_64-conda-linux-gnu-c++ 14.4.0) [github.com/conda-forge/yosys-feedstock at main]
+Time spent: 72% 2x read_slang (0 sec), 16% 1x opt_expr (0 sec), ...

@@ -1,0 +1,5 @@
+scenario,enable,configured,REF_result,REF_expected,RTL_expected,same_class,classification
+S1-pre-bypass,False,False,ALLOW,ALLOW,ALLOW,True,EXPECTED_EQUIVALENCE
+S2-pre-enforce,True,False,DENY,DENY,DENY,True,EXPECTED_EQUIVALENCE
+S3-auth-write,True,True,ALLOW,ALLOW,ALLOW,True,EXPECTED_EQUIVALENCE
+S7-post-reset,False,False,ALLOW,ALLOW,ALLOW,True,EXPECTED_EQUIVALENCE

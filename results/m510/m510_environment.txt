@@ -1,0 +1,7 @@
+M5.10 environment
+date: 2026-08-13
+branch: m510-compositional-guarantee-matrix
+starting_commit: 0a44ac8
+m59_tag: checkpoint-m59-axi-environment
+git_head: 7500156fbf076766a283a280465046e8b9ff02b9
+yices: TOOLCHAIN_LIMITATION (not installed; optional PDR replay skipped)

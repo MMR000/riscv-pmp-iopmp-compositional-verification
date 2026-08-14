@@ -1,0 +1,14 @@
+[options]
+mode bmc
+depth 32
+expect pass
+
+[engines]
+smtbmc z3
+
+[script]
+read -formal formal_m56_write_path_tb.sv
+prep -top formal_m56_write_path_tb
+
+[files]
+formal/harness/formal_m56_write_path_tb.sv

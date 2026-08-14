@@ -1,0 +1,9 @@
+ORFS_URL=https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts
+ORFS_COMMIT=f9ec54a6de7b2bc69fd586015f6ebdab34eca69c
+docker=NOT_INSTALLED
+openroad=NOT_INSTALLED
+yosys=Yosys 0.68+ (git sha1 832843ad0-dirty, Release, GNU /home/conda/feedstock_root/build_artifacts/yosys_1785933756519/_build_env/bin/x86_64-conda-linux-gnu-c++ 14.4.0) [github.com/conda-forge/yosys-feedstock at main]
+yosys_slang=NOT_INSTALLED
+host_kernel=7.0.0-28-generic
+cpu=32
+ram=62Gi

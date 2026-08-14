@@ -1,0 +1,19 @@
+SBY  9:26:03 [/home/mmr/ricv_paper/results/formal/m57/m57_proper_bmc16] Removing directory '/home/mmr/ricv_paper/results/formal/m57/m57_proper_bmc16'.
+SBY  9:26:03 [/home/mmr/ricv_paper/results/formal/m57/m57_proper_bmc16] Copy '/home/mmr/ricv_paper/formal/build/m57/src/formal_m57_fullrtl_write_path_tb.sv' to '/home/mmr/ricv_paper/results/formal/m57/m57_proper_bmc16/src/formal_m57_fullrtl_write_path_tb.sv'.
+SBY  9:26:03 [/home/mmr/ricv_paper/results/formal/m57/m57_proper_bmc16] Copy '/home/mmr/ricv_paper/formal/build/m57/src/axi_pkg.sv' to '/home/mmr/ricv_paper/results/formal/m57/m57_proper_bmc16/src/axi_pkg.sv'.
+SBY  9:26:03 [/home/mmr/ricv_paper/results/formal/m57/m57_proper_bmc16] Copy '/home/mmr/ricv_paper/formal/build/m57/src/lint_wrapper_pkg.sv' to '/home/mmr/ricv_paper/results/formal/m57/m57_proper_bmc16/src/lint_wrapper_pkg.sv'.
+SBY  9:26:03 [/home/mmr/ricv_paper/results/formal/m57/m57_proper_bmc16] Copy '/home/mmr/ricv_paper/formal/build/m57/src/rv_iopmp_pkg.sv' to '/home/mmr/ricv_paper/results/formal/m57/m57_proper_bmc16/src/rv_iopmp_pkg.sv'.
+SBY  9:26:03 [/home/mmr/ricv_paper/results/formal/m57/m57_proper_bmc16] Copy '/home/mmr/ricv_paper/formal/build/m57/src/rv_iopmp_axi4_bc.sv' to '/home/mmr/ricv_paper/results/formal/m57/m57_proper_bmc16/src/rv_iopmp_axi4_bc.sv'.
+SBY  9:26:03 [/home/mmr/ricv_paper/results/formal/m57/m57_proper_bmc16] Copy '/home/mmr/ricv_paper/formal/build/m57/src/axi_err_slv.sv' to '/home/mmr/ricv_paper/results/formal/m57/m57_proper_bmc16/src/axi_err_slv.sv'.
+SBY  9:26:03 [/home/mmr/ricv_paper/results/formal/m57/m57_proper_bmc16] Copy '/home/mmr/ricv_paper/formal/build/m57/src/axi_demux.sv' to '/home/mmr/ricv_paper/results/formal/m57/m57_proper_bmc16/src/axi_demux.sv'.
+SBY  9:26:03 [/home/mmr/ricv_paper/results/formal/m57/m57_proper_bmc16] Copy '/home/mmr/ricv_paper/formal/build/m57/src/rv_iopmp_data_abstractor_axi.sv' to '/home/mmr/ricv_paper/results/formal/m57/m57_proper_bmc16/src/rv_iopmp_data_abstractor_axi.sv'.
+SBY  9:26:03 [/home/mmr/ricv_paper/results/formal/m57/m57_proper_bmc16] engine_0: smtbmc z3
+SBY  9:26:03 [/home/mmr/ricv_paper/results/formal/m57/m57_proper_bmc16] base: starting process "cd /home/mmr/ricv_paper/results/formal/m57/m57_proper_bmc16/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY  9:26:03 [/home/mmr/ricv_paper/results/formal/m57/m57_proper_bmc16] base: axi_pkg.sv:95: ERROR: syntax error, unexpected TOK_CONSTVAL
+SBY  9:26:03 [/home/mmr/ricv_paper/results/formal/m57/m57_proper_bmc16] base: finished (returncode=1)
+SBY  9:26:03 [/home/mmr/ricv_paper/results/formal/m57/m57_proper_bmc16] base: task failed. ERROR.
+SBY  9:26:03 [/home/mmr/ricv_paper/results/formal/m57/m57_proper_bmc16] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY  9:26:03 [/home/mmr/ricv_paper/results/formal/m57/m57_proper_bmc16] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY  9:26:03 [/home/mmr/ricv_paper/results/formal/m57/m57_proper_bmc16] summary: engine_0 (smtbmc z3) did not return a status
+SBY  9:26:03 [/home/mmr/ricv_paper/results/formal/m57/m57_proper_bmc16] summary: engine_0 did not produce any traces
+SBY  9:26:03 [/home/mmr/ricv_paper/results/formal/m57/m57_proper_bmc16] DONE (ERROR, rc=16)

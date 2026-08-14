@@ -1,0 +1,17 @@
+Phase A REPRODUCTION_TOOLING_LIMITATION: CLOSED
+
+date: 2026-08-12
+
+Host packages now present:
+- /usr/include/libelf.h (libelf-dev 0.190-1.1ubuntu0.1)
+- /usr/bin/srec_cat (srecord 1.64-4.1build1)
+
+`scripts/run/run_m7_phase_a.sh` completed with exit 0 after a CPATH colon fix
+(matching the other M7 runners). Frozen PMP matrix SHA unchanged:
+
+```text
+a6176844f91613a15845c9eff24c71fd0ec240fef14dab7f57c3cdbb35e09660
+```
+
+No Phase A scientific result or expected matrix was modified.
+This does not block ORFS validation (already PASS).

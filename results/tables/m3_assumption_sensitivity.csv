@@ -1,0 +1,4 @@
+experiment,relaxed_assumption,affected_property,result,counterexample,interpretation
+AS-01,FA-01 trusted cfg,"SP-07,SP-10",NOT_RUN,,Adversarial cfg writes not in baseline suite
+AS-02,IOPMP fail-open (enable=0),SP-04,COUNTEREXAMPLE,enable=0 allows in-region DMA by design,EXPECTED_MODEL_DIFFERENCE when filtering disabled
+AS-03,DMA before secure_ready (RST-A),SP-08,see sp08_reset task,,RESET_ASSUMPTION_DEPENDENCY under fail-open defaults

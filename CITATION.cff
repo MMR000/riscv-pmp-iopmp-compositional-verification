@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this artifact, please cite the accompanying paper when available; otherwise cite this software repository."
+title: "Compositional Verification of PMP-IOPMP Isolation in RISC-V SoCs"
+type: software
+abstract: >-
+  Public artifact for compositional verification of PMP-IOPMP isolation in
+  RISC-V SoCs, including real-Ibex validation, reset-ordering analysis,
+  formal verification, simulation, and SKY130HD post-route PPA evaluation.
+repository-code: "https://github.com/MMR000/riscv-pmp-iopmp-compositional-verification"
+url: "https://github.com/MMR000/riscv-pmp-iopmp-compositional-verification"
+authors:
+  - name: "See accompanying manuscript"
+    website: "https://github.com/MMR000/riscv-pmp-iopmp-compositional-verification"
+keywords:
+  - RISC-V
+  - PMP
+  - IOPMP
+  - formal verification
+  - hardware security

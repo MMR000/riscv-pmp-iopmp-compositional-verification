@@ -1,0 +1,7 @@
+property_scenario,M4_result,REF_result,RTL_result,agreement,reason_for_disagreement,security_implication
+pre-config bypass class,ALLOW (C0 in-path),ALLOW (enable=0),ALLOW (enable=0 reset),qualitative yes,Mechanisms differ: M4 C0≠REF enable=0,SoC must model bypass explicitly
+pre-config enforce no-entry,DENY (C1),DENY (enable=1),DENY (after W1SS enable),yes,RTL requires explicit enable write after reset,Deny-by-default requires enable+no-entry
+authorized write post-config,ALLOW,ALLOW,ALLOW,yes,—,Policy works when correctly programmed
+unauthorized read post-config,DENY,DENY,DENY,yes,—,RRID/NSAID gating works for reads
+unauthorized write post-config,DENY,DENY,ALLOW (observed),REF/M4 vs RTL,M5B: write path with unmapped NSAID=1,Investigate; read path denies correctly
+post-reset pre-config write,bypass if C0,DENY if REF-C1 held,bypass (enable resets),REF vs RTL,SPEC_REVISION_DIFFERENCE on enable reset,RTL reset is fail-open until enable set

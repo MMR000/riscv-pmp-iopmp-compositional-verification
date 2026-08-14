@@ -1,0 +1,92 @@
+CAPI=2:
+name: "local:m7:m7_ibex_composed"
+description: "M7 Phase B: real Ibex (internal PMP) + DMA + IOPMP + shared SRAM"
+filesets:
+  files_rtl:
+    depend:
+      - lowrisc:ibex:ibex_top_tracing
+      - lowrisc:ibex:sim_shared
+    files:
+      - ../../rtl/common/bus_pkg.vh: {is_include_file: true}
+      - ../rtl/m7_composed_map.vh: {is_include_file: true}
+      - ../../rtl/memory/sram.v
+      - ../../rtl/dma/dma_master.v
+      - ../../rtl/iopmp/iopmp.v
+      - ../../rtl/interconnect/interconnect.v
+      - ../../rtl/soc/security_config.v
+      - ../rtl/m7_ibex_data_adapter.sv
+      - ../rtl/m7_research_arbiter.sv
+      - ../rtl/m7_test_sync.sv
+      - ../rtl/m7_composed_harness.sv
+      - ../rtl/m7_ibex_composed_top.sv
+    file_type: systemVerilogSource
+
+  files_verilator_tb:
+    depend:
+      - lowrisc:dv_verilator:memutil_verilator
+      - lowrisc:dv_verilator:simutil_verilator
+    files:
+      - ../sim/m7_ibex_composed_main.cc
+      - ../sim/m7_ibex_composed_system.cc
+      - ../sim/m7_ibex_composed_system.h: {is_include_file: true}
+    file_type: cppSource
+
+parameters:
+  RV32M:
+    datatype: str
+    default: ibex_pkg::RV32MFast
+    paramtype: vlogdefine
+  PMPEnable:
+    datatype: bool
+    paramtype: vlogparam
+    default: true
+  PMPNumRegions:
+    datatype: int
+    paramtype: vlogparam
+    default: 8
+  PMPGranularity:
+    datatype: int
+    paramtype: vlogparam
+    default: 0
+  SRAMInitFile:
+    datatype: str
+    paramtype: vlogparam
+    default: ""
+
+targets:
+  default: &default_target
+    filesets:
+      - files_rtl
+    toplevel: m7_ibex_composed_top
+    parameters:
+      - RV32M
+      - PMPEnable
+      - PMPNumRegions
+      - PMPGranularity
+      - SRAMInitFile
+
+  sim:
+    <<: *default_target
+    default_tool: verilator
+    filesets:
+      - files_rtl
+      - tool_verilator ? (files_verilator_tb)
+    tools:
+      verilator:
+        mode: cc
+        verilator_options:
+          - "-DDISABLE_PRIM_CDC_RAND_DELAY"
+          - "-Wall"
+          # Build-only: Verilator 5.050 UNOPTFLAT (same as Phase A waiver)
+          - "-Wno-UNOPTFLAT"
+          - "-Wno-UNUSEDSIGNAL"
+          - "-Wno-PINMISSING"
+          - "-Wno-WIDTHEXPAND"
+          - "-Wno-WIDTHTRUNC"
+          - "-Wno-DECLFILENAME"
+          - "+incdir+../../rtl/common"
+          - "+incdir+../rtl"
+          - "--unroll-count"
+          - "72"
+          - '-CFLAGS "-std=c++17 -Wall -g -DTOPLEVEL_NAME=m7_ibex_composed_top"'
+          - '-LDFLAGS "-pthread -lutil -lelf"'

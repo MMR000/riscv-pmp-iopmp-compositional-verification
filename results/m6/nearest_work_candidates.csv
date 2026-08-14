@@ -1,0 +1,6 @@
+category,resource,status,notes
+PMP formal verification,riscv_key_isolation_literature_usage_guide.md,local index only,do not auto-cite without verified metadata
+IOPMP / DMA isolation,riscv_key_isolation_literature_usage_guide.md,local index only,TODO manual review
+SoC compositional security,riscv_key_isolation_literature_usage_guide.md,local index only,novelty comparison deferred
+Reset lifecycle security,project SP-08 artifacts,verified internal evidence,RST-A/B contrast is project contribution candidate
+OpenTitan,TODO,not verified in this repo,no citation added in M6

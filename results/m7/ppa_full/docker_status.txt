@@ -1,0 +1,12 @@
+=== command -v docker ===
+/usr/bin/docker
+=== docker --version ===
+Docker version 29.7.2, build a7dcaa6
+=== image ===
+openroad/orfs:latest
+Id/digest: sha256:817b608c69a71fafc7b61baec11b4dc073fb8efb9d2714f9bd3316db4beba277
+=== docker group ===
+/etc/group: docker:x:983:mmr
+This agent session needed `sg docker` because the login groups were not refreshed.
+=== note ===
+Commit b1605e2 recorded Docker NOT_FOUND. That blocker is resolved as of 2026-08-12.

@@ -1,0 +1,23 @@
+M7 Phase A recovery — COMPLETE
+================================
+date: 2026-08-11
+starting_commit: ae49bbd61b938ab55075fee650be0bfa55ec5249a
+branch: m7-journal-validation
+status: COMPLETE
+
+simulator: /home/mmr/ricv_paper/third_party/ibex/build/lowrisc_ibex_ibex_simple_system_0/sim-verilator/Vibex_simple_system
+ibex_commit: c61e11c1e416b9ce2d996013b444c8e558d35b2b
+compat_patch: results/m7/ibex/ibex_verilator_505_compat.patch (build-only -Wno-UNOPTFLAT)
+
+hello_test: PASS (software halt, trace in trace_core_00000000.log)
+pmp_matrix: results/tables/m7_ibex_pmp_matrix.csv — IBEX-PMP-01..08 ALL PASS
+
+test_software_fixes (TEST_SOFTWARE_BUG, prior logs preserved as *.pre_region_fix.log):
+- R0 expanded to 16KiB @ RAM_BASE (code+data executable in U-mode)
+- pmpcfg0 read-modify-write (region1 write no longer clears region0)
+- U-mode stack inside R0; IBEX-PMP-06 uses ecall success path
+
+reproduce:
+  bash scripts/run/run_m7_phase_a.sh
+
+IBEX+DMA composition: NOT STARTED (Phase B blocked until user approval)

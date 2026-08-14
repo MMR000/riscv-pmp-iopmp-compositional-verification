@@ -1,0 +1,4 @@
+experiment_id,description,formal_task,rst_config
+R10,DMA active before secure_ready,sp08_reset,RST-A
+R6,Reset during authorized DMA,sp08_reset,RST-A
+R9,Reset while transaction pending,sp08_reset,RST-A

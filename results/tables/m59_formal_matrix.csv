@@ -1,0 +1,8 @@
+property,variant,environment,method,frontend,engine,depth,result,runtime,memory,assumptions,replay_status,classification,trace,notes
+M57-FP-04,FIX-0,ENV-0,bmc,read_slang,smtbmc z3,128,EXPECTED_PRE_FIX_COUNTEREXAMPLE,1,,M58-FA,NOT_REPRODUCIBLE,anyinit CE,results/formal/m59/m59_original_env0_bmc128/,primary+secondary step 10
+M57-FP-04,FIX-2,ENV-0,bmc,read_slang,smtbmc z3,64,COUNTEREXAMPLE,1,,M58-FA,NOT_REPRODUCIBLE_DUE_TO_UNCONTROLLABLE_INTERNAL_STATE,ASSUMPTION_GAP,results/formal/m58/m58_proper_bmc64/,M5.8 preserved
+M57-FP-04,FIX-0,ENV-4,bmc,read_slang,smtbmc z3,1024,secondary only,1,,M59-FA-01..12,INCONCLUSIVE,ASSUMPTION_DEPENDENCY,results/formal/m59/m59_original_env4_bmc1024/,primary not re-found <=1024
+M57-FP-04,FIX-2,ENV-4,bmc,read_slang,smtbmc z3,512,BOUNDED_PASS,1,,M59-FA-01..12,N/A,BOUNDED_EVIDENCE,results/formal/m59/m59_proper_env4_bmc512/,primary property only
+M57-FP-04,FIX-2,ENV-4,induction,read_slang,smtbmc z3,32,INCONCLUSIVE,1,,M59-FA,NOT_RUN,ASSUMPTION_DEPENDENCY,,not attempted to k-induction proof
+M57-FP-04,FIX-2,ENV-4,pdr,read_slang,abc pdr,32,FAIL,2,,M59-FA,WITNESS_UNREPLAYABLE,TOOLCHAIN_LIMITATION,results/formal/m59/m59_proper_env4_prove32/,no yices; no trace
+M57-FP-04,FIX-2,directed,verilator,verilator,assert,directed,BOUNDED_EVIDENCE,,M57-FA,N/A,BOUNDED_EVIDENCE,,M5.7 retained

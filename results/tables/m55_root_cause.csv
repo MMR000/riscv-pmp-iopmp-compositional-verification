@@ -1,0 +1,3 @@
+finding,classification,location,trigger,read_write_symmetry,evidence
+W-channel forward during IOPMP verification,RTL_IMPLEMENTATION_DEFECT,rv_iopmp_data_abstractor_axi.sv:129,Authorized write immediately before unauthorized write (same session),Read denies; write data can reach initiator without AW,results/m55/baseline/M55-WRITE-CE-BASELINE.txt
+Fresh-session NSAID=1 symmetric deny,EXPECTED_RTL_BEHAVIOR,rv_iopmp_matching_logic.sv SETUP/ERROR,"Reset between transactions, no prior initiator write",Both DENY,results/tables/m55_nsaid_matrix.csv NSAID=1

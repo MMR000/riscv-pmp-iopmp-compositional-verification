@@ -1,0 +1,7 @@
+configuration,sequence,nsaid_first,nsaid_second,observed_prev,observed_cur,dst_w_cur,memory_changed,allow_captured,git_commit,property
+proper,ALLOW_DENY,0,1,ALLOW,DENY,0,0,0,ff46d11,WP-04
+proper,ALLOW_DENY_DENY,0,1,DENY,DENY,0,0,0,ff46d11,WP-04
+proper,ALLOW_DENY_ALLOW,0,1,DENY,ALLOW,1,1,1,ff46d11,WP-04,WP-09
+proper,ALLOW_ALLOW_DENY,0,1,ALLOW,DENY,0,0,0,ff46d11,WP-04
+proper,DENY_ALLOW_DENY,1,0,ALLOW,DENY,0,0,0,ff46d11,WP-09
+proper,ALLOW_A_ALLOW_B_DENY_C,0,1,DENY,DENY,0,0,0,ff46d11,WP-04,WP-05

@@ -1,0 +1,5 @@
+metric,label,reset_model,n,min,median,mean,max
+cpu_release_to_pmp_ready,CPU to PMP_READY,RST-B,14,100,100.0,100.4286,102
+iopmp_release_to_iopmp_ready,IOPMP to IOPMP_READY,RST-B,11,21,105,97.5455,107
+reset_start_to_secure_ready,epoch to secure_ready,RST-B,10,106,106.0,106.2,108
+secure_ready_to_dma_req,secure_ready to DMA,RST-B,10,1,1.0,1.1,2

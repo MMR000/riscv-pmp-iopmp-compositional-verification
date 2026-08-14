@@ -1,0 +1,3 @@
+experiment_id,metric,cycles,notes
+M2-PT-PT1,revocation_visibility_latency,1,cfg effective next cycle
+M2-PT-PT3,revocation_completion_latency,6,admitted txn may complete after revoke

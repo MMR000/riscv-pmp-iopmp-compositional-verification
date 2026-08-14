@@ -1,0 +1,6 @@
+simulator=/home/mmr/ricv_paper/third_party/ibex/build/local_m7_m7_ibex_composed_0/sim-verilator/Vm7_ibex_composed_top
+46b4d97cf3fdab8d40c0d3a8634e43d4685f4d7cfc1ae1741b9f446bb645e1c3  /home/mmr/ricv_paper/third_party/ibex/build/local_m7_m7_ibex_composed_0/sim-verilator/Vm7_ibex_composed_top
+verilator=Verilator 5.050 2026-07-01 rev conda-forge build 0
+fusesoc=2.4.3
+ibex_commit=c61e11c1e416b9ce2d996013b444c8e558d35b2b
+project_commit=7500156fbf076766a283a280465046e8b9ff02b9

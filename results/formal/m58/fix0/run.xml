@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2026-08-11T09:52:47" hostname="DDD" package="run" id="0" name="default" tests="1" errors="1" failures="0" time="0" skipped="0">
+<properties>
+<property name="os" value="Linux"/>
+<property name="expect" value="FAIL"/>
+<property name="status" value="ERROR"/>
+</properties>
+<testcase classname="default" name="default" time="0">
+<error type="ERROR"/>
+</testcase>
+<system-out>SBY  9:52:46 [/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32] Removing directory '/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32'.
+SBY  9:52:46 [/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32] Copy '/home/mmr/ricv_paper/formal/build/m58/src/formal_m57_fullrtl_write_path_tb.sv' to '/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32/src/formal_m57_fullrtl_write_path_tb.sv'.
+SBY  9:52:46 [/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32] Copy '/home/mmr/ricv_paper/formal/build/m58/src/rv_iopmp_reg_pkg.sv' to '/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32/src/rv_iopmp_reg_pkg.sv'.
+SBY  9:52:46 [/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32] Copy '/home/mmr/ricv_paper/formal/build/m58/src/lint_wrapper_pkg.sv' to '/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32/src/lint_wrapper_pkg.sv'.
+SBY  9:52:46 [/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32] Copy '/home/mmr/ricv_paper/formal/build/m58/src/rv_iopmp_pkg.sv' to '/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32/src/rv_iopmp_pkg.sv'.
+SBY  9:52:46 [/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32] Copy '/home/mmr/ricv_paper/formal/build/m58/src/rv_iopmp_axi4_bc.sv' to '/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32/src/rv_iopmp_axi4_bc.sv'.
+SBY  9:52:46 [/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32] Copy '/home/mmr/ricv_paper/formal/build/m58/src/rv_iopmp_data_abstractor_axi.sv' to '/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32/src/rv_iopmp_data_abstractor_axi.sv'.
+SBY  9:52:46 [/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32] Copy '/home/mmr/ricv_paper/formal/build/m58/src/cf_math_pkg.sv' to '/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32/src/cf_math_pkg.sv'.
+SBY  9:52:46 [/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32] Copy '/home/mmr/ricv_paper/formal/build/m58/src/axi_pkg.sv' to '/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32/src/axi_pkg.sv'.
+SBY  9:52:46 [/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32] Copy '/home/mmr/ricv_paper/formal/build/m58/src/vendor/apb_to_reg.sv' to '/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32/src/apb_to_reg.sv'.
+SBY  9:52:46 [/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32] Copy '/home/mmr/ricv_paper/formal/build/m58/src/vendor/axi2apb_64_32.sv' to '/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32/src/axi2apb_64_32.sv'.
+SBY  9:52:46 [/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32] Copy '/home/mmr/ricv_paper/formal/build/m58/src/vendor/axi_ar_buffer.sv' to '/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32/src/axi_ar_buffer.sv'.
+SBY  9:52:46 [/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32] Copy '/home/mmr/ricv_paper/formal/build/m58/src/vendor/axi_atop_filter.sv' to '/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32/src/axi_atop_filter.sv'.
+SBY  9:52:46 [/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32] Copy '/home/mmr/ricv_paper/formal/build/m58/src/vendor/axi_aw_buffer.sv' to '/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32/src/axi_aw_buffer.sv'.
+SBY  9:52:46 [/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32] Copy '/home/mmr/ricv_paper/formal/build/m58/src/vendor/axi_b_buffer.sv' to '/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32/src/axi_b_buffer.sv'.
+SBY  9:52:46 [/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32] Copy '/home/mmr/ricv_paper/formal/build/m58/src/vendor/axi_demux.sv' to '/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32/src/axi_demux.sv'.
+SBY  9:52:46 [/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32] Copy '/home/mmr/ricv_paper/formal/build/m58/src/vendor/axi_err_slv.sv' to '/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32/src/axi_err_slv.sv'.
+SBY  9:52:46 [/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32] Copy '/home/mmr/ricv_paper/formal/build/m58/src/vendor/axi_r_buffer.sv' to '/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32/src/axi_r_buffer.sv'.
+SBY  9:52:46 [/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32] Copy '/home/mmr/ricv_paper/formal/build/m58/src/vendor/axi_single_slice.sv' to '/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32/src/axi_single_slice.sv'.
+SBY  9:52:46 [/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32] Copy '/home/mmr/ricv_paper/formal/build/m58/src/vendor/axi_w_buffer.sv' to '/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32/src/axi_w_buffer.sv'.
+SBY  9:52:46 [/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32] Copy '/home/mmr/ricv_paper/formal/build/m58/src/vendor/counter.sv' to '/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32/src/counter.sv'.
+SBY  9:52:46 [/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32] Copy '/home/mmr/ricv_paper/formal/build/m58/src/vendor/delta_counter.sv' to '/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32/src/delta_counter.sv'.
+SBY  9:52:46 [/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32] Copy '/home/mmr/ricv_paper/formal/build/m58/src/vendor/fifo.sv' to '/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32/src/fifo.sv'.
+SBY  9:52:46 [/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32] Copy '/home/mmr/ricv_paper/formal/build/m58/src/vendor/fifo_v2.sv' to '/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32/src/fifo_v2.sv'.
+SBY  9:52:46 [/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32] Copy '/home/mmr/ricv_paper/formal/build/m58/src/vendor/fifo_v3.sv' to '/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32/src/fifo_v3.sv'.
+SBY  9:52:46 [/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32] Copy '/home/mmr/ricv_paper/formal/build/m58/src/vendor/lzc.sv' to '/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32/src/lzc.sv'.
+SBY  9:52:46 [/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32] Copy '/home/mmr/ricv_paper/formal/build/m58/src/vendor/REG_BUS.sv' to '/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32/src/REG_BUS.sv'.
+SBY  9:52:46 [/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32] Copy '/home/mmr/ricv_paper/formal/build/m58/src/vendor/rr_arb_tree.sv' to '/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32/src/rr_arb_tree.sv'.
+SBY  9:52:46 [/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32] Copy '/home/mmr/ricv_paper/formal/build/m58/src/vendor/spill_register_flushable.sv' to '/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32/src/spill_register_flushable.sv'.
+SBY  9:52:46 [/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32] Copy '/home/mmr/ricv_paper/formal/build/m58/src/vendor/spill_register.sv' to '/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32/src/spill_register.sv'.
+SBY  9:52:46 [/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32] Copy '/home/mmr/ricv_paper/formal/build/m58/src/vendor/stream_arbiter_flushable.sv' to '/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32/src/stream_arbiter_flushable.sv'.
+SBY  9:52:46 [/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32] Copy '/home/mmr/ricv_paper/formal/build/m58/src/vendor/stream_arbiter.sv' to '/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32/src/stream_arbiter.sv'.
+SBY  9:52:46 [/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32] Copy '/home/mmr/ricv_paper/formal/build/m58/src/vendor/stream_mux.sv' to '/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32/src/stream_mux.sv'.
+SBY  9:52:46 [/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32] Copy '/home/mmr/ricv_paper/formal/build/m58/src/vendor/stream_register.sv' to '/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32/src/stream_register.sv'.
+SBY  9:52:46 [/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32] Copy '/home/mmr/ricv_paper/formal/build/m58/src/vendor/tc_sram.sv' to '/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32/src/tc_sram.sv'.
+SBY  9:52:46 [/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32] Copy '/home/mmr/ricv_paper/formal/build/m58/src/vendor/tc_sram_wrapper.sv' to '/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32/src/tc_sram_wrapper.sv'.
+SBY  9:52:46 [/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32] Copy '/home/mmr/ricv_paper/formal/build/m58/src/include/axi/assign.svh' to '/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32/src/assign.svh'.
+SBY  9:52:46 [/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32] Copy '/home/mmr/ricv_paper/formal/build/m58/src/include/axi/typedef.svh' to '/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32/src/typedef.svh'.
+SBY  9:52:46 [/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32] Copy '/home/mmr/ricv_paper/formal/build/m58/src/include/common_cells/assertions.svh' to '/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32/src/assertions.svh'.
+SBY  9:52:46 [/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32] Copy '/home/mmr/ricv_paper/formal/build/m58/src/include/common_cells/registers.svh' to '/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32/src/registers.svh'.
+SBY  9:52:46 [/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32] engine_0: smtbmc z3
+SBY  9:52:46 [/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32] base: starting process &quot;cd /home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY  9:52:47 [/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32] base: ERROR: Design elaboration failed; see full log for details
+SBY  9:52:47 [/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32] base: finished (returncode=1)
+SBY  9:52:47 [/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32] base: task failed. ERROR.
+SBY  9:52:47 [/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY  9:52:47 [/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY  9:52:47 [/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32] summary: engine_0 (smtbmc z3) did not return a status
+SBY  9:52:47 [/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32] summary: engine_0 did not produce any traces
+SBY  9:52:47 [/home/mmr/ricv_paper/results/formal/m58/m58_original_bmc32] DONE (ERROR, rc=16)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>

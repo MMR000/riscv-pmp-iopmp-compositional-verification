@@ -1,0 +1,2 @@
+configuration,build_fix,unauth_write_memory_effect,source_completion,bresp,deadlock,stale_route_possible,authorized_write_regression,notes
+naive,naive,1,1,OKAY,0,1,1,R3+fresh_unauth; build=naive

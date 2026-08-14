@@ -1,0 +1,58 @@
+Test 01 : Test entry granularity and encoding of ENTRY_ADDR(H)          : [32mPASS[0m
+Test 02 : Test OFF - Read Access permissions                            : [32mPASS[0m
+Test 03 : Test OFF - Write Access permissions                           : [32mPASS[0m
+Test 04 : Test OFF - Instruction Fetch permissions                      : [32mPASS[0m
+Test 05 : Test OFF - UNKNOWN RRID ERROR                                 : [32mPASS[0m
+Test 06 : Test TOR - Partial hit on a priority rule error               : [32mPASS[0m
+Test 07 : Test TOR - 4Byte Read Access                                  : [32mPASS[0m
+Test 08 : Test TOR - 4Byte Read Access with SRCMD_R not set             : [32mPASS[0m
+Test 09 : Test TOR - 4Byte Read Access, SRCMD_R not set, SPS disabled   : [33mSKIP[0m
+Test 10 : Test TOR - 4Byte AMO Write Access                             : [32mPASS[0m
+Test 11 : Test TOR - 4Byte Non-AMO Write Access                         : [32mPASS[0m
+Test 12 : Test TOR - 4Byte Write Access                                 : [32mPASS[0m
+Test 13 : Test NA4 - 4Byte Read Access                                  : [32mPASS[0m
+Test 14 : Test NA4 - 4Byte No Read Access error                         : [32mPASS[0m
+Test 15 : Test NA4 - 4Byte No SPS Read Access error                     : [32mPASS[0m
+Test 16 : Test NA4 - 4Byte Write Access                                 : [32mPASS[0m
+Test 17 : Test NA4 - 4Byte Non-AMO Write Access                         : [32mPASS[0m
+Test 18 : Test NA4 - 4Byte No Write Access error                        : [32mPASS[0m
+Test 19 : Test NA4 - 4Byte No SPS Write Access error                    : [32mPASS[0m
+Test 20 : Test NA4 - 4Byte Execute Access                               : [32mPASS[0m
+Test 21 : Test NA4 - 4Byte No Execute Access                            : [32mPASS[0m
+Test 22 : Test NA4 - 4Byte No SPS.R, Execute Access                     : [32mPASS[0m
+Test 23 : Test NA4 - 8Byte Access error                                 : [32mPASS[0m
+Test 24 : Test NA4 - For exact 4 Byte error                             : [32mPASS[0m
+Test 25 : Test NAPOT - 8 Byte read access                               : [32mPASS[0m
+Test 26 : Test NAPOT - 8 Byte read access error                         : [32mPASS[0m
+Test 27 : Test NAPOT - 8 Byte write access error                        : [32mPASS[0m
+Test 28 : Test NAPOT - 8 Byte write access                              : [32mPASS[0m
+Test 29 : Test NAPOT - 8 Byte Non-AMO write access                      : [32mPASS[0m
+Test 30 : Test NAPOT - 8 Byte Instruction access error                  : [32mPASS[0m
+Test 31 : Test NAPOT - 8 Byte Instruction access                        : [32mPASS[0m
+Test 32 : Test NAPOT - 8 Byte Instruction access for non-priority Entry : [32mPASS[0m
+Test 33 : Test NAPOT - 8 Byte Instruction access when chk_x=0           : [32mPASS[0m
+Test 34 : Test MDLCK, updating locked srcmd_en field                    : [32mPASS[0m
+Test 35 : Test MDLCK, updating unlocked srcmd_en field                  : [32mPASS[0m
+Test 36 : Test MDCFG_LCK, updating locked MDCFG field                   : [32mPASS[0m
+Test 37 : Test MDCFG_LCK, updating unlocked MDCFG field                 : [32mPASS[0m
+Test 38 : Test Entry_LCK, updating locked ENTRY field                   : [32mPASS[0m
+Test 39 : Test Entry_LCK, updating unlocked ENTRY field                 : [32mPASS[0m
+Test 40 : Test SRCMD_EN lock bit, updating locked SRCMD Table           : [32mPASS[0m
+Test 41 : Test SRCMD_EN lock bit, updating unlocked SRCMD Table         : [32mPASS[0m
+Test 42 : Test MDLCK register lock bit                                  : [32mPASS[0m
+Test 43 : Test MDCFG_LCK register lock bit                              : [32mPASS[0m
+Test 44 : Test Entry_LCK register lock bit                              : [32mPASS[0m
+Test 45 : Test MFR Extension                                            : [32mPASS[0m
+Test 46 : Test MDLCK, updating locked srcmd_enh field                   : [32mPASS[0m
+Test 47 : Test MDLCK, updating unlocked srcmd_enh field                 : [32mPASS[0m
+Test 48 : Test Interrupt Suppression is Enabled                         : [32mPASS[0m
+Test 49 : Test Interrupt Suppression is disabled                        : [32mPASS[0m
+Test 50 : Test Error Suppression is Enabled                             : [32mPASS[0m
+Test 51 : Test Error Suppression is Enabled but rs is zero              : [32mPASS[0m
+Test 52 : Test Error Suppression is disabled                            : [32mPASS[0m
+Test 53 : Test Interrupt and Error Suppression is Enabled               : [32mPASS[0m
+Test 54 : Test Interrupt and Error Suppression is disabled              : [32mPASS[0m
+Test 55 : Stall MD Feature                                              : [32mPASS[0m
+Test 56 : Test Cascading IOPMP Feature                                  : [32mPASS[0m
+Test 57 : Test MSI Write error                                          : [32mPASS[0m
+Test 58 : Test MSI                                                      : [32mPASS[0m

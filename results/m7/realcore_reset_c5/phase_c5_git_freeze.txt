@@ -1,0 +1,7 @@
+Phase C.5 git freeze
+date: 2026-08-12T14:55:55+05:00
+commit: 15b75d285ecb01997f08de2f03076843367886dd
+tag: checkpoint-m7-phase-c5-reset-closure
+parent: 586fdd5781890d2b24417227de2428f271260a45
+message: m7(phase-c5): close inflight and independent reset-order evidence
+ibex: c61e11c1e416b9ce2d996013b444c8e558d35b2b

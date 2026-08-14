@@ -1,0 +1,40 @@
+SBY  9:22:56 [/home/mmr/ricv_paper/results/formal/m56_write_path] Removing directory '/home/mmr/ricv_paper/results/formal/m56_write_path'.
+SBY  9:22:56 [/home/mmr/ricv_paper/results/formal/m56_write_path] Copy '/home/mmr/ricv_paper/formal/harness/formal_m56_write_path_tb.sv' to '/home/mmr/ricv_paper/results/formal/m56_write_path/src/formal_m56_write_path_tb.sv'.
+SBY  9:22:56 [/home/mmr/ricv_paper/results/formal/m56_write_path] engine_0: smtbmc z3
+SBY  9:22:56 [/home/mmr/ricv_paper/results/formal/m56_write_path] base: starting process "cd /home/mmr/ricv_paper/results/formal/m56_write_path/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY  9:22:56 [/home/mmr/ricv_paper/results/formal/m56_write_path] base: Warning: Wire formal_m56_write_path_tb.\slv_w_valid is used but has no driver.
+SBY  9:22:56 [/home/mmr/ricv_paper/results/formal/m56_write_path] base: Warning: Wire formal_m56_write_path_tb.\slv_b_ready is used but has no driver.
+SBY  9:22:56 [/home/mmr/ricv_paper/results/formal/m56_write_path] base: Warning: Wire formal_m56_write_path_tb.\iopmp_allow is used but has no driver.
+SBY  9:22:56 [/home/mmr/ricv_paper/results/formal/m56_write_path] base: Warning: Wire formal_m56_write_path_tb.\iopmp_valid is used but has no driver.
+SBY  9:22:56 [/home/mmr/ricv_paper/results/formal/m56_write_path] base: Warning: Wire formal_m56_write_path_tb.\slv_aw_valid is used but has no driver.
+SBY  9:22:56 [/home/mmr/ricv_paper/results/formal/m56_write_path] base: finished (returncode=0)
+SBY  9:22:56 [/home/mmr/ricv_paper/results/formal/m56_write_path] prep: starting process "cd /home/mmr/ricv_paper/results/formal/m56_write_path/model; yosys -ql design_prep.log design_prep.ys"
+SBY  9:22:56 [/home/mmr/ricv_paper/results/formal/m56_write_path] prep: Warning: Wire formal_m56_write_path_tb.\iopmp_allow is used but has no driver.
+SBY  9:22:56 [/home/mmr/ricv_paper/results/formal/m56_write_path] prep: Warning: Wire formal_m56_write_path_tb.\slv_b_ready is used but has no driver.
+SBY  9:22:56 [/home/mmr/ricv_paper/results/formal/m56_write_path] prep: Warning: Wire formal_m56_write_path_tb.\slv_aw_valid is used but has no driver.
+SBY  9:22:56 [/home/mmr/ricv_paper/results/formal/m56_write_path] prep: Warning: Wire formal_m56_write_path_tb.\slv_w_valid is used but has no driver.
+SBY  9:22:56 [/home/mmr/ricv_paper/results/formal/m56_write_path] prep: Warning: Wire formal_m56_write_path_tb.\iopmp_valid is used but has no driver.
+SBY  9:22:56 [/home/mmr/ricv_paper/results/formal/m56_write_path] prep: finished (returncode=0)
+SBY  9:22:56 [/home/mmr/ricv_paper/results/formal/m56_write_path] smt2: starting process "cd /home/mmr/ricv_paper/results/formal/m56_write_path/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY  9:22:56 [/home/mmr/ricv_paper/results/formal/m56_write_path] smt2: finished (returncode=0)
+SBY  9:22:56 [/home/mmr/ricv_paper/results/formal/m56_write_path] engine_0: starting process "cd /home/mmr/ricv_paper/results/formal/m56_write_path; yosys-smtbmc -s z3 --presat --noprogress -t 32  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2"
+SBY  9:22:56 [/home/mmr/ricv_paper/results/formal/m56_write_path] engine_0: ##   0:00:00  Solver: z3
+SBY  9:22:56 [/home/mmr/ricv_paper/results/formal/m56_write_path] engine_0: ##   0:00:00  Checking assumptions in step 0..
+SBY  9:22:56 [/home/mmr/ricv_paper/results/formal/m56_write_path] engine_0: ##   0:00:00  Checking assertions in step 0..
+SBY  9:22:56 [/home/mmr/ricv_paper/results/formal/m56_write_path] engine_0: ##   0:00:00  Checking assumptions in step 1..
+SBY  9:22:56 [/home/mmr/ricv_paper/results/formal/m56_write_path] engine_0: ##   0:00:00  Checking assertions in step 1..
+SBY  9:22:56 [/home/mmr/ricv_paper/results/formal/m56_write_path] engine_0: ##   0:00:00  BMC failed!
+SBY  9:22:56 [/home/mmr/ricv_paper/results/formal/m56_write_path] engine_0: ##   0:00:00  Assert failed in formal_m56_write_path_tb: formal_m56_write_path_tb.sv:109.7-109.28 (_witness_.check_assert_formal_m56_write_path_tb_sv_109_41)
+SBY  9:22:56 [/home/mmr/ricv_paper/results/formal/m56_write_path] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace.vcd
+SBY  9:22:56 [/home/mmr/ricv_paper/results/formal/m56_write_path] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace_tb.v
+SBY  9:22:56 [/home/mmr/ricv_paper/results/formal/m56_write_path] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace.smtc
+SBY  9:22:56 [/home/mmr/ricv_paper/results/formal/m56_write_path] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace.yw
+SBY  9:22:56 [/home/mmr/ricv_paper/results/formal/m56_write_path] engine_0: ##   0:00:00  Status: failed
+SBY  9:22:56 [/home/mmr/ricv_paper/results/formal/m56_write_path] engine_0: finished (returncode=1)
+SBY  9:22:56 [/home/mmr/ricv_paper/results/formal/m56_write_path] engine_0: Status returned by engine: FAIL
+SBY  9:22:56 [/home/mmr/ricv_paper/results/formal/m56_write_path] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY  9:22:56 [/home/mmr/ricv_paper/results/formal/m56_write_path] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY  9:22:56 [/home/mmr/ricv_paper/results/formal/m56_write_path] summary: engine_0 (smtbmc z3) returned FAIL
+SBY  9:22:56 [/home/mmr/ricv_paper/results/formal/m56_write_path] summary: counterexample trace: /home/mmr/ricv_paper/results/formal/m56_write_path/engine_0/trace.vcd
+SBY  9:22:56 [/home/mmr/ricv_paper/results/formal/m56_write_path] summary:   failed assertion formal_m56_write_path_tb._witness_.check_assert_formal_m56_write_path_tb_sv_109_41 at formal_m56_write_path_tb.sv:109.7-109.28 step 1
+SBY  9:22:56 [/home/mmr/ricv_paper/results/formal/m56_write_path] DONE (FAIL, rc=2)

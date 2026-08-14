@@ -1,0 +1,3 @@
+=== CSR smoke test ===
+/home/mmr/ricv_paper/third_party/toolchain/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 00010094
+CSR smoke: OK

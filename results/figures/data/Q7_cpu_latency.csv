@@ -1,0 +1,5 @@
+test_id,label,cycles,annotation
+PERF-CPU-01,Auth load,5,
+PERF-CPU-02,Auth store,5,
+PERF-CPU-03,U-load fault,28,mcause=5
+PERF-CPU-04,U-store fault,30,mcause=7

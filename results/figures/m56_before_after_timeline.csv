@@ -1,0 +1,11 @@
+cycle,configuration,aw_valid_src,aw_ready_src,w_valid_src,w_ready_src,authorization,aw_valid_dst,aw_ready_dst,w_valid_dst,w_ready_dst,memory_write,bresp
+0,original,1,0,1,0,pending,0,0,0,0,0,
+50,original,1,1,1,0,allow,1,1,0,0,0,
+51,original,0,0,1,1,allow,0,0,1,1,1,OKAY
+100,original,1,0,1,0,deny,0,0,1,1,1,OKAY
+0,repaired,1,0,1,0,pending,0,0,0,0,0,
+50,repaired,1,1,0,0,allow,1,1,0,0,0,
+51,repaired,0,0,1,0,allow,0,0,0,0,0,
+52,repaired,0,0,1,1,allow,0,0,1,1,1,OKAY
+100,repaired,1,0,1,0,deny,0,0,0,0,0,
+120,repaired,0,0,1,1,deny,0,0,0,0,0,SLVERR

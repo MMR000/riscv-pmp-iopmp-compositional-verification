@@ -1,0 +1,3 @@
+variant,description,platform,clock_period_ns,synth_cells,route_area,timing_pass,result,notes
+I0,IOPMP AXI abstractor original,sky130hd,20,,,NOT_RUN,PPA_TOOLCHAIN_BLOCKER,Separate from J-series; requires ORFS+slang
+I1,IOPMP AXI abstractor FIX-2,sky130hd,20,,,NOT_RUN,PPA_TOOLCHAIN_BLOCKER,Separate from J-series; requires ORFS+slang

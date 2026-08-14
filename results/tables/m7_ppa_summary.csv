@@ -1,0 +1,8 @@
+total_cells,wire_bits,flow,mapped_area,fmax,wns,config,overhead_vs_J0_note
+NOT_RUN,NOT_RUN,synthesis-only,NOT_RUN,NOT_RUN,NOT_RUN,I0,raw cell counts only; no Liberty/OpenROAD
+NOT_RUN,NOT_RUN,synthesis-only,NOT_RUN,NOT_RUN,NOT_RUN,I1,raw cell counts only; no Liberty/OpenROAD
+NOT_RUN,NOT_RUN,synthesis-only,NOT_RUN,NOT_RUN,NOT_RUN,J0,raw cell counts only; no Liberty/OpenROAD
+NOT_RUN,NOT_RUN,synthesis-only,NOT_RUN,NOT_RUN,NOT_RUN,J1,raw cell counts only; no Liberty/OpenROAD
+NOT_RUN,NOT_RUN,synthesis-only,NOT_RUN,NOT_RUN,NOT_RUN,J2,raw cell counts only; no Liberty/OpenROAD
+NOT_RUN,NOT_RUN,synthesis-only,NOT_RUN,NOT_RUN,NOT_RUN,J3,raw cell counts only; no Liberty/OpenROAD
+NOT_RUN,NOT_RUN,synthesis-only,NOT_RUN,NOT_RUN,NOT_RUN,J4,raw cell counts only; no Liberty/OpenROAD

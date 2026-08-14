@@ -1,0 +1,15 @@
+\section{Formal Assumptions}
+\label{app:assumptions}
+
+% SOURCE: docs/formal_assumptions.md, docs/m59_formal_assumptions.md
+\begin{itemize}
+  \item \textbf{FA-01:} Trusted configuration (\texttt{!cfg\_write} in baseline formal).
+  \item \textbf{FA-02:} Authentic DMA requester ID at admission.
+  \item \textbf{FA-03:} Deterministic protected-region decode.
+  \item \textbf{FA-04:} Stable admission metadata during outstanding transactions.
+  \item \textbf{FA-05:} Model A revocation (latched at admission).
+  \item \textbf{FA-06:} No bypass of interconnect to protected SRAM.
+  \item \textbf{FA-07:} Single synchronous clock domain.
+  \item \textbf{FA-08:} No spontaneous protected-memory change.
+  \item \textbf{M59-FA-01..12:} AXI environment ladder (ENV-0..ENV-4) for full-RTL formal.
+\end{itemize}

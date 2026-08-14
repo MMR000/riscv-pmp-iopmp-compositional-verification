@@ -1,0 +1,48 @@
+UTC=2026-08-14T06:57:09Z
+PWD=/home/mmr/ricv_paper
+BRANCH=m7-journal-validation
+HEAD=07ee8931f8e7e75d48168914fffddb31a5e0a091
+REMOTE:
+TAGS:
+checkpoint-m3-partial
+checkpoint-m35-done
+checkpoint-m4-done
+checkpoint-m4-partial
+checkpoint-m5-ev2
+checkpoint-m510-complete
+checkpoint-m55-write-defect
+checkpoint-m56-write-path-repair
+checkpoint-m57-fullrtl-validation
+checkpoint-m58-fullrtl-formal
+checkpoint-m59-axi-environment
+checkpoint-m5a-ev1
+checkpoint-m7-phase-a-ibex-pmp
+checkpoint-m7-phase-b-realcore-composition
+checkpoint-m7-phase-c-realcore-reset
+checkpoint-m7-phase-c5-reset-closure
+checkpoint-m7-phase-d-partial
+checkpoint-m7-phase-d-toolchain-ready
+checkpoint-m7-phase-d2-ppa-partial
+checkpoint-m7-phase-d3-ppa-final
+LOG:
+07ee893 (HEAD -> m7-journal-validation, tag: checkpoint-m7-phase-d3-ppa-final) m7(phase-d3): freeze common 20 ns PPA and J1 timing audit
+7500156 (tag: checkpoint-m7-phase-d2-ppa-partial) m7(phase-d2): preserve common-target PPA and real-core performance evidence
+0a86d81 (tag: checkpoint-m7-phase-d-toolchain-ready) m7(phase-d1): validate ORFS Docker physical-design toolchain
+b1605e2 m7(phase-d1): record Docker install blocker and ORFS validation gate
+8a4a085 (tag: checkpoint-m7-phase-d-partial) m7(phase-d): preserve PPA infrastructure and partial performance evidence
+15b75d2 (tag: checkpoint-m7-phase-c5-reset-closure) m7(phase-c5): close inflight and independent reset-order evidence
+586fdd5 (tag: checkpoint-m7-phase-c-realcore-reset) m7(phase-c): real-Ibex RST-A/B reset composition and recovery evidence
+eba4cae (tag: checkpoint-m7-phase-b-realcore-composition) m7(phase-b): real Ibex + DMA + IOPMP compositional isolation
+574d99c (tag: checkpoint-m7-phase-a-ibex-pmp) m7(phase-a): real Ibex PMP tests pass on pinned simple_system
+ae49bbd m7(partial): preserve reset and multimaster evidence before Ibex recovery
+b0d6666 (m6-publication-freeze, m510-compositional-guarantee-matrix) docs(m5.10): record final commit hash in m510 summary
+681b2bd (tag: checkpoint-m510-complete) m5.10: compositional guarantee matrix and RST-A/B formal comparison
+0a44ac8 (m59-axi-environment-proof-closure) docs(m5.9): record final commit hash in m59 summary
+9f2a98b (tag: checkpoint-m59-axi-environment) m5.9: classify FIX-2 formal CE as anyinit artifact; ENV-4 bounded evidence
+8e47a6a (m58-fullrtl-formal-proof) docs(m5.8): record final commit hash in m58 summary
+56f9ffe (tag: checkpoint-m58-fullrtl-formal) m5.8: read_slang full-RTL formal BMC for M57-FP-04
+fcf7495 (tag: checkpoint-m57-fullrtl-validation, m57-fullrtl-formal-validation) m5.7: full-RTL formal validation of AXI write-path repair
+096a984 (tag: checkpoint-m56-write-path-repair, m56-write-path-fix-formal) m5.6: repair IOPMP AXI write transaction binding
+ff46d11 (tag: checkpoint-m55-write-defect, m55-write-path-investigation) m5.5: characterize IOPMP AXI write-path enforcement defect
+fd3a876 (tag: checkpoint-m5-ev2, m5-rtl-closure) m5: add RTL-IOPMP AXI harness and external validity closure
+STATUS_SHORT_COUNT=1574

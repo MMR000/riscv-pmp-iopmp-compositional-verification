@@ -1,0 +1,377 @@
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] Removing directory '/home/mmr/ricv_paper/results/formal/spb01_model_b'.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] Copy '/home/mmr/ricv_paper/formal/sby/../../rtl/common/bus_pkg.vh' to '/home/mmr/ricv_paper/results/formal/spb01_model_b/src/bus_pkg.vh'.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] Copy '/home/mmr/ricv_paper/formal/sby/../../rtl/iopmp/iopmp.v' to '/home/mmr/ricv_paper/results/formal/spb01_model_b/src/iopmp.v'.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] Copy '/home/mmr/ricv_paper/formal/sby/../harness/formal_bus_stub.v' to '/home/mmr/ricv_paper/results/formal/spb01_model_b/src/formal_bus_stub.v'.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] Copy '/home/mmr/ricv_paper/formal/sby/../harness/formal_helpers.vh' to '/home/mmr/ricv_paper/results/formal/spb01_model_b/src/formal_helpers.vh'.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] Copy '/home/mmr/ricv_paper/formal/sby/../harness/formal_model_b_tb.v' to '/home/mmr/ricv_paper/results/formal/spb01_model_b/src/formal_model_b_tb.v'.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] engine_0: smtbmc z3
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: starting process "cd /home/mmr/ricv_paper/results/formal/spb01_model_b/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: formal_model_b_tb.v:58: Warning: Identifier `\u_dut.state' is implicitly declared.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: formal_model_b_tb.v:59: Warning: Identifier `\u_dut.dma_req_out' is implicitly declared.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_req is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_addr [31] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_addr [30] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_addr [29] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_addr [28] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_addr [27] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_addr [26] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_addr [25] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_addr [24] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_addr [23] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_addr [22] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_addr [21] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_addr [20] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_addr [19] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_addr [18] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_addr [17] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_addr [16] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_addr [15] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_addr [14] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_addr [13] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_addr [12] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_addr [11] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_addr [10] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_addr [9] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_addr [8] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_addr [7] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_addr [6] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_addr [5] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_addr [4] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_addr [3] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_addr [2] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_addr [1] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_addr [0] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_wdata [31] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_wdata [30] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_wdata [29] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_wdata [28] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_wdata [27] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_wdata [26] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_wdata [25] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_wdata [24] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_wdata [23] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_wdata [22] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_wdata [21] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_wdata [20] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_wdata [19] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_wdata [18] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_wdata [17] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_wdata [16] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_wdata [15] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_wdata [14] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_wdata [13] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_wdata [12] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_wdata [11] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_wdata [10] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_wdata [9] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_wdata [8] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_wdata [7] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_wdata [6] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_wdata [5] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_wdata [4] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_wdata [3] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_wdata [2] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_wdata [1] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_wdata [0] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_requester_id [7] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_requester_id [6] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_requester_id [5] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_requester_id [4] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_requester_id [3] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_requester_id [2] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_requester_id [1] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_requester_id [0] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_length [15] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_length [14] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_length [13] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_length [12] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_length [11] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_length [10] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_length [9] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_length [8] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_length [7] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_length [6] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_length [5] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_length [4] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_length [3] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_length [2] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_length [1] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_length [0] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_base [31] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_base [30] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_base [29] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_base [28] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_base [27] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_base [26] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_base [25] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_base [24] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_base [23] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_base [22] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_base [21] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_base [20] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_base [19] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_base [18] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_base [17] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_base [16] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_base [15] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_base [14] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_base [13] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_base [12] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_base [11] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_base [10] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_base [9] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_base [8] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_base [7] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_base [6] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_base [5] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_base [4] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_base [3] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_base [2] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_base [1] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_base [0] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_limit [31] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_limit [30] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_limit [29] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_limit [28] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_limit [27] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_limit [26] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_limit [25] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_limit [24] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_limit [23] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_limit [22] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_limit [21] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_limit [20] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_limit [19] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_limit [18] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_limit [17] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_limit [16] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_limit [15] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_limit [14] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_limit [13] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_limit [12] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_limit [11] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_limit [10] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_limit [9] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_limit [8] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_limit [7] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_limit [6] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_limit [5] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_limit [4] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_limit [3] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_limit [2] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_limit [1] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_limit [0] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_rid [7] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_rid [6] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_rid [5] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_rid [4] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_rid [3] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_rid [2] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_rid [1] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_rid [0] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_re is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_we is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\dma_write is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\enable is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\iopmp_dma_req_out is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\iopmp_state [0] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: Warning: Wire formal_model_b_tb.\rule0_valid is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] base: finished (returncode=0)
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: starting process "cd /home/mmr/ricv_paper/results/formal/spb01_model_b/model; yosys -ql design_prep.log design_prep.ys"
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_we is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_valid is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_rid [7] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_rid [6] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_rid [5] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_rid [4] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_rid [3] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_rid [2] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_rid [1] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_rid [0] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_re is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_limit [31] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_limit [30] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_limit [29] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_limit [28] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_limit [27] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_limit [26] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_limit [25] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_limit [24] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_limit [23] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_limit [22] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_limit [21] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_limit [20] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_limit [19] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_limit [18] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_limit [17] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_limit [16] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_limit [15] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_limit [14] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_limit [13] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_limit [12] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_limit [11] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_limit [10] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_limit [9] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_limit [8] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_limit [7] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_limit [6] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_limit [5] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_limit [4] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_limit [3] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_limit [2] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_limit [1] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_limit [0] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_base [31] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_base [30] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_base [29] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_base [28] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_base [27] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_base [26] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_base [25] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_base [24] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_base [23] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_base [22] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_base [21] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_base [20] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_base [19] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_base [18] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_base [17] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_base [16] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_base [15] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_base [14] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_base [13] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_base [12] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_base [11] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_base [10] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_base [9] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_base [8] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_base [7] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_base [6] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_base [5] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_base [4] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_base [3] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_base [2] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_base [1] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\rule0_base [0] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_wdata [31] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_wdata [30] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_wdata [29] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_wdata [28] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_wdata [27] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_wdata [26] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_wdata [25] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_wdata [24] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_wdata [23] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_wdata [22] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_wdata [21] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_wdata [20] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_wdata [19] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_wdata [18] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_wdata [17] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_wdata [16] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_wdata [15] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_wdata [14] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_wdata [13] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_wdata [12] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_wdata [11] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_wdata [10] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_wdata [9] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_wdata [8] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_wdata [7] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_wdata [6] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_wdata [5] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_wdata [4] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_wdata [3] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_wdata [2] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_wdata [1] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_wdata [0] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_requester_id [7] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_requester_id [6] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_requester_id [5] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_requester_id [4] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_requester_id [3] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_requester_id [2] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_requester_id [1] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_requester_id [0] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_req is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_length [15] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_length [14] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_length [13] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_length [12] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_length [11] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_length [10] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_length [9] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_length [8] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_length [7] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_length [6] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_length [5] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_length [4] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_length [3] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_length [2] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_length [1] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_length [0] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_addr [31] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_addr [30] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_addr [29] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_addr [28] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_addr [27] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_addr [26] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_addr [25] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_addr [24] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_addr [23] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_addr [22] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_addr [21] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_addr [20] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_addr [19] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_addr [18] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_addr [17] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_addr [16] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_addr [15] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_addr [14] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_addr [13] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_addr [12] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_addr [11] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_addr [10] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_addr [9] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_addr [8] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_addr [7] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_addr [6] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_addr [5] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_addr [4] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_addr [3] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_addr [2] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_addr [1] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_addr [0] is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\dma_write is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\enable is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: Warning: Wire formal_model_b_tb.\iopmp_dma_req_out is used but has no driver.
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] prep: finished (returncode=0)
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] smt2: starting process "cd /home/mmr/ricv_paper/results/formal/spb01_model_b/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] smt2: finished (returncode=0)
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] engine_0: starting process "cd /home/mmr/ricv_paper/results/formal/spb01_model_b; yosys-smtbmc -s z3 --presat --noprogress -t 24  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2"
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] engine_0: ##   0:00:00  Solver: z3
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] engine_0: ##   0:00:00  Checking assumptions in step 0..
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] engine_0: ##   0:00:00  Checking assertions in step 0..
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] engine_0: ##   0:00:00  Checking assumptions in step 1..
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] engine_0: ##   0:00:00  Checking assertions in step 1..
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] engine_0: ##   0:00:00  Checking assumptions in step 2..
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] engine_0: ##   0:00:00  Checking assertions in step 2..
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] engine_0: ##   0:00:00  Checking assumptions in step 3..
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] engine_0: ##   0:00:00  Checking assertions in step 3..
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] engine_0: ##   0:00:00  Checking assumptions in step 4..
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] engine_0: ##   0:00:00  Checking assertions in step 4..
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] engine_0: ##   0:00:00  BMC failed!
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] engine_0: ##   0:00:00  Assert failed in formal_model_b_tb.u_dut: iopmp.v:244.17-244.50 (_witness_.check_assert_iopmp_v_244_553)
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace.vcd
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace_tb.v
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace.smtc
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace.yw
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] engine_0: ##   0:00:00  Status: failed
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] engine_0: finished (returncode=1)
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] engine_0: Status returned by engine: FAIL
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] summary: engine_0 (smtbmc z3) returned FAIL
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] summary: counterexample trace: /home/mmr/ricv_paper/results/formal/spb01_model_b/engine_0/trace.vcd
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] summary:   failed assertion formal_model_b_tb.u_dut._witness_.check_assert_iopmp_v_244_553 at iopmp.v:244.17-244.50 step 4
+SBY 17:37:52 [/home/mmr/ricv_paper/results/formal/spb01_model_b] DONE (FAIL, rc=0)

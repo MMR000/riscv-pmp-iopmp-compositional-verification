@@ -1,0 +1,13 @@
+% Auto-included from results/m6/limitations.md (M6)
+\begin{itemize}
+  \item \textbf{Abstract CPU master} --- not a complete RISC-V core (e.g., not Ibex).
+  \item \textbf{Research IOPMP model} --- not claimed fully standards-compliant RISC-V IOPMP unless explicitly demonstrated.
+  \item \textbf{No FPGA or ASIC/silicon validation.}
+  \item \textbf{No claim of complete RISC-V SoC security.}
+  \item \textbf{Bounded evidence} for some properties (e.g., M57-FP-04 FIX-2); PDR raw FAIL is not a confirmed violation.
+  \item \textbf{SP-11} formal harness: PREUNSAT (FORMAL\_HARNESS\_BUG).
+  \item \textbf{Yices unavailable} --- PDR witness replay TOOLCHAIN\_LIMITATION.
+  \item \textbf{RST-A counterexample} is RESET\_ASSUMPTION\_DEPENDENCY at model level, not a named-product vulnerability.
+  \item \textbf{PPA} (area, power, timing) not evaluated in current artifacts.
+  \item Conclusions hold only under documented formal assumptions (FA-*, M59-FA-*).
+\end{itemize}

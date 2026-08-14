@@ -1,0 +1,8 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1786447603" />
+    <testcase name="m7_reset_matrix" classname="test_m7_reset" file="/home/mmr/ricv_paper/tb/cocotb/test_m7_reset.py" lineno="19" time="0.00514674186706543" sim_time_ns="1500.0" ratio_time="291446.5187381294">
+      <failure error_type="RuntimeError" error_msg="Attempting settings a value during the ReadOnly phase." />
+    </testcase>
+  </testsuite>
+</testsuites>

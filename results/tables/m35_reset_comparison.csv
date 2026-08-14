@@ -1,0 +1,2 @@
+scenario,RST_A_fail_open,RST_B_fail_closed,SP-08_status,secure_ready_timing,DMA_active_timing,counterexample_path,interpretation
+DMA active before secure_ready,COUNTEREXAMPLE,BOUNDED_PASS,RST-A=COUNTEREXAMPLE; RST-B=BOUNDED_PASS,nondeterministic,nondeterministic,results/formal/counterexamples/SP-08/,CI-RESET-01 when RST-B passes and RST-A fails

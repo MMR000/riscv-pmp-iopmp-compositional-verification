@@ -1,0 +1,27 @@
+M7 Phase D.2 start
+date: 2026-08-12T16:15:00+05:00
+branch: m7-journal-validation
+project_commit: 0a86d81482498e1eae40a0807a19659f4516c342
+describe: checkpoint-m7-phase-d-toolchain-ready
+ibex_commit: c61e11c1e416b9ce2d996013b444c8e558d35b2b
+orfs_commit: f9ec54a6de7b2bc69fd586015f6ebdab34eca69c
+docker_image: openroad/orfs@sha256:817b608c69a71fafc7b61baec11b4dc073fb8efb9d2714f9bd3316db4beba277
+openroad_version: 26Q3-1080-gab6fd26351
+yosys_version: Yosys 0.68+post (read_slang built-in)
+platform: sky130hd
+clock_period_ns_primary: 10.0
+lec_check: 0
+lec_reason: Kepler-formal in the validated image uses AVX-512; host i9-14900KF has AVX-512 fused off. LEC omitted due to host/tool binary compatibility. RTL/netlist equivalence was NOT formally checked. Identical LEC_CHECK=0 for J0-J3.
+memory_policy: LOGIC-ONLY / MEMORY-BLACKBOX
+--- frozen matrix sha256 ---
+a6176844f91613a15845c9eff24c71fd0ec240fef14dab7f57c3cdbb35e09660  results/tables/m7_ibex_pmp_matrix.csv
+38149283b0ed586c5cc4b9782545f789f2aa1e3bfed5420eb0c11d36c14795bc  results/tables/m7_ibex_composed_matrix.csv
+20c18fcab67e0fefaf4907214899f8f1a2d7091faec6063184d81cc87b6c8f4e  results/tables/m7_ibex_composed_random.csv
+3953e814a318a15a738b5c2c88e15e219e0eaacb0e6c39c63dfd796794aa05fd  results/tables/m7_realcore_reset_matrix.csv
+0dec98e4d2000ac55d67b9ea30e5728be4e1f0ae045d68c4de9e2a6bb608bb33  results/tables/m7_realcore_reset_random.csv
+5774971b4880bc17f62a217678568e4e3b10c2fc0ae60ef367d6ba33983e1591  results/tables/m7_realcore_reset_latency.csv
+27bb63eebce72619d4b23097622c61c4b3b3846c1442f5d54ab2f1770ac9a048  results/tables/m7_inflight_reset_matrix.csv
+b4e0fbdb58ae1324aff644ad9e4376387d0bc97ff5f566dd063f27241be25581  results/tables/m7_realcore_release_order_matrix.csv
+cdad18abf22d1b9f468884239c226e8952dfa91788557088e4ca6678bd966011  results/tables/m7_realcore_release_order_random.csv
+713942e59d2bc8cc062c536d27df8e38175022839b5a951bad5559990a392c2c  results/tables/m7_realcore_release_order_latency.csv
+edae0427049309bf265452ad79a53731369435cdea96dcfc6f66cc6902b1aa4a  results/tables/m7_realcore_performance.csv

@@ -1,0 +1,4 @@
+n,first_request_cycle,last_completion_cycle,total_cycles,transfers_per_cycle,cycles_per_transfer,classification,notes
+16,17,253,236,0.067797,14.75,MEASURED,single-outstanding sequential allowed DMA; includes inter-transfer harness gap
+64,17,973,956,0.066946,14.9375,MEASURED,single-outstanding sequential allowed DMA; includes inter-transfer harness gap
+256,17,3853,3836,0.066736,14.9844,MEASURED,single-outstanding sequential allowed DMA; includes inter-transfer harness gap

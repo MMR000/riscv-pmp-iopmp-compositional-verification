@@ -1,0 +1,454 @@
+=== Clean composed build dir ===
+=== FuseSoC build m7_ibex_composed ===
+WARNING: Replacing lowrisc:ibex:ibex_multdiv:0.1 in /home/mmr/ricv_paper/third_party/ibex with the version found in .
+WARNING: Replacing lowrisc:ibex:ibex_pkg:0.1 in /home/mmr/ricv_paper/third_party/ibex with the version found in .
+WARNING: Replacing lowrisc:tool:check_tool_requirements:0.1 in /home/mmr/ricv_paper/third_party/ibex with the version found in .
+WARNING: Replacing lowrisc:ibex:ibex_core:0.1 in /home/mmr/ricv_paper/third_party/ibex with the version found in .
+WARNING: Replacing lowrisc:ibex:ibex_icache:0.1 in /home/mmr/ricv_paper/third_party/ibex with the version found in .
+WARNING: Replacing lowrisc:ibex:ibex_tracer:0.1 in /home/mmr/ricv_paper/third_party/ibex with the version found in .
+WARNING: Replacing lowrisc:ibex:ibex_top_tracing:0.1 in /home/mmr/ricv_paper/third_party/ibex with the version found in .
+WARNING: Replacing lowrisc:ibex:ibex_top:0.1 in /home/mmr/ricv_paper/third_party/ibex with the version found in .
+WARNING: Replacing lowrisc:ibex:ibex_simple_system_core:0 in /home/mmr/ricv_paper/third_party/ibex/examples/simple_system with the version found in ./examples/simple_system
+WARNING: Replacing lowrisc:ibex:ibex_simple_system:0 in /home/mmr/ricv_paper/third_party/ibex/examples/simple_system with the version found in ./examples/simple_system
+WARNING: Replacing lowrisc:ibex:sim_shared:0 in /home/mmr/ricv_paper/third_party/ibex/shared with the version found in ./shared
+WARNING: Replacing lowrisc:ibex:fpga_xilinx_shared:0 in /home/mmr/ricv_paper/third_party/ibex/shared with the version found in ./shared
+WARNING: Replacing lowrisc:dv:cosim_dpi:0 in /home/mmr/ricv_paper/third_party/ibex/dv/cosim with the version found in ./dv/cosim
+WARNING: Replacing lowrisc:dv:cosim:0 in /home/mmr/ricv_paper/third_party/ibex/dv/cosim with the version found in ./dv/cosim
+WARNING: Replacing lowrisc:ibex:ibex_riscv_compliance:0.1 in /home/mmr/ricv_paper/third_party/ibex/dv/riscv_compliance with the version found in ./dv/riscv_compliance
+WARNING: Replacing lowrisc:dv:ibex_icache_sim:0.1 in /home/mmr/ricv_paper/third_party/ibex/dv/uvm/icache/dv with the version found in ./dv/uvm/icache/dv
+WARNING: Replacing lowrisc:dv:ibex_icache_core_agent:0.1 in /home/mmr/ricv_paper/third_party/ibex/dv/uvm/icache/dv/ibex_icache_core_agent with the version found in ./dv/uvm/icache/dv/ibex_icache_core_agent
+WARNING: Replacing lowrisc:dv:ibex_icache_env:0.1 in /home/mmr/ricv_paper/third_party/ibex/dv/uvm/icache/dv/env with the version found in ./dv/uvm/icache/dv/env
+WARNING: Replacing lowrisc:dv:ibex_icache_fcov:0 in /home/mmr/ricv_paper/third_party/ibex/dv/uvm/icache/dv/fcov with the version found in ./dv/uvm/icache/dv/fcov
+WARNING: Replacing lowrisc:dv:ibex_icache_mem_agent:0.1 in /home/mmr/ricv_paper/third_party/ibex/dv/uvm/icache/dv/ibex_icache_mem_agent with the version found in ./dv/uvm/icache/dv/ibex_icache_mem_agent
+WARNING: Replacing lowrisc:dv:ibex_icache_test:0.1 in /home/mmr/ricv_paper/third_party/ibex/dv/uvm/icache/dv/tests with the version found in ./dv/uvm/icache/dv/tests
+WARNING: Replacing lowrisc:ibex:bus_params_pkg:0 in /home/mmr/ricv_paper/third_party/ibex/dv/uvm/bus_params_pkg with the version found in ./dv/uvm/bus_params_pkg
+WARNING: Replacing lowrisc:dv:ibex_mem_intf_agent:0.1 in /home/mmr/ricv_paper/third_party/ibex/dv/uvm/core_ibex/common/ibex_mem_intf_agent with the version found in ./dv/uvm/core_ibex/common/ibex_mem_intf_agent
+WARNING: Replacing lowrisc:ibex:ibex_formal:0.1 in /home/mmr/ricv_paper/third_party/ibex/dv/formal with the version found in ./dv/formal
+WARNING: Replacing lowrisc:ibex:tb_cs_registers:0 in /home/mmr/ricv_paper/third_party/ibex/dv/cs_registers with the version found in ./dv/cs_registers
+WARNING: Replacing lowrisc:dv_verilator:ibex_pcounts:0 in /home/mmr/ricv_paper/third_party/ibex/dv/verilator/pcount with the version found in ./dv/verilator/pcount
+WARNING: Replacing lowrisc:ibex:ibex_simple_system_cosim:0 in /home/mmr/ricv_paper/third_party/ibex/dv/verilator/simple_system_cosim with the version found in ./dv/verilator/simple_system_cosim
+WARNING: Replacing lowrisc:tool:ibex_cosim_setup_check:0.1 in /home/mmr/ricv_paper/third_party/ibex/dv/verilator/simple_system_cosim with the version found in ./dv/verilator/simple_system_cosim
+WARNING: Replacing lowrisc:fpv:ibex_icache_fpv:0.1 in /home/mmr/ricv_paper/third_party/ibex/formal/icache with the version found in ./formal/icache
+WARNING: Replacing lowrisc:fpv:ibex_data_ind_timing:0.1 in /home/mmr/ricv_paper/third_party/ibex/formal/data_ind_timing with the version found in ./formal/data_ind_timing
+WARNING: Replacing pulp-platform:common_cells:common_cells:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor with the version found in ./vendor
+WARNING: Replacing lowrisc:dv:dv_macros:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/dv/sv/dv_utils with the version found in ./vendor/lowrisc_ip/dv/sv/dv_utils
+WARNING: Replacing lowrisc:dv:dv_utils:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/dv/sv/dv_utils with the version found in ./vendor/lowrisc_ip/dv/sv/dv_utils
+WARNING: Replacing lowrisc:dv:dv_test_status:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/dv/sv/dv_utils with the version found in ./vendor/lowrisc_ip/dv/sv/dv_utils
+WARNING: Replacing lowrisc:dv:dv_fcov_macros:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/dv/sv/dv_utils with the version found in ./vendor/lowrisc_ip/dv/sv/dv_utils
+WARNING: Replacing lowrisc:dv:dv_base_reg:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/dv/sv/dv_base_reg with the version found in ./vendor/lowrisc_ip/dv/sv/dv_base_reg
+WARNING: Replacing lowrisc:dv:csr_utils:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/dv/sv/csr_utils with the version found in ./vendor/lowrisc_ip/dv/sv/csr_utils
+WARNING: Replacing lowrisc:dv:entropy_subsys_fifo_exception_if:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/dv/sv/common_ifs with the version found in ./vendor/lowrisc_ip/dv/sv/common_ifs
+WARNING: Replacing lowrisc:dv:pins_if:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/dv/sv/common_ifs with the version found in ./vendor/lowrisc_ip/dv/sv/common_ifs
+WARNING: Replacing lowrisc:dv:common_ifs:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/dv/sv/common_ifs with the version found in ./vendor/lowrisc_ip/dv/sv/common_ifs
+WARNING: Replacing lowrisc:dv:rst_shadowed_if:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/dv/sv/common_ifs with the version found in ./vendor/lowrisc_ip/dv/sv/common_ifs
+WARNING: Replacing lowrisc:dv:dv_lib:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/dv/sv/dv_lib with the version found in ./vendor/lowrisc_ip/dv/sv/dv_lib
+WARNING: Replacing lowrisc:dv:mem_model:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/dv/sv/mem_model with the version found in ./vendor/lowrisc_ip/dv/sv/mem_model
+WARNING: Replacing lowrisc:dv:mem_bkdr_util:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/dv/sv/mem_bkdr_util with the version found in ./vendor/lowrisc_ip/dv/sv/mem_bkdr_util
+WARNING: Replacing lowrisc:dv:push_pull_agent:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/dv/sv/push_pull_agent with the version found in ./vendor/lowrisc_ip/dv/sv/push_pull_agent
+WARNING: Replacing lowrisc:dv:str_utils:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/dv/sv/str_utils with the version found in ./vendor/lowrisc_ip/dv/sv/str_utils
+WARNING: Replacing lowrisc:dv:ralgen:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/dv/tools/ralgen with the version found in ./vendor/lowrisc_ip/dv/tools/ralgen
+WARNING: Replacing lowrisc:dv_verilator:memutil_verilator:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/dv/verilator with the version found in ./vendor/lowrisc_ip/dv/verilator
+WARNING: Replacing lowrisc:dv_verilator:memutil_dpi:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/dv/verilator with the version found in ./vendor/lowrisc_ip/dv/verilator
+WARNING: Replacing lowrisc:dv_verilator:memutil_dpi_scrambled:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/dv/verilator with the version found in ./vendor/lowrisc_ip/dv/verilator
+WARNING: Replacing lowrisc:dv_verilator:simutil_verilator:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/dv/verilator/simutil_verilator with the version found in ./vendor/lowrisc_ip/dv/verilator/simutil_verilator
+WARNING: Replacing lowrisc:prim:cipher:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:esc:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:edge_detector:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:multibit_sync:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:racl_error_arb:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:all:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:edn_req:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:prim_ascon:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:gf_mult:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:mubi:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:count:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:onehot_check:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:arbiter:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:subreg:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:lfsr:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:diff_to_alert:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:msb_extend:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:ram_2p_async_adv:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:xoshiro256pp:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:lc_sender:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:lc_sync:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:ram_1r1w_async_adv:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:util_memload:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:sha2_pkg:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:sha2:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:leading_one_ppc:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:double_lfsr:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:mubi_pkg:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:fifo:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:diff_decode:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:macros:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:ram_2p_adv:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:crc32:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:assert:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:util:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:lc_dec:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:lc_combine:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:onehot:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:lc_or_hardened:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:sec_anchor:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:secded:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:rom_adv:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:cipher_pkg:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:cdc_rand_delay:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:sparse_fsm:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:ram_1p_adv:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:lc_and_hardened:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:max_tree:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:pad_wrapper_pkg:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:alert_to_diff:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:sdc_example:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:reg_we_check:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:measure:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:trivium:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:alert:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:sum_tree:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:blanker:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:ram_1p_scr:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:ram_1r1w_adv:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:diff_encode:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:prim_dom_and_2share:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:prim:util_get_scramble_params:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim with the version found in ./vendor/lowrisc_ip/ip/prim
+WARNING: Replacing lowrisc:fpv:prim_secded_inv_64_57_fpv:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim/fpv with the version found in ./vendor/lowrisc_ip/ip/prim/fpv
+WARNING: Replacing lowrisc:fpv:prim_packer_fpv:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim/fpv with the version found in ./vendor/lowrisc_ip/ip/prim/fpv
+WARNING: Replacing lowrisc:fpv:prim_secded_22_16_fpv:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim/fpv with the version found in ./vendor/lowrisc_ip/ip/prim/fpv
+WARNING: Replacing lowrisc:fpv:prim_secded_inv_72_64_fpv:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim/fpv with the version found in ./vendor/lowrisc_ip/ip/prim/fpv
+WARNING: Replacing lowrisc:fpv:prim_esc_rxtx_fpv:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim/fpv with the version found in ./vendor/lowrisc_ip/ip/prim/fpv
+WARNING: Replacing lowrisc:fpv:prim_secded_inv_hamming_76_68_fpv:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim/fpv with the version found in ./vendor/lowrisc_ip/ip/prim/fpv
+WARNING: Replacing lowrisc:fpv:prim_arbiter_ppc_fpv:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim/fpv with the version found in ./vendor/lowrisc_ip/ip/prim/fpv
+WARNING: Replacing lowrisc:fpv:prim_secded_72_64_fpv:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim/fpv with the version found in ./vendor/lowrisc_ip/ip/prim/fpv
+WARNING: Replacing lowrisc:fpv:prim_count_fpv:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim/fpv with the version found in ./vendor/lowrisc_ip/ip/prim/fpv
+WARNING: Replacing lowrisc:fpv:prim_fifo_sync_fpv:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim/fpv with the version found in ./vendor/lowrisc_ip/ip/prim/fpv
+WARNING: Replacing lowrisc:fpv:prim_alert_rxtx_fatal_fpv:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim/fpv with the version found in ./vendor/lowrisc_ip/ip/prim/fpv
+WARNING: Replacing lowrisc:fpv:prim_secded_inv_39_32_fpv:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim/fpv with the version found in ./vendor/lowrisc_ip/ip/prim/fpv
+WARNING: Replacing lowrisc:fpv:prim_alert_rxtx_async_fatal_fpv:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim/fpv with the version found in ./vendor/lowrisc_ip/ip/prim/fpv
+WARNING: Replacing lowrisc:fpv:prim_fifo_async_sram_adapter_fpv:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim/fpv with the version found in ./vendor/lowrisc_ip/ip/prim/fpv
+WARNING: Replacing lowrisc:fpv:prim_secded_39_32_fpv:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim/fpv with the version found in ./vendor/lowrisc_ip/ip/prim/fpv
+WARNING: Replacing lowrisc:fpv:prim_alert_rxtx_fpv:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim/fpv with the version found in ./vendor/lowrisc_ip/ip/prim/fpv
+WARNING: Replacing lowrisc:fpv:prim_secded_hamming_39_32_fpv:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim/fpv with the version found in ./vendor/lowrisc_ip/ip/prim/fpv
+WARNING: Replacing lowrisc:fpv:prim_secded_64_57_fpv:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim/fpv with the version found in ./vendor/lowrisc_ip/ip/prim/fpv
+WARNING: Replacing lowrisc:fpv:prim_secded_inv_hamming_72_64_fpv:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim/fpv with the version found in ./vendor/lowrisc_ip/ip/prim/fpv
+WARNING: Replacing lowrisc:fpv:prim_secded_inv_hamming_22_16_fpv:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim/fpv with the version found in ./vendor/lowrisc_ip/ip/prim/fpv
+WARNING: Replacing lowrisc:fpv:prim_arbiter_fixed_fpv:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim/fpv with the version found in ./vendor/lowrisc_ip/ip/prim/fpv
+WARNING: Replacing lowrisc:fpv:prim_arbiter_tree_fpv:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim/fpv with the version found in ./vendor/lowrisc_ip/ip/prim/fpv
+WARNING: Replacing lowrisc:fpv:prim_secded_inv_hamming_39_32_fpv:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim/fpv with the version found in ./vendor/lowrisc_ip/ip/prim/fpv
+WARNING: Replacing lowrisc:fpv:prim_secded_inv_28_22_fpv:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim/fpv with the version found in ./vendor/lowrisc_ip/ip/prim/fpv
+WARNING: Replacing lowrisc:fpv:prim_secded_hamming_22_16_fpv:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim/fpv with the version found in ./vendor/lowrisc_ip/ip/prim/fpv
+WARNING: Replacing lowrisc:fpv:prim_secded_hamming_72_64_fpv:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim/fpv with the version found in ./vendor/lowrisc_ip/ip/prim/fpv
+WARNING: Replacing lowrisc:fpv:prim_lfsr_fpv:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim/fpv with the version found in ./vendor/lowrisc_ip/ip/prim/fpv
+WARNING: Replacing lowrisc:fpv:prim_alert_rxtx_async_fpv:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim/fpv with the version found in ./vendor/lowrisc_ip/ip/prim/fpv
+WARNING: Replacing lowrisc:fpv:prim_keccak_fpv:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim/fpv with the version found in ./vendor/lowrisc_ip/ip/prim/fpv
+WARNING: Replacing lowrisc:fpv:prim_secded_28_22_fpv:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim/fpv with the version found in ./vendor/lowrisc_ip/ip/prim/fpv
+WARNING: Replacing lowrisc:fpv:prim_secded_inv_22_16_fpv:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim/fpv with the version found in ./vendor/lowrisc_ip/ip/prim/fpv
+WARNING: Replacing lowrisc:fpv:prim_secded_hamming_76_68_fpv:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim/fpv with the version found in ./vendor/lowrisc_ip/ip/prim/fpv
+WARNING: Replacing lowrisc:dv:prim_prince_sim:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim/dv/prim_prince with the version found in ./vendor/lowrisc_ip/ip/prim/dv/prim_prince
+WARNING: Replacing lowrisc:dv:crypto_dpi_prince:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim/dv/prim_prince/crypto_dpi_prince with the version found in ./vendor/lowrisc_ip/ip/prim/dv/prim_prince/crypto_dpi_prince
+WARNING: Replacing lowrisc:dv:crypto_prince_ref:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim/dv/prim_prince/crypto_dpi_prince with the version found in ./vendor/lowrisc_ip/ip/prim/dv/prim_prince/crypto_dpi_prince
+WARNING: Replacing lowrisc:dv:prim_esc_sim:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim/dv/prim_esc with the version found in ./vendor/lowrisc_ip/ip/prim/dv/prim_esc
+WARNING: Replacing lowrisc:dv:secded_enc:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim/dv/prim_secded with the version found in ./vendor/lowrisc_ip/ip/prim/dv/prim_secded
+WARNING: Replacing lowrisc:dv:ascon_model_dpi:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim/dv/prim_ascon/ascon_model_dpi with the version found in ./vendor/lowrisc_ip/ip/prim/dv/prim_ascon/ascon_model_dpi
+WARNING: Replacing lowrisc:dv:prim_lfsr_sim:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim/dv/prim_lfsr with the version found in ./vendor/lowrisc_ip/ip/prim/dv/prim_lfsr
+WARNING: Replacing lowrisc:dv:scramble_model:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim/dv/prim_ram_scr/cpp with the version found in ./vendor/lowrisc_ip/ip/prim/dv/prim_ram_scr/cpp
+WARNING: Replacing lowrisc:dv:prim_alert_sim:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim/dv/prim_alert with the version found in ./vendor/lowrisc_ip/ip/prim/dv/prim_alert
+WARNING: Replacing lowrisc:dv:prim_present_sim:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim/dv/prim_present with the version found in ./vendor/lowrisc_ip/ip/prim/dv/prim_present
+WARNING: Replacing lowrisc:dv:crypto_dpi_present:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim/dv/prim_present/crypto_dpi_present with the version found in ./vendor/lowrisc_ip/ip/prim/dv/prim_present/crypto_dpi_present
+WARNING: Replacing lowrisc:prim:crc32_sim:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim/pre_dv/prim_crc32 with the version found in ./vendor/lowrisc_ip/ip/prim/pre_dv/prim_crc32
+WARNING: Replacing lowrisc:dv_verilator:prim_ascon_duplex_tb:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim/pre_dv/prim_ascon/prim_ascon_duplex_tb with the version found in ./vendor/lowrisc_ip/ip/prim/pre_dv/prim_ascon/prim_ascon_duplex_tb
+WARNING: Replacing lowrisc:dv_verilator:prim_ascon_round_tb:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim/pre_dv/prim_ascon/prim_ascon_round_tb with the version found in ./vendor/lowrisc_ip/ip/prim/pre_dv/prim_ascon/prim_ascon_round_tb
+WARNING: Replacing lowrisc:dv:prim_flop_2sync_sim:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim/pre_dv/prim_flop_2sync with the version found in ./vendor/lowrisc_ip/ip/prim/pre_dv/prim_flop_2sync
+WARNING: Replacing lowrisc:dv_verilator:prim_trivium_tb:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim/pre_dv/prim_trivium with the version found in ./vendor/lowrisc_ip/ip/prim/pre_dv/prim_trivium
+WARNING: Replacing lowrisc:dv_verilator:prim_sync_reqack_tb:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim/pre_dv/prim_sync_reqack with the version found in ./vendor/lowrisc_ip/ip/prim/pre_dv/prim_sync_reqack
+WARNING: Replacing lowrisc:prim_generic:pad_attr:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim_generic with the version found in ./vendor/lowrisc_ip/ip/prim_generic
+WARNING: Replacing lowrisc:prim_generic:rom:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim_generic with the version found in ./vendor/lowrisc_ip/ip/prim_generic
+WARNING: Replacing lowrisc:prim_generic:ram_1p_pkg:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim_generic with the version found in ./vendor/lowrisc_ip/ip/prim_generic
+WARNING: Replacing lowrisc:prim_generic:ram_1r1w:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim_generic with the version found in ./vendor/lowrisc_ip/ip/prim_generic
+WARNING: Replacing lowrisc:prim_generic:flash:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim_generic with the version found in ./vendor/lowrisc_ip/ip/prim_generic
+WARNING: Replacing lowrisc:prim_generic:clock_inv:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim_generic with the version found in ./vendor/lowrisc_ip/ip/prim_generic
+WARNING: Replacing lowrisc:prim_generic:clock_gating:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim_generic with the version found in ./vendor/lowrisc_ip/ip/prim_generic
+WARNING: Replacing lowrisc:prim_generic:ram_2p_pkg:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim_generic with the version found in ./vendor/lowrisc_ip/ip/prim_generic
+WARNING: Replacing lowrisc:prim_generic:xnor2:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim_generic with the version found in ./vendor/lowrisc_ip/ip/prim_generic
+WARNING: Replacing lowrisc:prim_generic:all:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim_generic with the version found in ./vendor/lowrisc_ip/ip/prim_generic
+WARNING: Replacing lowrisc:prim_generic:flop_2sync:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim_generic with the version found in ./vendor/lowrisc_ip/ip/prim_generic
+WARNING: Replacing lowrisc:prim_generic:flop_en:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim_generic with the version found in ./vendor/lowrisc_ip/ip/prim_generic
+WARNING: Replacing lowrisc:prim_generic:clock_mux2:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim_generic with the version found in ./vendor/lowrisc_ip/ip/prim_generic
+WARNING: Replacing lowrisc:prim_generic:xor2:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim_generic with the version found in ./vendor/lowrisc_ip/ip/prim_generic
+WARNING: Replacing lowrisc:prim_generic:pad_wrapper:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim_generic with the version found in ./vendor/lowrisc_ip/ip/prim_generic
+WARNING: Replacing lowrisc:prim_generic:clock_buf:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim_generic with the version found in ./vendor/lowrisc_ip/ip/prim_generic
+WARNING: Replacing lowrisc:prim_generic:flop_no_rst:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim_generic with the version found in ./vendor/lowrisc_ip/ip/prim_generic
+WARNING: Replacing lowrisc:prim_generic:rst_sync:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim_generic with the version found in ./vendor/lowrisc_ip/ip/prim_generic
+WARNING: Replacing lowrisc:prim_generic:prim_pkg:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim_generic with the version found in ./vendor/lowrisc_ip/ip/prim_generic
+WARNING: Replacing lowrisc:prim_generic:ram_1r1w_pkg:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim_generic with the version found in ./vendor/lowrisc_ip/ip/prim_generic
+WARNING: Replacing lowrisc:prim_generic:usb_diff_rx:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim_generic with the version found in ./vendor/lowrisc_ip/ip/prim_generic
+WARNING: Replacing lowrisc:prim_generic:ram_1p:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim_generic with the version found in ./vendor/lowrisc_ip/ip/prim_generic
+WARNING: Replacing lowrisc:prim_generic:and2:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim_generic with the version found in ./vendor/lowrisc_ip/ip/prim_generic
+WARNING: Replacing lowrisc:prim_generic:rom_pkg:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim_generic with the version found in ./vendor/lowrisc_ip/ip/prim_generic
+WARNING: Replacing lowrisc:prim_generic:buf:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim_generic with the version found in ./vendor/lowrisc_ip/ip/prim_generic
+WARNING: Replacing lowrisc:prim_generic:flop:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim_generic with the version found in ./vendor/lowrisc_ip/ip/prim_generic
+WARNING: Replacing lowrisc:prim_generic:clock_div:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim_generic with the version found in ./vendor/lowrisc_ip/ip/prim_generic
+WARNING: Replacing lowrisc:prim_generic:ram_2p:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim_generic with the version found in ./vendor/lowrisc_ip/ip/prim_generic
+WARNING: Replacing lowrisc:prim_xilinx:and2:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim_xilinx with the version found in ./vendor/lowrisc_ip/ip/prim_xilinx
+WARNING: Replacing lowrisc:prim_xilinx:ram_1p:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim_xilinx with the version found in ./vendor/lowrisc_ip/ip/prim_xilinx
+WARNING: Replacing lowrisc:prim_xilinx:xnor2:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim_xilinx with the version found in ./vendor/lowrisc_ip/ip/prim_xilinx
+WARNING: Replacing lowrisc:prim_xilinx:flop:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim_xilinx with the version found in ./vendor/lowrisc_ip/ip/prim_xilinx
+WARNING: Replacing lowrisc:prim_xilinx:prim_xilinx_default_pkg:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim_xilinx with the version found in ./vendor/lowrisc_ip/ip/prim_xilinx
+WARNING: Replacing lowrisc:prim_xilinx:buf:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim_xilinx with the version found in ./vendor/lowrisc_ip/ip/prim_xilinx
+WARNING: Replacing lowrisc:prim_xilinx:clock_mux2:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim_xilinx with the version found in ./vendor/lowrisc_ip/ip/prim_xilinx
+WARNING: Replacing lowrisc:prim_xilinx:all:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim_xilinx with the version found in ./vendor/lowrisc_ip/ip/prim_xilinx
+WARNING: Replacing lowrisc:prim_xilinx:prim_pkg:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim_xilinx with the version found in ./vendor/lowrisc_ip/ip/prim_xilinx
+WARNING: Replacing lowrisc:prim_xilinx:pad_wrapper:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim_xilinx with the version found in ./vendor/lowrisc_ip/ip/prim_xilinx
+WARNING: Replacing lowrisc:prim_xilinx:clock_gating:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim_xilinx with the version found in ./vendor/lowrisc_ip/ip/prim_xilinx
+WARNING: Replacing lowrisc:prim_xilinx:clock_buf:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim_xilinx with the version found in ./vendor/lowrisc_ip/ip/prim_xilinx
+WARNING: Replacing lowrisc:prim_xilinx:flop_en:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim_xilinx with the version found in ./vendor/lowrisc_ip/ip/prim_xilinx
+WARNING: Replacing lowrisc:prim_xilinx:xor2:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim_xilinx with the version found in ./vendor/lowrisc_ip/ip/prim_xilinx
+WARNING: Replacing lowrisc:prim_xilinx:pad_attr:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim_xilinx with the version found in ./vendor/lowrisc_ip/ip/prim_xilinx
+WARNING: Replacing lowrisc:prim_xilinx:rom:0 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/ip/prim_xilinx with the version found in ./vendor/lowrisc_ip/ip/prim_xilinx
+WARNING: Replacing lowrisc:lint:common:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/lint with the version found in ./vendor/lowrisc_ip/lint
+WARNING: Replacing lowrisc:lint:comportable:0.1 in /home/mmr/ricv_paper/third_party/ibex/vendor/lowrisc_ip/lint with the version found in ./vendor/lowrisc_ip/lint
+WARNING: Replacing lowrisc:util:sv2v:0.1 in /home/mmr/ricv_paper/third_party/ibex/util with the version found in ./util
+INFO: Preparing lowrisc:dv:dv_fcov_macros:0
+INFO: Preparing lowrisc:dv:secded_enc:0
+INFO: Preparing lowrisc:dv_verilator:simutil_verilator:0
+INFO: Preparing lowrisc:ibex:ibex_pkg:0.1
+INFO: Preparing lowrisc:prim_generic:ram_1p_pkg:0
+INFO: Preparing lowrisc:prim_generic:ram_2p_pkg:0
+INFO: Preparing lowrisc:prim_generic:rom_pkg:0
+INFO: Preparing lowrisc:prim:util_get_scramble_params:0
+INFO: Preparing lowrisc:prim:util_memload:0
+INFO: Preparing lowrisc:tool:check_tool_requirements:0.1
+INFO: Preparing lowrisc:dv_verilator:memutil_dpi:0
+INFO: Preparing lowrisc:lint:common:0.1
+INFO: Preparing lowrisc:prim_generic:ram_1r1w_pkg:0
+INFO: Preparing lowrisc:dv_verilator:memutil_verilator:0
+INFO: Preparing lowrisc:prim:assert:0.1
+INFO: Preparing lowrisc:prim:cipher_pkg:0.1
+INFO: Preparing lowrisc:prim_generic:and2:0
+INFO: Preparing lowrisc:prim_generic:buf:0
+INFO: Preparing lowrisc:prim_generic:clock_buf:0
+INFO: Preparing lowrisc:prim_generic:clock_gating:0
+INFO: Preparing lowrisc:prim_generic:flop:0
+INFO: Preparing lowrisc:prim_generic:flop_no_rst:0
+INFO: Preparing lowrisc:prim_generic:prim_pkg:0
+INFO: Preparing lowrisc:prim_generic:usb_diff_rx:0
+INFO: Preparing lowrisc:prim_generic:xnor2:0
+INFO: Preparing lowrisc:prim_generic:xor2:0
+INFO: Preparing lowrisc:prim:pad_wrapper_pkg:0
+INFO: Preparing lowrisc:prim:secded:0.1
+INFO: Preparing lowrisc:ibex:ibex_icache:0.1
+INFO: Preparing lowrisc:ibex:ibex_tracer:0.1
+INFO: Preparing lowrisc:prim:cdc_rand_delay:0
+INFO: Preparing lowrisc:prim:cipher:0
+INFO: Preparing lowrisc:prim:count:0
+INFO: Preparing lowrisc:prim_generic:clock_mux2:0
+INFO: Preparing lowrisc:prim_generic:pad_attr:0
+INFO: Preparing lowrisc:prim_generic:pad_wrapper:0
+INFO: Preparing lowrisc:prim_generic:ram_1p:0
+INFO: Preparing lowrisc:prim_generic:ram_1r1w:0
+INFO: Preparing lowrisc:prim_generic:ram_2p:0
+INFO: Preparing lowrisc:prim_generic:rom:0
+INFO: Preparing lowrisc:prim:lfsr:0.1
+INFO: Preparing lowrisc:prim:mubi_pkg:0.1
+INFO: Preparing lowrisc:prim:sec_anchor:0.1
+INFO: Preparing lowrisc:prim:util:0.1
+INFO: Preparing pulp-platform:common_cells:common_cells:0.1
+INFO: Preparing lowrisc:ibex:sim_shared:0
+INFO: Preparing lowrisc:prim_generic:clock_inv:0
+INFO: Preparing lowrisc:prim_generic:flop_2sync:0
+INFO: Preparing lowrisc:prim_generic:flop_en:0
+INFO: Preparing lowrisc:prim:mubi:0.1
+INFO: Preparing lowrisc:prim:onehot:0
+INFO: Preparing lowrisc:prim:onehot_check:0
+INFO: Preparing lowrisc:prim:ram_1p_adv:0.1
+INFO: Preparing lowrisc:ibex:ibex_core:0.1
+INFO: Preparing lowrisc:prim:fifo:0
+INFO: Preparing lowrisc:prim_generic:clock_div:0
+INFO: Preparing lowrisc:prim_generic:rst_sync:0
+INFO: Preparing lowrisc:prim:ram_1p_scr:0.1
+INFO: Preparing lowrisc:prim_generic:all:0.1
+INFO: Preparing lowrisc:ibex:ibex_top:0.1
+INFO: Preparing lowrisc:ibex:ibex_top_tracing:0.1
+INFO: Preparing local:m7:m7_ibex_composed:0
+WARNING: The file ../../rtl/common/bus_pkg.vh in /home/mmr/ricv_paper/m7/fusesoc/m7_ibex_composed.core is not within the directory containing the core file. This is deprecated and will be an error in a future FuseSoC version. A typical solution is to move core file into the root directory of the IP block it describes.
+WARNING: The file ../rtl/m7_composed_map.vh in /home/mmr/ricv_paper/m7/fusesoc/m7_ibex_composed.core is not within the directory containing the core file. This is deprecated and will be an error in a future FuseSoC version. A typical solution is to move core file into the root directory of the IP block it describes.
+WARNING: The file ../../rtl/memory/sram.v in /home/mmr/ricv_paper/m7/fusesoc/m7_ibex_composed.core is not within the directory containing the core file. This is deprecated and will be an error in a future FuseSoC version. A typical solution is to move core file into the root directory of the IP block it describes.
+WARNING: The file ../../rtl/dma/dma_master.v in /home/mmr/ricv_paper/m7/fusesoc/m7_ibex_composed.core is not within the directory containing the core file. This is deprecated and will be an error in a future FuseSoC version. A typical solution is to move core file into the root directory of the IP block it describes.
+WARNING: The file ../../rtl/iopmp/iopmp.v in /home/mmr/ricv_paper/m7/fusesoc/m7_ibex_composed.core is not within the directory containing the core file. This is deprecated and will be an error in a future FuseSoC version. A typical solution is to move core file into the root directory of the IP block it describes.
+WARNING: The file ../../rtl/interconnect/interconnect.v in /home/mmr/ricv_paper/m7/fusesoc/m7_ibex_composed.core is not within the directory containing the core file. This is deprecated and will be an error in a future FuseSoC version. A typical solution is to move core file into the root directory of the IP block it describes.
+WARNING: The file ../../rtl/soc/security_config.v in /home/mmr/ricv_paper/m7/fusesoc/m7_ibex_composed.core is not within the directory containing the core file. This is deprecated and will be an error in a future FuseSoC version. A typical solution is to move core file into the root directory of the IP block it describes.
+WARNING: The file ../rtl/m7_ibex_data_adapter.sv in /home/mmr/ricv_paper/m7/fusesoc/m7_ibex_composed.core is not within the directory containing the core file. This is deprecated and will be an error in a future FuseSoC version. A typical solution is to move core file into the root directory of the IP block it describes.
+WARNING: The file ../rtl/m7_research_arbiter.sv in /home/mmr/ricv_paper/m7/fusesoc/m7_ibex_composed.core is not within the directory containing the core file. This is deprecated and will be an error in a future FuseSoC version. A typical solution is to move core file into the root directory of the IP block it describes.
+WARNING: The file ../rtl/m7_test_sync.sv in /home/mmr/ricv_paper/m7/fusesoc/m7_ibex_composed.core is not within the directory containing the core file. This is deprecated and will be an error in a future FuseSoC version. A typical solution is to move core file into the root directory of the IP block it describes.
+WARNING: The file ../rtl/m7_composed_harness.sv in /home/mmr/ricv_paper/m7/fusesoc/m7_ibex_composed.core is not within the directory containing the core file. This is deprecated and will be an error in a future FuseSoC version. A typical solution is to move core file into the root directory of the IP block it describes.
+WARNING: The file ../rtl/m7_ibex_composed_top.sv in /home/mmr/ricv_paper/m7/fusesoc/m7_ibex_composed.core is not within the directory containing the core file. This is deprecated and will be an error in a future FuseSoC version. A typical solution is to move core file into the root directory of the IP block it describes.
+WARNING: The file ../sim/m7_ibex_composed_main.cc in /home/mmr/ricv_paper/m7/fusesoc/m7_ibex_composed.core is not within the directory containing the core file. This is deprecated and will be an error in a future FuseSoC version. A typical solution is to move core file into the root directory of the IP block it describes.
+WARNING: The file ../sim/m7_ibex_composed_system.cc in /home/mmr/ricv_paper/m7/fusesoc/m7_ibex_composed.core is not within the directory containing the core file. This is deprecated and will be an error in a future FuseSoC version. A typical solution is to move core file into the root directory of the IP block it describes.
+WARNING: The file ../sim/m7_ibex_composed_system.h in /home/mmr/ricv_paper/m7/fusesoc/m7_ibex_composed.core is not within the directory containing the core file. This is deprecated and will be an error in a future FuseSoC version. A typical solution is to move core file into the root directory of the IP block it describes.
+INFO: Setting up project
+WARNING: This backend is deprecated and will eventually be removed. Please migrate to the flow API instead.  See https://edalize.readthedocs.io/en/latest/ref/migrations.html#migrating-from-the-tool-api-to-the-flow-api for more details.
+INFO: Running pre_build script check_tool_requirements
+INFO: Tool verilator present: Sufficiently recent version (found 5.050; needed 4.210)
+INFO: Tool edalize present: Sufficiently recent version (found 0.6.1; needed 0.2.0)
+INFO: Building simulation model
+simulator=/home/mmr/ricv_paper/third_party/ibex/build/local_m7_m7_ibex_composed_0/sim-verilator/Vm7_ibex_composed_top
+46b4d97cf3fdab8d40c0d3a8634e43d4685f4d7cfc1ae1741b9f446bb645e1c3  /home/mmr/ricv_paper/third_party/ibex/build/local_m7_m7_ibex_composed_0/sim-verilator/Vm7_ibex_composed_top
+verilator=Verilator 5.050 2026-07-01 rev conda-forge build 0
+fusesoc=2.4.3
+ibex_commit=c61e11c1e416b9ce2d996013b444c8e558d35b2b
+project_commit=7500156fbf076766a283a280465046e8b9ff02b9
+=== Build composed software ===
+make[1]: Entering directory '/home/mmr/ricv_paper/m7/sw/ibex_composed'
+rm -f IBEX-COMP-01.elf IBEX-COMP-02.elf IBEX-COMP-03.elf IBEX-COMP-04.elf IBEX-COMP-05.elf IBEX-COMP-06.elf IBEX-COMP-07.elf IBEX-COMP-08.elf *.o ibex_composed_tests_*.o m7_comp_trap_*.o build_arch.txt
+make[1]: Leaving directory '/home/mmr/ricv_paper/m7/sw/ibex_composed'
+make[1]: Entering directory '/home/mmr/ricv_paper/m7/sw/ibex_composed'
+"/home/mmr/ricv_paper/third_party/toolchain/xpack-riscv-none-elf-gcc-14.2.0-3/bin/riscv-none-elf-gcc" -march=rv32imc_zicsr -mabi=ilp32 -static -mcmodel=medany -Wall -g -Os -fvisibility=hidden -nostdlib -nostartfiles -ffreestanding -I/home/mmr/ricv_paper/third_party/ibex/examples/sw/simple_system/common -c -o m7_comp_common.o m7_comp_common.c
+"/home/mmr/ricv_paper/third_party/toolchain/xpack-riscv-none-elf-gcc-14.2.0-3/bin/riscv-none-elf-gcc" -march=rv32imc_zicsr -mabi=ilp32 -static -mcmodel=medany -Wall -g -Os -fvisibility=hidden -nostdlib -nostartfiles -ffreestanding -I/home/mmr/ricv_paper/third_party/ibex/examples/sw/simple_system/common -c -o crt0.o /home/mmr/ricv_paper/third_party/ibex/examples/sw/simple_system/common/crt0.S
+"/home/mmr/ricv_paper/third_party/toolchain/xpack-riscv-none-elf-gcc-14.2.0-3/bin/riscv-none-elf-gcc" -march=rv32imc_zicsr -mabi=ilp32 -static -mcmodel=medany -Wall -g -Os -fvisibility=hidden -nostdlib -nostartfiles -ffreestanding -I/home/mmr/ricv_paper/third_party/ibex/examples/sw/simple_system/common -DTEST_NUM=1 -c -o ibex_composed_tests_1.o ibex_composed_tests.c
+"/home/mmr/ricv_paper/third_party/toolchain/xpack-riscv-none-elf-gcc-14.2.0-3/bin/riscv-none-elf-gcc" -march=rv32imc_zicsr -mabi=ilp32 -static -mcmodel=medany -Wall -g -Os -fvisibility=hidden -nostdlib -nostartfiles -ffreestanding -I/home/mmr/ricv_paper/third_party/ibex/examples/sw/simple_system/common -c -o m7_comp_trap_1.o m7_comp_trap.c
+"/home/mmr/ricv_paper/third_party/toolchain/xpack-riscv-none-elf-gcc-14.2.0-3/bin/riscv-none-elf-gcc" -march=rv32imc_zicsr -mabi=ilp32 -static -mcmodel=medany -Wall -g -Os -fvisibility=hidden -nostdlib -nostartfiles -ffreestanding -T /home/mmr/ricv_paper/third_party/ibex/examples/sw/simple_system/common/link.ld crt0.o m7_comp_common.o ibex_composed_tests_1.o m7_comp_trap_1.o -o IBEX-COMP-01.elf
+/home/mmr/ricv_paper/third_party/toolchain/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/bin/ld: warning: IBEX-COMP-01.elf has a LOAD segment with RWX permissions
+"/home/mmr/ricv_paper/third_party/toolchain/xpack-riscv-none-elf-gcc-14.2.0-3/bin/riscv-none-elf-gcc" -march=rv32imc_zicsr -mabi=ilp32 -static -mcmodel=medany -Wall -g -Os -fvisibility=hidden -nostdlib -nostartfiles -ffreestanding -I/home/mmr/ricv_paper/third_party/ibex/examples/sw/simple_system/common -DTEST_NUM=2 -c -o ibex_composed_tests_2.o ibex_composed_tests.c
+"/home/mmr/ricv_paper/third_party/toolchain/xpack-riscv-none-elf-gcc-14.2.0-3/bin/riscv-none-elf-gcc" -march=rv32imc_zicsr -mabi=ilp32 -static -mcmodel=medany -Wall -g -Os -fvisibility=hidden -nostdlib -nostartfiles -ffreestanding -I/home/mmr/ricv_paper/third_party/ibex/examples/sw/simple_system/common -c -o m7_comp_trap_2.o m7_comp_trap.c
+"/home/mmr/ricv_paper/third_party/toolchain/xpack-riscv-none-elf-gcc-14.2.0-3/bin/riscv-none-elf-gcc" -march=rv32imc_zicsr -mabi=ilp32 -static -mcmodel=medany -Wall -g -Os -fvisibility=hidden -nostdlib -nostartfiles -ffreestanding -T /home/mmr/ricv_paper/third_party/ibex/examples/sw/simple_system/common/link.ld crt0.o m7_comp_common.o ibex_composed_tests_2.o m7_comp_trap_2.o -o IBEX-COMP-02.elf
+/home/mmr/ricv_paper/third_party/toolchain/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/bin/ld: warning: IBEX-COMP-02.elf has a LOAD segment with RWX permissions
+"/home/mmr/ricv_paper/third_party/toolchain/xpack-riscv-none-elf-gcc-14.2.0-3/bin/riscv-none-elf-gcc" -march=rv32imc_zicsr -mabi=ilp32 -static -mcmodel=medany -Wall -g -Os -fvisibility=hidden -nostdlib -nostartfiles -ffreestanding -I/home/mmr/ricv_paper/third_party/ibex/examples/sw/simple_system/common -DTEST_NUM=3 -c -o ibex_composed_tests_3.o ibex_composed_tests.c
+"/home/mmr/ricv_paper/third_party/toolchain/xpack-riscv-none-elf-gcc-14.2.0-3/bin/riscv-none-elf-gcc" -march=rv32imc_zicsr -mabi=ilp32 -static -mcmodel=medany -Wall -g -Os -fvisibility=hidden -nostdlib -nostartfiles -ffreestanding -I/home/mmr/ricv_paper/third_party/ibex/examples/sw/simple_system/common -c -o m7_comp_trap_3.o m7_comp_trap.c
+"/home/mmr/ricv_paper/third_party/toolchain/xpack-riscv-none-elf-gcc-14.2.0-3/bin/riscv-none-elf-gcc" -march=rv32imc_zicsr -mabi=ilp32 -static -mcmodel=medany -Wall -g -Os -fvisibility=hidden -nostdlib -nostartfiles -ffreestanding -T /home/mmr/ricv_paper/third_party/ibex/examples/sw/simple_system/common/link.ld crt0.o m7_comp_common.o ibex_composed_tests_3.o m7_comp_trap_3.o -o IBEX-COMP-03.elf
+/home/mmr/ricv_paper/third_party/toolchain/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/bin/ld: warning: IBEX-COMP-03.elf has a LOAD segment with RWX permissions
+"/home/mmr/ricv_paper/third_party/toolchain/xpack-riscv-none-elf-gcc-14.2.0-3/bin/riscv-none-elf-gcc" -march=rv32imc_zicsr -mabi=ilp32 -static -mcmodel=medany -Wall -g -Os -fvisibility=hidden -nostdlib -nostartfiles -ffreestanding -I/home/mmr/ricv_paper/third_party/ibex/examples/sw/simple_system/common -DTEST_NUM=4 -c -o ibex_composed_tests_4.o ibex_composed_tests.c
+"/home/mmr/ricv_paper/third_party/toolchain/xpack-riscv-none-elf-gcc-14.2.0-3/bin/riscv-none-elf-gcc" -march=rv32imc_zicsr -mabi=ilp32 -static -mcmodel=medany -Wall -g -Os -fvisibility=hidden -nostdlib -nostartfiles -ffreestanding -I/home/mmr/ricv_paper/third_party/ibex/examples/sw/simple_system/common -c -o m7_comp_trap_4.o m7_comp_trap.c
+"/home/mmr/ricv_paper/third_party/toolchain/xpack-riscv-none-elf-gcc-14.2.0-3/bin/riscv-none-elf-gcc" -march=rv32imc_zicsr -mabi=ilp32 -static -mcmodel=medany -Wall -g -Os -fvisibility=hidden -nostdlib -nostartfiles -ffreestanding -T /home/mmr/ricv_paper/third_party/ibex/examples/sw/simple_system/common/link.ld crt0.o m7_comp_common.o ibex_composed_tests_4.o m7_comp_trap_4.o -o IBEX-COMP-04.elf
+/home/mmr/ricv_paper/third_party/toolchain/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/bin/ld: warning: IBEX-COMP-04.elf has a LOAD segment with RWX permissions
+"/home/mmr/ricv_paper/third_party/toolchain/xpack-riscv-none-elf-gcc-14.2.0-3/bin/riscv-none-elf-gcc" -march=rv32imc_zicsr -mabi=ilp32 -static -mcmodel=medany -Wall -g -Os -fvisibility=hidden -nostdlib -nostartfiles -ffreestanding -I/home/mmr/ricv_paper/third_party/ibex/examples/sw/simple_system/common -DTEST_NUM=5 -c -o ibex_composed_tests_5.o ibex_composed_tests.c
+"/home/mmr/ricv_paper/third_party/toolchain/xpack-riscv-none-elf-gcc-14.2.0-3/bin/riscv-none-elf-gcc" -march=rv32imc_zicsr -mabi=ilp32 -static -mcmodel=medany -Wall -g -Os -fvisibility=hidden -nostdlib -nostartfiles -ffreestanding -I/home/mmr/ricv_paper/third_party/ibex/examples/sw/simple_system/common -c -o m7_comp_trap_5.o m7_comp_trap.c
+"/home/mmr/ricv_paper/third_party/toolchain/xpack-riscv-none-elf-gcc-14.2.0-3/bin/riscv-none-elf-gcc" -march=rv32imc_zicsr -mabi=ilp32 -static -mcmodel=medany -Wall -g -Os -fvisibility=hidden -nostdlib -nostartfiles -ffreestanding -T /home/mmr/ricv_paper/third_party/ibex/examples/sw/simple_system/common/link.ld crt0.o m7_comp_common.o ibex_composed_tests_5.o m7_comp_trap_5.o -o IBEX-COMP-05.elf
+/home/mmr/ricv_paper/third_party/toolchain/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/bin/ld: warning: IBEX-COMP-05.elf has a LOAD segment with RWX permissions
+"/home/mmr/ricv_paper/third_party/toolchain/xpack-riscv-none-elf-gcc-14.2.0-3/bin/riscv-none-elf-gcc" -march=rv32imc_zicsr -mabi=ilp32 -static -mcmodel=medany -Wall -g -Os -fvisibility=hidden -nostdlib -nostartfiles -ffreestanding -I/home/mmr/ricv_paper/third_party/ibex/examples/sw/simple_system/common -DTEST_NUM=6 -c -o ibex_composed_tests_6.o ibex_composed_tests.c
+"/home/mmr/ricv_paper/third_party/toolchain/xpack-riscv-none-elf-gcc-14.2.0-3/bin/riscv-none-elf-gcc" -march=rv32imc_zicsr -mabi=ilp32 -static -mcmodel=medany -Wall -g -Os -fvisibility=hidden -nostdlib -nostartfiles -ffreestanding -I/home/mmr/ricv_paper/third_party/ibex/examples/sw/simple_system/common -c -o m7_comp_trap_6.o m7_comp_trap.c
+"/home/mmr/ricv_paper/third_party/toolchain/xpack-riscv-none-elf-gcc-14.2.0-3/bin/riscv-none-elf-gcc" -march=rv32imc_zicsr -mabi=ilp32 -static -mcmodel=medany -Wall -g -Os -fvisibility=hidden -nostdlib -nostartfiles -ffreestanding -T /home/mmr/ricv_paper/third_party/ibex/examples/sw/simple_system/common/link.ld crt0.o m7_comp_common.o ibex_composed_tests_6.o m7_comp_trap_6.o -o IBEX-COMP-06.elf
+/home/mmr/ricv_paper/third_party/toolchain/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/bin/ld: warning: IBEX-COMP-06.elf has a LOAD segment with RWX permissions
+"/home/mmr/ricv_paper/third_party/toolchain/xpack-riscv-none-elf-gcc-14.2.0-3/bin/riscv-none-elf-gcc" -march=rv32imc_zicsr -mabi=ilp32 -static -mcmodel=medany -Wall -g -Os -fvisibility=hidden -nostdlib -nostartfiles -ffreestanding -I/home/mmr/ricv_paper/third_party/ibex/examples/sw/simple_system/common -DTEST_NUM=7 -c -o ibex_composed_tests_7.o ibex_composed_tests.c
+"/home/mmr/ricv_paper/third_party/toolchain/xpack-riscv-none-elf-gcc-14.2.0-3/bin/riscv-none-elf-gcc" -march=rv32imc_zicsr -mabi=ilp32 -static -mcmodel=medany -Wall -g -Os -fvisibility=hidden -nostdlib -nostartfiles -ffreestanding -I/home/mmr/ricv_paper/third_party/ibex/examples/sw/simple_system/common -c -o m7_comp_trap_7.o m7_comp_trap.c
+"/home/mmr/ricv_paper/third_party/toolchain/xpack-riscv-none-elf-gcc-14.2.0-3/bin/riscv-none-elf-gcc" -march=rv32imc_zicsr -mabi=ilp32 -static -mcmodel=medany -Wall -g -Os -fvisibility=hidden -nostdlib -nostartfiles -ffreestanding -T /home/mmr/ricv_paper/third_party/ibex/examples/sw/simple_system/common/link.ld crt0.o m7_comp_common.o ibex_composed_tests_7.o m7_comp_trap_7.o -o IBEX-COMP-07.elf
+/home/mmr/ricv_paper/third_party/toolchain/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/bin/ld: warning: IBEX-COMP-07.elf has a LOAD segment with RWX permissions
+"/home/mmr/ricv_paper/third_party/toolchain/xpack-riscv-none-elf-gcc-14.2.0-3/bin/riscv-none-elf-gcc" -march=rv32imc_zicsr -mabi=ilp32 -static -mcmodel=medany -Wall -g -Os -fvisibility=hidden -nostdlib -nostartfiles -ffreestanding -I/home/mmr/ricv_paper/third_party/ibex/examples/sw/simple_system/common -DTEST_NUM=8 -c -o ibex_composed_tests_8.o ibex_composed_tests.c
+"/home/mmr/ricv_paper/third_party/toolchain/xpack-riscv-none-elf-gcc-14.2.0-3/bin/riscv-none-elf-gcc" -march=rv32imc_zicsr -mabi=ilp32 -static -mcmodel=medany -Wall -g -Os -fvisibility=hidden -nostdlib -nostartfiles -ffreestanding -I/home/mmr/ricv_paper/third_party/ibex/examples/sw/simple_system/common -c -o m7_comp_trap_8.o m7_comp_trap.c
+"/home/mmr/ricv_paper/third_party/toolchain/xpack-riscv-none-elf-gcc-14.2.0-3/bin/riscv-none-elf-gcc" -march=rv32imc_zicsr -mabi=ilp32 -static -mcmodel=medany -Wall -g -Os -fvisibility=hidden -nostdlib -nostartfiles -ffreestanding -T /home/mmr/ricv_paper/third_party/ibex/examples/sw/simple_system/common/link.ld crt0.o m7_comp_common.o ibex_composed_tests_8.o m7_comp_trap_8.o -o IBEX-COMP-08.elf
+/home/mmr/ricv_paper/third_party/toolchain/xpack-riscv-none-elf-gcc-14.2.0-3/bin/../lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/bin/ld: warning: IBEX-COMP-08.elf has a LOAD segment with RWX permissions
+make[1]: Leaving directory '/home/mmr/ricv_paper/m7/sw/ibex_composed'
+=== Run IBEX-COMP-01..08 ===
+Wrote /home/mmr/ricv_paper/results/tables/m7_ibex_composed_matrix.csv
+  IBEX-COMP-01: PASS cpu=ALLOW dma=IDLE mem=0xB0010001
+  IBEX-COMP-02: PASS cpu=mcause=5 dma=IDLE mem=0x22222222
+  IBEX-COMP-03: PASS cpu=mcause=7 dma=IDLE mem=0x22222222
+  IBEX-COMP-04: PASS cpu=IDLE dma=DENY mem=0x22222222
+  IBEX-COMP-05: PASS cpu=IDLE dma=ALLOW mem=0xA11D0005
+  IBEX-COMP-06: PASS cpu=mcause=7 dma=DENY mem=0x22222222
+  IBEX-COMP-07: PASS cpu=mcause=7 dma=ALLOW mem=0xD00D0007
+  IBEX-COMP-08: PASS cpu=ALLOW dma=DENY mem=0xB0080008
+=== Randomized scenario campaign (100 seeds) ===
+seed=   0 IBEX-COMP-01: PASS
+seed=   1 IBEX-COMP-02: PASS
+seed=   2 IBEX-COMP-03: PASS
+seed=   3 IBEX-COMP-04: PASS
+seed=   4 IBEX-COMP-05: PASS
+seed=   5 IBEX-COMP-06: PASS
+seed=   6 IBEX-COMP-07: PASS
+seed=   7 IBEX-COMP-08: PASS
+seed=   8 IBEX-COMP-01: PASS
+seed=   9 IBEX-COMP-02: PASS
+seed=  10 IBEX-COMP-03: PASS
+seed=  11 IBEX-COMP-04: PASS
+seed=  12 IBEX-COMP-05: PASS
+seed=  13 IBEX-COMP-06: PASS
+seed=  14 IBEX-COMP-07: PASS
+seed=  15 IBEX-COMP-08: PASS
+seed=  16 IBEX-COMP-01: PASS
+seed=  17 IBEX-COMP-02: PASS
+seed=  18 IBEX-COMP-03: PASS
+seed=  19 IBEX-COMP-04: PASS
+seed=  20 IBEX-COMP-05: PASS
+seed=  21 IBEX-COMP-06: PASS
+seed=  22 IBEX-COMP-07: PASS
+seed=  23 IBEX-COMP-08: PASS
+seed=  24 IBEX-COMP-01: PASS
+seed=  25 IBEX-COMP-02: PASS
+seed=  26 IBEX-COMP-03: PASS
+seed=  27 IBEX-COMP-04: PASS
+seed=  28 IBEX-COMP-05: PASS
+seed=  29 IBEX-COMP-06: PASS
+seed=  30 IBEX-COMP-07: PASS
+seed=  31 IBEX-COMP-08: PASS
+seed=  32 IBEX-COMP-01: PASS
+seed=  33 IBEX-COMP-02: PASS
+seed=  34 IBEX-COMP-03: PASS
+seed=  35 IBEX-COMP-04: PASS
+seed=  36 IBEX-COMP-05: PASS
+seed=  37 IBEX-COMP-06: PASS
+seed=  38 IBEX-COMP-07: PASS
+seed=  39 IBEX-COMP-08: PASS
+seed=  40 IBEX-COMP-01: PASS
+seed=  41 IBEX-COMP-02: PASS
+seed=  42 IBEX-COMP-03: PASS
+seed=  43 IBEX-COMP-04: PASS
+seed=  44 IBEX-COMP-05: PASS
+seed=  45 IBEX-COMP-06: PASS
+seed=  46 IBEX-COMP-07: PASS
+seed=  47 IBEX-COMP-08: PASS
+seed=  48 IBEX-COMP-01: PASS
+seed=  49 IBEX-COMP-02: PASS
+seed=  50 IBEX-COMP-03: PASS
+seed=  51 IBEX-COMP-04: PASS
+seed=  52 IBEX-COMP-05: PASS
+seed=  53 IBEX-COMP-06: PASS
+seed=  54 IBEX-COMP-07: PASS
+seed=  55 IBEX-COMP-08: PASS
+seed=  56 IBEX-COMP-01: PASS
+seed=  57 IBEX-COMP-02: PASS
+seed=  58 IBEX-COMP-03: PASS
+seed=  59 IBEX-COMP-04: PASS
+seed=  60 IBEX-COMP-05: PASS
+seed=  61 IBEX-COMP-06: PASS
+seed=  62 IBEX-COMP-07: PASS
+seed=  63 IBEX-COMP-08: PASS
+seed=  64 IBEX-COMP-01: PASS
+seed=  65 IBEX-COMP-02: PASS
+seed=  66 IBEX-COMP-03: PASS
+seed=  67 IBEX-COMP-04: PASS
+seed=  68 IBEX-COMP-05: PASS
+seed=  69 IBEX-COMP-06: PASS
+seed=  70 IBEX-COMP-07: PASS
+seed=  71 IBEX-COMP-08: PASS
+seed=  72 IBEX-COMP-01: PASS
+seed=  73 IBEX-COMP-02: PASS
+seed=  74 IBEX-COMP-03: PASS
+seed=  75 IBEX-COMP-04: PASS
+seed=  76 IBEX-COMP-05: PASS
+seed=  77 IBEX-COMP-06: PASS
+seed=  78 IBEX-COMP-07: PASS
+seed=  79 IBEX-COMP-08: PASS
+seed=  80 IBEX-COMP-01: PASS
+seed=  81 IBEX-COMP-02: PASS
+seed=  82 IBEX-COMP-03: PASS
+seed=  83 IBEX-COMP-04: PASS
+seed=  84 IBEX-COMP-05: PASS
+seed=  85 IBEX-COMP-06: PASS
+seed=  86 IBEX-COMP-07: PASS
+seed=  87 IBEX-COMP-08: PASS
+seed=  88 IBEX-COMP-01: PASS
+seed=  89 IBEX-COMP-02: PASS
+seed=  90 IBEX-COMP-03: PASS
+seed=  91 IBEX-COMP-04: PASS
+seed=  92 IBEX-COMP-05: PASS
+seed=  93 IBEX-COMP-06: PASS
+seed=  94 IBEX-COMP-07: PASS
+seed=  95 IBEX-COMP-08: PASS
+seed=  96 IBEX-COMP-01: PASS
+seed=  97 IBEX-COMP-02: PASS
+seed=  98 IBEX-COMP-03: PASS
+seed=  99 IBEX-COMP-04: PASS
+seeds=100 pass=100 fail=0 runtime_sec=1.42 campaign=scenario_space_COMP01_08
+Wrote /home/mmr/ricv_paper/results/tables/m7_ibex_composed_random.csv
+Phase B composed runner complete.

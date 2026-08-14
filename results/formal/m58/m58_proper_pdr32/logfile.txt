@@ -1,0 +1,2 @@
+SBY  9:55:10 [/home/mmr/ricv_paper/results/formal/m58/m58_proper_pdr32] Removing directory '/home/mmr/ricv_paper/results/formal/m58/m58_proper_pdr32'.
+SBY  9:55:10 [/home/mmr/ricv_paper/results/formal/m58/m58_proper_pdr32] ERROR: Invalid mode: pdr

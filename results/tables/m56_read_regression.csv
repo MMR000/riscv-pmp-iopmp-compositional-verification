@@ -1,0 +1,6 @@
+test_id,configuration,nsaid,case,expected,observed,rresp,mem_changed,result,fix,git_commit
+R7,proper,0,auth_read,ALLOW,ALLOW,0,0,PASS,proper,b0d6666
+R8,proper,1,unauth_read,DENY,DENY,2,0,PASS,proper,b0d6666
+R9,proper,0,perm_r1_w0,ALLOW,ALLOW,0,0,PASS,proper,b0d6666
+R10,proper,0,perm_r0_w1,DENY,DENY,2,0,PASS,proper,b0d6666
+R11,proper,0,no_entry,DENY,DENY,2,0,PASS,proper,b0d6666

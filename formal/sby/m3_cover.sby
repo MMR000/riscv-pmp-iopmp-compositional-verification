@@ -1,0 +1,22 @@
+[options]
+mode cover
+depth 48
+wait on
+
+[engines]
+smtbmc z3
+
+[script]
+read -incdir . -formal formal_helpers.vh
+read -incdir . -formal bus_pkg.vh
+read -formal -D FORMAL iopmp.v
+read -formal formal_bus_stub.v
+read -formal formal_iopmp_tb.v
+prep -top formal_iopmp_tb
+
+[files]
+../../rtl/common/bus_pkg.vh
+../../rtl/iopmp/iopmp.v
+../harness/formal_bus_stub.v
+../harness/formal_helpers.vh
+../harness/formal_iopmp_tb.v

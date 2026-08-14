@@ -1,0 +1,4 @@
+yosys=Yosys 0.68+ (git sha1 832843ad0-dirty, Release, GNU /home/conda/feedstock_root/build_artifacts/yosys_1785933756519/_build_env/bin/x86_64-conda-linux-gnu-c++ 14.4.0) [github.com/conda-forge/yosys-feedstock at main]
+openroad=NOT_INSTALLED
+liberty=NONE (synthesis-only cell counts)
+flow=synthesis-only

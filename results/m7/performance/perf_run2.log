@@ -1,0 +1,6 @@
+  random progress seed=99 n=100
+  random progress seed=199 n=200
+  random progress seed=299 n=300
+  random progress seed=399 n=400
+  random progress seed=499 n=500
+Wrote /home/mmr/ricv_paper/results/tables/m7_realcore_performance.csv (10 metrics, 500 raw samples)

@@ -1,0 +1,5 @@
+variant,result_10ns,shortest_demonstrated_pass_ns,demonstrated_fmax_mhz,critical_path_category
+J0,PASS,9.5,105.26,core_reg2reg
+J1,GRT_FAIL,16.5,60.61,core_alu_to_observation_port
+J2,GDS_SETUP_FAIL,12.75,78.43,core_alu_to_observation_port
+J3,GRT_FAIL,13.0,76.92,core_alu_to_observation_port

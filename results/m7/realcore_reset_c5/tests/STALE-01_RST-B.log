@@ -1,0 +1,45 @@
+Program header number 0 in `/home/mmr/ricv_paper/m7/sw/ibex_reset/RC-1.elf' is not of type PT_LOAD; ignoring.
+Program header number 3 in `/home/mmr/ricv_paper/m7/sw/ibex_reset/RC-1.elf' is not of type PT_LOAD; ignoring.
+M7 Ibex C5 composed simulation
+TOP.m7_ibex_c5_composed_top.u_ibex.u_ibex_tracer: Instruction trace disabled.
+
+Simulation running, end by pressing CTRL-c.
+M7-C5-FINISH
+- src/local_m7_m7_ibex_c5_composed_0/../rtl/m7_c5_harness.sv:807: Verilog $finish
+Received $finish() from Verilog, shutting down simulation.
+
+Simulation statistics
+=====================
+Executed cycles:  61
+Wallclock time:   0 s
+Simulation speed: inf cycles/s (inf kHz)
+
+--- m7_c5_harness.log ---
+C5_TEST=300 REL_CPU=1 REL_DMA=2 REL_IOPMP=2 REL_SEC=2 REL_IC=1 DELAY=8 DMA_N=1
+STALE_POST ERR=1 PEEK0=0x11111111
+DONE PEEK=0x11111111 CPU=1 DMA=2 IOPMP=2 SEC=2 IC=1 PMP=0 IRDY=25 SECURE=0 REQ=52 ADMIT=29 COMMIT=44 RST=34 RES=0x600d0300 EPOCH=0
+
+--- m7_c5_events.log ---
+# C5 event log
+CYC=2 EVT=CPU_RESET_RELEASE
+CYC=2 EVT=IC_RESET_RELEASE
+CYC=3 EVT=DMA_RESET_RELEASE
+CYC=3 EVT=IOPMP_RESET_RELEASE
+CYC=3 EVT=SEC_RESET_RELEASE
+CYC=9 EVT=DELAY_ACCEPTED
+CYC=19 EVT=PROT_COMMIT SRC=CPU ADDR=0x20000100 DATA=0x5151a5a5
+CYC=21 EVT=CPU_RVALID
+CYC=25 EVT=IOPMP_READY
+CYC=29 EVT=DMA_ADMITTED RID=0x01 ADDR=0x20000100 WDATA=0x11111111 WRITE=1
+CYC=32 EVT=DMA_TARGET_ACCEPTED ADDR=0x20000100
+CYC=34 EVT=DELAY_ACCEPTED
+CYC=35 EVT=DMA_RESET_ASSERT
+CYC=35 EVT=IOPMP_RESET_ASSERT
+CYC=39 EVT=DMA_RESET_RELEASE
+CYC=39 EVT=IOPMP_RESET_RELEASE
+CYC=44 EVT=PROT_COMMIT SRC=DMA ADDR=0x20000100 DATA=0x11111111
+CYC=55 EVT=DMA_DENIED RID=0x02 ADDR=0x20000200 WDATA=0x22222222 WRITE=1
+CYC=55 EVT=DMA_COMPLETED ERR=1
+CYC=56 EVT=DMA_COMPLETED ERR=1
+
+--- m7_ibex_c5_composed.log ---

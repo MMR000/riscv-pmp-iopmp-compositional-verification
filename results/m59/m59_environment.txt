@@ -1,0 +1,16 @@
+M5.9 starting state
+===================
+date: 2026-08-11
+branch: m59-axi-environment-proof-closure
+starting_commit: 8e47a6a
+m58_main_commit: 56f9ffe
+checkpoint_tag: checkpoint-m58-fullrtl-formal
+
+tool_versions:
+  yosys: 0.68+ (read_slang)
+  symbiyosys: local tools/SymbiYosys
+  z3: 5.0.0
+  verilator: 5.050
+  yices: not installed (TOOLCHAIN_LIMITATION for PDR witness replay)
+
+host: linux x86_64

@@ -1,0 +1,25 @@
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Congestion
+---------------------------------------------------------------------------------------
+li1                  0             0            0.00%             0 /  0 /  0
+met1            100742         66326           65.84%             0 /  0 /  0
+met2            100300         72272           72.06%             0 /  0 /  0
+met3             74975         29364           39.17%             0 /  0 /  0
+met4             46200         22029           47.68%             0 /  1 /  1
+met5             10200          2014           19.75%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total           332417        192005           57.76%             0 /  1 /  1
+
+[INFO GRT-0018] Total wirelength: 1920718 um
+[INFO GRT-0014] Routed nets: 33243
+[WARNING GRT-0704] Try reduce the layer adjustment from 20% to 10%
+[ERROR GRT-0116] Global routing finished with congestion. Check the congestion regions in the DRC Viewer.
+write_db /work/results/sky130hd/m7_j3/base/5_1_grt-failed.odb
+Error: global_route.tcl, 156 GRT-0116
+Elapsed time: 0:29.62[h:]min:sec. CPU time: user 503.28 sys 8.97 (1729%). Peak memory: 974744KB.
+make[1]: *** [Makefile:581: do-5_1_grt] Error 1
+make: *** [Makefile:581: /work/results/sky130hd/m7_j3/base/5_1_grt.odb] Error 2
+END_UTC=2026-08-12T12:59:33Z
+ELAPSED_SEC=396
+EXIT_CODE=2

@@ -1,0 +1,7 @@
+M57 mem_we grant_allow=0 grant_seq=0 txn_seq=1 route=1 fsm=3
+M57 TIMEOUT do_write aw/w allow=0 nsaid=1 aw=0 w=0 fsm=3
+M57 stimulus complete
+- /home/mmr/ricv_paper/formal/harness/formal_m57_fullrtl_write_path_tb.sv:548: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.050 2026-07-01
+- Verilator: $finish at 5us; walltime 0.002 s; speed 3.484 ms/s
+- Verilator: cpu 0.002 s on 1 threads; allocated 6 MB

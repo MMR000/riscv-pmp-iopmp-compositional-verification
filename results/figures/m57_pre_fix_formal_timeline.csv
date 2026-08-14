@@ -1,0 +1,4 @@
+cycle,authorization,fsm_state,src_aw_valid,src_w_valid,ini_aw_hs,ini_w_hs,route_select,write_aw_done,mem_effect,notes
+1,reset,0,0,0,0,0,0,0,0,reset deassert
+~13,ALLOW,3,1,1,1,1,1,0,1,authorized write master W
+~25,DENY,3,1,1,1,1,0,0,1,stale-route CE: ini_w_hs with deny grant

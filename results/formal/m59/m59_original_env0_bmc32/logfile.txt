@@ -1,0 +1,11 @@
+SBY 10:03:20 [/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc32] Removing directory '/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc32'.
+SBY 10:03:20 [/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc32] engine_0: smtbmc z3
+SBY 10:03:20 [/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc32] base: starting process "cd /home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc32/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 10:03:20 [/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc32] base: ERROR: Design elaboration failed; see full log for details
+SBY 10:03:20 [/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc32] base: finished (returncode=1)
+SBY 10:03:20 [/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc32] base: task failed. ERROR.
+SBY 10:03:20 [/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc32] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 10:03:20 [/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc32] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 10:03:20 [/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc32] summary: engine_0 (smtbmc z3) did not return a status
+SBY 10:03:20 [/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc32] summary: engine_0 did not produce any traces
+SBY 10:03:20 [/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc32] DONE (ERROR, rc=16)

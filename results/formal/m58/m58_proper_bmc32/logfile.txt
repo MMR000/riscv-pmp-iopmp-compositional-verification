@@ -1,0 +1,35 @@
+SBY  9:55:10 [/home/mmr/ricv_paper/results/formal/m58/m58_proper_bmc32] Removing directory '/home/mmr/ricv_paper/results/formal/m58/m58_proper_bmc32'.
+SBY  9:55:10 [/home/mmr/ricv_paper/results/formal/m58/m58_proper_bmc32] engine_0: smtbmc --presat z3
+SBY  9:55:10 [/home/mmr/ricv_paper/results/formal/m58/m58_proper_bmc32] base: starting process "cd /home/mmr/ricv_paper/results/formal/m58/m58_proper_bmc32/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY  9:55:10 [/home/mmr/ricv_paper/results/formal/m58/m58_proper_bmc32] base: Warning: Wire formal_m57_fullrtl_write_path_tb.\dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[0].i_in_flight_cnt.rst_ni is used but has no driver.
+SBY  9:55:10 [/home/mmr/ricv_paper/results/formal/m58/m58_proper_bmc32] base: Warning: Wire formal_m57_fullrtl_write_path_tb.\clk is used but has no driver.
+SBY  9:55:10 [/home/mmr/ricv_paper/results/formal/m58/m58_proper_bmc32] base: finished (returncode=0)
+SBY  9:55:10 [/home/mmr/ricv_paper/results/formal/m58/m58_proper_bmc32] prep: starting process "cd /home/mmr/ricv_paper/results/formal/m58/m58_proper_bmc32/model; yosys -ql design_prep.log design_prep.ys"
+SBY  9:55:10 [/home/mmr/ricv_paper/results/formal/m58/m58_proper_bmc32] prep: Warning: Wire formal_m57_fullrtl_write_path_tb.\dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[0].i_in_flight_cnt.rst_ni is used but has no driver.
+SBY  9:55:10 [/home/mmr/ricv_paper/results/formal/m58/m58_proper_bmc32] prep: finished (returncode=0)
+SBY  9:55:10 [/home/mmr/ricv_paper/results/formal/m58/m58_proper_bmc32] smt2: starting process "cd /home/mmr/ricv_paper/results/formal/m58/m58_proper_bmc32/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY  9:55:10 [/home/mmr/ricv_paper/results/formal/m58/m58_proper_bmc32] smt2: finished (returncode=0)
+SBY  9:55:10 [/home/mmr/ricv_paper/results/formal/m58/m58_proper_bmc32] engine_0: starting process "cd /home/mmr/ricv_paper/results/formal/m58/m58_proper_bmc32; yosys-smtbmc -s z3 --presat --noprogress -t 5:32  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2"
+SBY  9:55:10 [/home/mmr/ricv_paper/results/formal/m58/m58_proper_bmc32] engine_0: ##   0:00:00  Solver: z3
+SBY  9:55:10 [/home/mmr/ricv_paper/results/formal/m58/m58_proper_bmc32] engine_0: ##   0:00:00  Skipping step 0..
+SBY  9:55:10 [/home/mmr/ricv_paper/results/formal/m58/m58_proper_bmc32] engine_0: ##   0:00:00  Skipping step 1..
+SBY  9:55:10 [/home/mmr/ricv_paper/results/formal/m58/m58_proper_bmc32] engine_0: ##   0:00:00  Skipping step 2..
+SBY  9:55:10 [/home/mmr/ricv_paper/results/formal/m58/m58_proper_bmc32] engine_0: ##   0:00:00  Skipping step 3..
+SBY  9:55:10 [/home/mmr/ricv_paper/results/formal/m58/m58_proper_bmc32] engine_0: ##   0:00:00  Skipping step 4..
+SBY  9:55:10 [/home/mmr/ricv_paper/results/formal/m58/m58_proper_bmc32] engine_0: ##   0:00:00  Checking assumptions in step 5..
+SBY  9:55:11 [/home/mmr/ricv_paper/results/formal/m58/m58_proper_bmc32] engine_0: ##   0:00:00  Checking assertions in step 5..
+SBY  9:55:11 [/home/mmr/ricv_paper/results/formal/m58/m58_proper_bmc32] engine_0: ##   0:00:00  BMC failed!
+SBY  9:55:11 [/home/mmr/ricv_paper/results/formal/m58/m58_proper_bmc32] engine_0: ##   0:00:00  Assert failed in formal_m57_fullrtl_write_path_tb: ../../../../../formal/build/m58/src/formal_m57_fullrtl_write_path_tb.sv:279.47-279.57 (_witness_.check_2565)
+SBY  9:55:11 [/home/mmr/ricv_paper/results/formal/m58/m58_proper_bmc32] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace.vcd
+SBY  9:55:11 [/home/mmr/ricv_paper/results/formal/m58/m58_proper_bmc32] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace_tb.v
+SBY  9:55:11 [/home/mmr/ricv_paper/results/formal/m58/m58_proper_bmc32] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace.smtc
+SBY  9:55:11 [/home/mmr/ricv_paper/results/formal/m58/m58_proper_bmc32] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace.yw
+SBY  9:55:11 [/home/mmr/ricv_paper/results/formal/m58/m58_proper_bmc32] engine_0: ##   0:00:00  Status: failed
+SBY  9:55:11 [/home/mmr/ricv_paper/results/formal/m58/m58_proper_bmc32] engine_0: finished (returncode=1)
+SBY  9:55:11 [/home/mmr/ricv_paper/results/formal/m58/m58_proper_bmc32] engine_0: Status returned by engine: FAIL
+SBY  9:55:11 [/home/mmr/ricv_paper/results/formal/m58/m58_proper_bmc32] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY  9:55:11 [/home/mmr/ricv_paper/results/formal/m58/m58_proper_bmc32] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY  9:55:11 [/home/mmr/ricv_paper/results/formal/m58/m58_proper_bmc32] summary: engine_0 (smtbmc --presat z3) returned FAIL
+SBY  9:55:11 [/home/mmr/ricv_paper/results/formal/m58/m58_proper_bmc32] summary: counterexample trace: /home/mmr/ricv_paper/results/formal/m58/m58_proper_bmc32/engine_0/trace.vcd
+SBY  9:55:11 [/home/mmr/ricv_paper/results/formal/m58/m58_proper_bmc32] summary:   failed assertion formal_m57_fullrtl_write_path_tb._witness_.check_2565 at ../../../../../formal/build/m58/src/formal_m57_fullrtl_write_path_tb.sv:279.47-279.57 step 5
+SBY  9:55:11 [/home/mmr/ricv_paper/results/formal/m58/m58_proper_bmc32] DONE (FAIL, rc=2)

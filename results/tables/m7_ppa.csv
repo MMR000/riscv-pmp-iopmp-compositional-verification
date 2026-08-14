@@ -1,0 +1,8 @@
+total_cells,wire_bits,flow,mapped_area,fmax,wns,config
+NOT_RUN,NOT_RUN,synthesis-only,NOT_RUN,NOT_RUN,NOT_RUN,I0
+NOT_RUN,NOT_RUN,synthesis-only,NOT_RUN,NOT_RUN,NOT_RUN,I1
+NOT_RUN,NOT_RUN,synthesis-only,NOT_RUN,NOT_RUN,NOT_RUN,J0
+NOT_RUN,NOT_RUN,synthesis-only,NOT_RUN,NOT_RUN,NOT_RUN,J1
+NOT_RUN,NOT_RUN,synthesis-only,NOT_RUN,NOT_RUN,NOT_RUN,J2
+NOT_RUN,NOT_RUN,synthesis-only,NOT_RUN,NOT_RUN,NOT_RUN,J3
+NOT_RUN,NOT_RUN,synthesis-only,NOT_RUN,NOT_RUN,NOT_RUN,J4

@@ -1,0 +1,16 @@
+M56 before-fix reproduction fix=original git=unknown
+=== M56-AUTH-WRITE-CONTROL ===
+NSAID=0 operation=WRITE observed=ALLOW fix=original
+BRESP=OKAY RRESP=0 mem_changed=1 forwarded=1 completed=1 deadlock=0
+dst_aw=1 dst_w=1 err_w=0 allow=0 route_select=0
+allow_captured=1
+=== M56-UNAUTH-WRITE-CE ===
+NSAID=1 operation=WRITE observed=DENY fix=original
+BRESP=SLVERR RRESP=0 mem_changed=0 forwarded=0 completed=1 deadlock=0
+dst_aw=0 dst_w=0 err_w=0 allow=0 route_select=0
+allow_captured=0
+=== M56-READ-CONTROL ===
+NSAID=1 operation=READ observed=DENY fix=original
+BRESP=OKAY RRESP=2 mem_changed=0 forwarded=0 completed=1 deadlock=0
+dst_aw=0 dst_w=0 err_w=0 allow=0 route_select=0
+allow_captured=0

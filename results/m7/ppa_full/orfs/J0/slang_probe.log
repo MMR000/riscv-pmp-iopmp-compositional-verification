@@ -1,0 +1,1436 @@
+OPENROAD: /OpenROAD-flow-scripts/tools/OpenROAD
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.68+post (git sha1 UNKNOWN, Release, GNU /usr/local/bin/wrapped-cc/g++ 11.4.0)
+
+-- Running command `read_slang -D SYNTHESIS --keep-hierarchy --compat=vcs --ignore-assertions --error-limit=0 --top m7_ppa_j0_top -I /repo/rtl/common -I /repo/m7/rtl -I /repo/m7/ppa/rtl -I /repo/third_party/ibex/vendor/lowrisc_ip/ip/prim/rtl -I /repo/third_party/ibex/vendor/lowrisc_ip/ip/prim_generic/rtl -I /repo/third_party/ibex/vendor/lowrisc_ip/dv/sv/dv_utils -I /repo/third_party/ibex/syn/rtl -I /repo/third_party/ibex/shared/rtl /repo/m7/ppa/rtl/m7_ppa_j0_top.sv /repo/m7/ppa/rtl/m7_ppa_mem_slave.v /repo/m7/ppa/rtl/m7_ppa_top.sv /repo/third_party/ibex/shared/rtl/bus.sv /repo/third_party/ibex/shared/rtl/timer.sv /repo/third_party/ibex/rtl/ibex_alu.sv /repo/third_party/ibex/rtl/ibex_branch_predict.sv /repo/third_party/ibex/rtl/ibex_cheriot_pkg.sv /repo/third_party/ibex/rtl/ibex_compressed_decoder.sv /repo/third_party/ibex/rtl/ibex_controller.sv /repo/third_party/ibex/rtl/ibex_core.sv /repo/third_party/ibex/rtl/ibex_counter.sv /repo/third_party/ibex/rtl/ibex_cs_registers.sv /repo/third_party/ibex/rtl/ibex_csr.sv /repo/third_party/ibex/rtl/ibex_decoder.sv /repo/third_party/ibex/rtl/ibex_dummy_instr.sv /repo/third_party/ibex/rtl/ibex_ex_block.sv /repo/third_party/ibex/rtl/ibex_fetch_fifo.sv /repo/third_party/ibex/rtl/ibex_icache.sv /repo/third_party/ibex/rtl/ibex_id_stage.sv /repo/third_party/ibex/rtl/ibex_if_stage.sv /repo/third_party/ibex/rtl/ibex_load_store_unit.sv /repo/third_party/ibex/rtl/ibex_lockstep.sv /repo/third_party/ibex/rtl/ibex_multdiv_fast.sv /repo/third_party/ibex/rtl/ibex_multdiv_slow.sv /repo/third_party/ibex/rtl/ibex_pkg.sv /repo/third_party/ibex/rtl/ibex_pmp.sv /repo/third_party/ibex/rtl/ibex_prefetch_buffer.sv /repo/third_party/ibex/rtl/ibex_register_file_ff.sv /repo/third_party/ibex/rtl/ibex_register_file_fpga.sv /repo/third_party/ibex/rtl/ibex_register_file_latch.sv /repo/third_party/ibex/rtl/ibex_top.sv /repo/third_party/ibex/rtl/ibex_trvk.sv /repo/third_party/ibex/rtl/ibex_wb_stage.sv /repo/third_party/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_assert.sv /repo/third_party/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_util_pkg.sv /repo/third_party/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_count_pkg.sv /repo/third_party/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_count.sv /repo/third_party/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_pkg.sv /repo/third_party/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_22_16_dec.sv /repo/third_party/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_22_16_enc.sv /repo/third_party/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_64_57_dec.sv /repo/third_party/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_64_57_enc.sv /repo/third_party/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_hamming_22_16_dec.sv /repo/third_party/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_hamming_22_16_enc.sv /repo/third_party/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_hamming_39_32_dec.sv /repo/third_party/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_hamming_39_32_enc.sv /repo/third_party/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_hamming_72_64_dec.sv /repo/third_party/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_hamming_72_64_enc.sv /repo/third_party/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_mubi_pkg.sv /repo/third_party/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_ram_1p_adv.sv /repo/third_party/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_ram_1p_scr.sv /repo/third_party/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_cipher_pkg.sv /repo/third_party/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_lfsr.sv /repo/third_party/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_inv_28_22_enc.sv /repo/third_party/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_inv_28_22_dec.sv /repo/third_party/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_inv_39_32_enc.sv /repo/third_party/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_inv_39_32_dec.sv /repo/third_party/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_inv_72_64_enc.sv /repo/third_party/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_inv_72_64_dec.sv /repo/third_party/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_prince.sv /repo/third_party/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_subst_perm.sv /repo/third_party/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_28_22_enc.sv /repo/third_party/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_28_22_dec.sv /repo/third_party/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_39_32_enc.sv /repo/third_party/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_39_32_dec.sv /repo/third_party/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_72_64_enc.sv /repo/third_party/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_72_64_dec.sv /repo/third_party/ibex/vendor/lowrisc_ip/ip/prim_generic/rtl/prim_pkg.sv /repo/third_party/ibex/vendor/lowrisc_ip/ip/prim_generic/rtl/prim_ram_1p_pkg.sv /repo/third_party/ibex/vendor/lowrisc_ip/ip/prim_generic/rtl/prim_ram_1p.sv /repo/third_party/ibex/vendor/lowrisc_ip/ip/prim_generic/rtl/prim_buf.sv /repo/third_party/ibex/vendor/lowrisc_ip/ip/prim_generic/rtl/prim_clock_mux2.sv /repo/third_party/ibex/vendor/lowrisc_ip/ip/prim_generic/rtl/prim_flop.sv /repo/third_party/ibex/vendor/lowrisc_ip/ip/prim_generic/rtl/prim_and2.sv /repo/third_party/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_fifo_sync.sv /repo/third_party/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_fifo_sync_cnt.sv /repo/third_party/ibex/syn/rtl/prim_clock_gating.v ' --
+
+1. Executing SLANG frontend.
+Top level design units:
+    m7_ppa_j0_top
+
+
+Build succeeded: 0 errors, 0 warnings
+
+1.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 1 empty switch in `\ibex_fetch_fifo$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.gen_prefetch_buffer.prefetch_buffer_i.fifo_i.$129'.
+Found and cleaned up 1 empty switch in `\ibex_fetch_fifo$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.gen_prefetch_buffer.prefetch_buffer_i.fifo_i.$126'.
+Found and cleaned up 1 empty switch in `\ibex_fetch_fifo$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.gen_prefetch_buffer.prefetch_buffer_i.fifo_i.$123'.
+Removing empty process `ibex_fetch_fifo$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.gen_prefetch_buffer.prefetch_buffer_i.fifo_i.$120'.
+Found and cleaned up 1 empty switch in `\ibex_fetch_fifo$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.gen_prefetch_buffer.prefetch_buffer_i.fifo_i.$54'.
+Found and cleaned up 1 empty switch in `\ibex_fetch_fifo$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.gen_prefetch_buffer.prefetch_buffer_i.fifo_i.$37'.
+Found and cleaned up 1 empty switch in `\ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_cpuctrlsts_part_csr.$0'.
+Found and cleaned up 1 empty switch in `\ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_mcounteren_csr.$0'.
+Removing empty process `ibex_counter$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.minstret_counter_i.$8'.
+Found and cleaned up 1 empty switch in `\ibex_counter$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.minstret_counter_i.$2'.
+Removing empty process `ibex_counter$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.mcycle_counter_i.$8'.
+Found and cleaned up 1 empty switch in `\ibex_counter$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.mcycle_counter_i.$2'.
+Found and cleaned up 1 empty switch in `\ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_mstack_cause_csr.$0'.
+Found and cleaned up 1 empty switch in `\ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_mstack_epc_csr.$0'.
+Found and cleaned up 1 empty switch in `\ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_mstack_csr.$0'.
+Found and cleaned up 1 empty switch in `\ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_dscratch1_csr.$0'.
+Found and cleaned up 1 empty switch in `\ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_dscratch0_csr.$0'.
+Found and cleaned up 1 empty switch in `\ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_depc_csr.$0'.
+Found and cleaned up 1 empty switch in `\ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_dcsr_csr.$0'.
+Found and cleaned up 1 empty switch in `\ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_mtvec_csr.$0'.
+Found and cleaned up 1 empty switch in `\ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_mtval_csr.$0'.
+Found and cleaned up 1 empty switch in `\ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_mcause_csr.$0'.
+Found and cleaned up 1 empty switch in `\ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_mscratch_csr.$0'.
+Found and cleaned up 1 empty switch in `\ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_mie_csr.$0'.
+Found and cleaned up 1 empty switch in `\ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_mepc_csr.$0'.
+Found and cleaned up 1 empty switch in `\ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_mstatus_csr.$0'.
+Found and cleaned up 1 empty switch in `\ibex_multdiv_fast$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.gen_multdiv_fast.multdiv_i.$90'.
+Found and cleaned up 1 empty switch in `\ibex_multdiv_fast$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.gen_multdiv_fast.multdiv_i.$75'.
+Found and cleaned up 1 empty switch in `\ibex_multdiv_fast$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.gen_multdiv_fast.multdiv_i.$60'.
+Found and cleaned up 1 empty switch in `\ibex_multdiv_fast$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.gen_multdiv_fast.multdiv_i.$34'.
+Found and cleaned up 1 empty switch in `\ibex_multdiv_fast$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.gen_multdiv_fast.multdiv_i.$7'.
+Found and cleaned up 1 empty switch in `\ibex_alu$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.alu_i.$172'.
+Found and cleaned up 1 empty switch in `\ibex_alu$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.alu_i.$152'.
+Found and cleaned up 1 empty switch in `\ibex_alu$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.alu_i.$133'.
+Removing empty process `ibex_alu$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.alu_i.$126'.
+Found and cleaned up 1 empty switch in `\ibex_alu$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.alu_i.$118'.
+Found and cleaned up 1 empty switch in `\ibex_alu$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.alu_i.$109'.
+Found and cleaned up 1 empty switch in `\ibex_alu$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.alu_i.$60'.
+Found and cleaned up 1 empty switch in `\ibex_alu$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.alu_i.$53'.
+Found and cleaned up 1 empty switch in `\ibex_alu$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.alu_i.$47'.
+Found and cleaned up 1 empty switch in `\ibex_alu$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.alu_i.$40'.
+Found and cleaned up 1 empty switch in `\ibex_alu$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.alu_i.$35'.
+Found and cleaned up 1 empty switch in `\ibex_alu$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.alu_i.$32'.
+Removing empty process `ibex_controller$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.controller_i.$294'.
+Found and cleaned up 1 empty switch in `\ibex_controller$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.controller_i.$141'.
+Removing empty process `ibex_controller$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.controller_i.$137'.
+Found and cleaned up 1 empty switch in `\ibex_controller$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.controller_i.$113'.
+Found and cleaned up 1 empty switch in `\ibex_controller$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.controller_i.$41'.
+Found and cleaned up 1 empty switch in `\ibex_decoder$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.decoder_i.$132'.
+Found and cleaned up 1 empty switch in `\ibex_decoder$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.decoder_i.$31'.
+Found and cleaned up 1 empty switch in `\ibex_decoder$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.decoder_i.$23'.
+Removing empty process `ibex_compressed_decoder$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.compressed_decoder_i.$195'.
+Removing empty process `ibex_compressed_decoder$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.compressed_decoder_i.$191'.
+Found and cleaned up 1 empty switch in `\ibex_compressed_decoder$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.compressed_decoder_i.$2'.
+Removing empty process `ibex_prefetch_buffer$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.gen_prefetch_buffer.prefetch_buffer_i.$74'.
+Found and cleaned up 1 empty switch in `\ibex_prefetch_buffer$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.gen_prefetch_buffer.prefetch_buffer_i.$40'.
+Found and cleaned up 1 empty switch in `\ibex_prefetch_buffer$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.gen_prefetch_buffer.prefetch_buffer_i.$29'.
+Removing empty process `ibex_cs_registers$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.$363'.
+Removing empty process `ibex_cs_registers$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.$315'.
+Removing empty process `ibex_cs_registers$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.$313'.
+Found and cleaned up 1 empty switch in `\ibex_cs_registers$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.$309'.
+Found and cleaned up 1 empty switch in `\ibex_cs_registers$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.$305'.
+Found and cleaned up 1 empty switch in `\ibex_cs_registers$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.$221'.
+Removing empty process `ibex_cs_registers$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.$215'.
+Found and cleaned up 1 empty switch in `\ibex_cs_registers$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.$87'.
+Found and cleaned up 1 empty switch in `\ibex_cs_registers$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.$21'.
+Removing empty process `ibex_load_store_unit$m7_ppa_j0_top.u.u_ibex.u_ibex_core.load_store_unit_i.$138'.
+Found and cleaned up 1 empty switch in `\ibex_load_store_unit$m7_ppa_j0_top.u.u_ibex.u_ibex_core.load_store_unit_i.$70'.
+Found and cleaned up 1 empty switch in `\ibex_load_store_unit$m7_ppa_j0_top.u.u_ibex.u_ibex_core.load_store_unit_i.$58'.
+Found and cleaned up 1 empty switch in `\ibex_load_store_unit$m7_ppa_j0_top.u.u_ibex.u_ibex_core.load_store_unit_i.$47'.
+Found and cleaned up 1 empty switch in `\ibex_load_store_unit$m7_ppa_j0_top.u.u_ibex.u_ibex_core.load_store_unit_i.$36'.
+Found and cleaned up 1 empty switch in `\ibex_load_store_unit$m7_ppa_j0_top.u.u_ibex.u_ibex_core.load_store_unit_i.$33'.
+Found and cleaned up 1 empty switch in `\ibex_load_store_unit$m7_ppa_j0_top.u.u_ibex.u_ibex_core.load_store_unit_i.$29'.
+Found and cleaned up 1 empty switch in `\ibex_load_store_unit$m7_ppa_j0_top.u.u_ibex.u_ibex_core.load_store_unit_i.$20'.
+Found and cleaned up 1 empty switch in `\ibex_load_store_unit$m7_ppa_j0_top.u.u_ibex.u_ibex_core.load_store_unit_i.$16'.
+Found and cleaned up 1 empty switch in `\ibex_load_store_unit$m7_ppa_j0_top.u.u_ibex.u_ibex_core.load_store_unit_i.$13'.
+Found and cleaned up 1 empty switch in `\ibex_load_store_unit$m7_ppa_j0_top.u.u_ibex.u_ibex_core.load_store_unit_i.$2'.
+Found and cleaned up 1 empty switch in `\ibex_id_stage$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.$131'.
+Found and cleaned up 1 empty switch in `\ibex_id_stage$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.$127'.
+Removing empty process `ibex_id_stage$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.$116'.
+Removing empty process `ibex_id_stage$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.$107'.
+Found and cleaned up 1 empty switch in `\ibex_id_stage$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.$50'.
+Found and cleaned up 1 empty switch in `\ibex_id_stage$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.$41'.
+Found and cleaned up 1 empty switch in `\ibex_id_stage$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.$37'.
+Found and cleaned up 1 empty switch in `\ibex_id_stage$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.$30'.
+Found and cleaned up 1 empty switch in `\ibex_id_stage$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.$23'.
+Found and cleaned up 1 empty switch in `\ibex_if_stage$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.$96'.
+Removing empty process `ibex_if_stage$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.$90'.
+Found and cleaned up 1 empty switch in `\ibex_if_stage$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.$9'.
+Found and cleaned up 1 empty switch in `\ibex_if_stage$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.$4'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$217'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$212'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$207'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$202'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$197'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$192'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$187'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$182'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$177'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$172'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$167'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$162'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$157'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$152'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$147'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$142'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$137'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$132'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$127'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$122'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$117'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$112'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$107'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$102'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$97'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$92'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$87'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$82'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$77'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$72'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$67'.
+Removing empty process `ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$0'.
+Found and cleaned up 1 empty switch in `\prim_clock_gating$m7_ppa_j0_top.u.u_ibex.core_clock_gate_i.$0'.
+Removing empty process `timer$m7_ppa_j0_top.u.u_timer.$80'.
+Found and cleaned up 1 empty switch in `\timer$m7_ppa_j0_top.u.u_timer.$76'.
+Found and cleaned up 1 empty switch in `\timer$m7_ppa_j0_top.u.u_timer.$72'.
+Removing empty process `timer$m7_ppa_j0_top.u.u_timer.$68'.
+Found and cleaned up 1 empty switch in `\timer$m7_ppa_j0_top.u.u_timer.$57'.
+Removing empty process `timer$m7_ppa_j0_top.u.u_timer.$54'.
+Found and cleaned up 1 empty switch in `\m7_ppa_mem_slave$m7_ppa_j0_top.u.u_dram.$0'.
+Found and cleaned up 1 empty switch in `\m7_ppa_mem_slave$m7_ppa_j0_top.u.u_imem.$0'.
+Removing empty process `ibex_top$m7_ppa_j0_top.u.u_ibex.$0'.
+Found and cleaned up 1 empty switch in `\bus$m7_ppa_j0_top.u.u_bus.$59'.
+Found and cleaned up 1 empty switch in `\bus$m7_ppa_j0_top.u.u_bus.$23'.
+Removing empty process `bus$m7_ppa_j0_top.u.u_bus.$18'.
+Found and cleaned up 1 empty switch in `\bus$m7_ppa_j0_top.u.u_bus.$4'.
+Found and cleaned up 1 empty switch in `\bus$m7_ppa_j0_top.u.u_bus.$0'.
+Found and cleaned up 1 empty switch in `\m7_ppa_top$m7_ppa_j0_top.u.$6'.
+Cleaned up 115 empty switches.
+<suppressed ~1871 debug messages>
+
+1.2. Executing TRIBUF pass.
+
+1.3. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 3 switch rules as full_case in process $37 in module ibex_fetch_fifo$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.gen_prefetch_buffer.prefetch_buffer_i.fifo_i.
+Marked 4 switch rules as full_case in process $2 in module ibex_counter$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.minstret_counter_i.
+Marked 4 switch rules as full_case in process $2 in module ibex_counter$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.mcycle_counter_i.
+Marked 6 switch rules as full_case in process $90 in module ibex_multdiv_fast$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.gen_multdiv_fast.multdiv_i.
+Marked 1 switch rules as full_case in process $75 in module ibex_multdiv_fast$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.gen_multdiv_fast.multdiv_i.
+Removed 1 dead cases from process $34 in module ibex_multdiv_fast$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.gen_multdiv_fast.multdiv_i.
+Marked 4 switch rules as full_case in process $34 in module ibex_multdiv_fast$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.gen_multdiv_fast.multdiv_i.
+Marked 1 switch rules as full_case in process $118 in module ibex_alu$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.alu_i.
+Marked 1 switch rules as full_case in process $109 in module ibex_alu$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.alu_i.
+Marked 1 switch rules as full_case in process $53 in module ibex_alu$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.alu_i.
+Marked 37 switch rules as full_case in process $141 in module ibex_controller$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.controller_i.
+Marked 14 switch rules as full_case in process $113 in module ibex_controller$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.controller_i.
+Marked 10 switch rules as full_case in process $41 in module ibex_controller$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.controller_i.
+Removed 1 dead cases from process $132 in module ibex_decoder$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.decoder_i.
+Marked 20 switch rules as full_case in process $132 in module ibex_decoder$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.decoder_i.
+Removed 1 dead cases from process $31 in module ibex_decoder$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.decoder_i.
+Marked 33 switch rules as full_case in process $31 in module ibex_decoder$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.decoder_i.
+Removed 8 dead cases from process $2 in module ibex_compressed_decoder$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.compressed_decoder_i.
+Marked 64 switch rules as full_case in process $2 in module ibex_compressed_decoder$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.compressed_decoder_i.
+Marked 1 switch rules as full_case in process $305 in module ibex_cs_registers$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.
+Removed 1 dead cases from process $221 in module ibex_cs_registers$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.
+Marked 1 switch rules as full_case in process $309 in module ibex_cs_registers$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.
+Marked 13 switch rules as full_case in process $87 in module ibex_cs_registers$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.
+Marked 1 switch rules as full_case in process $21 in module ibex_cs_registers$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.
+Marked 9 switch rules as full_case in process $70 in module ibex_load_store_unit$m7_ppa_j0_top.u.u_ibex.u_ibex_core.load_store_unit_i.
+Removed 1 dead cases from process $58 in module ibex_load_store_unit$m7_ppa_j0_top.u.u_ibex.u_ibex_core.load_store_unit_i.
+Removed 1 dead cases from process $47 in module ibex_load_store_unit$m7_ppa_j0_top.u.u_ibex.u_ibex_core.load_store_unit_i.
+Marked 8 switch rules as full_case in process $47 in module ibex_load_store_unit$m7_ppa_j0_top.u.u_ibex.u_ibex_core.load_store_unit_i.
+Removed 1 dead cases from process $36 in module ibex_load_store_unit$m7_ppa_j0_top.u.u_ibex.u_ibex_core.load_store_unit_i.
+Marked 8 switch rules as full_case in process $36 in module ibex_load_store_unit$m7_ppa_j0_top.u.u_ibex.u_ibex_core.load_store_unit_i.
+Removed 1 dead cases from process $33 in module ibex_load_store_unit$m7_ppa_j0_top.u.u_ibex.u_ibex_core.load_store_unit_i.
+Removed 1 dead cases from process $13 in module ibex_load_store_unit$m7_ppa_j0_top.u.u_ibex.u_ibex_core.load_store_unit_i.
+Removed 5 dead cases from process $2 in module ibex_load_store_unit$m7_ppa_j0_top.u.u_ibex.u_ibex_core.load_store_unit_i.
+Marked 8 switch rules as full_case in process $2 in module ibex_load_store_unit$m7_ppa_j0_top.u.u_ibex.u_ibex_core.load_store_unit_i.
+Removed 1 dead cases from process $131 in module ibex_id_stage$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.
+Marked 6 switch rules as full_case in process $131 in module ibex_id_stage$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.
+Removed 1 dead cases from process $50 in module ibex_id_stage$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.
+Removed 1 dead cases from process $23 in module ibex_id_stage$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.
+Removed 1 dead cases from process $4 in module ibex_if_stage$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.
+Marked 1 switch rules as full_case in process $4 in module ibex_if_stage$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.
+Marked 1 switch rules as full_case in process $0 in module m7_ppa_mem_slave$m7_ppa_j0_top.u.u_dram.
+Marked 1 switch rules as full_case in process $0 in module m7_ppa_mem_slave$m7_ppa_j0_top.u.u_imem.
+Marked 3 switch rules as full_case in process $23 in module bus$m7_ppa_j0_top.u.u_bus.
+Marked 1 switch rules as full_case in process $59 in module bus$m7_ppa_j0_top.u.u_bus.
+Marked 1 switch rules as full_case in process $4 in module bus$m7_ppa_j0_top.u.u_bus.
+Marked 2 switch rules as full_case in process $6 in module m7_ppa_top$m7_ppa_j0_top.u.
+Removed a total of 26 dead cases.
+
+1.4. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 157 redundant assignments.
+Promoted 0 assignments to connections.
+
+1.5. Executing PROC_INIT pass (extract init attributes).
+
+1.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 4 switches.
+<suppressed ~503 debug messages>
+
+1.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\ibex_fetch_fifo$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.gen_prefetch_buffer.prefetch_buffer_i.fifo_i.$126'.
+     1/2: $err_q[1]$128
+     2/2: $rdata_q[63:32]$127
+Creating decoders for process `\ibex_fetch_fifo$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.gen_prefetch_buffer.prefetch_buffer_i.fifo_i.$123'.
+     1/2: $err_q[0]$125
+     2/2: $rdata_q[31:0]$124
+Creating decoders for process `\ibex_fetch_fifo$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.gen_prefetch_buffer.prefetch_buffer_i.fifo_i.$129'.
+     1/2: $err_q[2]$131
+     2/2: $rdata_q[95:64]$130
+Creating decoders for process `\ibex_fetch_fifo$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.gen_prefetch_buffer.prefetch_buffer_i.fifo_i.$54'.
+     1/1: $instr_addr_q$55
+Creating decoders for process `\ibex_fetch_fifo$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.gen_prefetch_buffer.prefetch_buffer_i.fifo_i.$37'.
+     1/5: $out_err_plus2_o$42
+     2/5: $out_err_o$41
+     3/5: $out_rdata_o$40
+     4/5: $out_valid_o$39
+     5/5: $out_valid_o$38
+Creating decoders for process `\ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_cpuctrlsts_part_csr.$0'.
+     1/1: $rdata_q$3
+Creating decoders for process `\ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_mcounteren_csr.$0'.
+     1/1: $rdata_q$3
+Creating decoders for process `\ibex_counter$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.minstret_counter_i.$2'.
+     1/3: $counter_d$5
+     2/3: $counter_d$6
+     3/3: $counter_load$4
+Creating decoders for process `\ibex_counter$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.mcycle_counter_i.$2'.
+     1/3: $counter_d$5
+     2/3: $counter_d$6
+     3/3: $counter_load$4
+Creating decoders for process `\ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_mstack_cause_csr.$0'.
+     1/1: $rdata_q$3
+Creating decoders for process `\ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_mstack_epc_csr.$0'.
+     1/1: $rdata_q$3
+Creating decoders for process `\ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_mstack_csr.$0'.
+     1/1: $rdata_q$3
+Creating decoders for process `\ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_dscratch1_csr.$0'.
+     1/1: $rdata_q$3
+Creating decoders for process `\ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_dscratch0_csr.$0'.
+     1/1: $rdata_q$3
+Creating decoders for process `\ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_depc_csr.$0'.
+     1/1: $rdata_q$3
+Creating decoders for process `\ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_dcsr_csr.$0'.
+     1/1: $rdata_q$3
+Creating decoders for process `\ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_mtvec_csr.$0'.
+     1/1: $rdata_q$3
+Creating decoders for process `\ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_mtval_csr.$0'.
+     1/1: $rdata_q$3
+Creating decoders for process `\ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_mcause_csr.$0'.
+     1/1: $rdata_q$3
+Creating decoders for process `\ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_mscratch_csr.$0'.
+     1/1: $rdata_q$3
+Creating decoders for process `\ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_mie_csr.$0'.
+     1/1: $rdata_q$3
+Creating decoders for process `\ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_mepc_csr.$0'.
+     1/1: $rdata_q$3
+Creating decoders for process `\ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_mstatus_csr.$0'.
+     1/1: $rdata_q$3
+Creating decoders for process `\ibex_multdiv_fast$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.gen_multdiv_fast.multdiv_i.$90'.
+     1/16: $op_remainder_d$120
+     2/16: $op_remainder_d$115
+     3/16: $md_state_d$133
+     4/16: $md_state_d$102
+     5/16: $op_remainder_d$100
+     6/16: $div_by_zero_d$101
+     7/16: $div_by_zero_d$132
+     8/16: $div_hold$131
+     9/16: $div_counter_d$130
+    10/16: $div_valid$129
+    11/16: $op_quotient_d$128
+    12/16: $op_numerator_d$127
+    13/16: $op_denominator_d$126
+    14/16: $op_remainder_d$125
+    15/16: $alu_operand_b_o$124
+    16/16: $alu_operand_a_o$123
+Creating decoders for process `\ibex_multdiv_fast$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.gen_multdiv_fast.multdiv_i.$75'.
+     1/1: $is_greater_equal$79
+Creating decoders for process `\ibex_multdiv_fast$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.gen_multdiv_fast.multdiv_i.$60'.
+     1/1: $gen_mult_fast.mult_state_q$63
+Creating decoders for process `\ibex_multdiv_fast$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.gen_multdiv_fast.multdiv_i.$34'.
+     1/15: $gen_mult_fast.mult_state_d$45
+     2/15: $mac_res_d$43
+     3/15: $accum$41
+     4/15: $mult_hold$44
+     5/15: $mult_valid$42
+     6/15: $mac_res_d$37
+     7/15: $gen_mult_fast.mult_state_d$58
+     8/15: $gen_mult_fast.mult_op_b$57
+     9/15: $gen_mult_fast.mult_op_a$56
+    10/15: $mac_res_d$54
+    11/15: $sign_b$52
+    12/15: $sign_a$51
+    13/15: $accum$50
+    14/15: $mult_hold$55
+    15/15: $mult_valid$53
+Creating decoders for process `\ibex_multdiv_fast$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.gen_multdiv_fast.multdiv_i.$7'.
+     1/5: $md_state_q$14
+     2/5: $div_by_zero_q$13
+     3/5: $div_counter_q$12
+     4/5: $op_quotient_q$11
+     5/5: $op_numerator_q$10
+Creating decoders for process `\ibex_alu$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.alu_i.$152'.
+     1/1: $bwlogic_result$153
+Creating decoders for process `\ibex_alu$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.alu_i.$133'.
+     1/1: $bwlogic_op_b_negate$134
+Creating decoders for process `\ibex_alu$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.alu_i.$172'.
+     1/1: $result_o$173
+Creating decoders for process `\ibex_alu$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.alu_i.$118'.
+     1/2: $shift_left$120
+     2/2: $shift_left$119
+Creating decoders for process `\ibex_alu$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.alu_i.$109'.
+     1/1: $shift_amt[4:0]$115
+Creating decoders for process `\ibex_alu$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.alu_i.$60'.
+     1/1: $cmp_result$63
+Creating decoders for process `\ibex_alu$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.alu_i.$53'.
+     1/1: $is_greater_equal$58
+Creating decoders for process `\ibex_alu$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.alu_i.$47'.
+     1/1: $cmp_signed$48
+Creating decoders for process `\ibex_alu$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.alu_i.$40'.
+     1/1: $adder_in_b$41
+Creating decoders for process `\ibex_alu$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.alu_i.$35'.
+     1/1: $adder_in_a$36
+Creating decoders for process `\ibex_alu$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.alu_i.$32'.
+     1/1: $adder_op_b_negate$33
+Creating decoders for process `\ibex_controller$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.controller_i.$141'.
+     1/101: $halt_if$277
+     2/101: $ctrl_fsm_ns$252
+     3/101: $ctrl_fsm_ns$223
+     4/101: $debug_mode_d$228
+     5/101: $ctrl_fsm_ns$227
+     6/101: $csr_restore_dret_id_o$226
+     7/101: $pc_mux_o$225
+     8/101: $pc_set_o$224
+     9/101: $pc_mux_o$230
+    10/101: $pc_set_o$229
+    11/101: $nmi_mode_d$222
+    12/101: $debug_mode_d$235
+    13/101: $nmi_mode_d$234
+    14/101: $ctrl_fsm_ns$233
+    15/101: $csr_restore_dret_id_o$232
+    16/101: $csr_restore_mret_id_o$231
+    17/101: $ctrl_fsm_ns$245
+    18/101: $pc_mux_o$237
+    19/101: $pc_set_o$236
+    20/101: $flush_id$214
+    21/101: $ctrl_fsm_ns$213
+    22/101: $csr_save_cause_o$212
+    23/101: $csr_save_id_o$211
+    24/101: $exc_cause_o$210
+    25/101: $pc_set_o$209
+    26/101: $flush_id$221
+    27/101: $ctrl_fsm_ns$220
+    28/101: $csr_mtval_o$219
+    29/101: $csr_save_cause_o$218
+    30/101: $csr_save_id_o$217
+    31/101: $exc_cause_o$216
+    32/101: $pc_set_o$215
+    33/101: $flush_id$248
+    34/101: $debug_mode_d$247
+    35/101: $nmi_mode_d$246
+    36/101: $csr_mtval_o$244
+    37/101: $csr_save_cause_o$243
+    38/101: $csr_restore_dret_id_o$242
+    39/101: $csr_restore_mret_id_o$241
+    40/101: $csr_save_id_o$240
+    41/101: $exc_cause_o$239
+    42/101: $exc_pc_mux_o$238
+    43/101: $csr_save_cause_o$199
+    44/101: $csr_save_id_o$198
+    45/101: $debug_csr_save_o$197
+    46/101: $exc_cause_o$183
+    47/101: $exc_cause_o$184
+    48/101: $exc_cause_o$185
+    49/101: $exc_cause_o$186
+    50/101: $csr_mtval_o$181
+    51/101: $nmi_mode_d$188
+    52/101: $csr_mtval_o$187
+    53/101: $nmi_mode_d$194
+    54/101: $csr_mtval_o$193
+    55/101: $csr_save_cause_o$192
+    56/101: $csr_save_if_o$191
+    57/101: $exc_cause_o$190
+    58/101: $pc_set_o$189
+    59/101: $halt_if$171
+    60/101: $ctrl_fsm_ns$170
+    61/101: $halt_if$173
+    62/101: $ctrl_fsm_ns$172
+    63/101: $halt_if$175
+    64/101: $ctrl_fsm_ns$174
+    65/101: $halt_if$164
+    66/101: $perf_tbranch_o$160
+    67/101: $perf_jump_o$159
+    68/101: $pc_set_o$158
+    69/101: $ctrl_fsm_ns$154
+    70/101: $retain_id$156
+    71/101: $ctrl_fsm_ns$155
+    72/101: $halt_if$152
+    73/101: $ctrl_fsm_ns$151
+    74/101: $halt_if$150
+    75/101: $ctrl_fsm_ns$149
+    76/101: $ctrl_fsm_ns$148
+    77/101: $ctrl_fsm_ns$147
+    78/101: $ctrl_busy_o$146
+    79/101: $ctrl_fsm_ns$270
+    80/101: $flush_id$275
+    81/101: $retain_id$274
+    82/101: $halt_if$273
+    83/101: $debug_mode_d$272
+    84/101: $nmi_mode_d$271
+    85/101: $perf_tbranch_o$269
+    86/101: $perf_jump_o$268
+    87/101: $csr_mtval_o$267
+    88/101: $csr_save_cause_o$266
+    89/101: $csr_restore_dret_id_o$265
+    90/101: $csr_restore_mret_id_o$264
+    91/101: $csr_save_id_o$263
+    92/101: $csr_save_if_o$262
+    93/101: $debug_mode_entering_o$261
+    94/101: $debug_csr_save_o$260
+    95/101: $exc_cause_o$259
+    96/101: $exc_pc_mux_o$258
+    97/101: $pc_mux_o$257
+    98/101: $pc_set_o$256
+    99/101: $instr_req_o$255
+   100/101: $controller_run_o$254
+   101/101: $ctrl_busy_o$253
+Creating decoders for process `\ibex_controller$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.controller_i.$113'.
+     1/15: $mfip_id$128
+     2/15: $mfip_id$127
+     3/15: $mfip_id$126
+     4/15: $mfip_id$125
+     5/15: $mfip_id$124
+     6/15: $mfip_id$123
+     7/15: $mfip_id$122
+     8/15: $mfip_id$121
+     9/15: $mfip_id$120
+    10/15: $mfip_id$119
+    11/15: $mfip_id$118
+    12/15: $mfip_id$117
+    13/15: $mfip_id$116
+    14/15: $mfip_id$115
+    15/15: $mfip_id$114
+Creating decoders for process `\ibex_controller$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.controller_i.$41'.
+     1/21: $load_err_prio$42
+     2/21: $load_err_prio$44
+     3/21: $store_err_prio$43
+     4/21: $load_err_prio$47
+     5/21: $store_err_prio$46
+     6/21: $ebrk_insn_prio$45
+     7/21: $load_err_prio$51
+     8/21: $store_err_prio$50
+     9/21: $ebrk_insn_prio$49
+    10/21: $ecall_insn_prio$48
+    11/21: $load_err_prio$56
+    12/21: $store_err_prio$55
+    13/21: $ebrk_insn_prio$54
+    14/21: $ecall_insn_prio$53
+    15/21: $illegal_insn_prio$52
+    16/21: $load_err_prio$62
+    17/21: $store_err_prio$61
+    18/21: $ebrk_insn_prio$60
+    19/21: $ecall_insn_prio$59
+    20/21: $illegal_insn_prio$58
+    21/21: $instr_fetch_err_prio$57
+Creating decoders for process `\ibex_decoder$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.decoder_i.$132'.
+     1/39: $alu_op_a_mux_sel_o$168
+     2/39: $alu_op_a_mux_sel_o$170
+     3/39: $alu_op_b_mux_sel_o$171
+     4/39: $imm_a_mux_sel_o$169
+     5/39: $alu_op_b_mux_sel_o$166
+     6/39: $alu_op_a_mux_sel_o$165
+     7/39: $alu_operator_o$164
+     8/39: $imm_b_mux_sel_o$163
+     9/39: $div_sel_o$159
+    10/39: $mult_sel_o$158
+    11/39: $alu_operator_o$157
+    12/39: $div_sel_o$162
+    13/39: $mult_sel_o$161
+    14/39: $alu_operator_o$160
+    15/39: $alu_operator_o$154
+    16/39: $alu_operator_o$155
+    17/39: $alu_operator_o$156
+    18/39: $alu_op_b_mux_sel_o$151
+    19/39: $imm_b_mux_sel_o$150
+    20/39: $alu_op_b_mux_sel_o$148
+    21/39: $alu_op_a_mux_sel_o$147
+    22/39: $alu_operator_o$146
+    23/39: $imm_b_mux_sel_o$145
+    24/39: $alu_operator_o$143
+    25/39: $alu_op_b_mux_sel_o$142
+    26/39: $alu_op_a_mux_sel_o$141
+    27/39: $alu_operator_o$140
+    28/39: $imm_b_mux_sel_o$139
+    29/39: $alu_op_b_mux_sel_o$137
+    30/39: $alu_op_a_mux_sel_o$136
+    31/39: $alu_operator_o$135
+    32/39: $imm_b_mux_sel_o$134
+    33/39: $div_sel_o$178
+    34/39: $mult_sel_o$177
+    35/39: $alu_op_b_mux_sel_o$176
+    36/39: $alu_op_a_mux_sel_o$175
+    37/39: $alu_operator_o$174
+    38/39: $imm_b_mux_sel_o$173
+    39/39: $imm_a_mux_sel_o$172
+Creating decoders for process `\ibex_decoder$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.decoder_i.$31'.
+     1/85: $rf_we$130
+     2/85: $branch_in_dec_o$129
+     3/85: $jump_in_dec_o$128
+     4/85: $data_we_o$127
+     5/85: $data_req_o$126
+     6/85: $csr_access_o$125
+     7/85: $jump_set_o$124
+     8/85: $illegal_insn$123
+     9/85: $csr_op$87
+    10/85: $csr_illegal$86
+    11/85: $rf_ren_a_o$85
+    12/85: $illegal_insn$96
+    13/85: $illegal_insn$83
+    14/85: $illegal_insn$79
+    15/85: $wfi_insn_o$78
+    16/85: $ecall_insn_o$77
+    17/85: $dret_insn_o$76
+    18/85: $mret_insn_o$75
+    19/85: $ebrk_insn_o$74
+    20/85: $csr_op$99
+    21/85: $rf_we$98
+    22/85: $csr_illegal$97
+    23/85: $csr_access_o$95
+    24/85: $rf_ren_a_o$94
+    25/85: $rf_wdata_sel_o$93
+    26/85: $wfi_insn_o$92
+    27/85: $ecall_insn_o$91
+    28/85: $dret_insn_o$90
+    29/85: $mret_insn_o$89
+    30/85: $ebrk_insn_o$88
+    31/85: $icache_inval_o$67
+    32/85: $jump_set_o$66
+    33/85: $rf_we$72
+    34/85: $illegal_insn$71
+    35/85: $jump_in_dec_o$70
+    36/85: $icache_inval_o$69
+    37/85: $jump_set_o$68
+    38/85: $illegal_insn$62
+    39/85: $multdiv_signed_mode_o$61
+    40/85: $multdiv_operator_o$60
+    41/85: $illegal_insn$65
+    42/85: $multdiv_signed_mode_o$64
+    43/85: $multdiv_operator_o$63
+    44/85: $illegal_insn$55
+    45/85: $illegal_insn$56
+    46/85: $illegal_insn$57
+    47/85: $illegal_insn$50
+    48/85: $illegal_insn$49
+    49/85: $illegal_insn$51
+    50/85: $illegal_insn$58
+    51/85: $illegal_insn$43
+    52/85: $illegal_insn$45
+    53/85: $data_type_o$44
+    54/85: $illegal_insn$41
+    55/85: $data_type_o$40
+    56/85: $illegal_insn$39
+    57/85: $illegal_insn$38
+    58/85: $illegal_insn$37
+    59/85: $rf_we$35
+    60/85: $jump_set_o$34
+    61/85: $rf_we$33
+    62/85: $jump_set_o$32
+    63/85: $csr_op$122
+    64/85: $rf_we$121
+    65/85: $csr_illegal$120
+    66/85: $illegal_insn$119
+    67/85: $branch_in_dec_o$118
+    68/85: $jump_in_dec_o$117
+    69/85: $data_sign_extension_o$116
+    70/85: $data_type_o$115
+    71/85: $data_we_o$114
+    72/85: $data_req_o$113
+    73/85: $csr_access_o$112
+    74/85: $multdiv_signed_mode_o$111
+    75/85: $multdiv_operator_o$110
+    76/85: $rf_ren_b_o$109
+    77/85: $rf_ren_a_o$108
+    78/85: $rf_wdata_sel_o$107
+    79/85: $icache_inval_o$106
+    80/85: $jump_set_o$105
+    81/85: $wfi_insn_o$104
+    82/85: $ecall_insn_o$103
+    83/85: $dret_insn_o$102
+    84/85: $mret_insn_o$101
+    85/85: $ebrk_insn_o$100
+Creating decoders for process `\ibex_decoder$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.decoder_i.$23'.
+     1/1: $csr_op_o$29
+Creating decoders for process `\ibex_compressed_decoder$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.compressed_decoder_i.$2'.
+     1/123: $gets_expanded$162
+     2/123: $cm_state_d$161
+     3/123: $cm_state_d$164
+     4/123: $cm_state_d$158
+     5/123: $gets_expanded$165
+     6/123: $instr_o$163
+     7/123: $gets_expanded$151
+     8/123: $cm_state_d$150
+     9/123: $cm_state_d$153
+    10/123: $cm_state_d$147
+    11/123: $gets_expanded$154
+    12/123: $instr_o$152
+    13/123: $gets_expanded$169
+    14/123: $cm_state_d$168
+    15/123: $illegal_instr_o$167
+    16/123: $instr_o$166
+    17/123: $gets_expanded$137
+    18/123: $cm_state_d$136
+    19/123: $cm_state_d$135
+    20/123: $cm_state_d$131
+    21/123: $gets_expanded$132
+    22/123: $gets_expanded$134
+    23/123: $cm_state_d$133
+    24/123: { $127 $cm_stack_adj_base.cm_stack_adj_base$126 }
+    25/123: $cm_state_d$122
+    26/123: $cm_state_d$125
+    27/123: $cm_sp_offset_d$124
+    28/123: $cm_rlist_d$123
+    29/123: $118
+    30/123: $cm_rlist_top_reg.cm_rlist_top_reg$117
+    31/123: $cm_state_d$142
+    32/123: $cm_state_d$107
+    33/123: $cm_state_d$110
+    34/123: $cm_state_d$103
+    35/123: $cm_sp_offset_d$109
+    36/123: $cm_rlist_d$108
+    37/123: $cm_state_d$114
+    38/123: $cm_sp_offset_d$113
+    39/123: $cm_rlist_d$112
+    40/123: $illegal_instr_o$111
+    41/123: $99
+    42/123: $cm_rlist_top_reg.cm_rlist_top_reg$98
+    43/123: { $92 $cm_stack_adj_base.cm_stack_adj_base$91 }
+    44/123: $cm_rlist_init.rlist$90
+    45/123: $gets_expanded$143
+    46/123: $cm_sp_offset_d$141
+    47/123: $cm_rlist_d$140
+    48/123: $illegal_instr_o$139
+    49/123: $instr_o$138
+    50/123: $illegal_instr_o$171
+    51/123: $gets_expanded$82
+    52/123: $cm_state_d$81
+    53/123: { $77 $cm_stack_adj_base.cm_stack_adj_base$76 }
+    54/123: $cm_state_d$72
+    55/123: $cm_state_d$75
+    56/123: $cm_sp_offset_d$74
+    57/123: $cm_rlist_d$73
+    58/123: $68
+    59/123: $cm_rlist_top_reg.cm_rlist_top_reg$67
+    60/123: $cm_state_d$87
+    61/123: $cm_state_d$56
+    62/123: $cm_state_d$59
+    63/123: $cm_state_d$53
+    64/123: $cm_sp_offset_d$58
+    65/123: $cm_rlist_d$57
+    66/123: $cm_state_d$63
+    67/123: $cm_sp_offset_d$62
+    68/123: $cm_rlist_d$61
+    69/123: $illegal_instr_o$60
+    70/123: $49
+    71/123: $cm_rlist_top_reg.cm_rlist_top_reg$48
+    72/123: $cm_rlist_init.rlist$45
+    73/123: $gets_expanded$88
+    74/123: $cm_sp_offset_d$86
+    75/123: $cm_rlist_d$85
+    76/123: $illegal_instr_o$84
+    77/123: $instr_o$83
+    78/123: $gets_expanded$175
+    79/123: $cm_state_d$174
+    80/123: $cm_sp_offset_d$173
+    81/123: $cm_rlist_d$172
+    82/123: $instr_o$170
+    83/123: $instr_o$40
+    84/123: $instr_o$41
+    85/123: $instr_o$42
+    86/123: $illegal_instr_o$35
+    87/123: $instr_o$36
+    88/123: $illegal_instr_o$37
+    89/123: $illegal_instr_o$43
+    90/123: $illegal_instr_o$31
+    91/123: $illegal_instr_o$29
+    92/123: $gets_expanded$181
+    93/123: $cm_state_d$180
+    94/123: $cm_sp_offset_d$179
+    95/123: $cm_rlist_d$178
+    96/123: $illegal_instr_o$177
+    97/123: $instr_o$176
+    98/123: $illegal_instr_o$21
+    99/123: $instr_o$20
+   100/123: $illegal_instr_o$23
+   101/123: $instr_o$22
+   102/123: $instr_o$24
+   103/123: $illegal_instr_o$19
+   104/123: $illegal_instr_o$25
+   105/123: $illegal_instr_o$17
+   106/123: $instr_o$15
+   107/123: $instr_o$26
+   108/123: $illegal_instr_o$27
+   109/123: $illegal_instr_o$8
+   110/123: $instr_o$7
+   111/123: $instr_o$5
+   112/123: $illegal_instr_o$6
+   113/123: $illegal_instr_o$10
+   114/123: $instr_o$9
+   115/123: $illegal_instr_o$4
+   116/123: $illegal_instr_o$12
+   117/123: $instr_o$11
+   118/123: $gets_expanded$187
+   119/123: $cm_state_d$186
+   120/123: $cm_sp_offset_d$185
+   121/123: $cm_rlist_d$184
+   122/123: $illegal_instr_o$183
+   123/123: $instr_o$182
+Creating decoders for process `\ibex_prefetch_buffer$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.gen_prefetch_buffer.prefetch_buffer_i.$40'.
+     1/1: $fetch_addr_q$41
+Creating decoders for process `\ibex_prefetch_buffer$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.gen_prefetch_buffer.prefetch_buffer_i.$29'.
+     1/1: $stored_addr_q$30
+Creating decoders for process `\ibex_cs_registers$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.$305'.
+     1/1: $mcountinhibit_d$307
+Creating decoders for process `\ibex_cs_registers$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.$221'.
+     1/1: $csr_wdata_int$225
+Creating decoders for process `\ibex_cs_registers$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.$309'.
+     1/1: $mcounteren_d$311
+Creating decoders for process `\ibex_cs_registers$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.$87'.
+     1/102: $cpuctrlsts_part_d[7:6]$212 [1]
+     2/102: $cpuctrlsts_part_d[7:6]$212 [0]
+     3/102: $mcause_en$194
+     4/102: $mcause_d$193
+     5/102: $mepc_en$192
+     6/102: $mepc_d$191
+     7/102: $mstatus_d[1]$189
+     8/102: $mstatus_d[5:1]$198 [0]
+     9/102: $mstatus_d[4:2]$190
+    10/102: $double_fault_seen_o$154
+    11/102: $cpuctrlsts_part_we$158
+    12/102: $cpuctrlsts_part_d[7:6]$157
+    13/102: $double_fault_seen_o$156
+    14/102: $cpuctrlsts_part_we$170
+    15/102: $cpuctrlsts_part_d[7:6]$169
+    16/102: $mstack_en$168
+    17/102: $mtval_en$167
+    18/102: $mtval_d$166
+    19/102: $mcause_en$165
+    20/102: $mcause_d$164
+    21/102: $mepc_en$163
+    22/102: $mepc_d$162
+    23/102: $mstatus_en$161
+    24/102: $mstatus_d[5:2]$160
+    25/102: $double_fault_seen_o$159
+    26/102: $cpuctrlsts_part_we$187
+    27/102: $cpuctrlsts_part_d[7:6]$186
+    28/102: $mstack_en$185
+    29/102: $depc_en$184
+    30/102: $depc_d$183
+    31/102: $dcsr_en$182
+    32/102: $dcsr_d[8:6]$181
+    33/102: $dcsr_d[1:0]$180
+    34/102: $mtval_en$179
+    35/102: $mtval_d$178
+    36/102: $mcause_en$177
+    37/102: $mcause_d$176
+    38/102: $mepc_en$175
+    39/102: $mepc_d$174
+    40/102: $mstatus_en$173
+    41/102: $mstatus_d[5:2]$172
+    42/102: $double_fault_seen_o$171
+    43/102: $exception_pc$150
+    44/102: $cpuctrlsts_part_we$213
+    45/102: $mstatus_d[5:1]$198 [4:1]
+    46/102: $mstack_en$211
+    47/102: $depc_en$210
+    48/102: $depc_d$209
+    49/102: $dcsr_en$208
+    50/102: $dcsr_d[8:6]$207
+    51/102: $dcsr_d[1:0]$206
+    52/102: $mtval_en$205
+    53/102: $mtval_d$204
+    54/102: $mcause_en$203
+    55/102: $mcause_d$202
+    56/102: $mepc_en$201
+    57/102: $mepc_d$200
+    58/102: $mstatus_en$199
+    59/102: $cpuctrlsts_part_d[7]$155
+    60/102: $priv_lvl_d$197
+    61/102: $exception_pc$196
+    62/102: $double_fault_seen_o$195
+    63/102: $dcsr_d[1:0]$98
+    64/102: $mstatus_d[3:2]$94
+    65/102: $cpuctrlsts_part_we$130
+    66/102: $cpuctrlsts_part_d$129
+    67/102: $mhpmcounterh_we$128
+    68/102: $mhpmcounter_we$127
+    69/102: $mcounteren_we$126
+    70/102: $mcountinhibit_we$125
+    71/102: $dscratch1_en$124
+    72/102: $dscratch0_en$123
+    73/102: $depc_en$122
+    74/102: $dcsr_en$121
+    75/102: $dcsr_d$120
+    76/102: $mtvec_en$119
+    77/102: $mtval_en$118
+    78/102: $mcause_en$117
+    79/102: $mepc_en$116
+    80/102: $mscratch_en$115
+    81/102: $mie_en$114
+    82/102: $mstatus_en$113
+    83/102: $mstatus_d$112
+    84/102: $cpuctrlsts_part_we$149
+    85/102: $cpuctrlsts_part_d$148
+    86/102: $mhpmcounterh_we$147
+    87/102: $mhpmcounter_we$146
+    88/102: $mcounteren_we$145
+    89/102: $mcountinhibit_we$144
+    90/102: $dscratch1_en$143
+    91/102: $dscratch0_en$142
+    92/102: $depc_en$141
+    93/102: $dcsr_en$140
+    94/102: $dcsr_d$139
+    95/102: $mtvec_en$138
+    96/102: $mtval_en$137
+    97/102: $mcause_en$136
+    98/102: $mepc_en$135
+    99/102: $mscratch_en$134
+   100/102: $mie_en$133
+   101/102: $mstatus_en$132
+   102/102: $mstatus_d$131
+Creating decoders for process `\ibex_cs_registers$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.$21'.
+     1/4: $illegal_csr$85
+     2/4: $illegal_csr$63
+     3/4: $dbg_csr$62
+     4/4: $csr_rdata_int$61
+Creating decoders for process `\ibex_load_store_unit$m7_ppa_j0_top.u.u_ibex.u_ibex_core.load_store_unit_i.$70'.
+     1/45: $ls_fsm_ns$120
+     2/45: $lsu_err_d$119
+     3/45: $pmp_err_d$118
+     4/45: $rdata_update$117
+     5/45: $addr_update$116
+     6/45: $ls_fsm_ns$113
+     7/45: $handle_misaligned_d$112
+     8/45: $ctrl_update$111
+     9/45: $addr_update$110
+    10/45: $ls_fsm_ns$101
+    11/45: $handle_misaligned_d$100
+    12/45: $ls_fsm_ns$107
+    13/45: $handle_misaligned_d$104
+    14/45: $lsu_err_d$106
+    15/45: $pmp_err_d$105
+    16/45: $rdata_update$103
+    17/45: $addr_update$102
+    18/45: $ls_fsm_ns$91
+    19/45: $handle_misaligned_d$90
+    20/45: $ctrl_update$89
+    21/45: $addr_update$88
+    22/45: $ls_fsm_ns$131
+    23/45: $ls_fsm_ns$77
+    24/45: $handle_misaligned_d$76
+    25/45: $ctrl_update$75
+    26/45: $addr_update$74
+    27/45: $ls_fsm_ns$86
+    28/45: $lsu_err_d$85
+    29/45: $pmp_err_d$84
+    30/45: $handle_misaligned_d$83
+    31/45: $ctrl_update$82
+    32/45: $addr_update$81
+    33/45: $perf_store_o$80
+    34/45: $perf_load_o$79
+    35/45: $data_req_o$78
+    36/45: $lsu_err_d$130
+    37/45: $pmp_err_d$129
+    38/45: $handle_misaligned_d$128
+    39/45: $rdata_update$127
+    40/45: $ctrl_update$126
+    41/45: $addr_update$125
+    42/45: $perf_store_o$124
+    43/45: $perf_load_o$123
+    44/45: $addr_incr_req_o$122
+    45/45: $data_req_o$121
+Creating decoders for process `\ibex_load_store_unit$m7_ppa_j0_top.u.u_ibex.u_ibex_core.load_store_unit_i.$58'.
+     1/1: $data_rdata_ext$59
+Creating decoders for process `\ibex_load_store_unit$m7_ppa_j0_top.u.u_ibex.u_ibex_core.load_store_unit_i.$47'.
+     1/5: $rdata_b_ext$55
+     2/5: $rdata_b_ext$53
+     3/5: $rdata_b_ext$51
+     4/5: $rdata_b_ext$56
+     5/5: $rdata_b_ext$49
+Creating decoders for process `\ibex_load_store_unit$m7_ppa_j0_top.u.u_ibex.u_ibex_core.load_store_unit_i.$36'.
+     1/5: $rdata_h_ext$44
+     2/5: $rdata_h_ext$42
+     3/5: $rdata_h_ext$40
+     4/5: $rdata_h_ext$45
+     5/5: $rdata_h_ext$38
+Creating decoders for process `\ibex_load_store_unit$m7_ppa_j0_top.u.u_ibex.u_ibex_core.load_store_unit_i.$33'.
+     1/1: $rdata_w_ext$34
+Creating decoders for process `\ibex_load_store_unit$m7_ppa_j0_top.u.u_ibex.u_ibex_core.load_store_unit_i.$29'.
+     1/1: $addr_last_q$32
+Creating decoders for process `\ibex_load_store_unit$m7_ppa_j0_top.u.u_ibex.u_ibex_core.load_store_unit_i.$20'.
+     1/4: $data_we_q$26
+     2/4: $data_sign_ext_q$25
+     3/4: $data_type_q$24
+     4/4: $rdata_offset_q$23
+Creating decoders for process `\ibex_load_store_unit$m7_ppa_j0_top.u.u_ibex.u_ibex_core.load_store_unit_i.$16'.
+     1/1: $rdata_q$19
+Creating decoders for process `\ibex_load_store_unit$m7_ppa_j0_top.u.u_ibex.u_ibex_core.load_store_unit_i.$13'.
+     1/1: $data_wdata$14
+Creating decoders for process `\ibex_load_store_unit$m7_ppa_j0_top.u.u_ibex.u_ibex_core.load_store_unit_i.$2'.
+     1/7: $data_be$10
+     2/7: $data_be$9
+     3/7: $data_be$8
+     4/7: $data_be$11
+     5/7: $data_be$5
+     6/7: $data_be$6
+     7/7: $data_be$4
+Creating decoders for process `\ibex_id_stage$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.$131'.
+     1/35: $id_fsm_d$157
+     2/35: $stall_jump$156
+     3/35: $stall_branch$155
+     4/35: $stall_multdiv$154
+     5/35: $rf_we_raw$152
+     6/35: $id_fsm_d$166
+     7/35: $rf_we_raw$164
+     8/35: $stall_jump$163
+     9/35: $stall_branch$162
+    10/35: $stall_multdiv$161
+    11/35: $id_fsm_d$135
+    12/35: $rf_we_raw$134
+    13/35: $stall_multdiv$133
+    14/35: $id_fsm_d$150
+    15/35: $stall_alu$149
+    16/35: $rf_we_raw$148
+    17/35: $stall_jump$147
+    18/35: $stall_branch$146
+    19/35: $stall_multdiv$145
+    20/35: $jump_set_raw$144
+    21/35: $branch_set_raw_d$143
+    22/35: $perf_branch_o$142
+    23/35: $stall_alu$165
+    24/35: $jump_set_raw$160
+    25/35: $branch_set_raw_d$159
+    26/35: $perf_branch_o$158
+    27/35: $id_fsm_d$175
+    28/35: $stall_alu$174
+    29/35: $rf_we_raw$173
+    30/35: $stall_jump$172
+    31/35: $stall_branch$171
+    32/35: $stall_multdiv$170
+    33/35: $jump_set_raw$169
+    34/35: $branch_set_raw_d$168
+    35/35: $perf_branch_o$167
+Creating decoders for process `\ibex_id_stage$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.$127'.
+     1/1: $id_fsm_q$130
+Creating decoders for process `\ibex_id_stage$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.$50'.
+     1/1: $rf_wdata_id_o$51
+Creating decoders for process `\ibex_id_stage$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.$41'.
+     1/1: $imd_val_q[33:0]$44
+Creating decoders for process `\ibex_id_stage$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.$37'.
+     1/1: $imd_val_q[67:34]$40
+Creating decoders for process `\ibex_id_stage$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.$30'.
+     1/1: $imm_b$32
+Creating decoders for process `\ibex_id_stage$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.$23'.
+     1/1: $alu_operand_a$24
+Creating decoders for process `\ibex_if_stage$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.$96'.
+     1/10: $pc_id_o$106
+     2/10: $illegal_c_insn_id_o$105
+     3/10: $instr_fetch_err_plus2_o$104
+     4/10: $instr_fetch_err_o$103
+     5/10: $instr_expanded_id_o$102
+     6/10: $instr_gets_expanded_id_o$101
+     7/10: $instr_is_compressed_id_o$100
+     8/10: $instr_rdata_c_id_o$99
+     9/10: $instr_rdata_alu_id_o$98
+    10/10: $instr_rdata_id_o$97
+Creating decoders for process `\ibex_if_stage$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.$9'.
+     1/1: $fetch_addr_n$10
+Creating decoders for process `\ibex_if_stage$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.$4'.
+     1/2: $exc_pc$6
+     2/2: $irq_vec$5
+Creating decoders for process `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$212'.
+     1/1: $g_rf_flops[30].rf_reg_q$215
+Creating decoders for process `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$207'.
+     1/1: $g_rf_flops[29].rf_reg_q$210
+Creating decoders for process `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$202'.
+     1/1: $g_rf_flops[28].rf_reg_q$205
+Creating decoders for process `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$197'.
+     1/1: $g_rf_flops[27].rf_reg_q$200
+Creating decoders for process `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$192'.
+     1/1: $g_rf_flops[26].rf_reg_q$195
+Creating decoders for process `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$187'.
+     1/1: $g_rf_flops[25].rf_reg_q$190
+Creating decoders for process `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$182'.
+     1/1: $g_rf_flops[24].rf_reg_q$185
+Creating decoders for process `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$177'.
+     1/1: $g_rf_flops[23].rf_reg_q$180
+Creating decoders for process `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$172'.
+     1/1: $g_rf_flops[22].rf_reg_q$175
+Creating decoders for process `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$167'.
+     1/1: $g_rf_flops[21].rf_reg_q$170
+Creating decoders for process `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$162'.
+     1/1: $g_rf_flops[20].rf_reg_q$165
+Creating decoders for process `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$157'.
+     1/1: $g_rf_flops[19].rf_reg_q$160
+Creating decoders for process `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$152'.
+     1/1: $g_rf_flops[18].rf_reg_q$155
+Creating decoders for process `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$147'.
+     1/1: $g_rf_flops[17].rf_reg_q$150
+Creating decoders for process `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$142'.
+     1/1: $g_rf_flops[16].rf_reg_q$145
+Creating decoders for process `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$137'.
+     1/1: $g_rf_flops[15].rf_reg_q$140
+Creating decoders for process `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$132'.
+     1/1: $g_rf_flops[14].rf_reg_q$135
+Creating decoders for process `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$127'.
+     1/1: $g_rf_flops[13].rf_reg_q$130
+Creating decoders for process `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$122'.
+     1/1: $g_rf_flops[12].rf_reg_q$125
+Creating decoders for process `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$117'.
+     1/1: $g_rf_flops[11].rf_reg_q$120
+Creating decoders for process `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$112'.
+     1/1: $g_rf_flops[10].rf_reg_q$115
+Creating decoders for process `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$107'.
+     1/1: $g_rf_flops[9].rf_reg_q$110
+Creating decoders for process `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$102'.
+     1/1: $g_rf_flops[8].rf_reg_q$105
+Creating decoders for process `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$97'.
+     1/1: $g_rf_flops[7].rf_reg_q$100
+Creating decoders for process `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$92'.
+     1/1: $g_rf_flops[6].rf_reg_q$95
+Creating decoders for process `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$87'.
+     1/1: $g_rf_flops[5].rf_reg_q$90
+Creating decoders for process `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$82'.
+     1/1: $g_rf_flops[4].rf_reg_q$85
+Creating decoders for process `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$77'.
+     1/1: $g_rf_flops[3].rf_reg_q$80
+Creating decoders for process `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$72'.
+     1/1: $g_rf_flops[2].rf_reg_q$75
+Creating decoders for process `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$67'.
+     1/1: $g_rf_flops[1].rf_reg_q$70
+Creating decoders for process `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$217'.
+     1/1: $g_rf_flops[31].rf_reg_q$220
+Creating decoders for process `\prim_clock_gating$m7_ppa_j0_top.u.u_ibex.core_clock_gate_i.$0'.
+     1/3: $en_latch$3
+     2/3: $5
+     3/3: $4
+Creating decoders for process `\timer$m7_ppa_j0_top.u.u_timer.$76'.
+     1/2: $rdata_q$78
+     2/2: $error_q$77
+Creating decoders for process `\timer$m7_ppa_j0_top.u.u_timer.$57'.
+     1/1: $mtimecmp_q$61
+Creating decoders for process `\timer$m7_ppa_j0_top.u.u_timer.$72'.
+     1/2: $rdata_d$74
+     2/2: $error_d$73
+Creating decoders for process `\m7_ppa_mem_slave$m7_ppa_j0_top.u.u_dram.$0'.
+     1/5: $rdata$5
+     2/5: $addr_q$9
+     3/5: $rdata$8
+     4/5: $valid$7
+     5/5: $gnt$6
+Creating decoders for process `\m7_ppa_mem_slave$m7_ppa_j0_top.u.u_imem.$0'.
+     1/5: $rdata$5
+     2/5: $addr_q$9
+     3/5: $rdata$8
+     4/5: $valid$7
+     5/5: $gnt$6
+Creating decoders for process `\bus$m7_ppa_j0_top.u.u_bus.$23'.
+     1/10: $device_wdata_o[31:0]$57
+     2/10: $device_be_o[3:0]$56
+     3/10: $device_we_o[0]$55
+     4/10: $device_addr_o[31:0]$54
+     5/10: $device_req_o[0]$53
+     6/10: $device_wdata_o[63:32]$40
+     7/10: $device_be_o[7:4]$39
+     8/10: $device_we_o[1]$38
+     9/10: $device_addr_o[63:32]$37
+    10/10: $device_req_o[1]$36
+Creating decoders for process `\bus$m7_ppa_j0_top.u.u_bus.$59'.
+     1/3: $host_err_o$80
+     2/3: $host_rdata_o$79
+     3/3: $host_rvalid_o$78
+Creating decoders for process `\bus$m7_ppa_j0_top.u.u_bus.$4'.
+     1/4: $device_sel_req$16
+     2/4: $device_sel_valid$15
+     3/4: $device_sel_req$10
+     4/4: $device_sel_valid$9
+Creating decoders for process `\bus$m7_ppa_j0_top.u.u_bus.$0'.
+     1/2: $host_sel_req$2
+     2/2: $host_sel_valid$1
+Creating decoders for process `\m7_ppa_top$m7_ppa_j0_top.u.$6'.
+     1/2: $research_outstanding$10
+     2/2: $research_outstanding$11
+
+1.8. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 1 empty switch in `\ibex_fetch_fifo$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.gen_prefetch_buffer.prefetch_buffer_i.fifo_i.$126'.
+Removing empty process `ibex_fetch_fifo$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.gen_prefetch_buffer.prefetch_buffer_i.fifo_i.$126'.
+Found and cleaned up 1 empty switch in `\ibex_fetch_fifo$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.gen_prefetch_buffer.prefetch_buffer_i.fifo_i.$123'.
+Removing empty process `ibex_fetch_fifo$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.gen_prefetch_buffer.prefetch_buffer_i.fifo_i.$123'.
+Found and cleaned up 1 empty switch in `\ibex_fetch_fifo$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.gen_prefetch_buffer.prefetch_buffer_i.fifo_i.$129'.
+Removing empty process `ibex_fetch_fifo$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.gen_prefetch_buffer.prefetch_buffer_i.fifo_i.$129'.
+Found and cleaned up 1 empty switch in `\ibex_fetch_fifo$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.gen_prefetch_buffer.prefetch_buffer_i.fifo_i.$54'.
+Removing empty process `ibex_fetch_fifo$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.gen_prefetch_buffer.prefetch_buffer_i.fifo_i.$54'.
+Found and cleaned up 3 empty switches in `\ibex_fetch_fifo$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.gen_prefetch_buffer.prefetch_buffer_i.fifo_i.$37'.
+Removing empty process `ibex_fetch_fifo$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.gen_prefetch_buffer.prefetch_buffer_i.fifo_i.$37'.
+Found and cleaned up 1 empty switch in `\ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_cpuctrlsts_part_csr.$0'.
+Removing empty process `ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_cpuctrlsts_part_csr.$0'.
+Found and cleaned up 1 empty switch in `\ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_mcounteren_csr.$0'.
+Removing empty process `ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_mcounteren_csr.$0'.
+Found and cleaned up 5 empty switches in `\ibex_counter$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.minstret_counter_i.$2'.
+Removing empty process `ibex_counter$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.minstret_counter_i.$2'.
+Found and cleaned up 5 empty switches in `\ibex_counter$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.mcycle_counter_i.$2'.
+Removing empty process `ibex_counter$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.mcycle_counter_i.$2'.
+Found and cleaned up 1 empty switch in `\ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_mstack_cause_csr.$0'.
+Removing empty process `ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_mstack_cause_csr.$0'.
+Found and cleaned up 1 empty switch in `\ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_mstack_epc_csr.$0'.
+Removing empty process `ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_mstack_epc_csr.$0'.
+Found and cleaned up 1 empty switch in `\ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_mstack_csr.$0'.
+Removing empty process `ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_mstack_csr.$0'.
+Found and cleaned up 1 empty switch in `\ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_dscratch1_csr.$0'.
+Removing empty process `ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_dscratch1_csr.$0'.
+Found and cleaned up 1 empty switch in `\ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_dscratch0_csr.$0'.
+Removing empty process `ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_dscratch0_csr.$0'.
+Found and cleaned up 1 empty switch in `\ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_depc_csr.$0'.
+Removing empty process `ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_depc_csr.$0'.
+Found and cleaned up 1 empty switch in `\ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_dcsr_csr.$0'.
+Removing empty process `ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_dcsr_csr.$0'.
+Found and cleaned up 1 empty switch in `\ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_mtvec_csr.$0'.
+Removing empty process `ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_mtvec_csr.$0'.
+Found and cleaned up 1 empty switch in `\ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_mtval_csr.$0'.
+Removing empty process `ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_mtval_csr.$0'.
+Found and cleaned up 1 empty switch in `\ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_mcause_csr.$0'.
+Removing empty process `ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_mcause_csr.$0'.
+Found and cleaned up 1 empty switch in `\ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_mscratch_csr.$0'.
+Removing empty process `ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_mscratch_csr.$0'.
+Found and cleaned up 1 empty switch in `\ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_mie_csr.$0'.
+Removing empty process `ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_mie_csr.$0'.
+Found and cleaned up 1 empty switch in `\ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_mepc_csr.$0'.
+Removing empty process `ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_mepc_csr.$0'.
+Found and cleaned up 1 empty switch in `\ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_mstatus_csr.$0'.
+Removing empty process `ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_mstatus_csr.$0'.
+Found and cleaned up 7 empty switches in `\ibex_multdiv_fast$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.gen_multdiv_fast.multdiv_i.$90'.
+Removing empty process `ibex_multdiv_fast$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.gen_multdiv_fast.multdiv_i.$90'.
+Found and cleaned up 1 empty switch in `\ibex_multdiv_fast$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.gen_multdiv_fast.multdiv_i.$75'.
+Removing empty process `ibex_multdiv_fast$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.gen_multdiv_fast.multdiv_i.$75'.
+Found and cleaned up 1 empty switch in `\ibex_multdiv_fast$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.gen_multdiv_fast.multdiv_i.$60'.
+Removing empty process `ibex_multdiv_fast$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.gen_multdiv_fast.multdiv_i.$60'.
+Found and cleaned up 5 empty switches in `\ibex_multdiv_fast$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.gen_multdiv_fast.multdiv_i.$34'.
+Removing empty process `ibex_multdiv_fast$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.gen_multdiv_fast.multdiv_i.$34'.
+Found and cleaned up 1 empty switch in `\ibex_multdiv_fast$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.gen_multdiv_fast.multdiv_i.$7'.
+Removing empty process `ibex_multdiv_fast$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.gen_multdiv_fast.multdiv_i.$7'.
+Found and cleaned up 1 empty switch in `\ibex_alu$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.alu_i.$152'.
+Removing empty process `ibex_alu$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.alu_i.$152'.
+Found and cleaned up 1 empty switch in `\ibex_alu$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.alu_i.$133'.
+Removing empty process `ibex_alu$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.alu_i.$133'.
+Found and cleaned up 1 empty switch in `\ibex_alu$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.alu_i.$172'.
+Removing empty process `ibex_alu$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.alu_i.$172'.
+Found and cleaned up 3 empty switches in `\ibex_alu$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.alu_i.$118'.
+Removing empty process `ibex_alu$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.alu_i.$118'.
+Found and cleaned up 1 empty switch in `\ibex_alu$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.alu_i.$109'.
+Removing empty process `ibex_alu$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.alu_i.$109'.
+Found and cleaned up 1 empty switch in `\ibex_alu$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.alu_i.$60'.
+Removing empty process `ibex_alu$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.alu_i.$60'.
+Found and cleaned up 1 empty switch in `\ibex_alu$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.alu_i.$53'.
+Removing empty process `ibex_alu$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.alu_i.$53'.
+Found and cleaned up 1 empty switch in `\ibex_alu$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.alu_i.$47'.
+Removing empty process `ibex_alu$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.alu_i.$47'.
+Found and cleaned up 1 empty switch in `\ibex_alu$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.alu_i.$40'.
+Removing empty process `ibex_alu$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.alu_i.$40'.
+Found and cleaned up 1 empty switch in `\ibex_alu$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.alu_i.$35'.
+Removing empty process `ibex_alu$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.alu_i.$35'.
+Found and cleaned up 1 empty switch in `\ibex_alu$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.alu_i.$32'.
+Removing empty process `ibex_alu$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.alu_i.$32'.
+Found and cleaned up 55 empty switches in `\ibex_controller$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.controller_i.$141'.
+Removing empty process `ibex_controller$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.controller_i.$141'.
+Found and cleaned up 29 empty switches in `\ibex_controller$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.controller_i.$113'.
+Removing empty process `ibex_controller$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.controller_i.$113'.
+Found and cleaned up 11 empty switches in `\ibex_controller$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.controller_i.$41'.
+Removing empty process `ibex_controller$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.controller_i.$41'.
+Found and cleaned up 27 empty switches in `\ibex_decoder$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.decoder_i.$132'.
+Removing empty process `ibex_decoder$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.decoder_i.$132'.
+Found and cleaned up 53 empty switches in `\ibex_decoder$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.decoder_i.$31'.
+Removing empty process `ibex_decoder$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.decoder_i.$31'.
+Found and cleaned up 1 empty switch in `\ibex_decoder$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.decoder_i.$23'.
+Removing empty process `ibex_decoder$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.decoder_i.$23'.
+Found and cleaned up 113 empty switches in `\ibex_compressed_decoder$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.compressed_decoder_i.$2'.
+Removing empty process `ibex_compressed_decoder$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.compressed_decoder_i.$2'.
+Found and cleaned up 1 empty switch in `\ibex_prefetch_buffer$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.gen_prefetch_buffer.prefetch_buffer_i.$40'.
+Removing empty process `ibex_prefetch_buffer$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.gen_prefetch_buffer.prefetch_buffer_i.$40'.
+Found and cleaned up 1 empty switch in `\ibex_prefetch_buffer$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.gen_prefetch_buffer.prefetch_buffer_i.$29'.
+Removing empty process `ibex_prefetch_buffer$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.gen_prefetch_buffer.prefetch_buffer_i.$29'.
+Found and cleaned up 1 empty switch in `\ibex_cs_registers$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.$305'.
+Removing empty process `ibex_cs_registers$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.$305'.
+Found and cleaned up 1 empty switch in `\ibex_cs_registers$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.$221'.
+Removing empty process `ibex_cs_registers$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.$221'.
+Found and cleaned up 1 empty switch in `\ibex_cs_registers$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.$309'.
+Removing empty process `ibex_cs_registers$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.$309'.
+Found and cleaned up 23 empty switches in `\ibex_cs_registers$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.$87'.
+Removing empty process `ibex_cs_registers$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.$87'.
+Found and cleaned up 3 empty switches in `\ibex_cs_registers$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.$21'.
+Removing empty process `ibex_cs_registers$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.$21'.
+Found and cleaned up 15 empty switches in `\ibex_load_store_unit$m7_ppa_j0_top.u.u_ibex.u_ibex_core.load_store_unit_i.$70'.
+Removing empty process `ibex_load_store_unit$m7_ppa_j0_top.u.u_ibex.u_ibex_core.load_store_unit_i.$70'.
+Found and cleaned up 1 empty switch in `\ibex_load_store_unit$m7_ppa_j0_top.u.u_ibex.u_ibex_core.load_store_unit_i.$58'.
+Removing empty process `ibex_load_store_unit$m7_ppa_j0_top.u.u_ibex.u_ibex_core.load_store_unit_i.$58'.
+Found and cleaned up 9 empty switches in `\ibex_load_store_unit$m7_ppa_j0_top.u.u_ibex.u_ibex_core.load_store_unit_i.$47'.
+Removing empty process `ibex_load_store_unit$m7_ppa_j0_top.u.u_ibex.u_ibex_core.load_store_unit_i.$47'.
+Found and cleaned up 9 empty switches in `\ibex_load_store_unit$m7_ppa_j0_top.u.u_ibex.u_ibex_core.load_store_unit_i.$36'.
+Removing empty process `ibex_load_store_unit$m7_ppa_j0_top.u.u_ibex.u_ibex_core.load_store_unit_i.$36'.
+Found and cleaned up 1 empty switch in `\ibex_load_store_unit$m7_ppa_j0_top.u.u_ibex.u_ibex_core.load_store_unit_i.$33'.
+Removing empty process `ibex_load_store_unit$m7_ppa_j0_top.u.u_ibex.u_ibex_core.load_store_unit_i.$33'.
+Found and cleaned up 1 empty switch in `\ibex_load_store_unit$m7_ppa_j0_top.u.u_ibex.u_ibex_core.load_store_unit_i.$29'.
+Removing empty process `ibex_load_store_unit$m7_ppa_j0_top.u.u_ibex.u_ibex_core.load_store_unit_i.$29'.
+Found and cleaned up 1 empty switch in `\ibex_load_store_unit$m7_ppa_j0_top.u.u_ibex.u_ibex_core.load_store_unit_i.$20'.
+Removing empty process `ibex_load_store_unit$m7_ppa_j0_top.u.u_ibex.u_ibex_core.load_store_unit_i.$20'.
+Found and cleaned up 1 empty switch in `\ibex_load_store_unit$m7_ppa_j0_top.u.u_ibex.u_ibex_core.load_store_unit_i.$16'.
+Removing empty process `ibex_load_store_unit$m7_ppa_j0_top.u.u_ibex.u_ibex_core.load_store_unit_i.$16'.
+Found and cleaned up 1 empty switch in `\ibex_load_store_unit$m7_ppa_j0_top.u.u_ibex.u_ibex_core.load_store_unit_i.$13'.
+Removing empty process `ibex_load_store_unit$m7_ppa_j0_top.u.u_ibex.u_ibex_core.load_store_unit_i.$13'.
+Found and cleaned up 13 empty switches in `\ibex_load_store_unit$m7_ppa_j0_top.u.u_ibex.u_ibex_core.load_store_unit_i.$2'.
+Removing empty process `ibex_load_store_unit$m7_ppa_j0_top.u.u_ibex.u_ibex_core.load_store_unit_i.$2'.
+Found and cleaned up 11 empty switches in `\ibex_id_stage$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.$131'.
+Removing empty process `ibex_id_stage$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.$131'.
+Found and cleaned up 1 empty switch in `\ibex_id_stage$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.$127'.
+Removing empty process `ibex_id_stage$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.$127'.
+Found and cleaned up 1 empty switch in `\ibex_id_stage$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.$50'.
+Removing empty process `ibex_id_stage$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.$50'.
+Found and cleaned up 1 empty switch in `\ibex_id_stage$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.$41'.
+Removing empty process `ibex_id_stage$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.$41'.
+Found and cleaned up 1 empty switch in `\ibex_id_stage$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.$37'.
+Removing empty process `ibex_id_stage$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.$37'.
+Found and cleaned up 1 empty switch in `\ibex_id_stage$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.$30'.
+Removing empty process `ibex_id_stage$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.$30'.
+Found and cleaned up 1 empty switch in `\ibex_id_stage$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.$23'.
+Removing empty process `ibex_id_stage$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.$23'.
+Found and cleaned up 1 empty switch in `\ibex_if_stage$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.$96'.
+Removing empty process `ibex_if_stage$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.$96'.
+Found and cleaned up 1 empty switch in `\ibex_if_stage$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.$9'.
+Removing empty process `ibex_if_stage$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.$9'.
+Found and cleaned up 3 empty switches in `\ibex_if_stage$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.$4'.
+Removing empty process `ibex_if_stage$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.$4'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$212'.
+Removing empty process `ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$212'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$207'.
+Removing empty process `ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$207'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$202'.
+Removing empty process `ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$202'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$197'.
+Removing empty process `ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$197'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$192'.
+Removing empty process `ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$192'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$187'.
+Removing empty process `ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$187'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$182'.
+Removing empty process `ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$182'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$177'.
+Removing empty process `ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$177'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$172'.
+Removing empty process `ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$172'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$167'.
+Removing empty process `ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$167'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$162'.
+Removing empty process `ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$162'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$157'.
+Removing empty process `ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$157'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$152'.
+Removing empty process `ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$152'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$147'.
+Removing empty process `ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$147'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$142'.
+Removing empty process `ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$142'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$137'.
+Removing empty process `ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$137'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$132'.
+Removing empty process `ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$132'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$127'.
+Removing empty process `ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$127'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$122'.
+Removing empty process `ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$122'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$117'.
+Removing empty process `ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$117'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$112'.
+Removing empty process `ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$112'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$107'.
+Removing empty process `ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$107'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$102'.
+Removing empty process `ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$102'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$97'.
+Removing empty process `ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$97'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$92'.
+Removing empty process `ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$92'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$87'.
+Removing empty process `ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$87'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$82'.
+Removing empty process `ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$82'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$77'.
+Removing empty process `ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$77'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$72'.
+Removing empty process `ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$72'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$67'.
+Removing empty process `ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$67'.
+Found and cleaned up 1 empty switch in `\ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$217'.
+Removing empty process `ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.$217'.
+Found and cleaned up 1 empty switch in `\prim_clock_gating$m7_ppa_j0_top.u.u_ibex.core_clock_gate_i.$0'.
+Removing empty process `prim_clock_gating$m7_ppa_j0_top.u.u_ibex.core_clock_gate_i.$0'.
+Found and cleaned up 1 empty switch in `\timer$m7_ppa_j0_top.u.u_timer.$76'.
+Removing empty process `timer$m7_ppa_j0_top.u.u_timer.$76'.
+Found and cleaned up 1 empty switch in `\timer$m7_ppa_j0_top.u.u_timer.$57'.
+Removing empty process `timer$m7_ppa_j0_top.u.u_timer.$57'.
+Found and cleaned up 1 empty switch in `\timer$m7_ppa_j0_top.u.u_timer.$72'.
+Removing empty process `timer$m7_ppa_j0_top.u.u_timer.$72'.
+Found and cleaned up 3 empty switches in `\m7_ppa_mem_slave$m7_ppa_j0_top.u.u_dram.$0'.
+Removing empty process `m7_ppa_mem_slave$m7_ppa_j0_top.u.u_dram.$0'.
+Found and cleaned up 3 empty switches in `\m7_ppa_mem_slave$m7_ppa_j0_top.u.u_imem.$0'.
+Removing empty process `m7_ppa_mem_slave$m7_ppa_j0_top.u.u_imem.$0'.
+Found and cleaned up 3 empty switches in `\bus$m7_ppa_j0_top.u.u_bus.$23'.
+Removing empty process `bus$m7_ppa_j0_top.u.u_bus.$23'.
+Found and cleaned up 1 empty switch in `\bus$m7_ppa_j0_top.u.u_bus.$59'.
+Removing empty process `bus$m7_ppa_j0_top.u.u_bus.$59'.
+Found and cleaned up 3 empty switches in `\bus$m7_ppa_j0_top.u.u_bus.$4'.
+Removing empty process `bus$m7_ppa_j0_top.u.u_bus.$4'.
+Found and cleaned up 1 empty switch in `\bus$m7_ppa_j0_top.u.u_bus.$0'.
+Removing empty process `bus$m7_ppa_j0_top.u.u_bus.$0'.
+Found and cleaned up 3 empty switches in `\m7_ppa_top$m7_ppa_j0_top.u.$6'.
+Removing empty process `m7_ppa_top$m7_ppa_j0_top.u.$6'.
+Cleaned up 507 empty switches.
+
+1.9. Executing OPT_EXPR pass (perform const folding).
+Optimizing module ibex_fetch_fifo$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.gen_prefetch_buffer.prefetch_buffer_i.fifo_i.
+<suppressed ~1 debug messages>
+Optimizing module ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_cpuctrlsts_part_csr.
+<suppressed ~1 debug messages>
+Optimizing module ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_mcounteren_csr.
+<suppressed ~1 debug messages>
+Optimizing module ibex_counter$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.minstret_counter_i.
+<suppressed ~1 debug messages>
+Optimizing module ibex_counter$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.mcycle_counter_i.
+<suppressed ~1 debug messages>
+Optimizing module ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_mstack_cause_csr.
+<suppressed ~1 debug messages>
+Optimizing module ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_mstack_epc_csr.
+<suppressed ~1 debug messages>
+Optimizing module ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_mstack_csr.
+<suppressed ~1 debug messages>
+Optimizing module ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_dscratch1_csr.
+<suppressed ~1 debug messages>
+Optimizing module ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_dscratch0_csr.
+<suppressed ~1 debug messages>
+Optimizing module ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_depc_csr.
+<suppressed ~1 debug messages>
+Optimizing module ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_dcsr_csr.
+<suppressed ~1 debug messages>
+Optimizing module ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_mtvec_csr.
+<suppressed ~1 debug messages>
+Optimizing module ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_mtval_csr.
+<suppressed ~1 debug messages>
+Optimizing module ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_mcause_csr.
+<suppressed ~1 debug messages>
+Optimizing module ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_mscratch_csr.
+<suppressed ~1 debug messages>
+Optimizing module ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_mie_csr.
+<suppressed ~1 debug messages>
+Optimizing module ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_mepc_csr.
+<suppressed ~1 debug messages>
+Optimizing module ibex_csr$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.u_mstatus_csr.
+<suppressed ~1 debug messages>
+Optimizing module ibex_multdiv_fast$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.gen_multdiv_fast.multdiv_i.
+Couldn't topologically sort cells, optimizing module ibex_multdiv_fast$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.gen_multdiv_fast.multdiv_i may take a longer time.
+Couldn't topologically sort cells, optimizing module ibex_multdiv_fast$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.gen_multdiv_fast.multdiv_i may take a longer time.
+Couldn't topologically sort cells, optimizing module ibex_multdiv_fast$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.gen_multdiv_fast.multdiv_i may take a longer time.
+<suppressed ~24 debug messages>
+Optimizing module ibex_alu$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.alu_i.
+<suppressed ~14 debug messages>
+Optimizing module ibex_controller$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.controller_i.
+Couldn't topologically sort cells, optimizing module ibex_controller$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.controller_i may take a longer time.
+Couldn't topologically sort cells, optimizing module ibex_controller$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.controller_i may take a longer time.
+<suppressed ~29 debug messages>
+Optimizing module ibex_decoder$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.decoder_i.
+<suppressed ~33 debug messages>
+Optimizing module ibex_compressed_decoder$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.compressed_decoder_i.
+<suppressed ~94 debug messages>
+Optimizing module ibex_prefetch_buffer$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.gen_prefetch_buffer.prefetch_buffer_i.
+<suppressed ~1 debug messages>
+Optimizing module ibex_cs_registers$m7_ppa_j0_top.u.u_ibex.u_ibex_core.cs_registers_i.
+<suppressed ~107 debug messages>
+Optimizing module ibex_wb_stage$m7_ppa_j0_top.u.u_ibex.u_ibex_core.wb_stage_i.
+Optimizing module ibex_load_store_unit$m7_ppa_j0_top.u.u_ibex.u_ibex_core.load_store_unit_i.
+<suppressed ~61 debug messages>
+Optimizing module ibex_ex_block$m7_ppa_j0_top.u.u_ibex.u_ibex_core.ex_block_i.
+Optimizing module ibex_id_stage$m7_ppa_j0_top.u.u_ibex.u_ibex_core.id_stage_i.
+<suppressed ~72 debug messages>
+Optimizing module ibex_if_stage$m7_ppa_j0_top.u.u_ibex.u_ibex_core.if_stage_i.
+<suppressed ~3 debug messages>
+Optimizing module ibex_register_file_ff$m7_ppa_j0_top.u.u_ibex.gen_regfile_ff.register_file_i.
+<suppressed ~32 debug messages>
+Optimizing module ibex_core$m7_ppa_j0_top.u.u_ibex.u_ibex_core.
+Optimizing module prim_buf$m7_ppa_j0_top.u.u_ibex.u_mcounteren_writable_buf.
+Optimizing module prim_buf$m7_ppa_j0_top.u.u_ibex.u_fetch_enable_buf.
+Optimizing module prim_clock_gating$m7_ppa_j0_top.u.u_ibex.core_clock_gate_i.
+<suppressed ~4 debug messages>
+Optimizing module timer$m7_ppa_j0_top.u.u_timer.
+<suppressed ~7 debug messages>
+Optimizing module m7_ppa_mem_slave$m7_ppa_j0_top.u.u_dram.
+<suppressed ~3 debug messages>
+Optimizing module m7_ppa_mem_slave$m7_ppa_j0_top.u.u_imem.
+<suppressed ~3 debug messages>
+Optimizing module ibex_top$m7_ppa_j0_top.u.u_ibex.
+<suppressed ~2 debug messages>
+Optimizing module bus$m7_ppa_j0_top.u.u_bus.
+<suppressed ~7 debug messages>
+Optimizing module m7_ppa_top$m7_ppa_j0_top.u.
+<suppressed ~1 debug messages>
+Optimizing module m7_ppa_j0_top.
+
+End of script. Logfile hash: 995ccdaa13, time: 0.11s, user: 0.13s, system: 0.06s, MEM: 53.33 MB peak
+Yosys 0.68+post (git sha1 UNKNOWN, Release, GNU /usr/local/bin/wrapped-cc/g++ 11.4.0)
+Time spent: 66% 2x read_slang (0 sec), 16% 1x opt_expr (0 sec), ...

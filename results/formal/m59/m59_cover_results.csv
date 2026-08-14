@@ -1,0 +1,11 @@
+cover_id,variant,env,result,notes
+M59-COV-01,proper,4,REACHABLE,cover(1) auth AW
+M59-COV-02,both,4,REACHABLE,cover(2) deny AW
+M59-COV-03,proper,4,REACHABLE,cover(7) AW before W
+M59-COV-04,proper,4,INCONCLUSIVE,delay>=8 not targeted
+M59-COV-05,proper,4,REACHABLE,cover(5) auth route mem write
+M59-COV-06,both,4,REACHABLE,cover(6) deny B / cover(9)
+M59-COV-07,both,4,INCONCLUSIVE,policy change between txns needs deeper BMC
+M59-COV-08,both,4,REACHABLE,stall via ready backpressure
+M59-COV-09,original,0,REACHABLE,cover(4) bad mem write
+M59-COV-10,proper,4,REACHABLE,cover(6) deny path

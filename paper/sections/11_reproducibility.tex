@@ -1,0 +1,17 @@
+\section{Reproducibility}
+\label{sec:repro}
+
+% VERIFIED commands:
+\begin{itemize}
+  \item \texttt{make m510-matrix} --- regenerate guarantee tables
+  \item \texttt{make m510} --- full M5.10 reproduction suite
+  \item \texttt{make paper} --- regenerate artifacts and compile PDF
+\end{itemize}
+
+% Provenance: commit \ProvenanceCommit{}, generated \ProvenanceGenerated{}.
+% Branch: \texttt{m6-publication-freeze}. M5.10 checkpoint tag: \texttt{checkpoint-m510-complete} on \GitCommitMFiveTen{}.
+
+% Toolchain: Yosys 0.68+ (read\_slang), SymbiYosys, Z3 5.0.0, Verilator 5.050.
+% Yices witness replay: unavailable (TOOLCHAIN\_LIMITATION).
+
+See Appendix~\ref{app:repro} for artifact paths and formal-engine commands.

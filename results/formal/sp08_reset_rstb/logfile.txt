@@ -1,0 +1,417 @@
+SBY 22:58:25 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] Removing directory '/home/mmr/ricv_paper/results/formal/sp08_reset_rstb'.
+SBY 22:58:25 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] Copy '/home/mmr/ricv_paper/formal/sby/../../rtl/common/bus_pkg.vh' to '/home/mmr/ricv_paper/results/formal/sp08_reset_rstb/src/bus_pkg.vh'.
+SBY 22:58:25 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] Copy '/home/mmr/ricv_paper/formal/sby/../../rtl/soc/security_config.v' to '/home/mmr/ricv_paper/results/formal/sp08_reset_rstb/src/security_config.v'.
+SBY 22:58:25 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] Copy '/home/mmr/ricv_paper/formal/sby/../../rtl/iopmp/iopmp.v' to '/home/mmr/ricv_paper/results/formal/sp08_reset_rstb/src/iopmp.v'.
+SBY 22:58:25 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] Copy '/home/mmr/ricv_paper/formal/sby/../../rtl/interconnect/interconnect.v' to '/home/mmr/ricv_paper/results/formal/sp08_reset_rstb/src/interconnect.v'.
+SBY 22:58:25 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] Copy '/home/mmr/ricv_paper/formal/sby/../../rtl/memory/sram.v' to '/home/mmr/ricv_paper/results/formal/sp08_reset_rstb/src/sram.v'.
+SBY 22:58:25 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] Copy '/home/mmr/ricv_paper/formal/sby/../harness/formal_helpers.vh' to '/home/mmr/ricv_paper/results/formal/sp08_reset_rstb/src/formal_helpers.vh'.
+SBY 22:58:25 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] Copy '/home/mmr/ricv_paper/formal/sby/../harness/formal_reset_rstb_tb.v' to '/home/mmr/ricv_paper/results/formal/sp08_reset_rstb/src/formal_reset_rstb_tb.v'.
+SBY 22:58:25 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: smtbmc z3
+SBY 22:58:25 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: starting process "cd /home/mmr/ricv_paper/results/formal/sp08_reset_rstb/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 22:58:25 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: formal_reset_rstb_tb.v:49: Warning: Identifier `\u_iopmp.hold_authorized' is implicitly declared.
+SBY 22:58:25 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: formal_reset_rstb_tb.v:102: Warning: Identifier `\u_iopmp.hold_write' is implicitly declared.
+SBY 22:58:25 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: formal_reset_rstb_tb.v:103: Warning: Identifier `\u_iopmp.hold_addr' is implicitly declared.
+SBY 22:58:25 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Replacing memory \mem with list of registers. See sram.v:48
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [31] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [30] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [29] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [28] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [27] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [26] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [25] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [24] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [23] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [22] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [21] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [20] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [19] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [18] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [17] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [16] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [15] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [14] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [13] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [12] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [11] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [10] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [9] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [8] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [7] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [6] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [5] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [4] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [3] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [2] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [1] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [0] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [31] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [30] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [29] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [28] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [27] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [26] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [25] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [24] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [23] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [22] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [21] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [20] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [19] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [18] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [17] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [16] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [15] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [14] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [13] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [12] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [11] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [10] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [9] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [8] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [7] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [6] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [5] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [4] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [3] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [2] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [1] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [0] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\sec_rst_n is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [31] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [30] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [29] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [28] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [27] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [26] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [25] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [24] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [23] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [22] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [21] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [20] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [19] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [18] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [17] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [16] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [15] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [14] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [13] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [12] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [11] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [10] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [9] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [8] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [7] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [6] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [5] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [4] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [3] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [2] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [1] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [0] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_write is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [31] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [30] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [29] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [28] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [27] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [26] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [25] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [24] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [23] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [22] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [21] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [20] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [19] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [18] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [17] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [16] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [15] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [14] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [13] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [12] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [11] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [10] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [9] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [8] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [7] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [6] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [5] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [4] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [3] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [2] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [1] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [0] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_requester_id [7] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_requester_id [6] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_requester_id [5] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_requester_id [4] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_requester_id [3] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_requester_id [2] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_requester_id [1] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_requester_id [0] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_length [15] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_length [14] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_length [13] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_length [12] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_length [11] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_length [10] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_length [9] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_length [8] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_length [7] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_length [6] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_length [5] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_length [4] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_length [3] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_length [2] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_length [1] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_length [0] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\iopmp_rst_n is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_rst_n is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\ic_rst_n is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\u_iopmp.hold_write is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\u_iopmp.hold_addr is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\iopmp_hold_authorized is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\cfg_write is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: Warning: Wire formal_reset_rstb_tb.\dma_req is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] base: finished (returncode=0)
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: starting process "cd /home/mmr/ricv_paper/results/formal/sp08_reset_rstb/model; yosys -ql design_prep.log design_prep.ys"
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [31] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [30] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [29] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [28] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [27] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [26] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [25] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [24] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [23] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [22] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [21] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [20] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [19] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [18] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [17] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [16] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [15] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [14] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [13] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [12] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [11] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [10] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [9] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [8] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [7] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [6] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [5] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [4] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [3] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [2] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [1] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [0] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [31] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [30] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [29] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [28] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [27] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [26] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [25] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [24] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [23] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [22] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [21] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [20] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [19] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [18] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [17] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [16] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [15] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [14] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [13] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [12] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [11] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [10] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [9] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [8] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [7] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [6] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [5] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [4] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [3] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [2] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [1] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [0] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_write is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [31] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [30] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [29] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [28] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [27] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [26] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [25] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [24] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [23] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [22] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [21] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [20] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [19] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [18] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [17] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [16] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [15] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [14] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [13] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [12] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [11] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [10] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [9] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [8] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [7] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [6] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [5] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [4] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [3] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [2] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [1] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [0] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_requester_id [7] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_requester_id [6] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_requester_id [5] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_requester_id [4] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_requester_id [3] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_requester_id [2] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_requester_id [1] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_requester_id [0] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_length [15] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_length [14] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_length [13] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_length [12] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_length [11] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_length [10] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_length [9] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_length [8] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_length [7] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_length [6] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_length [5] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_length [4] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_length [3] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_length [2] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_length [1] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_length [0] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [31] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [30] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [29] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [28] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [27] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [26] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [25] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [24] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [23] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [22] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [21] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [20] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [19] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [18] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [17] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [16] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [15] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [14] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [13] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [12] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [11] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [10] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [9] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [8] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [7] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [6] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [5] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [4] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [3] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [2] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [1] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [0] is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\cfg_write is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\ic_rst_n is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_rst_n is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\dma_req is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\iopmp_rst_n is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\sec_rst_n is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\iopmp_hold_authorized is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\u_iopmp.hold_write is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: Warning: Wire formal_reset_rstb_tb.\u_iopmp.hold_addr is used but has no driver.
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] prep: finished (returncode=0)
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] smt2: starting process "cd /home/mmr/ricv_paper/results/formal/sp08_reset_rstb/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] smt2: finished (returncode=0)
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: starting process "cd /home/mmr/ricv_paper/results/formal/sp08_reset_rstb; yosys-smtbmc -s z3 --presat --noprogress -t 32  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2"
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:00  Solver: z3
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:00  Checking assumptions in step 0..
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:00  Checking assertions in step 0..
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:00  Checking assumptions in step 1..
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:00  Checking assertions in step 1..
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:00  Checking assumptions in step 2..
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:00  Checking assertions in step 2..
+SBY 22:58:26 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:00  Checking assumptions in step 3..
+SBY 22:58:27 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:00  Checking assertions in step 3..
+SBY 22:58:27 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:00  Checking assumptions in step 4..
+SBY 22:58:27 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:00  Checking assertions in step 4..
+SBY 22:58:27 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:00  Checking assumptions in step 5..
+SBY 22:58:27 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:00  Checking assertions in step 5..
+SBY 22:58:27 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:00  Checking assumptions in step 6..
+SBY 22:58:27 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:00  Checking assertions in step 6..
+SBY 22:58:27 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:00  Checking assumptions in step 7..
+SBY 22:58:27 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:00  Checking assertions in step 7..
+SBY 22:58:27 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:00  Checking assumptions in step 8..
+SBY 22:58:27 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:00  Checking assertions in step 8..
+SBY 22:58:27 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:00  Checking assumptions in step 9..
+SBY 22:58:28 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:01  Checking assertions in step 9..
+SBY 22:58:28 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:01  Checking assumptions in step 10..
+SBY 22:58:28 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:01  Checking assertions in step 10..
+SBY 22:58:28 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:01  Checking assumptions in step 11..
+SBY 22:58:28 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:01  Checking assertions in step 11..
+SBY 22:58:28 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:01  Checking assumptions in step 12..
+SBY 22:58:28 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:01  Checking assertions in step 12..
+SBY 22:58:28 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:01  Checking assumptions in step 13..
+SBY 22:58:29 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:02  Checking assertions in step 13..
+SBY 22:58:29 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:02  Checking assumptions in step 14..
+SBY 22:58:30 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:03  Checking assertions in step 14..
+SBY 22:58:30 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:03  Checking assumptions in step 15..
+SBY 22:58:31 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:04  Checking assertions in step 15..
+SBY 22:58:31 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:04  Checking assumptions in step 16..
+SBY 22:58:33 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:06  Checking assertions in step 16..
+SBY 22:58:33 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:06  Checking assumptions in step 17..
+SBY 22:58:34 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:07  Checking assertions in step 17..
+SBY 22:58:34 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:07  Checking assumptions in step 18..
+SBY 22:58:35 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:08  Checking assertions in step 18..
+SBY 22:58:35 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:08  Checking assumptions in step 19..
+SBY 22:58:36 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:09  Checking assertions in step 19..
+SBY 22:58:36 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:09  Checking assumptions in step 20..
+SBY 22:58:36 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:09  Checking assertions in step 20..
+SBY 22:58:36 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:09  Checking assumptions in step 21..
+SBY 22:58:37 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:10  Checking assertions in step 21..
+SBY 22:58:37 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:10  Checking assumptions in step 22..
+SBY 22:58:38 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:11  Checking assertions in step 22..
+SBY 22:58:38 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:11  Checking assumptions in step 23..
+SBY 22:58:38 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:11  Checking assertions in step 23..
+SBY 22:58:38 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:11  Checking assumptions in step 24..
+SBY 22:58:43 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:16  Checking assertions in step 24..
+SBY 22:58:43 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:16  Checking assumptions in step 25..
+SBY 22:58:44 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:17  Checking assertions in step 25..
+SBY 22:58:44 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:17  Checking assumptions in step 26..
+SBY 22:58:45 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:18  Checking assertions in step 26..
+SBY 22:58:45 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:18  Checking assumptions in step 27..
+SBY 22:58:46 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:19  Checking assertions in step 27..
+SBY 22:58:47 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:20  Checking assumptions in step 28..
+SBY 22:58:51 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:24  Checking assertions in step 28..
+SBY 22:58:51 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:24  Checking assumptions in step 29..
+SBY 22:58:53 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:26  Checking assertions in step 29..
+SBY 22:58:53 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:26  Checking assumptions in step 30..
+SBY 22:58:55 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:28  Checking assertions in step 30..
+SBY 22:58:55 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:29  Checking assumptions in step 31..
+SBY 22:59:01 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:34  Checking assertions in step 31..
+SBY 22:59:01 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: ##   0:00:34  Status: passed
+SBY 22:59:01 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: finished (returncode=0)
+SBY 22:59:01 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] engine_0: Status returned by engine: pass
+SBY 22:59:01 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:35 (35)
+SBY 22:59:01 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:35 (35)
+SBY 22:59:01 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] summary: engine_0 (smtbmc z3) returned pass
+SBY 22:59:01 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] summary: engine_0 did not produce any traces
+SBY 22:59:01 [/home/mmr/ricv_paper/results/formal/sp08_reset_rstb] DONE (PASS, rc=0)

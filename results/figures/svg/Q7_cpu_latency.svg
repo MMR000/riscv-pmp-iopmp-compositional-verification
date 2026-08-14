@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="222.8875pt" height="161.538626pt" viewBox="0 0 222.8875 161.538626" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-08-14T10:42:54.356864</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 161.538626 
+L 222.8875 161.538626 
+L 222.8875 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 26.1475 140.04 
+L 221.4475 140.04 
+L 221.4475 1.44 
+L 26.1475 1.44 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="mbefc23c643" d="M 0 0 
+L 0 3 
+" style="stroke: #000000; stroke-width: 0.7"/>
+      </defs>
+      <g>
+       <use xlink:href="#mbefc23c643" x="51.428429" y="140.04" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 7px; font-family: 'STIXGeneral', serif" transform="translate(23.915936 156.997132) rotate(-12)">Auth load</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#mbefc23c643" x="99.674476" y="140.04" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 7px; font-family: 'STIXGeneral', serif" transform="translate(70.641728 157.320272) rotate(-12)">Auth store</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#mbefc23c643" x="147.920524" y="140.04" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 7px; font-family: 'STIXGeneral', serif" transform="translate(114.328079 158.289465) rotate(-12)">U-load fault</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#mbefc23c643" x="196.166571" y="140.04" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 7px; font-family: 'STIXGeneral', serif" transform="translate(161.053871 158.612606) rotate(-12)">U-store fault</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_5">
+      <defs>
+       <path id="m64e3c354ab" d="M 0 0 
+L -3 0 
+" style="stroke: #000000; stroke-width: 0.7"/>
+      </defs>
+      <g>
+       <use xlink:href="#m64e3c354ab" x="26.1475" y="140.04" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 7px; font-family: 'STIXGeneral', serif; text-anchor: end" x="19.6475" y="142.430391" transform="rotate(-0 19.6475 142.430391)">0</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#m64e3c354ab" x="26.1475" y="121.993125" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 7px; font-family: 'STIXGeneral', serif; text-anchor: end" x="19.6475" y="124.383516" transform="rotate(-0 19.6475 124.383516)">5</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_7">
+      <g>
+       <use xlink:href="#m64e3c354ab" x="26.1475" y="103.94625" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="font-size: 7px; font-family: 'STIXGeneral', serif; text-anchor: end" x="19.6475" y="106.336641" transform="rotate(-0 19.6475 106.336641)">10</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#m64e3c354ab" x="26.1475" y="85.899375" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="font-size: 7px; font-family: 'STIXGeneral', serif; text-anchor: end" x="19.6475" y="88.289766" transform="rotate(-0 19.6475 88.289766)">15</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_9">
+      <g>
+       <use xlink:href="#m64e3c354ab" x="26.1475" y="67.8525" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <text style="font-size: 7px; font-family: 'STIXGeneral', serif; text-anchor: end" x="19.6475" y="70.242891" transform="rotate(-0 19.6475 70.242891)">20</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#m64e3c354ab" x="26.1475" y="49.805625" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_10">
+      <text style="font-size: 7px; font-family: 'STIXGeneral', serif; text-anchor: end" x="19.6475" y="52.196016" transform="rotate(-0 19.6475 52.196016)">25</text>
+     </g>
+    </g>
+    <g id="ytick_7">
+     <g id="line2d_11">
+      <g>
+       <use xlink:href="#m64e3c354ab" x="26.1475" y="31.75875" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_11">
+      <text style="font-size: 7px; font-family: 'STIXGeneral', serif; text-anchor: end" x="19.6475" y="34.149141" transform="rotate(-0 19.6475 34.149141)">30</text>
+     </g>
+    </g>
+    <g id="ytick_8">
+     <g id="line2d_12">
+      <g>
+       <use xlink:href="#m64e3c354ab" x="26.1475" y="13.711875" style="stroke: #000000; stroke-width: 0.7"/>
+      </g>
+     </g>
+     <g id="text_12">
+      <text style="font-size: 7px; font-family: 'STIXGeneral', serif; text-anchor: end" x="19.6475" y="16.102266" transform="rotate(-0 19.6475 16.102266)">35</text>
+     </g>
+    </g>
+    <g id="text_13">
+     <text style="font-size: 8px; font-family: 'STIXGeneral', serif; text-anchor: middle" x="6.90375" y="70.74" transform="rotate(-90 6.90375 70.74)">Latency (cycles)</text>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 26.1475 140.04 
+L 26.1475 1.44 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 26.1475 140.04 
+L 221.4475 140.04 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 35.024773 140.04 
+L 67.832085 140.04 
+L 67.832085 121.993125 
+L 35.024773 121.993125 
+z
+" clip-path="url(#p473053df36)" style="fill: #4d4d4d; stroke: #111111; stroke-width: 0.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 83.27082 140.04 
+L 116.078132 140.04 
+L 116.078132 121.993125 
+L 83.27082 121.993125 
+z
+" clip-path="url(#p473053df36)" style="fill: #6a6a6a; stroke: #111111; stroke-width: 0.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 131.516868 140.04 
+L 164.32418 140.04 
+L 164.32418 38.9775 
+L 131.516868 38.9775 
+z
+" clip-path="url(#p473053df36)" style="fill: url(#h024e3ad102); stroke: #111111; stroke-width: 0.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 179.762915 140.04 
+L 212.570227 140.04 
+L 212.570227 31.75875 
+L 179.762915 31.75875 
+z
+" clip-path="url(#p473053df36)" style="fill: url(#h88baa93f3f); stroke: #111111; stroke-width: 0.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 6.5px; font-family: 'STIXGeneral', serif; text-anchor: middle" x="51.428429" y="118.055859" transform="rotate(-0 51.428429 118.055859)">5</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 6.5px; font-family: 'STIXGeneral', serif; text-anchor: middle" x="99.674476" y="118.055859" transform="rotate(-0 99.674476 118.055859)">5</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 6.5px; font-family: 'STIXGeneral', serif; text-anchor: middle" x="147.920524" y="35.040234" transform="rotate(-0 147.920524 35.040234)">28</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 5.6px; font-family: 'STIXGeneral', serif; text-anchor: middle; fill: #111111" x="147.920524" y="95.8665" transform="rotate(-0 147.920524 95.8665)">mcause=5</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 6.5px; font-family: 'STIXGeneral', serif; text-anchor: middle" x="196.166571" y="27.821484" transform="rotate(-0 196.166571 27.821484)">30</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 5.6px; font-family: 'STIXGeneral', serif; text-anchor: middle; fill: #111111" x="196.166571" y="92.618063" transform="rotate(-0 196.166571 92.618063)">mcause=7</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p473053df36">
+   <rect x="26.1475" y="1.44" width="195.3" height="138.6"/>
+  </clipPath>
+ </defs>
+ <defs>
+  <pattern id="h024e3ad102" patternUnits="userSpaceOnUse" x="0" y="0" width="72" height="72">
+   <rect x="0" y="0" width="73" height="73" fill="#9a9a9a"/>
+   <path d="M -36 36 
+L 36 -36 
+M -32 40 
+L 40 -32 
+M -28 44 
+L 44 -28 
+M -24 48 
+L 48 -24 
+M -20 52 
+L 52 -20 
+M -16 56 
+L 56 -16 
+M -12 60 
+L 60 -12 
+M -8 64 
+L 64 -8 
+M -4 68 
+L 68 -4 
+M 0 72 
+L 72 0 
+M 4 76 
+L 76 4 
+M 8 80 
+L 80 8 
+M 12 84 
+L 84 12 
+M 16 88 
+L 88 16 
+M 20 92 
+L 92 20 
+M 24 96 
+L 96 24 
+M 28 100 
+L 100 28 
+M 32 104 
+L 104 32 
+M 36 108 
+L 108 36 
+" style="fill: #111111; stroke: #111111; stroke-width: 1.0; stroke-linecap: butt; stroke-linejoin: miter"/>
+  </pattern>
+  <pattern id="h88baa93f3f" patternUnits="userSpaceOnUse" x="0" y="0" width="72" height="72">
+   <rect x="0" y="0" width="73" height="73" fill="#c0c0c0"/>
+   <path d="M -36 36 
+L 36 -36 
+M -32 40 
+L 40 -32 
+M -28 44 
+L 44 -28 
+M -24 48 
+L 48 -24 
+M -20 52 
+L 52 -20 
+M -16 56 
+L 56 -16 
+M -12 60 
+L 60 -12 
+M -8 64 
+L 64 -8 
+M -4 68 
+L 68 -4 
+M 0 72 
+L 72 0 
+M 4 76 
+L 76 4 
+M 8 80 
+L 80 8 
+M 12 84 
+L 84 12 
+M 16 88 
+L 88 16 
+M 20 92 
+L 92 20 
+M 24 96 
+L 96 24 
+M 28 100 
+L 100 28 
+M 32 104 
+L 104 32 
+M 36 108 
+L 108 36 
+M -36 36 
+L 36 108 
+M -32 32 
+L 40 104 
+M -28 28 
+L 44 100 
+M -24 24 
+L 48 96 
+M -20 20 
+L 52 92 
+M -16 16 
+L 56 88 
+M -12 12 
+L 60 84 
+M -8 8 
+L 64 80 
+M -4 4 
+L 68 76 
+M 0 0 
+L 72 72 
+M 4 -4 
+L 76 68 
+M 8 -8 
+L 80 64 
+M 12 -12 
+L 84 60 
+M 16 -16 
+L 88 56 
+M 20 -20 
+L 92 52 
+M 24 -24 
+L 96 48 
+M 28 -28 
+L 100 44 
+M 32 -32 
+L 104 40 
+M 36 -36 
+L 108 36 
+" style="fill: #111111; stroke: #111111; stroke-width: 1.0; stroke-linecap: butt; stroke-linejoin: miter"/>
+  </pattern>
+ </defs>
+</svg>

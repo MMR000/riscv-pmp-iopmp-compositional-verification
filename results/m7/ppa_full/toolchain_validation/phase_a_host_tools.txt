@@ -1,0 +1,4 @@
+libelf OK
+/usr/bin/srec_cat
+ii  libelf-dev:amd64 0.190-1.1ubuntu0.1 amd64        libelf1t64 development libraries and header files
+ii  srecord          1.64-4.1build1     amd64        collection of powerful tools for manipulating EPROM load files

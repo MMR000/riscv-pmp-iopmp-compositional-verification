@@ -1,0 +1,14 @@
+M7 Phase D.2 end
+date: 2026-08-13T16:57:22+05:00
+branch: m7-journal-validation
+project_commit_start: 0a86d81482498e1eae40a0807a19659f4516c342
+project_commit_end: 0a86d81482498e1eae40a0807a19659f4516c342
+working_tree: dirty (D.2 artifacts uncommitted)
+ibex_commit: c61e11c1e416b9ce2d996013b444c8e558d35b2b
+orfs_commit: f9ec54a6de7b2bc69fd586015f6ebdab34eca69c
+docker_image: openroad/orfs@sha256:817b608c69a71fafc7b61baec11b4dc073fb8efb9d2714f9bd3316db4beba277
+platform: sky130hd
+primary_clock_ns: 10.0
+lec_check: 0
+demonstrated_fmax_mhz: J0=105.26 (9.5ns) J1=50.00 (20ns) J2=78.43 (12.75ns) J3=76.92 (13ns)
+composed_random_note: HEAD sha256 18cd8d40... differs from phase_d2_start list 20c18fca...; HEAD matches current committed file; security PASS results unchanged

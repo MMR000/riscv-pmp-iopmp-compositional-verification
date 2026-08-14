@@ -1,0 +1,4 @@
+configuration,metric,cycles,fix,git_commit,notes
+proper,aw_to_b,-1,proper,ff46d11,authorized write same-cycle AW/W
+proper,aw_to_dst_aw,-1,proper,ff46d11,authorized write same-cycle AW/W
+proper,w_to_dst_w,0,proper,ff46d11,authorized write same-cycle AW/W

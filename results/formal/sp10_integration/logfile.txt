@@ -1,0 +1,122 @@
+SBY 22:58:19 [/home/mmr/ricv_paper/results/formal/sp10_integration] Removing directory '/home/mmr/ricv_paper/results/formal/sp10_integration'.
+SBY 22:58:19 [/home/mmr/ricv_paper/results/formal/sp10_integration] Copy '/home/mmr/ricv_paper/formal/sby/../../rtl/common/bus_pkg.vh' to '/home/mmr/ricv_paper/results/formal/sp10_integration/src/bus_pkg.vh'.
+SBY 22:58:19 [/home/mmr/ricv_paper/results/formal/sp10_integration] Copy '/home/mmr/ricv_paper/formal/sby/../../rtl/soc/security_config.v' to '/home/mmr/ricv_paper/results/formal/sp10_integration/src/security_config.v'.
+SBY 22:58:19 [/home/mmr/ricv_paper/results/formal/sp10_integration] Copy '/home/mmr/ricv_paper/formal/sby/../../rtl/pmp/pmp.v' to '/home/mmr/ricv_paper/results/formal/sp10_integration/src/pmp.v'.
+SBY 22:58:19 [/home/mmr/ricv_paper/results/formal/sp10_integration] Copy '/home/mmr/ricv_paper/formal/sby/../../rtl/iopmp/iopmp.v' to '/home/mmr/ricv_paper/results/formal/sp10_integration/src/iopmp.v'.
+SBY 22:58:19 [/home/mmr/ricv_paper/results/formal/sp10_integration] Copy '/home/mmr/ricv_paper/formal/sby/../../rtl/interconnect/interconnect.v' to '/home/mmr/ricv_paper/results/formal/sp10_integration/src/interconnect.v'.
+SBY 22:58:19 [/home/mmr/ricv_paper/results/formal/sp10_integration] Copy '/home/mmr/ricv_paper/formal/sby/../../rtl/memory/sram.v' to '/home/mmr/ricv_paper/results/formal/sp10_integration/src/sram.v'.
+SBY 22:58:19 [/home/mmr/ricv_paper/results/formal/sp10_integration] Copy '/home/mmr/ricv_paper/formal/sby/../harness/formal_helpers.vh' to '/home/mmr/ricv_paper/results/formal/sp10_integration/src/formal_helpers.vh'.
+SBY 22:58:19 [/home/mmr/ricv_paper/results/formal/sp10_integration] Copy '/home/mmr/ricv_paper/formal/sby/../harness/formal_soc_tb.v' to '/home/mmr/ricv_paper/results/formal/sp10_integration/src/formal_soc_tb.v'.
+SBY 22:58:19 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: smtbmc z3
+SBY 22:58:19 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: starting process "cd /home/mmr/ricv_paper/results/formal/sp10_integration/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 22:58:19 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: wire '\cfg_write' is assigned in a block at formal_soc_tb.v:171.9-171.32.
+SBY 22:58:19 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: wire '\cfg_addr' is assigned in a block at formal_soc_tb.v:172.9-173.75.
+SBY 22:58:19 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: wire '\cfg_wdata' is assigned in a block at formal_soc_tb.v:174.9-175.57.
+SBY 22:58:19 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: formal_soc_tb.v:137: Warning: Identifier `\u_iopmp.hold_authorized' is implicitly declared.
+SBY 22:58:19 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: formal_soc_tb.v:138: Warning: Identifier `\u_iopmp.hold_write' is implicitly declared.
+SBY 22:58:19 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: formal_soc_tb.v:139: Warning: Identifier `\u_iopmp.hold_addr' is implicitly declared.
+SBY 22:58:19 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: formal_soc_tb.v:140: Warning: Identifier `\u_pmp.hold_privilege' is implicitly declared.
+SBY 22:58:19 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: formal_soc_tb.v:141: Warning: Identifier `\u_pmp.hold_write' is implicitly declared.
+SBY 22:58:19 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: formal_soc_tb.v:142: Warning: Identifier `\u_pmp.hold_addr' is implicitly declared.
+SBY 22:58:19 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: formal_soc_tb.v:143: Warning: Identifier `\u_iopmp.state' is implicitly declared.
+SBY 22:58:19 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: formal_soc_tb.v:189: Warning: Identifier `\u_ic.serve_cpu' is implicitly declared.
+SBY 22:58:19 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: formal_soc_tb.v:194: Warning: Identifier `\u_ic.active_write' is implicitly declared.
+SBY 22:58:19 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: formal_soc_tb.v:194: Warning: Identifier `\u_ic.active_addr' is implicitly declared.
+SBY 22:58:19 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: formal_soc_tb.v:205: Warning: Identifier `\u_ic.arb' is implicitly declared.
+SBY 22:58:19 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: formal_soc_tb.v:205: Warning: Identifier `\u_pmp.pending' is implicitly declared.
+SBY 22:58:19 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Replacing memory \mem with list of registers. See sram.v:48
+SBY 22:58:19 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\u_ic.serve_cpu is used but has no driver.
+SBY 22:58:19 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\pmp_hold_privilege is used but has no driver.
+SBY 22:58:19 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\u_ic.active_addr is used but has no driver.
+SBY 22:58:19 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\u_ic.active_write is used but has no driver.
+SBY 22:58:19 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\iopmp_hold_authorized is used but has no driver.
+SBY 22:58:19 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\u_ic.arb is used but has no driver.
+SBY 22:58:19 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\pmp_pending is used but has no driver.
+SBY 22:58:19 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: Warning: Wire formal_soc_tb.\iopmp_busy is used but has no driver.
+SBY 22:58:20 [/home/mmr/ricv_paper/results/formal/sp10_integration] base: finished (returncode=0)
+SBY 22:58:20 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: starting process "cd /home/mmr/ricv_paper/results/formal/sp10_integration/model; yosys -ql design_prep.log design_prep.ys"
+SBY 22:58:20 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\u_ic.active_addr is used but has no driver.
+SBY 22:58:20 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\u_ic.arb is used but has no driver.
+SBY 22:58:20 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\iopmp_busy is used but has no driver.
+SBY 22:58:20 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\pmp_pending is used but has no driver.
+SBY 22:58:20 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\iopmp_hold_authorized is used but has no driver.
+SBY 22:58:20 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\u_ic.active_write is used but has no driver.
+SBY 22:58:20 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\pmp_hold_privilege is used but has no driver.
+SBY 22:58:20 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: Warning: Wire formal_soc_tb.\u_ic.serve_cpu is used but has no driver.
+SBY 22:58:20 [/home/mmr/ricv_paper/results/formal/sp10_integration] prep: finished (returncode=0)
+SBY 22:58:20 [/home/mmr/ricv_paper/results/formal/sp10_integration] smt2: starting process "cd /home/mmr/ricv_paper/results/formal/sp10_integration/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY 22:58:20 [/home/mmr/ricv_paper/results/formal/sp10_integration] smt2: finished (returncode=0)
+SBY 22:58:20 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: starting process "cd /home/mmr/ricv_paper/results/formal/sp10_integration; yosys-smtbmc -s z3 --presat --noprogress -t 32  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2"
+SBY 22:58:20 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:00  Solver: z3
+SBY 22:58:20 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:00  Checking assumptions in step 0..
+SBY 22:58:20 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:00  Checking assertions in step 0..
+SBY 22:58:20 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:00  Checking assumptions in step 1..
+SBY 22:58:20 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:00  Checking assertions in step 1..
+SBY 22:58:20 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:00  Checking assumptions in step 2..
+SBY 22:58:20 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:00  Checking assertions in step 2..
+SBY 22:58:20 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:00  Checking assumptions in step 3..
+SBY 22:58:20 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:00  Checking assertions in step 3..
+SBY 22:58:20 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:00  Checking assumptions in step 4..
+SBY 22:58:20 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:00  Checking assertions in step 4..
+SBY 22:58:20 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:00  Checking assumptions in step 5..
+SBY 22:58:20 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:00  Checking assertions in step 5..
+SBY 22:58:20 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:00  Checking assumptions in step 6..
+SBY 22:58:20 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:00  Checking assertions in step 6..
+SBY 22:58:20 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:00  Checking assumptions in step 7..
+SBY 22:58:21 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:00  Checking assertions in step 7..
+SBY 22:58:21 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:00  Checking assumptions in step 8..
+SBY 22:58:21 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:00  Checking assertions in step 8..
+SBY 22:58:21 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:00  Checking assumptions in step 9..
+SBY 22:58:21 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:00  Checking assertions in step 9..
+SBY 22:58:21 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:00  Checking assumptions in step 10..
+SBY 22:58:21 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:00  Checking assertions in step 10..
+SBY 22:58:21 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:00  Checking assumptions in step 11..
+SBY 22:58:21 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:00  Checking assertions in step 11..
+SBY 22:58:21 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:00  Checking assumptions in step 12..
+SBY 22:58:21 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:00  Checking assertions in step 12..
+SBY 22:58:21 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:00  Checking assumptions in step 13..
+SBY 22:58:21 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:00  Checking assertions in step 13..
+SBY 22:58:21 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:00  Checking assumptions in step 14..
+SBY 22:58:21 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:00  Checking assertions in step 14..
+SBY 22:58:21 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:00  Checking assumptions in step 15..
+SBY 22:58:21 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:00  Checking assertions in step 15..
+SBY 22:58:21 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:01  Checking assumptions in step 16..
+SBY 22:58:21 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:01  Checking assertions in step 16..
+SBY 22:58:21 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:01  Checking assumptions in step 17..
+SBY 22:58:21 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:01  Checking assertions in step 17..
+SBY 22:58:21 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:01  Checking assumptions in step 18..
+SBY 22:58:21 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:01  Checking assertions in step 18..
+SBY 22:58:21 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:01  Checking assumptions in step 19..
+SBY 22:58:22 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:01  Checking assertions in step 19..
+SBY 22:58:22 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:01  Checking assumptions in step 20..
+SBY 22:58:22 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:01  Checking assertions in step 20..
+SBY 22:58:22 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:01  Checking assumptions in step 21..
+SBY 22:58:22 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:01  Checking assertions in step 21..
+SBY 22:58:22 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:01  Checking assumptions in step 22..
+SBY 22:58:22 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:01  Checking assertions in step 22..
+SBY 22:58:22 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:01  Checking assumptions in step 23..
+SBY 22:58:22 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:01  Checking assertions in step 23..
+SBY 22:58:22 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:01  Checking assumptions in step 24..
+SBY 22:58:22 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:01  Checking assertions in step 24..
+SBY 22:58:22 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:01  Checking assumptions in step 25..
+SBY 22:58:22 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:02  Checking assertions in step 25..
+SBY 22:58:22 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:02  Checking assumptions in step 26..
+SBY 22:58:22 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:02  Checking assertions in step 26..
+SBY 22:58:22 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:02  Checking assumptions in step 27..
+SBY 22:58:22 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:02  Checking assertions in step 27..
+SBY 22:58:22 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:02  Checking assumptions in step 28..
+SBY 22:58:23 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:02  Checking assertions in step 28..
+SBY 22:58:23 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:02  Checking assumptions in step 29..
+SBY 22:58:23 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:02  Checking assertions in step 29..
+SBY 22:58:23 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:02  Checking assumptions in step 30..
+SBY 22:58:23 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:02  Checking assertions in step 30..
+SBY 22:58:23 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:02  Checking assumptions in step 31..
+SBY 22:58:23 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:02  Checking assertions in step 31..
+SBY 22:58:23 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: ##   0:00:03  Status: passed
+SBY 22:58:23 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: finished (returncode=0)
+SBY 22:58:23 [/home/mmr/ricv_paper/results/formal/sp10_integration] engine_0: Status returned by engine: pass
+SBY 22:58:23 [/home/mmr/ricv_paper/results/formal/sp10_integration] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:04 (4)
+SBY 22:58:23 [/home/mmr/ricv_paper/results/formal/sp10_integration] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:04 (4)
+SBY 22:58:23 [/home/mmr/ricv_paper/results/formal/sp10_integration] summary: engine_0 (smtbmc z3) returned pass
+SBY 22:58:23 [/home/mmr/ricv_paper/results/formal/sp10_integration] summary: engine_0 did not produce any traces
+SBY 22:58:23 [/home/mmr/ricv_paper/results/formal/sp10_integration] DONE (PASS, rc=0)

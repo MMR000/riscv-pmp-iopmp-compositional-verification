@@ -1,0 +1,15 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.68+ (git sha1 832843ad0-dirty, Release, GNU /home/conda/feedstock_root/build_artifacts/yosys_1785933756519/_build_env/bin/x86_64-conda-linux-gnu-c++ 14.4.0) [github.com/conda-forge/yosys-feedstock at main]
+
+-- Running command `
+read_slang -I/home/mmr/ricv_paper/third_party/zero-day-labs-riscv-iopmp/packages/dependencies -I/home/mmr/ricv_paper/third_party/zero-day-labs-riscv-iopmp/packages/rv_iopmp -I/home/mmr/ricv_paper/third_party/zero-day-labs-riscv-iopmp/vendor -I/home/mmr/ricv_paper/third_party/zero-day-labs-riscv-iopmp/include -I/home/mmr/ricv_paper/third_party/zero-day-labs-riscv-iopmp/rtl -I/home/mmr/ricv_paper/third_party/zero-day-labs-riscv-iopmp/rtl/interfaces/axi_support   /home/mmr/ricv_paper/third_party/zero-day-labs-riscv-iopmp/packages/dependencies/cf_math_pkg.sv   /home/mmr/ricv_paper/third_party/zero-day-labs-riscv-iopmp/packages/dependencies/axi_pkg.sv   /home/mmr/ricv_paper/third_party/zero-day-labs-riscv-iopmp/packages/dependencies/lint_wrapper_pkg.sv   /home/mmr/ricv_paper/third_party/zero-day-labs-riscv-iopmp/packages/rv_iopmp/rv_iopmp_pkg.sv   /home/mmr/ricv_paper/third_party/zero-day-labs-riscv-iopmp/rtl/interfaces/axi_support/rv_iopmp_axi4_bc.sv   /home/mmr/ricv_paper/m56/rtl/original/rv_iopmp_data_abstractor_axi.sv   --top rv_iopmp_data_abstractor_axi 2>&1
+' --
+
+1. Executing SLANG frontend.
+error: '2>&1': No such file or directory
+ERROR: Bad command

@@ -1,0 +1,6 @@
+experiment_id,configuration,security_property,expected,observed,result,notes,git_commit,seed
+M4-PEND-01,C0,SP-12,Model A may complete if admitted authorized,VIOLATION,OBSERVED,txn_age=1 secure_ready_drop during pending write,4ba410a17a53e01fa8150c4018013d2abd2a7717,directed
+M4-PEND-02,C0,SP-12,no protected write on reset abort,PASS,OBSERVED,global reset during pending read,4ba410a17a53e01fa8150c4018013d2abd2a7717,directed
+R16,C0,SP-12,config-dependent,mem_changed,FAIL,dma_error=0,4ba410a17a53e01fa8150c4018013d2abd2a7717,directed
+R15,C0,SP-08,no early unauthorized write,blocked,OBSERVED,T_secure_ready=0,4ba410a17a53e01fa8150c4018013d2abd2a7717,directed
+SP-14,C0,SP-14,authorized DMA succeeds,PASS,PASS,liveness after secure_ready,4ba410a17a53e01fa8150c4018013d2abd2a7717,directed

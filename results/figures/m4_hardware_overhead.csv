@@ -1,0 +1,6 @@
+configuration,total_cells,flip_flops,logic_delta_vs_C0
+C0,16,1,0
+C1,36,1,20
+C2,26,1,10
+C3,34,1,18
+C4,43,1,27

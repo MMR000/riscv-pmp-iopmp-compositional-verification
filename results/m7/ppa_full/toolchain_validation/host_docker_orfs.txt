@@ -1,0 +1,19 @@
+=== host docker ===
+Docker version 29.7.2, build a7dcaa6
+=== image inspect (digest/id) ===
+Id: sha256:817b608c69a71fafc7b61baec11b4dc073fb8efb9d2714f9bd3316db4beba277
+RepoDigests: ["openroad/orfs@sha256:817b608c69a71fafc7b61baec11b4dc073fb8efb9d2714f9bd3316db4beba277"]
+Created: 2026-08-11T21:29:36.590966244Z
+Size: 1593823105
+=== ORFS pin ===
+f9ec54a6de7b2bc69fd586015f6ebdab34eca69c
+=== submodules (not initialized; Docker image supplies tools) ===
+-ab6fd26351dc449e69059684dc6aa9ae9046eb36 tools/OpenROAD
+-9dd032c6ffb885c232801bc20f39cd5c80dc05fe tools/kepler-formal
+-a5af9d690a43744bf6b2cc3dea2717c16b54621c tools/yosys
+=== gcd configs ===
+third_party/OpenROAD-flow-scripts/flow/designs/nangate45/gcd/config.mk
+=== sky130hd ibex configs ===
+third_party/OpenROAD-flow-scripts/flow/designs/sky130hd/ibex/config.mk
+=== docker group note ===
+User mmr is in group docker (gid 983) in /etc/group; this agent session needed `sg docker` because the login session had not refreshed groups.

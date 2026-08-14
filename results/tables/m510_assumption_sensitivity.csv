@@ -1,0 +1,12 @@
+assumption_id,description,baseline_status,weakened_status,properties_affected,classification
+M59-FA-04,yes,ENV-4 FIX-2 primary pass,CE returns step 5,M57-FP-04,reset/anyinit artifact
+M59-FA-11,yes,ENV-4 FIX-2 primary pass,FIX-2 primary CE,M57-FP-04,master quiescence required
+M59-FA-10,yes,ENV-4 FIX-2 primary pass,txn_active anyinit CE,M57-FP-04,observer consistency
+M59-FA-07,yes,ENV-4 FIX-2 primary pass,spurious ini_w at reset edge,M57-FP-04,post-reset idle
+M59-FA-01,yes,ENV-4 FIX-2 primary pass,illegal AW morphing,M57-FP-04,protocol-required
+M59-FA-05,no,ENV-4 FIX-2 primary pass,W without txn CE,M57-FP-04,implementation sequencing
+FA-01,No cfg_write during formal reset window,RST-B PROVED,COUNTEREXAMPLE,SP-08-RST-A,RESET_ASSUMPTION_DEPENDENCY
+RST-A-default,iopmp_enable=0 at reset (fail-open),RST-B unreachable CE,SP-08 COUNTEREXAMPLE,SP-08,RESET_ASSUMPTION_DEPENDENCY
+M59-FA-11,Master quiescence ⇒ no ini write,FIX-2 BOUNDED_PASS,FIX-2 COUNTEREXAMPLE,M57-FP-04,ASSUMPTION_DEPENDENCY
+M59-FA-04,Derived reset sequence,FIX-2 ENV-4 pass,CE step 5 anyinit,M57-FP-04,FORMAL_HARNESS_BUG
+M57-FA-02/03,Stable AW/W while stalled,Verilator PASS,Illegal morphing traces,M57-FP-04,ASSUMPTION_DEPENDENCY

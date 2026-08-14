@@ -1,0 +1,58 @@
+task,property_id,mode,depth,solver,status,final_status
+sp02_pmp_unit,SP-02,bmc,32,z3,sby PASS,BOUNDED_PASS
+sp02_pmp_prove,SP-02,prove,,z3,sby PASS,PROVED
+sp04_iopmp_unit,SP-04,bmc,32,z3,sby PASS,BOUNDED_PASS
+sp04_iopmp_prove,SP-04,prove,,z3,sby PASS,PROVED
+sp10_integration,SP-10,bmc,32,z3,sby PASS,BOUNDED_PASS
+sp08_reset,SP-08-RST-A,bmc,32,z3,sby FAIL,COUNTEREXAMPLE
+sp08_reset_rstb,SP-08-RST-B,bmc,32,z3,sby PASS,BOUNDED_PASS
+spb01_model_b,SP-B01,bmc,32,z3,sby PASS; expect_fail semantic demo,COUNTEREXAMPLE
+m3_cover,COV,cover,32,z3,sby FAIL,INCONCLUSIVE
+,,,8,,,
+,,,8,,,
+,,,16,,,
+,,,16,,,
+,,,32,,,
+,,,32,,,
+,,,64,,,
+,,,64,,,
+,,,8,,,
+,,,8,,,
+,,,16,,,
+,,,16,,,
+,,,32,,,
+,,,32,,,
+,,,64,,,
+,,,64,,,
+,,,8,,,
+,,,8,,,
+,,,16,,,
+,,,16,,,
+,,,32,,,
+,,,32,,,
+,,,64,,,
+,,,64,,,
+,,,8,,,
+,,,8,,,
+,,,16,,,
+,,,16,,,
+,,,32,,,
+,,,32,,,
+,,,64,,,
+,,,64,,,
+,,,8,,,
+,,,8,,,
+,,,16,,,
+,,,16,,,
+,,,32,,,
+,,,32,,,
+,,,64,,,
+,,,64,,,
+,,,8,,,
+,,,8,,,
+,,,16,,,
+,,,16,,,
+,,,32,,,
+,,,32,,,
+,,,64,,,
+,,,64,,,

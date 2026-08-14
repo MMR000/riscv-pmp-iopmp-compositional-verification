@@ -1,0 +1,10 @@
+feature,M4_abstraction,official_REF_semantics,equivalent,difference,security_relevance,M5_action
+default_checking_enable,C1 fail-closed IOPMP reset / C0 fail-open,M4 `RST_B` vs open; REF `HWCFG0.enable` W1SS at reset,qualitative yes (both provide C0/C1 knob),M4 uses `iopmp_enable` bypass when disabled; REF bypasses all checks when enable=0,high,experimentally map REF-C0/C1 to M4 C0/C1
+requester_ID,M4 `dma_requester_id` 8-bit,REF RRID up to HWCFG1.rrid_num,partial,M4 single rule RID; REF SRCMD table per RRID,high,adapter maps RRID to M4 AUTH/UNAUTH
+memory_domain,M4 single protected region via rule0,REF MD/SRCMD association tables,no,M4 has no MD abstraction,medium,document ABSTRACTION_DIFFERENCE
+entry_matching,M4 TOR-like base/limit single rule,REF NA4/TOR/NAPOT/OFF + priority,partial,M4 simplified range check,high,range differential tests
+partial_match,M4 length-aware end address,REF transaction length/size/granularity,unknown until tested,high,reproduce M2 boundary cases on REF
+no_match_behavior,M4 deny when in region no rule,M4 `enable=0` bypass; REF enable=0 pass / enable=1 error,partial,same qualitative enable distinction,high,center of M5 reset-default experiment
+reset_behavior,M4 global `rst_n`,REF `reset_iopmp()` + HWCFG0.enable from cfg,partial,no per-domain reset in either M5 harness yet,high,fixture limitation documented
+configuration_lifecycle,M4 CSR via `security_config`,REF register tables SRCMD/MDCFG/ENTRY,partial,different programming model,medium,adapter only; do not rewrite REF
+outstanding_transactions,M4 Model A pending semantics,REF stall buffer optional,partial,C3 epoch not in REF,medium,SP-12 comparison deferred

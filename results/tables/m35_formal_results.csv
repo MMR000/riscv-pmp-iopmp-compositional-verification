@@ -1,0 +1,8 @@
+property_id,bmc_depth,bmc_result,prove_method,prove_result,solver,assumptions,cover_reachable,final_status,notes
+COV,32,INCONCLUSIVE,,,z3,see docs/formal_assumptions.md,,INCONCLUSIVE,sby FAIL
+SP-02,32,BOUNDED_PASS,smtbmc k-induction,PROVED,z3,see docs/formal_assumptions.md,,PROVED,sby PASS
+SP-04,32,BOUNDED_PASS,smtbmc k-induction,PROVED,z3,see docs/formal_assumptions.md,,PROVED,sby PASS
+SP-08-RST-A,32,COUNTEREXAMPLE,,,z3,see docs/formal_assumptions.md,,COUNTEREXAMPLE,sby FAIL
+SP-08-RST-B,32,BOUNDED_PASS,,,z3,see docs/formal_assumptions.md,,BOUNDED_PASS,sby PASS
+SP-10,32,BOUNDED_PASS,,,z3,see docs/formal_assumptions.md,,BOUNDED_PASS,sby PASS
+SP-B01,32,COUNTEREXAMPLE,,,z3,see docs/formal_assumptions.md,,COUNTEREXAMPLE,sby PASS; expect_fail semantic demo

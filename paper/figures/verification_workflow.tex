@@ -1,0 +1,20 @@
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[
+  node distance=0.65cm,
+  box/.style={draw, rounded corners, minimum width=5.2cm, minimum height=0.6cm, align=center, font=\scriptsize},
+  arr/.style={-{Stealth[length=2mm]}}
+]
+  \node[box] (tm) {Threat model + FA assumptions};
+  \node[box, below=of tm] (sp) {Security properties (SP-*, M57-FP-*)};
+  \node[box, below=of sp] (sim) {Directed / randomized simulation};
+  \node[box, below=of sim] (bmc) {BMC (SymbiYosys + Z3)};
+  \node[box, below=of bmc] (ind) {Induction / PDR where applicable};
+  \node[box, below=of ind] (cls) {Scientific classification};
+  \node[box, below=of cls] (sen) {Assumption sensitivity};
+  \node[box, below=of sen] (mat) {Guarantee matrix (m510\_*.csv)};
+  \foreach \a/\b in {tm/sp,sp/sim,sim/bmc,bmc/ind,ind/cls,cls/sen,sen/mat} \draw[arr] (\a)--(\b);
+\end{tikzpicture}
+\caption{Verification workflow emphasizing classification distinct from raw tool status.}
+\label{fig:workflow}
+\end{figure}

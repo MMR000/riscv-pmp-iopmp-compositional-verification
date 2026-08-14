@@ -1,0 +1,18 @@
+% TODO(PROSE): Final abstract not written in M6.
+% Structured skeleton only.
+
+\begin{abstract}
+\textbf{Problem:} CPU-side PMP and DMA-side IOPMP-style mechanisms protect different transaction origins in RISC-V SoCs.
+
+\textbf{Research question:} Whether local access-control correctness composes into an end-to-end protected-memory isolation guarantee.
+
+\textbf{Method:} RTL simulation, randomized tests, bounded model checking, and induction/PDR where applicable, with assumption sensitivity.
+
+\textbf{Verified result:} Selected normal-operation CPU/DMA access-control properties (e.g., SP-02, SP-04) are formally established under documented assumptions.
+
+\textbf{Compositional result:} Under RST-A fail-open initialization, an unsafe early-DMA protected-memory state before \texttt{secure\_ready} is reachable (RESET\_ASSUMPTION\_DEPENDENCY). Under RST-B fail-closed defaults, the corresponding state is unreachable (FORMAL\_PROOF via k-induction).
+
+\textbf{Conclusion:} Compositional isolation depends on initialization, reset ordering, requester identity, and transaction-admission invariants---not local rules alone.
+
+% EVIDENCE: results/m510/m510_summary.md
+\end{abstract}

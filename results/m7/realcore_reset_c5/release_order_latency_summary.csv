@@ -1,0 +1,11 @@
+metric,min,median,mean,p95,max,n
+epoch_start_to_secure_ready,20,50.0,48.89,58,59,216
+epoch_to_cpu_release,8,23.0,22.46,38,38,216
+epoch_to_dma_release,8,23.0,23.45,39,40,216
+epoch_to_ic_release,8,23.0,23.72,39,40,216
+epoch_to_iopmp_release,8,23.0,23.32,39,40,216
+epoch_to_sec_release,8,23.0,22.70,38,38,216
+iopmp_release_to_iopmp_ready,12,23.0,25.56,45,47,216
+last_security_milestone_to_secure_ready,12,25.0,26.19,41,47,216
+secure_ready_to_auth_commit,18,18.0,18.00,18,18,108
+secure_ready_to_auth_dma_req,10,10.0,10.00,10,10,216

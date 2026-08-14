@@ -1,0 +1,5 @@
+=== final layout artifacts (host WORK_HOME; not committed) ===
+-rw-r--r-- 1 mmr mmr 395K Aug 12 15:46 /home/mmr/ricv_paper/third_party/OpenROAD-flow-scripts/flow/results/nangate45/gcd/base/6_final.def
+-rw-r--r-- 1 mmr mmr 517K Aug 12 15:46 /home/mmr/ricv_paper/third_party/OpenROAD-flow-scripts/flow/results/nangate45/gcd/base/6_final.gds
+-rw-r--r-- 1 mmr mmr 1.2M Aug 12 15:46 /home/mmr/ricv_paper/third_party/OpenROAD-flow-scripts/flow/results/nangate45/gcd/base/6_final.odb
+-rw-r--r-- 1 mmr mmr  47K Aug 12 15:46 /home/mmr/ricv_paper/third_party/OpenROAD-flow-scripts/flow/results/nangate45/gcd/base/6_final.v

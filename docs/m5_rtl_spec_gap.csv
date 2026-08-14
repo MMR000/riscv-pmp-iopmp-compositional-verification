@@ -1,0 +1,2 @@
+repository,commit,license,specification_target,known_limitations
+zero-day-labs/riscv-iopmp,a029581351aaf8a71831916aa8877895364e6e98,Apache-2.0 + SHL-2.1,RISC-V IOPMP Architecture Specification v1.0.0-draft5 (NOT v0.8.2),AXI-only; targets draft5 not ref-model v0.8.2; Makefile provides lint-only by default

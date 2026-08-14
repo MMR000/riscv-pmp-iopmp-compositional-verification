@@ -1,0 +1,9 @@
+test_id,ibex_commit,pmp_enable,pmp_regions,privilege,operation,address,expected,observed,mcause,mepc,mtval,memory_before,memory_after,result,notes
+IBEX-PMP-01,c61e11c1e416b9ce2d996013b444c8e558d35b2b,1,8,M,write,0x00101100,ALLOW,ALLOW,,,,,,PASS,exit=0
+IBEX-PMP-02,c61e11c1e416b9ce2d996013b444c8e558d35b2b,1,8,M,read,0x00101100,ALLOW,ALLOW,,,,,,PASS,exit=0
+IBEX-PMP-03,c61e11c1e416b9ce2d996013b444c8e558d35b2b,1,8,M,csr_setup,pmpcfg,ALLOW,ALLOW,,,,,,PASS,exit=0
+IBEX-PMP-04,c61e11c1e416b9ce2d996013b444c8e558d35b2b,1,8,U,load,0x00180100,LOAD_FAULT,mcause=5,5,00100182,00180100,,22222222,PASS,exit=0
+IBEX-PMP-05,c61e11c1e416b9ce2d996013b444c8e558d35b2b,1,8,U,store,0x00180100,STORE_FAULT,mcause=7,7,0010018A,00180100,0x22222222,22222222,PASS,exit=0
+IBEX-PMP-06,c61e11c1e416b9ce2d996013b444c8e558d35b2b,1,8,U,load,0x00101100,ALLOW,ALLOW,,,,,,PASS,exit=0
+IBEX-PMP-07,c61e11c1e416b9ce2d996013b444c8e558d35b2b,1,8,U,load_boundary,prot_last,LOAD_FAULT,mcause=5,5,00100182,00180FFC,,22222222,PASS,exit=0
+IBEX-PMP-08,c61e11c1e416b9ce2d996013b444c8e558d35b2b,1,8,M,write_reconfig,0x00180100,ALLOW,ALLOW,,,,,,PASS,exit=0

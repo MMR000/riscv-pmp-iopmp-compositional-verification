@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1786447608" />
+    <testcase name="m7_reset_matrix" classname="test_m7_reset" file="/home/mmr/ricv_paper/tb/cocotb/test_m7_reset.py" lineno="19" time="0.06629204750061035" sim_time_ns="26550.0" ratio_time="400500.52760484663" />
+  </testsuite>
+</testsuites>

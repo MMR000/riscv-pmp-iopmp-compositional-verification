@@ -1,0 +1,15 @@
+test_id,metric,cycles,source,classification,notes
+PERF-CPU-01,mcycle_before_to_after_load,5,phase_a_mcycle,SIMULATION_EVIDENCE,"M-mode authorized protected load; landmarks: csrr mcycle, lw prot_word, csrr mcycle"
+PERF-CPU-02,mcycle_before_to_after_store,5,phase_a_mcycle,SIMULATION_EVIDENCE,"M-mode authorized protected store; landmarks: csrr mcycle, sw prot_word, csrr mcycle"
+PERF-CPU-03,umode_attempt_to_trap,28,phase_a_mcycle,SIMULATION_EVIDENCE,U-mode denied protected load; landmarks: U-mode csrr cycle then sw g_cyc_req then lw; trap-handler csrr mcycle; expected mcause=5; mcause=5
+PERF-CPU-04,umode_attempt_to_trap,30,phase_a_mcycle,SIMULATION_EVIDENCE,U-mode denied protected store; landmarks: U-mode csrr cycle then sw g_cyc_req then sw; trap-handler csrr mcycle; expected mcause=7; mcause=7
+PERF-DMA-01a,admit_to_first_prot_commit,5,simulation_event_log,SIMULATION_EVIDENCE,authorized DMA RID=0x01 admit → first PROT_COMMIT (memory write visible)
+PERF-DMA-01b,admit_to_last_prot_commit_strobe,9,simulation_event_log,SIMULATION_EVIDENCE,same write; last PROT_COMMIT while monitor holds mem_changed (previous directed '9')
+PERF-DMA-02,admit_to_dma_completed_err0,7,simulation_event_log,SIMULATION_EVIDENCE,authorized DMA admit → first DMA_COMPLETED ERR=0 (response/completion)
+PERF-DMA-03,deny_to_dma_completed_err1,0,simulation_event_log,SIMULATION_EVIDENCE,unauthorized DMA RID=0x02 deny → first DMA_COMPLETED ERR=1; same-cycle in this monitor (latency 0)
+PERF-RAND-DMA-AUTH,auth_dma_admit_to_complete,7.0,/home/mmr/ricv_paper/results/m7/performance/raw_samples.csv,SIMULATION_EVIDENCE,authorized DMA completion (admit → DMA_COMPLETED ERR=0); n=500 min=7 median=7.0 mean=7 p95=7 max=7
+PERF-RAND-DMA-DENY,denied_dma_deny_to_complete,0.0,/home/mmr/ricv_paper/results/m7/performance/raw_samples.csv,SIMULATION_EVIDENCE,denied DMA response (DMA_DENIED → DMA_COMPLETED ERR=1); n=500 min=0 median=0.0 mean=0 p95=0 max=0
+PERF-DMA-THRU-16,cycles_per_transfer_measured,14.75,c5_test_900,MEASURED,N=16 first_req=17 last_done=253 total=236; single-outstanding sequential allowed DMA; includes inter-transfer harness gap
+PERF-DMA-THRU-64,cycles_per_transfer_measured,14.9375,c5_test_900,MEASURED,N=64 first_req=17 last_done=973 total=956; single-outstanding sequential allowed DMA; includes inter-transfer harness gap
+PERF-DMA-THRU-256,cycles_per_transfer_measured,14.9844,c5_test_900,MEASURED,N=256 first_req=17 last_done=3853 total=3836; single-outstanding sequential allowed DMA; includes inter-transfer harness gap
+PERF-RESET-01,secure_ready_latency,see_raw_files,results/tables/m7_realcore_reset_latency.csv;results/tables/m7_realcore_release_order_latency.csv,SIMULATION_EVIDENCE,Phase C/C.5 raw latency preserved; not re-measured here

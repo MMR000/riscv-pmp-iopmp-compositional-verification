@@ -1,0 +1,78 @@
+# M7 Phase D.1 — ORFS Docker container toolchain versions
+# Recorded: 2026-08-12T10:38:31Z
+# Method: cd third_party/OpenROAD-flow-scripts/flow && util/docker_shell (via sg docker)
+
+=== host docker ===
+Docker version 29.7.2, build a7dcaa6
+
+=== ORFS Docker image ===
+Name: openroad/orfs:latest
+Id: sha256:817b608c69a71fafc7b61baec11b4dc073fb8efb9d2714f9bd3316db4beba277
+RepoDigests: ["openroad/orfs@sha256:817b608c69a71fafc7b61baec11b4dc073fb8efb9d2714f9bd3316db4beba277"]
+Created: 2026-08-11T21:29:36.590966244Z
+Size: 1593823105 bytes
+Full inspect summary: results/m7/ppa_full/toolchain_validation/docker_image_inspect.txt
+
+=== container identity (cosmetic; not a blocker) ===
+uid=1000 gid=1000
+whoami: cannot find name for user ID 1000
+xauth: file /tmp/.docker.xauth may be created on first use
+
+=== environment ===
+PATH=/OpenROAD-flow-scripts/tools/install/kepler-formal/bin:/OpenROAD-flow-scripts/tools/install/yosys/bin:/OpenROAD-flow-scripts/tools/install/OpenROAD/bin:/usr/local/bin/wrapped-cc:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+YOSYS_EXE=/OpenROAD-flow-scripts/tools/install/yosys/bin/yosys
+OPENROAD_EXE=/OpenROAD-flow-scripts/tools/install/OpenROAD/bin/openroad
+FLOW_HOME=/OpenROAD-flow-scripts/flow
+WORK_HOME=/work
+KLAYOUT=/usr/bin/klayout (KLayout 0.30.7)
+
+=== which yosys ===
+/OpenROAD-flow-scripts/tools/install/yosys/bin/yosys
+
+=== yosys -V ===
+Yosys 0.68+post (git sha1 UNKNOWN, Release, GNU /usr/local/bin/wrapped-cc/g++ 11.4.0)
+
+=== $YOSYS_EXE -V ===
+-rwxr-xr-x 1 root root 39412552 Aug 11 21:46 /OpenROAD-flow-scripts/tools/install/yosys/bin/yosys
+Yosys 0.68+post (git sha1 UNKNOWN, Release, GNU /usr/local/bin/wrapped-cc/g++ 11.4.0)
+
+=== which openroad ===
+/OpenROAD-flow-scripts/tools/install/OpenROAD/bin/openroad
+
+=== openroad -version / $OPENROAD_EXE -version ===
+-rwxr-xr-x 1 root root 121071216 Aug 11 21:43 /OpenROAD-flow-scripts/tools/install/OpenROAD/bin/openroad
+26Q3-1080-gab6fd26351
+
+=== Slang support ===
+Probe 1: "$YOSYS_EXE" -m slang -p "help read_slang"
+  FAIL as a *plugin load*: slang.so is not present under share/yosys/plugins.
+  This is expected in this ORFS image.
+
+Probe 2: "$YOSYS_EXE" -p "help read_slang"  (no -m)
+  PASS: read_slang is a built-in Yosys command.
+
+Yosys -H lists:
+  read_slang           read SystemVerilog (slang)
+  slang_defaults       set default options for read_slang
+  slang_version        display revision of slang frontend
+
+ORFS synth_preamble.tcl (image) comment:
+  "read_slang is built into Yosys (>=0.67); no plugin load needed."
+  SYNTH_HDL_FRONTEND=slang uses: yosys read_slang ...
+
+Slang status for ORFS SystemVerilog designs (including official sky130hd/ibex): PASS (built-in frontend)
+
+=== host ORFS git pin (not initialized submodules; Docker supplies tools) ===
+third_party/OpenROAD-flow-scripts HEAD:
+  f9ec54a6de7b2bc69fd586015f6ebdab34eca69c
+submodule status --recursive:
+  -ab6fd26351dc449e69059684dc6aa9ae9046eb36 tools/OpenROAD
+  -9dd032c6ffb885c232801bc20f39cd5c80dc05fe tools/kepler-formal
+  -a5af9d690a43744bf6b2cc3dea2717c16b54621c tools/yosys
+Note: '-' prefix means submodules are not initialized on the host.
+Docker image already contains installed Yosys/OpenROAD; host submodule init/build was NOT required.
+
+OpenROAD version string 26Q3-1080-gab6fd26351 matches the pinned OpenROAD submodule SHA prefix ab6fd26351.
+
+=== image ORFS git ===
+no git metadata inside /OpenROAD-flow-scripts in this image

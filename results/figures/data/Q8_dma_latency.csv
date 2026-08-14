@@ -1,0 +1,5 @@
+test_id,label,cycles
+PERF-DMA-01a,1st commit,5
+PERF-DMA-02,completion,7
+PERF-DMA-01b,last commit,9
+PERF-DMA-03,deny response,0

@@ -1,0 +1,308 @@
+=== J0 ===
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.68+ (git sha1 832843ad0-dirty, Release, GNU /home/conda/feedstock_root/build_artifacts/yosys_1785933756519/_build_env/bin/x86_64-conda-linux-gnu-c++ 14.4.0) [github.com/conda-forge/yosys-feedstock at main]
+
+-- Running command `
+    read_verilog -I/home/mmr/ricv_paper/rtl/common  /home/mmr/ricv_paper/rtl/soc/security_config.v;
+    read_verilog -I/home/mmr/ricv_paper/rtl/common  /home/mmr/ricv_paper/rtl/pmp/pmp.v;
+    read_verilog -I/home/mmr/ricv_paper/rtl/common  /home/mmr/ricv_paper/rtl/iopmp/iopmp.v;
+    hierarchy -top pmp;
+    proc; flatten; opt; stat
+  ' --
+
+1. Executing Verilog-2005 frontend: /home/mmr/ricv_paper/rtl/soc/security_config.v
+Parsing Verilog input from `/home/mmr/ricv_paper/rtl/soc/security_config.v' to AST representation.
+Generating RTLIL representation for module `\security_config'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: /home/mmr/ricv_paper/rtl/pmp/pmp.v
+Parsing Verilog input from `/home/mmr/ricv_paper/rtl/pmp/pmp.v' to AST representation.
+Generating RTLIL representation for module `\pmp'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: /home/mmr/ricv_paper/rtl/iopmp/iopmp.v
+Parsing Verilog input from `/home/mmr/ricv_paper/rtl/iopmp/iopmp.v' to AST representation.
+Generating RTLIL representation for module `\iopmp'.
+Successfully finished Verilog frontend.
+
+4. Executing HIERARCHY pass (managing design hierarchy).
+
+4.1. Analyzing design hierarchy..
+Top module:  \pmp
+
+4.2. Analyzing design hierarchy..
+Top module:  \pmp
+Removing unused module `\iopmp'.
+Removing unused module `\security_config'.
+Removed 2 unused modules.
+
+5. Executing PROC pass (convert processes to netlists).
+
+5.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+5.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 5 switch rules as full_case in process $proc$/home/mmr/ricv_paper/rtl/pmp/pmp.v:54$17 in module pmp.
+Removed a total of 0 dead cases.
+
+5.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 6 redundant assignments.
+Promoted 5 assignments to connections.
+
+5.4. Executing PROC_INIT pass (extract init attributes).
+
+5.5. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \rst_n in `\pmp.$proc$/home/mmr/ricv_paper/rtl/pmp/pmp.v:54$17'.
+
+5.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~6 debug messages>
+
+5.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\pmp.$proc$/home/mmr/ricv_paper/rtl/pmp/pmp.v:54$17'.
+     1/26: $4\cpu_allowed$func$/home/mmr/ricv_paper/rtl/pmp/pmp.v:77$15.$result[0:0]$43
+     2/26: $3\cpu_allowed$func$/home/mmr/ricv_paper/rtl/pmp/pmp.v:77$15.$result[0:0]$37
+     3/26: $3\in_protected_region$func$/home/mmr/ricv_paper/rtl/pmp/pmp.v:47$16.a[31:0]$39
+     4/26: $3\in_protected_region$func$/home/mmr/ricv_paper/rtl/pmp/pmp.v:47$16.$result[0:0]$38
+     5/26: $2\in_protected_region$func$/home/mmr/ricv_paper/rtl/pmp/pmp.v:47$16.a[31:0]$35
+     6/26: $2\in_protected_region$func$/home/mmr/ricv_paper/rtl/pmp/pmp.v:47$16.$result[0:0]$34
+     7/26: $2\cpu_allowed$func$/home/mmr/ricv_paper/rtl/pmp/pmp.v:77$15.$result[0:0]$31
+     8/26: $2\cpu_allowed$func$/home/mmr/ricv_paper/rtl/pmp/pmp.v:77$15.priv[0:0]$33
+     9/26: $2\cpu_allowed$func$/home/mmr/ricv_paper/rtl/pmp/pmp.v:77$15.a[31:0]$32
+    10/26: $1\in_protected_region$func$/home/mmr/ricv_paper/rtl/pmp/pmp.v:47$16.a[31:0]$28
+    11/26: $1\in_protected_region$func$/home/mmr/ricv_paper/rtl/pmp/pmp.v:47$16.$result[0:0]$27
+    12/26: $1\cpu_allowed$func$/home/mmr/ricv_paper/rtl/pmp/pmp.v:77$15.priv[0:0]$26
+    13/26: $1\cpu_allowed$func$/home/mmr/ricv_paper/rtl/pmp/pmp.v:77$15.a[31:0]$25
+    14/26: $1\cpu_allowed$func$/home/mmr/ricv_paper/rtl/pmp/pmp.v:77$15.$result[0:0]$24
+    15/26: $0\cpu_error[0:0]
+    16/26: $0\cpu_valid[0:0]
+    17/26: $0\cpu_gnt[0:0]
+    18/26: $0\cpu_write_out[0:0]
+    19/26: $0\cpu_addr_out[31:0]
+    20/26: $0\cpu_req_out[0:0]
+    21/26: $0\hold_addr[31:0]
+    22/26: $0\hold_write[0:0]
+    23/26: $0\hold_privilege[0:0]
+    24/26: $0\pending[0:0]
+    25/26: $0\cpu_wdata_out[31:0]
+    26/26: $0\cpu_rdata[31:0]
+
+5.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+5.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\pmp.\cpu_gnt' using process `\pmp.$proc$/home/mmr/ricv_paper/rtl/pmp/pmp.v:54$17'.
+  created $adff cell `$procdff$614' with positive edge clock and positive level reset.
+Creating register for signal `\pmp.\cpu_valid' using process `\pmp.$proc$/home/mmr/ricv_paper/rtl/pmp/pmp.v:54$17'.
+  created $adff cell `$procdff$619' with positive edge clock and positive level reset.
+Creating register for signal `\pmp.\cpu_rdata' using process `\pmp.$proc$/home/mmr/ricv_paper/rtl/pmp/pmp.v:54$17'.
+  created $adff cell `$procdff$624' with positive edge clock and positive level reset.
+Creating register for signal `\pmp.\cpu_error' using process `\pmp.$proc$/home/mmr/ricv_paper/rtl/pmp/pmp.v:54$17'.
+  created $adff cell `$procdff$629' with positive edge clock and positive level reset.
+Creating register for signal `\pmp.\cpu_req_out' using process `\pmp.$proc$/home/mmr/ricv_paper/rtl/pmp/pmp.v:54$17'.
+  created $adff cell `$procdff$634' with positive edge clock and positive level reset.
+Creating register for signal `\pmp.\cpu_addr_out' using process `\pmp.$proc$/home/mmr/ricv_paper/rtl/pmp/pmp.v:54$17'.
+  created $adff cell `$procdff$639' with positive edge clock and positive level reset.
+Creating register for signal `\pmp.\cpu_write_out' using process `\pmp.$proc$/home/mmr/ricv_paper/rtl/pmp/pmp.v:54$17'.
+  created $adff cell `$procdff$644' with positive edge clock and positive level reset.
+Creating register for signal `\pmp.\cpu_wdata_out' using process `\pmp.$proc$/home/mmr/ricv_paper/rtl/pmp/pmp.v:54$17'.
+  created $adff cell `$procdff$649' with positive edge clock and positive level reset.
+Creating register for signal `\pmp.\pending' using process `\pmp.$proc$/home/mmr/ricv_paper/rtl/pmp/pmp.v:54$17'.
+  created $adff cell `$procdff$654' with positive edge clock and positive level reset.
+Creating register for signal `\pmp.\hold_privilege' using process `\pmp.$proc$/home/mmr/ricv_paper/rtl/pmp/pmp.v:54$17'.
+  created $adff cell `$procdff$659' with positive edge clock and positive level reset.
+Creating register for signal `\pmp.\hold_write' using process `\pmp.$proc$/home/mmr/ricv_paper/rtl/pmp/pmp.v:54$17'.
+  created $adff cell `$procdff$664' with positive edge clock and positive level reset.
+Creating register for signal `\pmp.\hold_addr' using process `\pmp.$proc$/home/mmr/ricv_paper/rtl/pmp/pmp.v:54$17'.
+  created $adff cell `$procdff$669' with positive edge clock and positive level reset.
+Creating register for signal `\pmp.\cpu_allowed$func$/home/mmr/ricv_paper/rtl/pmp/pmp.v:77$15.$result' using process `\pmp.$proc$/home/mmr/ricv_paper/rtl/pmp/pmp.v:54$17'.
+  created $adff cell `$procdff$674' with positive edge clock and positive level reset.
+Creating register for signal `\pmp.\cpu_allowed$func$/home/mmr/ricv_paper/rtl/pmp/pmp.v:77$15.a' using process `\pmp.$proc$/home/mmr/ricv_paper/rtl/pmp/pmp.v:54$17'.
+  created $adff cell `$procdff$679' with positive edge clock and positive level reset.
+Creating register for signal `\pmp.\cpu_allowed$func$/home/mmr/ricv_paper/rtl/pmp/pmp.v:77$15.priv' using process `\pmp.$proc$/home/mmr/ricv_paper/rtl/pmp/pmp.v:54$17'.
+  created $adff cell `$procdff$684' with positive edge clock and positive level reset.
+Creating register for signal `\pmp.\in_protected_region$func$/home/mmr/ricv_paper/rtl/pmp/pmp.v:47$16.$result' using process `\pmp.$proc$/home/mmr/ricv_paper/rtl/pmp/pmp.v:54$17'.
+  created $adff cell `$procdff$689' with positive edge clock and positive level reset.
+Creating register for signal `\pmp.\in_protected_region$func$/home/mmr/ricv_paper/rtl/pmp/pmp.v:47$16.a' using process `\pmp.$proc$/home/mmr/ricv_paper/rtl/pmp/pmp.v:54$17'.
+  created $adff cell `$procdff$694' with positive edge clock and positive level reset.
+
+5.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+5.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 6 empty switches in `\pmp.$proc$/home/mmr/ricv_paper/rtl/pmp/pmp.v:54$17'.
+Removing empty process `pmp.$proc$/home/mmr/ricv_paper/rtl/pmp/pmp.v:54$17'.
+Cleaned up 6 empty switches.
+
+5.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmp.
+<suppressed ~38 debug messages>
+
+6. Executing FLATTEN pass (flatten design).
+
+7. Executing OPT pass (performing simple optimizations).
+
+7.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmp.
+
+7.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmp'.
+Computing hashes of 83 cells of `\pmp'.
+Finding duplicate cells in `\pmp'.
+Computing hashes of 64 cells of `\pmp'.
+Finding duplicate cells in `\pmp'.
+<suppressed ~57 debug messages>
+Removed a total of 19 cells.
+
+7.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \pmp..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+      Replacing known input bits on port A of cell $procmux$589: \pending -> 1'0
+      Replacing known input bits on port A of cell $procmux$587: \pending -> 1'1
+  Analyzing evaluation results.
+    dead port 1/2 on $mux $procmux$528.
+    dead port 2/2 on $mux $procmux$528.
+    dead port 1/2 on $mux $procmux$525.
+    dead port 2/2 on $mux $procmux$525.
+    dead port 1/2 on $mux $procmux$522.
+    dead port 2/2 on $mux $procmux$522.
+    dead port 1/2 on $mux $procmux$519.
+    dead port 2/2 on $mux $procmux$519.
+    dead port 1/2 on $mux $procmux$516.
+    dead port 2/2 on $mux $procmux$516.
+    dead port 1/2 on $mux $procmux$513.
+    dead port 2/2 on $mux $procmux$513.
+    dead port 1/2 on $mux $procmux$511.
+    dead port 2/2 on $mux $procmux$511.
+    dead port 1/2 on $mux $procmux$507.
+    dead port 2/2 on $mux $procmux$507.
+    dead port 1/2 on $mux $procmux$505.
+    dead port 2/2 on $mux $procmux$505.
+    dead port 2/2 on $mux $procmux$495.
+    dead port 2/2 on $mux $procmux$493.
+Removed 20 multiplexer ports.
+<suppressed ~46 debug messages>
+
+7.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \pmp.
+Performed a total of 0 changes.
+
+7.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmp'.
+Computing hashes of 53 cells of `\pmp'.
+Finding duplicate cells in `\pmp'.
+Computing hashes of 52 cells of `\pmp'.
+Finding duplicate cells in `\pmp'.
+<suppressed ~3 debug messages>
+Removed a total of 1 cells.
+
+7.6. Executing OPT_DFF pass (perform DFF optimizations).
+Adding EN signal on $procdff$669 ($adff) from module pmp (D = \cpu_addr, Q = \hold_addr).
+Adding EN signal on $procdff$654 ($adff) from module pmp (D = $procmux$595_Y, Q = \pending).
+Adding EN signal on $procdff$624 ($adff) from module pmp (D = \bus_rdata, Q = \cpu_rdata).
+Adding EN signal on $procdff$664 ($adff) from module pmp (D = \cpu_write, Q = \hold_write).
+Adding EN signal on $procdff$649 ($adff) from module pmp (D = \cpu_wdata, Q = \cpu_wdata_out).
+Adding EN signal on $procdff$659 ($adff) from module pmp (D = \cpu_privilege, Q = \hold_privilege).
+Setting constant 1-bit at position 0 on $procdff$679 ($adff) from module pmp.
+Setting constant 1-bit at position 1 on $procdff$679 ($adff) from module pmp.
+Setting constant 1-bit at position 2 on $procdff$679 ($adff) from module pmp.
+Setting constant 1-bit at position 3 on $procdff$679 ($adff) from module pmp.
+Setting constant 1-bit at position 4 on $procdff$679 ($adff) from module pmp.
+Setting constant 1-bit at position 5 on $procdff$679 ($adff) from module pmp.
+Setting constant 1-bit at position 6 on $procdff$679 ($adff) from module pmp.
+Setting constant 1-bit at position 7 on $procdff$679 ($adff) from module pmp.
+Setting constant 1-bit at position 8 on $procdff$679 ($adff) from module pmp.
+Setting constant 1-bit at position 9 on $procdff$679 ($adff) from module pmp.
+Setting constant 1-bit at position 10 on $procdff$679 ($adff) from module pmp.
+Setting constant 1-bit at position 11 on $procdff$679 ($adff) from module pmp.
+Setting constant 1-bit at position 12 on $procdff$679 ($adff) from module pmp.
+Setting constant 1-bit at position 13 on $procdff$679 ($adff) from module pmp.
+Setting constant 1-bit at position 14 on $procdff$679 ($adff) from module pmp.
+Setting constant 1-bit at position 15 on $procdff$679 ($adff) from module pmp.
+Setting constant 1-bit at position 16 on $procdff$679 ($adff) from module pmp.
+Setting constant 1-bit at position 17 on $procdff$679 ($adff) from module pmp.
+Setting constant 1-bit at position 18 on $procdff$679 ($adff) from module pmp.
+Setting constant 1-bit at position 19 on $procdff$679 ($adff) from module pmp.
+Setting constant 1-bit at position 20 on $procdff$679 ($adff) from module pmp.
+Setting constant 1-bit at position 21 on $procdff$679 ($adff) from module pmp.
+Setting constant 1-bit at position 22 on $procdff$679 ($adff) from module pmp.
+Setting constant 1-bit at position 23 on $procdff$679 ($adff) from module pmp.
+Setting constant 1-bit at position 24 on $procdff$679 ($adff) from module pmp.
+Setting constant 1-bit at position 25 on $procdff$679 ($adff) from module pmp.
+Setting constant 1-bit at position 26 on $procdff$679 ($adff) from module pmp.
+Setting constant 1-bit at position 27 on $procdff$679 ($adff) from module pmp.
+Setting constant 1-bit at position 28 on $procdff$679 ($adff) from module pmp.
+Setting constant 1-bit at position 29 on $procdff$679 ($adff) from module pmp.
+Setting constant 1-bit at position 30 on $procdff$679 ($adff) from module pmp.
+Setting constant 1-bit at position 31 on $procdff$679 ($adff) from module pmp.
+Setting constant 1-bit at position 0 on $procdff$684 ($adff) from module pmp.
+
+7.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmp..
+Removed 20 unused cells and 140 unused wires.
+<suppressed ~24 debug messages>
+
+7.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmp.
+
+7.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+7.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \pmp..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~30 debug messages>
+
+7.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \pmp.
+Performed a total of 0 changes.
+
+7.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmp'.
+Computing hashes of 37 cells of `\pmp'.
+Finding duplicate cells in `\pmp'.
+Removed a total of 0 cells.
+
+7.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+7.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmp..
+
+7.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmp.
+
+7.16. Finished fast OPT passes. (There is nothing left to do.)
+
+8. Printing statistics.
+
+=== pmp ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       51 wires
+      361 wire bits
+       23 public wires
+      271 public wire bits
+       19 ports
+      205 port bits
+       37 cells
+        6   $adff
+        3   $adffe
+        1   $ge
+        1   $le
+        2   $logic_and
+        1   $logic_not
+       19   $mux
+        1   $ne
+        1   $not
+        2   $reduce_and
+
+End of script. Logfile hash: 93c7da5559, time: 0.02s, user: 0.02s, system: 0.00s, MEM: 25.84 MB peak
+Yosys 0.68+ (git sha1 832843ad0-dirty, Release, GNU /home/conda/feedstock_root/build_artifacts/yosys_1785933756519/_build_env/bin/x86_64-conda-linux-gnu-c++ 14.4.0) [github.com/conda-forge/yosys-feedstock at main]
+Time spent: 76% 6x read_verilog (0 sec), 3% 2x opt_clean (0 sec), ...

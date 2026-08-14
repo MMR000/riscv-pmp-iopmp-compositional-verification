@@ -1,0 +1,15 @@
+\section{Security Properties}
+\label{sec:properties}
+
+% SOURCE: docs/security_properties.md, results/tables/m510_guarantee_matrix.csv
+
+\subsection{Representative Properties}
+\begin{itemize}
+  \item \textbf{SP-02:} Unauthorized CPU writes must not modify protected memory.
+  \item \textbf{SP-04:} Unauthorized DMA writes must not modify protected memory.
+  \item \textbf{SP-06:} Decisions must match DMA requester identity (simulation evidence).
+  \item \textbf{SP-08:} Reset safety --- no unintentional protected accessibility interval.
+  \item \textbf{M57-FP-04:} AXI write beat bound to authorized transaction context (full-RTL path).
+\end{itemize}
+
+\input{tables/property_summary.tex}

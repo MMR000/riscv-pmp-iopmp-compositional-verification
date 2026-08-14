@@ -1,0 +1,18 @@
+=== M55-AUTH-WRITE-CONTROL ===
+NSAID=0 operation=WRITE observed=ALLOW
+BRESP/RRESP write=0 read=0 mem_eff=1
+ip_mst_aw_seen=1 ip_mst_w_seen=0 ip_err_w_seen=0 forwarded=1
+probe_aw_nsaid=0 probe_ar_nsaid=0 aw_req_q=0 ar_req_q=0
+captured_sid=0 sid_q=0 enabled=1 has_md=1 allow=1 ml_state=4 access=2 txn_allow_q=0
+=== M55-WRITE-CE-BASELINE ===
+NSAID=1 operation=WRITE observed=DENY
+BRESP/RRESP write=2 read=0 mem_eff=0
+ip_mst_aw_seen=0 ip_mst_w_seen=0 ip_err_w_seen=0 forwarded=0
+probe_aw_nsaid=0 probe_ar_nsaid=0 aw_req_q=0 ar_req_q=0
+captured_sid=1 sid_q=0 enabled=1 has_md=0 allow=0 ml_state=3 access=2 txn_allow_q=0
+=== M55-READ-CONTROL ===
+NSAID=1 operation=READ observed=DENY
+BRESP/RRESP write=0 read=2 mem_eff=0
+ip_mst_aw_seen=0 ip_mst_w_seen=0 ip_err_w_seen=0 forwarded=0
+probe_aw_nsaid=0 probe_ar_nsaid=0 aw_req_q=0 ar_req_q=0
+captured_sid=1 sid_q=0 enabled=1 has_md=0 allow=0 ml_state=3 access=1 txn_allow_q=0

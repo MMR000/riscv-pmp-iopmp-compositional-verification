@@ -1,0 +1,2 @@
+YOSYS_EXE is set to '/home/mmr/ricv_paper/third_party/OpenROAD-flow-scripts/tools/install/yosys/bin/yosys', but it is either not found or not executable.
+make: *** [Makefile:796: check-yosys] Error 1

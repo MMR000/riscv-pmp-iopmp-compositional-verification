@@ -1,0 +1,8 @@
+property_id,description,original_status,proper_status,method,depth,engine,solver,assumptions,pre_fix_cex,post_fix_cex,notes
+M57-FP-01,denied must not handshake downstream AW,INCONCLUSIVE,BOUNDED_PASS,verilator-assert+sim,directed+sim,verilator/sby,n/a/z3,M57-FA-01..09,no,no,SymbiYosys BMC INCONCLUSIVE (Yosys SV elaboration)
+M57-FP-02,denied must not handshake downstream W,COUNTEREXAMPLE,BOUNDED_PASS,verilator-assert+sim,directed+sim,verilator/sby,n/a/z3,M57-FA-01..09,yes,no,SymbiYosys BMC INCONCLUSIVE (Yosys SV elaboration)
+M57-FP-03,denied must not modify downstream memory,COUNTEREXAMPLE,BOUNDED_PASS,verilator-assert+sim,directed+sim,verilator/sby,n/a/z3,M57-FA-01..09,yes,no,SymbiYosys BMC INCONCLUSIVE (Yosys SV elaboration)
+M57-FP-04,downstream W requires authorized context,COUNTEREXAMPLE,BOUNDED_PASS,verilator-assert+sim,directed+sim,verilator/sby,n/a/z3,M57-FA-01..09,yes,no,SymbiYosys BMC INCONCLUSIVE (Yosys SV elaboration)
+M57-FP-06,route cleared in IDLE (proper),N/A,BOUNDED_PASS,verilator-assert+sim,directed+sim,verilator/sby,n/a/z3,M57-FA-01..09,no,no,SymbiYosys BMC INCONCLUSIVE (Yosys SV elaboration)
+M57-FP-14,stale route cannot authorize deny,COUNTEREXAMPLE,BOUNDED_PASS,verilator-assert+sim,directed+sim,verilator/sby,n/a/z3,M57-FA-01..09,yes,no,SymbiYosys BMC INCONCLUSIVE (Yosys SV elaboration)
+M57-FP-15,memory write implies authorized context,COUNTEREXAMPLE,BOUNDED_PASS,verilator-assert+sim,directed+sim,verilator/sby,n/a/z3,M57-FA-01..09,yes,no,SymbiYosys BMC INCONCLUSIVE (Yosys SV elaboration)

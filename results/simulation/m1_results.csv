@@ -1,0 +1,10 @@
+experiment_id,configuration,cpu_authorized,dma_authorized,requester_id,operation,address,length,expected,observed,security_property,result,notes,git_commit,seed
+A1,PMP-only,0,N/A,N/A,cpu_read,0x20000000,4,BLOCKED,BLOCKED,SP-01,PASS,Untrusted CPU read protected SRAM,096a984d3f96bb42a797fcbe94b9a2e937b8ed69,directed
+A2,PMP-only,0,N/A,N/A,cpu_write,0x20000000,4,BLOCKED,BLOCKED,SP-02,PASS,Untrusted CPU write protected SRAM,096a984d3f96bb42a797fcbe94b9a2e937b8ed69,directed
+A3,PMP-only,N/A,0,0x02,dma_read,0x20000000,4,REACHES_MEMORY,REACHES_MEMORY,SP-03-baseline,PASS,PMP-only system-level coverage limitation,096a984d3f96bb42a797fcbe94b9a2e937b8ed69,directed
+A4,PMP-only,N/A,0,0x02,dma_write,0x20000000,4,REACHES_MEMORY,REACHES_MEMORY,SP-04-baseline,PASS,PMP-only system-level coverage limitation,096a984d3f96bb42a797fcbe94b9a2e937b8ed69,directed
+M1-CPU,PMP+IOPMP,0,N/A,N/A,cpu_read,0x20000000,4,BLOCKED,BLOCKED,SP-01,PASS,M1 untrusted CPU must remain blocked,096a984d3f96bb42a797fcbe94b9a2e937b8ed69,directed
+B2,PMP+IOPMP,N/A,0,0x02,dma_read,0x20000000,4,BLOCKED,BLOCKED,SP-03,PASS,Unauthorized DMA read,096a984d3f96bb42a797fcbe94b9a2e937b8ed69,directed
+B4,PMP+IOPMP,N/A,0,0x02,dma_write,0x20000000,4,BLOCKED,BLOCKED,SP-04,PASS,Unauthorized DMA write; M1 requirement,096a984d3f96bb42a797fcbe94b9a2e937b8ed69,directed
+B1,PMP+IOPMP,N/A,1,0x01,dma_read,0x20000000,4,ALLOW,ALLOW,SP-03,PASS,Authorized DMA read,096a984d3f96bb42a797fcbe94b9a2e937b8ed69,directed
+B3,PMP+IOPMP,N/A,1,0x01,dma_write,0x20000000,4,ALLOW,ALLOW,SP-04,PASS,Authorized DMA write,096a984d3f96bb42a797fcbe94b9a2e937b8ed69,directed

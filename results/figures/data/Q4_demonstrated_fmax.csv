@@ -1,0 +1,5 @@
+variant,demonstrated_fmax_mhz,result_10ns,shortest_demonstrated_pass_ns
+J0,105.26,PASS,9.5
+J1,60.61,GRT_FAIL,16.5
+J2,78.43,GDS_SETUP_FAIL,12.75
+J3,76.92,GRT_FAIL,13.0

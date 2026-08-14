@@ -1,0 +1,3 @@
+trace_tb=/home/mmr/ricv_paper/results/formal/m58/m58_proper_bmc64/engine_0/trace_tb.v
+classification=NOT_REPRODUCIBLE_DUE_TO_UNCONTROLLABLE_INTERNAL_STATE
+notes=Witness is dominated by Yosys anyinit on internal FIFO/FSM state; cycles 0-4 contain no AW/W stimulus assignments.

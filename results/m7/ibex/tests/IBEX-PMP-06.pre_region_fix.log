@@ -1,0 +1,31 @@
+Program header number 0 in `/home/mmr/ricv_paper/m7/sw/ibex_pmp/IBEX-PMP-06.elf' is not of type PT_LOAD; ignoring.
+Program header number 3 in `/home/mmr/ricv_paper/m7/sw/ibex_pmp/IBEX-PMP-06.elf' is not of type PT_LOAD; ignoring.
+Simulation of Ibex
+==================
+
+Tracing can be toggled by sending SIGUSR1 to this process:
+$ kill -USR1 1948111
+
+Simulation running, end by pressing CTRL-c.
+TOP.ibex_simple_system.u_top.u_ibex_tracer.unnamedblk2.unnamedblk3: Writing execution trace to trace_core_00000000.log
+Terminating simulation by software request.
+- src/lowrisc_ibex_sim_shared_0/rtl/sim/simulator_ctrl.sv:93: Verilog $finish
+Received $finish() from Verilog, shutting down simulation.
+
+Simulation statistics
+=====================
+Executed cycles:  1119
+Wallclock time:   0.002 s
+Simulation speed: 559500 cycles/s (559.5 kHz)
+
+Performance Counters
+====================
+Cycles:               1115
+Instructions Retired: 689
+
+--- ibex_simple_system.log ---
+M7-TRAP
+MCAUSE: 0x00000001
+MEPc: 0x0010017E
+MTVAL: 0x0010017E
+MEM_AFTER: 0x22222222

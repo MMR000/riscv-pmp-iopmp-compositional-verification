@@ -1,0 +1,29 @@
+[options]
+mode bmc
+depth 32
+expect pass
+wait on
+
+[engines]
+smtbmc z3
+
+[script]
+read -incdir . -formal formal_helpers.vh
+read -incdir . -formal bus_pkg.vh
+read -formal -D FORMAL security_config.v
+read -formal -D FORMAL pmp.v
+read -formal -D FORMAL iopmp.v
+read -formal interconnect.v
+read -formal sram.v
+read -formal formal_soc_tb.v
+prep -top formal_soc_tb
+
+[files]
+../../rtl/common/bus_pkg.vh
+../../rtl/soc/security_config.v
+../../rtl/pmp/pmp.v
+../../rtl/iopmp/iopmp.v
+../../rtl/interconnect/interconnect.v
+../../rtl/memory/sram.v
+../harness/formal_helpers.vh
+../harness/formal_soc_tb.v

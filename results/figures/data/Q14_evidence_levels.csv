@@ -1,0 +1,7 @@
+evidence_level,claim_class,artifact,notes
+abstract_rtl_simulation,SIMULATION_EVIDENCE,results/tables/m7_reset_matrix.csv,abstract CPU/PMP model
+m510_formal,FORMAL_PROOF,results/tables/m510_property_matrix.csv,stated formal assumptions; not real-Ibex
+real_ibex_directed_simulation,SIMULATION_EVIDENCE / RESET_ASSUMPTION_DEPENDENCY,results/tables/m7_realcore_reset_matrix.csv,Phase C RC-01..12
+real_ibex_random_reset_simulation,SIMULATION_EVIDENCE,results/tables/m7_realcore_reset_random.csv,Phase C 100 seeds
+real_ibex_release_order_simulation,SIMULATION_EVIDENCE / RESET_ASSUMPTION_DEPENDENCY,results/tables/m7_realcore_release_order_matrix.csv,Phase C.5 ORD-A..H
+real_ibex_inflight_reset_simulation,SIMULATION_EVIDENCE / INCONCLUSIVE,results/tables/m7_inflight_reset_matrix.csv,Phase C.5 RC-IF

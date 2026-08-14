@@ -1,0 +1,52 @@
+% Venue template is provisional.
+% Replace IEEEtran if the final venue requires another template.
+\documentclass[conference]{IEEEtran}
+
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs,multirow,graphicx,xcolor}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{siunitx}
+\usepackage{tabularx,array}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,shapes.geometric}
+
+% Provisional title — subject to change
+\title{Compositional Verification of PMP--IOPMP Isolation in RISC-V SoCs:\\
+Reset Ordering, Initialization, and Transaction Invariants}
+
+\author{
+  Author One\thanks{TODO: affiliation} \\
+  Author Two\thanks{TODO: affiliation}
+}
+
+\input{generated/result_macros.tex}
+\input{generated/provenance.tex}
+
+\begin{document}
+\maketitle
+
+\input{sections/00_abstract}
+\input{sections/01_introduction}
+\input{sections/02_background}
+\input{sections/03_threat_model}
+\input{sections/04_system_model}
+\input{sections/05_security_properties}
+\input{sections/06_verification_methodology}
+\input{sections/07_results}
+\input{sections/08_discussion}
+\input{sections/09_related_work}
+\input{sections/10_limitations}
+\input{sections/11_reproducibility}
+\input{sections/12_conclusion}
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+\appendices
+\input{appendix/full_property_matrix}
+\input{appendix/formal_assumptions}
+\input{appendix/toolchain}
+\input{appendix/artifact_reproduction}
+
+\end{document}

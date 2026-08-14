@@ -1,0 +1,78 @@
+.git
+.cursor
+.codex
+agent-transcripts
+__pycache__
+.venv
+venv
+.pytest_cache
+.cache
+.idea
+.vscode
+
+# Third-party / toolchain / PDK (fetch separately)
+third_party/ibex
+third_party/OpenROAD-flow-scripts
+third_party/toolchain
+third_party/zero-day-labs-riscv-iopmp
+third_party/riscv-iopmp-official
+third_party/riscv-xpack.tar.gz
+
+# Local solver / yosys trees
+tools/z3
+tools/z3-4.13.4-x64-glibc-2.35
+tools/SymbiYosys
+tools/yosys-slang
+
+# Build trees
+**/obj_dir/
+**/sim-verilator/
+*.gch
+m5/bin/
+formal/build/
+paper/build/
+paper/vendor/IEEEtran.cls
+
+# Physical / sim dumps
+*.gds
+*.gds.gz
+*.oas
+*.odb
+*.spef
+*.def
+*.vvp
+a.out
+*.xlsx
+
+# Formal solver dumps (nested BMC directories)
+results/**/model/
+results/**/engine_0/
+*.smt2
+*.il
+*.sqlite
+
+# Root scratch from local runs
+/build/
+/ibex_simple_system.log
+/ibex_simple_system_pcount.csv
+/m7_composed_harness.log
+/m7_ibex_composed.log
+/trace_core_00000000.log
+
+# Optional bulky figure rasters (vectors kept)
+results/figures/png/
+results/figures/all_figures_contact_sheet.png
+
+# ORFS GRT JSON can be large; keep metrics*.json via directory copy then we still
+# copy logs — exclude the known >0.5MB GRT dumps
+results/m7/ppa_full/orfs/J1/logs/5_1_grt.json
+results/m7/ppa_full/orfs/J2/logs/5_1_grt.json
+
+# Generated simulator binaries (not source)
+results/m55/m55_sim
+results/m56/m56_sim
+results/m5/rtl/rtl_iopmp_sim
+results/m7.zip
+*.webp
+results/m7/ppa_full/toolchain_validation/**/results/
+results/m7/ppa_full/toolchain_validation/**/*.tar

@@ -1,0 +1,48 @@
+name: Reproduction problem
+description: Report a problem reproducing this artifact
+title: "[repro] "
+labels: ["reproduction"]
+body:
+  - type: input
+    id: tag
+    attributes:
+      label: Artifact tag
+      placeholder: artifact-v1.0
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: OS
+      placeholder: Ubuntu 24.04
+    validations:
+      required: true
+  - type: input
+    id: tools
+    attributes:
+      label: Tool versions
+      placeholder: Verilator 5.x, Yosys 0.x, Docker …
+  - type: input
+    id: command
+    attributes:
+      label: Command
+      placeholder: python3 scripts/artifact/check_artifact.py
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed result
+    validations:
+      required: true
+  - type: textarea
+    id: log
+    attributes:
+      label: Log excerpt
+      description: Do not paste secrets.

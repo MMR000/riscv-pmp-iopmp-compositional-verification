@@ -1,0 +1,20 @@
+# Resolved RISC-V toolchain (M7 Phase A recovery)
+date: 2026-08-12
+
+gcc=/home/mmr/ricv_paper/third_party/toolchain/xpack-riscv-none-elf-gcc-14.2.0-3/bin/riscv-none-elf-gcc
+objcopy=/home/mmr/ricv_paper/third_party/toolchain/xpack-riscv-none-elf-gcc-14.2.0-3/bin/riscv-none-elf-objcopy
+objdump=/home/mmr/ricv_paper/third_party/toolchain/xpack-riscv-none-elf-gcc-14.2.0-3/bin/riscv-none-elf-objdump
+
+gcc_version=riscv-none-elf-gcc (xPack GNU RISC-V Embedded GCC x86_64) 14.2.0
+
+march=rv32imc_zicsr
+mabi=ilp32
+
+libelf_headers=/home/mmr/miniconda3/include/libelf.h
+libelf_system_so=libelf.so.1 (ldconfig)
+libelf_dev_pkg=INSTALLED (libelf-dev 0.190-1.1ubuntu0.1)
+srec_cat=/usr/bin/srec_cat (srecord 1.64-4.1build1)
+phase_a_reproduction_tooling_limitation=CLOSED
+
+build_cppflags=-I/home/mmr/miniconda3/include
+build_ldflags=-lelf

@@ -1,0 +1,2 @@
+case,configuration,phase,probe_route_select,probe_txn_allow,post_reset_write_observed,post_reset_mem,dst_w_after,result,fix,git_commit
+reset_during_idle,proper,after_reset,0,0,DENY,0,0,PASS,proper,ff46d11

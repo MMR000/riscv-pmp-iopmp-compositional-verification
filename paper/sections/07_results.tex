@@ -1,0 +1,28 @@
+\section{Experimental and Formal Results}
+\label{sec:results}
+
+% SOURCE: results/tables/m510_guarantee_matrix.csv
+
+\subsection{Local Access Control}
+% VERIFIED: SP-02 FORMAL_PROOF (k-induction); SP-04 FORMAL_PROOF.
+% EVIDENCE: results/formal/sp02_pmp_prove, sp04_iopmp_prove
+
+\subsection{Reset Ordering (SP-08)}
+\input{tables/reset_comparison.tex}
+\input{figures/reset_ordering.tex}
+
+% VERIFIED RST-A: CE step 1, RESET_ASSUMPTION_DEPENDENCY — NOT a vulnerability claim.
+% VERIFIED RST-B: k-induction proof (SymbiYosys smtbmc z3), FORMAL_PROOF.
+% EVIDENCE: results/formal/counterexamples/SP-08/, sp08_rstb_prove/logfile.txt
+
+\subsection{Requester Identity}
+% VERIFIED: SP-06 simulation PASS (security_matrix.csv M2-RID-*).
+% LIMITATION: No standalone formal proof row for SP-06 in m510 matrix.
+
+\subsection{Write-Path Binding (M57-FP-04)}
+% VERIFIED FIX-2: simulation BOUNDED_PASS; BMC ENV-4 BOUNDED_PASS; PDR raw FAIL.
+% SCIENTIFIC: BOUNDED_EVIDENCE — not unbounded proof.
+% VERIFIED M5.8 CE: HARNESS_ARTIFACT (closed M5.9).
+
+\input{tables/claims_evidence.tex}
+\input{tables/assumption_sensitivity.tex}

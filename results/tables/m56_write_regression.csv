@@ -1,0 +1,19 @@
+test_id,configuration,previous_transaction,current_transaction,nsaid,authorization,aw_timing,w_timing,backpressure,expected_bresp,observed_bresp,downstream_aw_seen,downstream_w_seen,memory_changed,property,result,git_commit,notes
+R1,proper,none,auth_write,0,ALLOW,0,0,none,OKAY,OKAY,1,1,1,WP-07,PASS,b0d6666,fresh auth write
+R2,proper,none,unauth_write,1,DENY,0,0,none,SLVERR,SLVERR,0,0,0,WP-02,WP-03,PASS,b0d6666,fresh unauth write
+R3,proper,auth_write,unauth_write,1,DENY,0,0,none,SLVERR,SLVERR,0,0,0,WP-04,WP-09,PASS,b0d6666,M5.5 CE sequence
+R4,proper,unauth_write,auth_write,0,ALLOW,0,0,none,OKAY,OKAY,1,1,1,WP-09,PASS,b0d6666,unauth then auth
+R5,proper,auth_write,auth_write,0,ALLOW,0,0,none,OKAY,OKAY,1,1,1,WP-07,PASS,b0d6666,auth then auth
+R6,proper,unauth_write,unauth_write,1,DENY,0,0,none,SLVERR,SLVERR,0,0,0,WP-02,PASS,b0d6666,unauth then unauth
+R7,proper,none,auth_read,0,ALLOW,0,0,none,OKAY,OKAY,0,0,0,WP-11,PASS,b0d6666,NSAID0 read
+R7,proper,auth_read,auth_write,0,ALLOW,0,0,none,OKAY,OKAY,1,1,1,WP-11,PASS,b0d6666,NSAID0 write
+R8,proper,none,unauth_read,1,DENY,0,0,none,SLVERR,SLVERR,0,0,0,WP-11,PASS,b0d6666,NSAID1 read
+R8,proper,unauth_read,unauth_write,1,DENY,0,0,none,SLVERR,SLVERR,0,0,0,WP-11,PASS,b0d6666,NSAID1 write
+R9,proper,none,perm_r1_w0_read,0,ALLOW,0,0,none,OKAY,OKAY,0,0,0,WP-11,PASS,b0d6666,R=1 W=0 read
+R9,proper,perm_r1_w0_read,perm_r1_w0_write,0,DENY,0,0,none,SLVERR,SLVERR,0,0,0,WP-02,PASS,b0d6666,R=1 W=0 write
+R10,proper,none,perm_r0_w1_read,0,DENY,0,0,none,SLVERR,SLVERR,0,0,0,WP-11,PASS,b0d6666,R=0 W=1 read
+R10,proper,perm_r0_w1_read,perm_r0_w1_write,0,ALLOW,0,0,none,OKAY,OKAY,1,1,1,WP-07,PASS,b0d6666,R=0 W=1 write
+R11,proper,none,no_entry_read,0,DENY,0,0,none,SLVERR,SLVERR,0,0,0,WP-11,PASS,b0d6666,no matching entry read
+R11,proper,no_entry_read,no_entry_write,0,DENY,0,0,none,SLVERR,SLVERR,0,0,0,WP-02,PASS,b0d6666,no matching entry write
+R12,proper,none,enable_no_entry_read,0,DENY,0,0,none,SLVERR,SLVERR,0,0,0,WP-11,PASS,b0d6666,enable no entry read
+R12,proper,enable_no_entry_read,enable_no_entry_write,0,DENY,0,0,none,SLVERR,SLVERR,0,0,0,WP-02,PASS,b0d6666,enable no entry write

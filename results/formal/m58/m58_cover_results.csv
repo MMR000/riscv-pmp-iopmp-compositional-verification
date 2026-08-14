@@ -1,0 +1,6 @@
+cover_id,variant,result,notes
+COV-01,proper,REACHABLE,cover(3) auth AW in formal model
+COV-02,both,REACHABLE,cover(4) deny AW
+COV-07,both,REACHABLE,cover(1) auth master W
+COV-09,original,REACHABLE,cover(2) bad master W (FIX-0 CE)
+COV-10,proper,INCONCLUSIVE,directed sim only for deny without master W

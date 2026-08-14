@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2026-08-11T10:04:22" hostname="DDD" package="m59_proper_env0_bmc128" id="0" name="default" tests="12" errors="0" failures="3" time="0" skipped="10">
+<properties>
+<property name="os" value="Linux"/>
+<property name="expect" value="PASS"/>
+<property name="status" value="FAIL"/>
+</properties>
+<testcase classname="default" name="build execution" time="0">
+<failure type="FAIL" message="Task returned status FAIL." />
+</testcase>
+<testcase classname="default" name="Property ASSERT in formal_m57_fullrtl_write_path_tb at ../../../../../formal/build/m59/src/formal_m57_fullrtl_write_path_tb.sv:381.47-381.57" time="0" type="ASSERT" location="../../../../../formal/build/m59/src/formal_m57_fullrtl_write_path_tb.sv:381.47-381.57" id="_witness_.check_2566" tracefile="engine_0/trace.vcd">
+<failure type="ASSERT" message="Property ASSERT in formal_m57_fullrtl_write_path_tb at ../../../../../formal/build/m59/src/formal_m57_fullrtl_write_path_tb.sv:381.47-381.57 failed. Trace file: engine_0/trace.vcd" />
+</testcase>
+<testcase classname="default" name="Property ASSERT in formal_m57_fullrtl_write_path_tb at ../../../../../formal/build/m59/src/formal_m57_fullrtl_write_path_tb.sv:383.11-383.21" time="0" type="ASSERT" location="../../../../../formal/build/m59/src/formal_m57_fullrtl_write_path_tb.sv:383.11-383.21" id="_witness_.check_2573" tracefile="engine_0/trace.vcd">
+<failure type="ASSERT" message="Property ASSERT in formal_m57_fullrtl_write_path_tb at ../../../../../formal/build/m59/src/formal_m57_fullrtl_write_path_tb.sv:383.11-383.21 failed. Trace file: engine_0/trace.vcd" />
+</testcase>
+<testcase classname="default" name="Property COVER in formal_m57_fullrtl_write_path_tb at ../../../../../formal/build/m59/src/formal_m57_fullrtl_write_path_tb.sv:391.35-391.44" time="0" type="COVER" location="../../../../../formal/build/m59/src/formal_m57_fullrtl_write_path_tb.sv:391.35-391.44" id="_witness_.check_2578">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property COVER in formal_m57_fullrtl_write_path_tb at ../../../../../formal/build/m59/src/formal_m57_fullrtl_write_path_tb.sv:392.36-392.45" time="0" type="COVER" location="../../../../../formal/build/m59/src/formal_m57_fullrtl_write_path_tb.sv:392.36-392.45" id="_witness_.check_2582">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property COVER in formal_m57_fullrtl_write_path_tb at ../../../../../formal/build/m59/src/formal_m57_fullrtl_write_path_tb.sv:393.44-393.53" time="0" type="COVER" location="../../../../../formal/build/m59/src/formal_m57_fullrtl_write_path_tb.sv:393.44-393.53" id="_witness_.check_2585">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property COVER in formal_m57_fullrtl_write_path_tb at ../../../../../formal/build/m59/src/formal_m57_fullrtl_write_path_tb.sv:394.45-394.54" time="0" type="COVER" location="../../../../../formal/build/m59/src/formal_m57_fullrtl_write_path_tb.sv:394.45-394.54" id="_witness_.check_2589">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property COVER in formal_m57_fullrtl_write_path_tb at ../../../../../formal/build/m59/src/formal_m57_fullrtl_write_path_tb.sv:395.41-395.50" time="0" type="COVER" location="../../../../../formal/build/m59/src/formal_m57_fullrtl_write_path_tb.sv:395.41-395.50" id="_witness_.check_2592">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property COVER in formal_m57_fullrtl_write_path_tb at ../../../../../formal/build/m59/src/formal_m57_fullrtl_write_path_tb.sv:396.49-396.58" time="0" type="COVER" location="../../../../../formal/build/m59/src/formal_m57_fullrtl_write_path_tb.sv:396.49-396.58" id="_witness_.check_2598">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property COVER in formal_m57_fullrtl_write_path_tb at ../../../../../formal/build/m59/src/formal_m57_fullrtl_write_path_tb.sv:397.59-397.68" time="0" type="COVER" location="../../../../../formal/build/m59/src/formal_m57_fullrtl_write_path_tb.sv:397.59-397.68" id="_witness_.check_2603">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property COVER in formal_m57_fullrtl_write_path_tb at ../../../../../formal/build/m59/src/formal_m57_fullrtl_write_path_tb.sv:398.38-398.47" time="0" type="COVER" location="../../../../../formal/build/m59/src/formal_m57_fullrtl_write_path_tb.sv:398.38-398.47" id="_witness_.check_2607">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property COVER in formal_m57_fullrtl_write_path_tb at ../../../../../formal/build/m59/src/formal_m57_fullrtl_write_path_tb.sv:399.42-399.51" time="0" type="COVER" location="../../../../../formal/build/m59/src/formal_m57_fullrtl_write_path_tb.sv:399.42-399.51" id="_witness_.check_2611">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property COVER in formal_m57_fullrtl_write_path_tb at ../../../../../formal/build/m59/src/formal_m57_fullrtl_write_path_tb.sv:400.35-400.45" time="0" type="COVER" location="../../../../../formal/build/m59/src/formal_m57_fullrtl_write_path_tb.sv:400.35-400.45" id="_witness_.check_2615">
+<skipped />
+</testcase>
+<system-out>SBY 10:04:21 [/home/mmr/ricv_paper/results/formal/m59/m59_proper_env0_bmc128] Removing directory '/home/mmr/ricv_paper/results/formal/m59/m59_proper_env0_bmc128'.
+SBY 10:04:21 [/home/mmr/ricv_paper/results/formal/m59/m59_proper_env0_bmc128] engine_0: smtbmc z3
+SBY 10:04:21 [/home/mmr/ricv_paper/results/formal/m59/m59_proper_env0_bmc128] base: starting process &quot;cd /home/mmr/ricv_paper/results/formal/m59/m59_proper_env0_bmc128/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 10:04:21 [/home/mmr/ricv_paper/results/formal/m59/m59_proper_env0_bmc128] base: Warning: Wire formal_m57_fullrtl_write_path_tb.\dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[0].i_in_flight_cnt.rst_ni is used but has no driver.
+SBY 10:04:21 [/home/mmr/ricv_paper/results/formal/m59/m59_proper_env0_bmc128] base: Warning: Wire formal_m57_fullrtl_write_path_tb.\clk is used but has no driver.
+SBY 10:04:21 [/home/mmr/ricv_paper/results/formal/m59/m59_proper_env0_bmc128] base: finished (returncode=0)
+SBY 10:04:21 [/home/mmr/ricv_paper/results/formal/m59/m59_proper_env0_bmc128] prep: starting process &quot;cd /home/mmr/ricv_paper/results/formal/m59/m59_proper_env0_bmc128/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY 10:04:21 [/home/mmr/ricv_paper/results/formal/m59/m59_proper_env0_bmc128] prep: Warning: Wire formal_m57_fullrtl_write_path_tb.\dut.i_axi_demux.gen_demux.gen_ar_id_counter.i_ar_id_counter.gen_counters[0].i_in_flight_cnt.rst_ni is used but has no driver.
+SBY 10:04:21 [/home/mmr/ricv_paper/results/formal/m59/m59_proper_env0_bmc128] prep: finished (returncode=0)
+SBY 10:04:21 [/home/mmr/ricv_paper/results/formal/m59/m59_proper_env0_bmc128] smt2: starting process &quot;cd /home/mmr/ricv_paper/results/formal/m59/m59_proper_env0_bmc128/model; yosys -ql design_smt2.log design_smt2.ys&quot;
+SBY 10:04:21 [/home/mmr/ricv_paper/results/formal/m59/m59_proper_env0_bmc128] smt2: finished (returncode=0)
+SBY 10:04:21 [/home/mmr/ricv_paper/results/formal/m59/m59_proper_env0_bmc128] engine_0: starting process &quot;cd /home/mmr/ricv_paper/results/formal/m59/m59_proper_env0_bmc128; yosys-smtbmc -s z3 --presat --noprogress -t 5:128  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2&quot;
+SBY 10:04:21 [/home/mmr/ricv_paper/results/formal/m59/m59_proper_env0_bmc128] engine_0: ##   0:00:00  Solver: z3
+SBY 10:04:21 [/home/mmr/ricv_paper/results/formal/m59/m59_proper_env0_bmc128] engine_0: ##   0:00:00  Skipping step 0..
+SBY 10:04:21 [/home/mmr/ricv_paper/results/formal/m59/m59_proper_env0_bmc128] engine_0: ##   0:00:00  Skipping step 1..
+SBY 10:04:21 [/home/mmr/ricv_paper/results/formal/m59/m59_proper_env0_bmc128] engine_0: ##   0:00:00  Skipping step 2..
+SBY 10:04:21 [/home/mmr/ricv_paper/results/formal/m59/m59_proper_env0_bmc128] engine_0: ##   0:00:00  Skipping step 3..
+SBY 10:04:21 [/home/mmr/ricv_paper/results/formal/m59/m59_proper_env0_bmc128] engine_0: ##   0:00:00  Skipping step 4..
+SBY 10:04:21 [/home/mmr/ricv_paper/results/formal/m59/m59_proper_env0_bmc128] engine_0: ##   0:00:00  Checking assumptions in step 5..
+SBY 10:04:21 [/home/mmr/ricv_paper/results/formal/m59/m59_proper_env0_bmc128] engine_0: ##   0:00:00  Checking assertions in step 5..
+SBY 10:04:22 [/home/mmr/ricv_paper/results/formal/m59/m59_proper_env0_bmc128] engine_0: ##   0:00:00  BMC failed!
+SBY 10:04:22 [/home/mmr/ricv_paper/results/formal/m59/m59_proper_env0_bmc128] engine_0: ##   0:00:00  Assert failed in formal_m57_fullrtl_write_path_tb: ../../../../../formal/build/m59/src/formal_m57_fullrtl_write_path_tb.sv:381.47-381.57 (_witness_.check_2566)
+SBY 10:04:22 [/home/mmr/ricv_paper/results/formal/m59/m59_proper_env0_bmc128] engine_0: ##   0:00:00  Assert failed in formal_m57_fullrtl_write_path_tb: ../../../../../formal/build/m59/src/formal_m57_fullrtl_write_path_tb.sv:383.11-383.21 (_witness_.check_2573)
+SBY 10:04:22 [/home/mmr/ricv_paper/results/formal/m59/m59_proper_env0_bmc128] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace.vcd
+SBY 10:04:22 [/home/mmr/ricv_paper/results/formal/m59/m59_proper_env0_bmc128] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace_tb.v
+SBY 10:04:22 [/home/mmr/ricv_paper/results/formal/m59/m59_proper_env0_bmc128] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace.smtc
+SBY 10:04:22 [/home/mmr/ricv_paper/results/formal/m59/m59_proper_env0_bmc128] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace.yw
+SBY 10:04:22 [/home/mmr/ricv_paper/results/formal/m59/m59_proper_env0_bmc128] engine_0: ##   0:00:00  Status: failed
+SBY 10:04:22 [/home/mmr/ricv_paper/results/formal/m59/m59_proper_env0_bmc128] engine_0: finished (returncode=1)
+SBY 10:04:22 [/home/mmr/ricv_paper/results/formal/m59/m59_proper_env0_bmc128] engine_0: Status returned by engine: FAIL
+SBY 10:04:22 [/home/mmr/ricv_paper/results/formal/m59/m59_proper_env0_bmc128] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 10:04:22 [/home/mmr/ricv_paper/results/formal/m59/m59_proper_env0_bmc128] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 10:04:22 [/home/mmr/ricv_paper/results/formal/m59/m59_proper_env0_bmc128] summary: engine_0 (smtbmc z3) returned FAIL
+SBY 10:04:22 [/home/mmr/ricv_paper/results/formal/m59/m59_proper_env0_bmc128] summary: counterexample trace: /home/mmr/ricv_paper/results/formal/m59/m59_proper_env0_bmc128/engine_0/trace.vcd
+SBY 10:04:22 [/home/mmr/ricv_paper/results/formal/m59/m59_proper_env0_bmc128] summary:   failed assertion formal_m57_fullrtl_write_path_tb._witness_.check_2566 at ../../../../../formal/build/m59/src/formal_m57_fullrtl_write_path_tb.sv:381.47-381.57 step 5
+SBY 10:04:22 [/home/mmr/ricv_paper/results/formal/m59/m59_proper_env0_bmc128] summary:   failed assertion formal_m57_fullrtl_write_path_tb._witness_.check_2573 at ../../../../../formal/build/m59/src/formal_m57_fullrtl_write_path_tb.sv:383.11-383.21 step 5
+SBY 10:04:22 [/home/mmr/ricv_paper/results/formal/m59/m59_proper_env0_bmc128] DONE (FAIL, rc=2)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>

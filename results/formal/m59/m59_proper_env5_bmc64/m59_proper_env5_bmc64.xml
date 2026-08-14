@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2026-08-11T10:03:48" hostname="DDD" package="m59_proper_env5_bmc64" id="0" name="default" tests="1" errors="1" failures="0" time="0" skipped="0">
+<properties>
+<property name="os" value="Linux"/>
+<property name="expect" value="PASS"/>
+<property name="status" value="ERROR"/>
+</properties>
+<testcase classname="default" name="default" time="0">
+<error type="ERROR"/>
+</testcase>
+<system-out>SBY 10:03:48 [/home/mmr/ricv_paper/results/formal/m59/m59_proper_env5_bmc64] Removing directory '/home/mmr/ricv_paper/results/formal/m59/m59_proper_env5_bmc64'.
+SBY 10:03:48 [/home/mmr/ricv_paper/results/formal/m59/m59_proper_env5_bmc64] engine_0: smtbmc z3
+SBY 10:03:48 [/home/mmr/ricv_paper/results/formal/m59/m59_proper_env5_bmc64] base: starting process &quot;cd /home/mmr/ricv_paper/results/formal/m59/m59_proper_env5_bmc64/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 10:03:48 [/home/mmr/ricv_paper/results/formal/m59/m59_proper_env5_bmc64] base: ERROR: Design elaboration failed; see full log for details
+SBY 10:03:48 [/home/mmr/ricv_paper/results/formal/m59/m59_proper_env5_bmc64] base: finished (returncode=1)
+SBY 10:03:48 [/home/mmr/ricv_paper/results/formal/m59/m59_proper_env5_bmc64] base: task failed. ERROR.
+SBY 10:03:48 [/home/mmr/ricv_paper/results/formal/m59/m59_proper_env5_bmc64] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 10:03:48 [/home/mmr/ricv_paper/results/formal/m59/m59_proper_env5_bmc64] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 10:03:48 [/home/mmr/ricv_paper/results/formal/m59/m59_proper_env5_bmc64] summary: engine_0 (smtbmc z3) did not return a status
+SBY 10:03:48 [/home/mmr/ricv_paper/results/formal/m59/m59_proper_env5_bmc64] summary: engine_0 did not produce any traces
+SBY 10:03:48 [/home/mmr/ricv_paper/results/formal/m59/m59_proper_env5_bmc64] DONE (ERROR, rc=16)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>

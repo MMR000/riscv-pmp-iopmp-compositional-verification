@@ -1,0 +1,2 @@
+configuration,git_commit,normal_write_latency_cycles,normal_read_error,secure_ready_cycles_after_reset,notes
+C0,297df920dab05466b1fc3fc6711346364cd0c459,10,0,0,single transaction sample

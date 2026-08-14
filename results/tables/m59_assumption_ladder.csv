@@ -1,0 +1,7 @@
+environment_level,assumptions,fix0_result,fix2_result,fix0_ce_depth,fix2_ce_depth,interpretation
+ENV-0,M58 baseline,EXPECTED_PRE_FIX_COUNTEREXAMPLE,COUNTEREXAMPLE,step 10 primary,step 10 secondary,M5.8 anyinit-dominated CE
+ENV-1,stable AW/W,FAIL,ERROR,,,original-only elaboration with proper signals OK at ENV>=2
+ENV-2,legal burst params,EXPECTED_PRE_FIX_COUNTEREXAMPLE,COUNTEREXAMPLE,step 10,step 10,dual assert fail
+ENV-3,W/AW sequencing,EXPECTED_PRE_FIX_COUNTEREXAMPLE,COUNTEREXAMPLE,step 10,step 10,sequencing insufficient alone
+ENV-4,reset idle + master quiescence,secondary only at <=1024,BOUNDED_PASS primary,step 10 secondary,none primary to 512,M59-FA-11/12 eliminate spurious FIX-2 CE
+ENV-5,IOPMP contract,FAIL,FAIL,step 10,step 10,stronger grant assumptions; still anyinit on observer

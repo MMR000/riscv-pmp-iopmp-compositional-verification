@@ -1,0 +1,45 @@
+SBY 10:06:46 [/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc128] Removing directory '/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc128'.
+SBY 10:06:46 [/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc128] engine_0: smtbmc z3
+SBY 10:06:46 [/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc128] base: starting process "cd /home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc128/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 10:06:46 [/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc128] base: Warning: Wire formal_m57_fullrtl_write_path_tb.\clk is used but has no driver.
+SBY 10:06:46 [/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc128] base: finished (returncode=0)
+SBY 10:06:46 [/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc128] prep: starting process "cd /home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc128/model; yosys -ql design_prep.log design_prep.ys"
+SBY 10:06:46 [/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc128] prep: finished (returncode=0)
+SBY 10:06:46 [/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc128] smt2: starting process "cd /home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc128/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY 10:06:47 [/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc128] smt2: finished (returncode=0)
+SBY 10:06:47 [/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc128] engine_0: starting process "cd /home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc128; yosys-smtbmc -s z3 --presat --noprogress -t 5:128  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2"
+SBY 10:06:47 [/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc128] engine_0: ##   0:00:00  Solver: z3
+SBY 10:06:47 [/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc128] engine_0: ##   0:00:00  Skipping step 0..
+SBY 10:06:47 [/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc128] engine_0: ##   0:00:00  Skipping step 1..
+SBY 10:06:47 [/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc128] engine_0: ##   0:00:00  Skipping step 2..
+SBY 10:06:47 [/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc128] engine_0: ##   0:00:00  Skipping step 3..
+SBY 10:06:47 [/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc128] engine_0: ##   0:00:00  Skipping step 4..
+SBY 10:06:47 [/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc128] engine_0: ##   0:00:00  Checking assumptions in step 5..
+SBY 10:06:47 [/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc128] engine_0: ##   0:00:00  Checking assertions in step 5..
+SBY 10:06:47 [/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc128] engine_0: ##   0:00:00  Checking assumptions in step 6..
+SBY 10:06:47 [/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc128] engine_0: ##   0:00:00  Checking assertions in step 6..
+SBY 10:06:47 [/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc128] engine_0: ##   0:00:00  Checking assumptions in step 7..
+SBY 10:06:47 [/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc128] engine_0: ##   0:00:00  Checking assertions in step 7..
+SBY 10:06:47 [/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc128] engine_0: ##   0:00:00  Checking assumptions in step 8..
+SBY 10:06:47 [/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc128] engine_0: ##   0:00:00  Checking assertions in step 8..
+SBY 10:06:47 [/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc128] engine_0: ##   0:00:00  Checking assumptions in step 9..
+SBY 10:06:47 [/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc128] engine_0: ##   0:00:00  Checking assertions in step 9..
+SBY 10:06:47 [/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc128] engine_0: ##   0:00:00  Checking assumptions in step 10..
+SBY 10:06:47 [/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc128] engine_0: ##   0:00:00  Checking assertions in step 10..
+SBY 10:06:47 [/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc128] engine_0: ##   0:00:00  BMC failed!
+SBY 10:06:47 [/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc128] engine_0: ##   0:00:00  Assert failed in formal_m57_fullrtl_write_path_tb: ../../../../../formal/build/m59/src/formal_m57_fullrtl_write_path_tb.sv:385.47-385.57 (_witness_.check_2527)
+SBY 10:06:47 [/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc128] engine_0: ##   0:00:00  Assert failed in formal_m57_fullrtl_write_path_tb: ../../../../../formal/build/m59/src/formal_m57_fullrtl_write_path_tb.sv:387.11-387.21 (_witness_.check_2534)
+SBY 10:06:47 [/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc128] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace.vcd
+SBY 10:06:47 [/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc128] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace_tb.v
+SBY 10:06:47 [/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc128] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace.smtc
+SBY 10:06:47 [/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc128] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace.yw
+SBY 10:06:47 [/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc128] engine_0: ##   0:00:00  Status: failed
+SBY 10:06:47 [/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc128] engine_0: finished (returncode=1)
+SBY 10:06:47 [/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc128] engine_0: Status returned by engine: FAIL
+SBY 10:06:47 [/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc128] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 10:06:47 [/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc128] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 10:06:47 [/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc128] summary: engine_0 (smtbmc z3) returned FAIL
+SBY 10:06:47 [/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc128] summary: counterexample trace: /home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc128/engine_0/trace.vcd
+SBY 10:06:47 [/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc128] summary:   failed assertion formal_m57_fullrtl_write_path_tb._witness_.check_2527 at ../../../../../formal/build/m59/src/formal_m57_fullrtl_write_path_tb.sv:385.47-385.57 step 10
+SBY 10:06:47 [/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc128] summary:   failed assertion formal_m57_fullrtl_write_path_tb._witness_.check_2534 at ../../../../../formal/build/m59/src/formal_m57_fullrtl_write_path_tb.sv:387.11-387.21 step 10
+SBY 10:06:47 [/home/mmr/ricv_paper/results/formal/m59/m59_original_env0_bmc128] DONE (FAIL, rc=0)

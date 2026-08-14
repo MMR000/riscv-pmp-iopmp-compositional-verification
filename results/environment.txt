@@ -1,0 +1,25 @@
+# Environment snapshot
+# Generated: 2026-08-11T04:34:16Z
+# Host: Linux DDD 7.0.0-28-generic #28~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Wed Jul  1 15:50:57 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+git: git version 2.43.0
+python3: Python 3.13.9
+pytest: pytest 9.1.1
+cocotb: 2.0.1
+iverilog: Icarus Verilog version 13.0 (stable) (v13_0)
+vvp: Icarus Verilog runtime version 13.0 (stable) (v13_0)
+make: GNU Make 4.4.1
+verilator: Verilator 5.050 2026-07-01 rev conda-forge build 0
+yosys: Yosys 0.68+ (git sha1 832843ad0-dirty, Release, GNU /home/conda/feedstock_root/build_artifacts/yosys_1785933756519/_build_env/bin/x86_64-conda-linux-gnu-c++ 14.4.0) [github.com/conda-forge/yosys-feedstock at main]
+sby: MISSING
+z3: Z3 version 4.13.4 - 64 bit
+boolector: MISSING
+cmake: cmake version 3.28.3
+gcc: gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+g++: g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+riscv64-gcc: MISSING
+riscv32-gcc: MISSING
+
+[M3 Formal Toolchain]
+z3: Z3 version 4.13.4 - 64 bit
+sby: MISSING
+boolector: MISSING

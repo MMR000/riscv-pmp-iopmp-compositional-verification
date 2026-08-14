@@ -1,0 +1,5 @@
+metric,min,median,mean,max,n
+cpu_release_to_pmp_ready,100,100,100.53,102,15
+iopmp_release_to_iopmp_ready,21,105,97.55,107,11
+reset_start_to_secure_ready,106,106.0,106.20,108,10
+secure_ready_to_dma_req,1,1.0,1.10,2,10

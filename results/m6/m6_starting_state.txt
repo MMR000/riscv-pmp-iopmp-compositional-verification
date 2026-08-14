@@ -1,0 +1,9 @@
+M6 starting state
+================
+date: 2026-08-11
+branch_at_start: m510-compositional-guarantee-matrix
+head_at_start: b0d66661b938ab55075fee650be0bfa55ec5249a
+expected_commit_note: user specified 681b2bd (M5.10 main); HEAD is +1 docs commit
+m510_checkpoint_tag: checkpoint-m510-complete on 681b2bd
+m59_checkpoint_tag: checkpoint-m59-axi-environment on 9f2a98b
+m59_preserve: results/m510/preserve/ (do not modify)

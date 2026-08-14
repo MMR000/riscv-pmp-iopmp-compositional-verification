@@ -1,0 +1,8 @@
+delay,auth_case,ordering,result_proper,deadlock_default_watchdog,deadlock_extended_watchdog,classification
+0,auth,same-cycle,PASS,no,no,OK
+8,auth,AW-before-W,FAIL,yes,no,TESTBENCH_WATCHDOG_LIMIT
+8,auth,AW-before-W,PASS,no,no,OK_with_TIMEOUT_LONG
+16,auth,AW-before-W,PASS,no,no,OK
+64,auth,AW-before-W,PASS,no,no,OK
+0,deny,same-cycle,PASS,no,no,OK
+8,deny,AW-before-W,PASS,no,no,OK

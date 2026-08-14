@@ -1,0 +1,3 @@
+[255000] %Error: formal_m57_fullrtl_write_path_tb.sv:452: Assertion failed in formal_m57_fullrtl_write_path_tb.M57_FP_04: 'assert' failed.
+%Error: /home/mmr/ricv_paper/formal/harness/formal_m57_fullrtl_write_path_tb.sv:452: Verilog $stop
+Aborting...

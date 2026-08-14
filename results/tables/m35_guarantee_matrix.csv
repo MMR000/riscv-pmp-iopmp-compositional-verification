@@ -1,0 +1,6 @@
+property_id,normal_operation,concurrency,policy_transition,outstanding_transaction,reset_RST_A,reset_RST_B,required_assumptions,final_status,notes
+SP-02,PROVED,BOUNDED_PASS,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,"FA-03,FA-04,FA-06,FA-07,FA-08",PROVED,hold_* at commit; prove upgraded if induction pass
+SP-04,PROVED,NOT_RUN,NOT_RUN,PROVED,NOT_RUN,NOT_RUN,"FA-02,FA-03,FA-05,FA-07,FA-08",PROVED,
+SP-08,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,COUNTEREXAMPLE,BOUNDED_PASS,"FA-01,FA-07,RST-A/RST-B",BOUNDED_PASS,RST-A CE preserved under fail-open defaults
+SP-10,NOT_RUN,BOUNDED_PASS,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,FA-01..FA-08,BOUNDED_PASS,interconnect serve_cpu attribution
+SP-B01,NOT_RUN,NOT_RUN,COUNTEREXAMPLE,NOT_RUN,NOT_RUN,NOT_RUN,FA-05 contrast,COUNTEREXAMPLE,EXPECTED_MODEL_DIFFERENCE if COUNTEREXAMPLE

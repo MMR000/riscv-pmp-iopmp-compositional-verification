@@ -1,0 +1,13 @@
+\section{Artifact Reproduction Commands}
+\label{app:repro}
+
+\begin{verbatim}
+git checkout m6-publication-freeze
+make m510-matrix
+make m510          # optional full suite (~45s)
+make paper
+\end{verbatim}
+
+M5.9 preserved evidence: \texttt{results/m510/preserve/} (do not modify).
+
+Counterexample traces: \texttt{results/formal/counterexamples/SP-08/}.

@@ -1,0 +1,123 @@
++ DEFAULT_IMAGE=openroad/orfs:latest
++ FLOW_DIR=/OpenROAD-flow-scripts/flow
++ USE_USER=false
++ DRY_RUN=false
++ PORTS=()
++ IMAGE=
++ CMD_ARGS=()
++ [[ 2 -gt 0 ]]
++ case "$1" in
++ CMD_ARGS=("$@")
++ break
++ IMAGE=openroad/orfs:latest
++ get_container_engine
+++ docker --version
++ local 'DOCKER_VERSION_STRING=Docker version 29.7.2, build a7dcaa6'
++ [[ Docker version 29.7.2, build a7dcaa6 == *\D\o\c\k\e\r* ]]
++ container_engine=docker
+++ pwd
++ WORKSPACE=/home/mmr/ricv_paper/third_party/OpenROAD-flow-scripts/flow
++ YOSYS_EXE=/OpenROAD-flow-scripts/tools/install/yosys/bin/yosys
++ OPENROAD_EXE=/OpenROAD-flow-scripts/tools/install/OpenROAD/bin/openroad
++ KLAYOUT_CMD=/usr/bin/klayout
++ XSOCK=/tmp/.X11-unix
++ XAUTH=/tmp/.docker.xauth
++ false
++ xauth nlist :1
++ sed -e 's/^..../ffff/'
++ xauth -f /tmp/.docker.xauth nmerge -
++ test -t 0
++ DOCKER_INTERACTIVE=
++ false
++ [[ docker == \p\o\d\m\a\n ]]
+++ id -u mmr
+++ id -g mmr
++ user_args='-u 1000:1000'
++ user_env=
++ PORT_ARGS=()
++ CMD_STR=
++ [[ 2 -gt 0 ]]
++ CMD_STR='bash /work/_m7_probe_cts.sh'
++ ENV_SH_CMD='if [ -f ../env.sh ]; then . ../env.sh; fi;'
++ DOCKER_CMD=("$container_engine" run --rm -i $DOCKER_INTERACTIVE $user_env $user_args -e LIBGL_ALWAYS_SOFTWARE=1 -e QT_X11_NO_MITSHM=1 -e XDG_RUNTIME_DIR=/tmp/xdg-run -e "DISPLAY=${DISPLAY:-:0}" -e QT_XKB_CONFIG_ROOT=/usr/share/X11/xkb -v "$XSOCK:$XSOCK" -v "$XAUTH:$XAUTH" -e "XAUTHORITY=$XAUTH" -e FLOW_HOME=/OpenROAD-flow-scripts/flow/ -e WORK_HOME=/work -e "YOSYS_EXE=$YOSYS_EXE" -e "OPENROAD_EXE=$OPENROAD_EXE" -e "KLAYOUT_CMD=$KLAYOUT_CMD" -v "$WORKSPACE:/work:Z" --network host "${PORT_ARGS[@]}" "$IMAGE" bash -c "set -ex; mkdir /tmp/xdg-run; cd ${FLOW_DIR}; ${ENV_SH_CMD}$CMD_STR")
++ false
++ exec docker run --rm -i -u 1000:1000 -e LIBGL_ALWAYS_SOFTWARE=1 -e QT_X11_NO_MITSHM=1 -e XDG_RUNTIME_DIR=/tmp/xdg-run -e DISPLAY=:1 -e QT_XKB_CONFIG_ROOT=/usr/share/X11/xkb -v /tmp/.X11-unix:/tmp/.X11-unix -v /tmp/.docker.xauth:/tmp/.docker.xauth -e XAUTHORITY=/tmp/.docker.xauth -e FLOW_HOME=/OpenROAD-flow-scripts/flow/ -e WORK_HOME=/work -e YOSYS_EXE=/OpenROAD-flow-scripts/tools/install/yosys/bin/yosys -e OPENROAD_EXE=/OpenROAD-flow-scripts/tools/install/OpenROAD/bin/openroad -e KLAYOUT_CMD=/usr/bin/klayout -v /home/mmr/ricv_paper/third_party/OpenROAD-flow-scripts/flow:/work:Z --network host openroad/orfs:latest bash -c 'set -ex; mkdir /tmp/xdg-run; cd /OpenROAD-flow-scripts/flow; if [ -f ../env.sh ]; then . ../env.sh; fi;bash /work/_m7_probe_cts.sh'
++ mkdir /tmp/xdg-run
++ cd /OpenROAD-flow-scripts/flow
++ '[' -f ../env.sh ']'
++ . ../env.sh
+++ __setpaths
+++ [[ linux-gnu == \d\a\r\w\i\n* ]]
+++++ readlink -f ../env.sh
++++ dirname /OpenROAD-flow-scripts/env.sh
+++ DIR=/OpenROAD-flow-scripts
+++ export OPENROAD=/OpenROAD-flow-scripts/tools/OpenROAD
+++ OPENROAD=/OpenROAD-flow-scripts/tools/OpenROAD
+++ echo 'OPENROAD: /OpenROAD-flow-scripts/tools/OpenROAD'
+OPENROAD: /OpenROAD-flow-scripts/tools/OpenROAD
+++ export PATH=/OpenROAD-flow-scripts/tools/install/OpenROAD/bin:/usr/local/bin/wrapped-cc:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ PATH=/OpenROAD-flow-scripts/tools/install/OpenROAD/bin:/usr/local/bin/wrapped-cc:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ export PATH=/OpenROAD-flow-scripts/tools/install/yosys/bin:/OpenROAD-flow-scripts/tools/install/OpenROAD/bin:/usr/local/bin/wrapped-cc:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ PATH=/OpenROAD-flow-scripts/tools/install/yosys/bin:/OpenROAD-flow-scripts/tools/install/OpenROAD/bin:/usr/local/bin/wrapped-cc:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ export PATH=/OpenROAD-flow-scripts/tools/install/kepler-formal/bin:/OpenROAD-flow-scripts/tools/install/yosys/bin:/OpenROAD-flow-scripts/tools/install/OpenROAD/bin:/usr/local/bin/wrapped-cc:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ PATH=/OpenROAD-flow-scripts/tools/install/kepler-formal/bin:/OpenROAD-flow-scripts/tools/install/yosys/bin:/OpenROAD-flow-scripts/tools/install/OpenROAD/bin:/usr/local/bin/wrapped-cc:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ [[ linux-gnu == \d\a\r\w\i\n* ]]
+++ export FLOW_HOME=/OpenROAD-flow-scripts/flow
+++ FLOW_HOME=/OpenROAD-flow-scripts/flow
+++ unset -f __setpaths
++ bash /work/_m7_probe_cts.sh
+=== image cts.tcl lines 60-95 ===
+    55	log_cmd estimate_parasitics -placement
+    56	
+    57	if { $::env(CTS_SNAPSHOTS) } {
+    58	  save_progress 4_1_pre_repair_hold_setup
+    59	}
+    60	
+    61	if { !$::env(SKIP_CTS_REPAIR_TIMING) } {
+    62	  set lec_enabled [lec_check_enabled]
+    63	  if { $lec_enabled } {
+    64	    write_lec_verilog 4_before_rsz_lec.v
+    65	  }
+    66	
+    67	  repair_timing_helper
+    68	
+    69	  if { $lec_enabled } {
+    70	    write_lec_verilog 4_after_rsz_lec.v
+    71	    run_lec_test 4_rsz 4_before_rsz_lec.v 4_after_rsz_lec.v
+    72	  }
+    73	
+    74	  set result [catch { log_cmd detailed_placement } msg]
+    75	  if { $result != 0 } {
+    76	    save_progress 4_1_error
+    77	    error "Detailed placement failed in CTS: $msg"
+    78	  }
+    79	
+    80	  check_placement -verbose
+    81	}
+    82	
+    83	report_metrics 4 "cts final"
+    84	
+    85	source_step_tcl POST CTS
+    86	
+    87	orfs_write_db $::env(RESULTS_DIR)/4_1_cts.odb
+    88	orfs_write_sdc $::env(RESULTS_DIR)/4_cts.sdc
+
+=== kepler ===
+-rwxr-xr-x 1 root root 4851448 Aug 11 21:50 /OpenROAD-flow-scripts/tools/install/kepler-formal/bin/kepler-formal
+/OpenROAD-flow-scripts/tools/install/kepler-formal/bin/kepler-formal: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=9a94195a1c30aed48731128b6e993243688933d6, for GNU/Linux 3.2.0, with debug_info, not stripped
+LEC_CHECK would see wildcard:
+kepler_executable
+
+=== zmm instruction counts (AVX-512) ===
+/OpenROAD-flow-scripts/tools/install/OpenROAD/bin/openroad : 0
+objdump_fail
+/OpenROAD-flow-scripts/tools/install/kepler-formal/bin/kepler-formal : 1262
+/opt/or-tools/lib/libortools.so.9 : 0
+objdump_fail
+
+=== image settings.mk ===
+# Enable LEC (Logical Equivalence Check) only if kepler-formal is installed.
+# kepler-formal is primarily an OpenROAD/ORFS developer tool, not an end-user
+# tool. End-users would typically run LEC transactionally at project completion,
+# not in every CI run where it wastes CI time.
+export LEC_CHECK ?= $(if $(wildcard $(KEPLER_FORMAL_EXE)),1,0)

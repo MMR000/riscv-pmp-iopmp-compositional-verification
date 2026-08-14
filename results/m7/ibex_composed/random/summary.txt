@@ -1,0 +1,1 @@
+seeds=100 pass=100 fail=0 runtime_sec=1.42 campaign=scenario_space_COMP01_08

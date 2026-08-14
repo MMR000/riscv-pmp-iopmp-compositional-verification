@@ -1,0 +1,37 @@
+Program header number 0 in `/home/mmr/ricv_paper/m7/sw/ibex_reset/RC-4.elf' is not of type PT_LOAD; ignoring.
+Program header number 3 in `/home/mmr/ricv_paper/m7/sw/ibex_reset/RC-4.elf' is not of type PT_LOAD; ignoring.
+M7 Ibex C5 composed simulation
+TOP.m7_ibex_c5_composed_top.u_ibex.u_ibex_tracer: Instruction trace disabled.
+
+Simulation running, end by pressing CTRL-c.
+Terminating simulation by software request.
+- src/lowrisc_ibex_sim_shared_0/rtl/sim/simulator_ctrl.sv:93: Verilog $finish
+Received $finish() from Verilog, shutting down simulation.
+
+Simulation statistics
+=====================
+Executed cycles:  592
+Wallclock time:   0.001 s
+Simulation speed: 592000 cycles/s (592 kHz)
+
+--- m7_c5_events.log ---
+# C5 event log
+CYC=2 EVT=CPU_RESET_RELEASE
+CYC=2 EVT=IC_RESET_RELEASE
+CYC=3 EVT=DMA_RESET_RELEASE
+CYC=3 EVT=IOPMP_RESET_RELEASE
+CYC=3 EVT=SEC_RESET_RELEASE
+CYC=9 EVT=PROT_COMMIT SRC=CPU ADDR=0x20000100 DATA=0x5151a5a5
+CYC=10 EVT=PROT_COMMIT SRC=CPU ADDR=0x20000100 DATA=0x5151a5a5
+CYC=10 EVT=CPU_RVALID
+CYC=11 EVT=PROT_COMMIT SRC=CPU ADDR=0x20000100 DATA=0x5151a5a5
+CYC=103 EVT=PMP_READY
+CYC=109 EVT=IOPMP_READY
+CYC=109 EVT=SECURE_READY
+CYC=123 EVT=CPU_REQ_GNT ADDR=0x20000100 WE=1 WDATA=0xb0040004
+CYC=125 EVT=PROT_COMMIT SRC=CPU ADDR=0x20000100 DATA=0xb0040004
+CYC=126 EVT=PROT_COMMIT SRC=CPU ADDR=0x20000100 DATA=0xb0040004
+CYC=126 EVT=CPU_RVALID
+CYC=127 EVT=PROT_COMMIT SRC=CPU ADDR=0x20000100 DATA=0xb0040004
+CYC=270 EVT=CPU_REQ_GNT ADDR=0x20000100 WE=0 WDATA=0x00000000
+CYC=273 EVT=CPU_RVALID

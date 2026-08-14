@@ -1,0 +1,6 @@
+property_id,cover_id,variant,result,notes
+M57-COV,COV-01,proper,PASS,authorized master W in directed stimulus
+M57-COV,COV-02,proper,PASS,denied grant issued
+M57-COV,COV-03,both,PASS,auth then deny sequence
+M57-COV,COV-10,proper,PASS,WAIT_B reachable (fsm=4)
+M57-COV,COV-12,original,PASS,stale-route CE trace

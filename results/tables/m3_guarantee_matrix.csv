@@ -1,0 +1,7 @@
+property_id,property_name,normal_operation,policy_transition,concurrency,outstanding_transaction,reset,required_assumptions,formal_status,depth,solver,notes
+COV,Reachability covers,BOUNDED_PASS,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,"FA-03,FA-07",BOUNDED_PASS,32,z3,assertion failure
+SP-02,CPU Integrity,COUNTEREXAMPLE,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,"FA-03,FA-06,FA-07,FA-08",COUNTEREXAMPLE,16,z3,assertion failure
+"SP-04,SP-05,SP-06,SP-07,SP-09",IOPMP unit properties,PROVED,PROVED,NOT_RUN,PROVED,NOT_RUN,"FA-02,FA-03,FA-05,FA-07,FA-08",PROVED,32,z3,no counterexample in bound
+SP-08,Reset Safety,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,COUNTEREXAMPLE,"FA-01,FA-07,RST-A",COUNTEREXAMPLE,32,z3,assertion failure
+"SP-02,SP-04,SP-05,SP-10",Compositional integration,COUNTEREXAMPLE,NOT_RUN,COUNTEREXAMPLE,NOT_RUN,NOT_RUN,"FA-01,FA-02,FA-03,FA-05,FA-06,FA-07,FA-08",COUNTEREXAMPLE,32,z3,assertion failure
+SP-B01,Strong Revocation (Model B),INCONCLUSIVE,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,FA-05 contrast,INCONCLUSIVE,24,z3,no counterexample in bound

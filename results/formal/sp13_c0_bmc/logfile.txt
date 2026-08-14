@@ -1,0 +1,171 @@
+SBY 16:15:25 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] Removing directory '/home/mmr/ricv_paper/results/formal/sp13_c0_bmc'.
+SBY 16:15:25 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] Copy '/home/mmr/ricv_paper/formal/sby/../../rtl/common/bus_pkg.vh' to '/home/mmr/ricv_paper/results/formal/sp13_c0_bmc/src/bus_pkg.vh'.
+SBY 16:15:25 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] Copy '/home/mmr/ricv_paper/formal/sby/../../rtl/soc/security_config.v' to '/home/mmr/ricv_paper/results/formal/sp13_c0_bmc/src/security_config.v'.
+SBY 16:15:25 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] Copy '/home/mmr/ricv_paper/formal/sby/../../rtl/iopmp/iopmp.v' to '/home/mmr/ricv_paper/results/formal/sp13_c0_bmc/src/iopmp.v'.
+SBY 16:15:25 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] Copy '/home/mmr/ricv_paper/formal/sby/../../rtl/interconnect/interconnect.v' to '/home/mmr/ricv_paper/results/formal/sp13_c0_bmc/src/interconnect.v'.
+SBY 16:15:25 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] Copy '/home/mmr/ricv_paper/formal/sby/../../rtl/memory/sram.v' to '/home/mmr/ricv_paper/results/formal/sp13_c0_bmc/src/sram.v'.
+SBY 16:15:25 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] Copy '/home/mmr/ricv_paper/formal/sby/../harness/formal_helpers.vh' to '/home/mmr/ricv_paper/results/formal/sp13_c0_bmc/src/formal_helpers.vh'.
+SBY 16:15:25 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] Copy '/home/mmr/ricv_paper/formal/sby/../harness/formal_sp13_tb.v' to '/home/mmr/ricv_paper/results/formal/sp13_c0_bmc/src/formal_sp13_tb.v'.
+SBY 16:15:25 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] engine_0: smtbmc z3
+SBY 16:15:25 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: starting process "cd /home/mmr/ricv_paper/results/formal/sp13_c0_bmc/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 16:15:25 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Replacing memory \mem with list of registers. See sram.v:48
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_req is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_addr [31] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_addr [30] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_addr [29] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_addr [28] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_addr [27] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_addr [26] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_addr [25] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_addr [24] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_addr [23] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_addr [22] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_addr [21] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_addr [20] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_addr [19] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_addr [18] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_addr [17] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_addr [16] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_addr [15] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_addr [14] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_addr [13] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_addr [12] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_addr [11] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_addr [10] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_addr [9] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_addr [8] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_addr [7] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_addr [6] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_addr [5] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_addr [4] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_addr [3] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_addr [2] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_addr [1] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_addr [0] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_write is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_requester_id [7] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_requester_id [6] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_requester_id [5] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_requester_id [4] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_requester_id [3] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_requester_id [2] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_requester_id [1] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_requester_id [0] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_length [15] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_length [14] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_length [13] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_length [12] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_length [11] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_length [10] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_length [9] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_length [8] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_length [7] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_length [6] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_length [5] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_length [4] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_length [3] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_length [2] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_length [1] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: Warning: Wire formal_sp13_tb.\dma_length [0] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] base: finished (returncode=0)
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: starting process "cd /home/mmr/ricv_paper/results/formal/sp13_c0_bmc/model; yosys -ql design_prep.log design_prep.ys"
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_write is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_requester_id [7] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_requester_id [6] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_requester_id [5] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_requester_id [4] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_requester_id [3] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_requester_id [2] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_requester_id [1] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_requester_id [0] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_req is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_length [15] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_length [14] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_length [13] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_length [12] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_length [11] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_length [10] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_length [9] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_length [8] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_length [7] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_length [6] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_length [5] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_length [4] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_length [3] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_length [2] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_length [1] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_length [0] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_addr [31] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_addr [30] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_addr [29] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_addr [28] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_addr [27] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_addr [26] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_addr [25] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_addr [24] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_addr [23] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_addr [22] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_addr [21] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_addr [20] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_addr [19] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_addr [18] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_addr [17] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_addr [16] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_addr [15] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_addr [14] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_addr [13] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_addr [12] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_addr [11] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_addr [10] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_addr [9] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_addr [8] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_addr [7] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_addr [6] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_addr [5] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_addr [4] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_addr [3] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_addr [2] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_addr [1] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: Warning: Wire formal_sp13_tb.\dma_addr [0] is used but has no driver.
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] prep: finished (returncode=0)
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] smt2: starting process "cd /home/mmr/ricv_paper/results/formal/sp13_c0_bmc/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] smt2: finished (returncode=0)
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] engine_0: starting process "cd /home/mmr/ricv_paper/results/formal/sp13_c0_bmc; yosys-smtbmc -s z3 --presat --noprogress -t 32  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2"
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] engine_0: ##   0:00:00  Solver: z3
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] engine_0: ##   0:00:00  Checking assumptions in step 0..
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] engine_0: ##   0:00:00  Checking assertions in step 0..
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] engine_0: ##   0:00:00  Checking assumptions in step 1..
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] engine_0: ##   0:00:00  Checking assertions in step 1..
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] engine_0: ##   0:00:00  Checking assumptions in step 2..
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] engine_0: ##   0:00:00  Checking assertions in step 2..
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] engine_0: ##   0:00:00  Checking assumptions in step 3..
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] engine_0: ##   0:00:00  Checking assertions in step 3..
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] engine_0: ##   0:00:00  Checking assumptions in step 4..
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] engine_0: ##   0:00:00  Checking assertions in step 4..
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] engine_0: ##   0:00:00  Checking assumptions in step 5..
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] engine_0: ##   0:00:00  Checking assertions in step 5..
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] engine_0: ##   0:00:00  Checking assumptions in step 6..
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] engine_0: ##   0:00:00  Checking assertions in step 6..
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] engine_0: ##   0:00:00  Checking assumptions in step 7..
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] engine_0: ##   0:00:00  Checking assertions in step 7..
+SBY 16:15:26 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] engine_0: ##   0:00:00  Checking assumptions in step 8..
+SBY 16:15:27 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] engine_0: ##   0:00:00  Checking assertions in step 8..
+SBY 16:15:27 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] engine_0: ##   0:00:00  Checking assumptions in step 9..
+SBY 16:15:27 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] engine_0: ##   0:00:00  Checking assertions in step 9..
+SBY 16:15:27 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] engine_0: ##   0:00:00  Checking assumptions in step 10..
+SBY 16:15:27 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] engine_0: ##   0:00:00  Checking assertions in step 10..
+SBY 16:15:27 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] engine_0: ##   0:00:00  BMC failed!
+SBY 16:15:27 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] engine_0: ##   0:00:00  Assert failed in formal_sp13_tb: formal_sp13_tb.v:87.13-87.22 (_witness_.check_assert_formal_sp13_tb_v_87_23)
+SBY 16:15:27 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace.vcd
+SBY 16:15:27 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace_tb.v
+SBY 16:15:27 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace.smtc
+SBY 16:15:27 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace.yw
+SBY 16:15:27 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] engine_0: ##   0:00:00  Status: failed
+SBY 16:15:27 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] engine_0: finished (returncode=1)
+SBY 16:15:27 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] engine_0: Status returned by engine: FAIL
+SBY 16:15:27 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:02 (2)
+SBY 16:15:27 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:02 (2)
+SBY 16:15:27 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] summary: engine_0 (smtbmc z3) returned FAIL
+SBY 16:15:27 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] summary: counterexample trace: /home/mmr/ricv_paper/results/formal/sp13_c0_bmc/engine_0/trace.vcd
+SBY 16:15:27 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] summary:   failed assertion formal_sp13_tb._witness_.check_assert_formal_sp13_tb_v_87_23 at formal_sp13_tb.v:87.13-87.22 step 10
+SBY 16:15:27 [/home/mmr/ricv_paper/results/formal/sp13_c0_bmc] DONE (FAIL, rc=2)

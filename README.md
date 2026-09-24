@@ -38,6 +38,8 @@ DMA Master --> IOPMP ----------------------+--> Shared fabric
 
 Ibex PMP filters **CPU** data/instruction accesses. DMA does **not** traverse Ibex PMP. A research IOPMP sits on the DMA path. Reset / security-readiness is a separate control domain (RST-A fail-open vs RST-B fail-closed), not an extra PMP inserted after Ibex.
 
+Evaluated C.5 hardware remains **Option A**: no synthesizable RSDG in `m7_ibex_c5_composed_top`; `sys_secure_ready` is a harness observation/scheduling predicate; trusted initialization is harness `ST_SEED`; IOPMP `!enable` is fail-open. Standalone RSDG formal evidence is a separate module experiment. See [docs/history/OPTION_A.md](docs/history/OPTION_A.md). Do not claim hardware-enforced fail-closed readiness in C.5.
+
 Evaluated physical-design variants:
 
 | Variant | Meaning |
@@ -63,21 +65,33 @@ Numbers below are read from frozen tables under [results/tables/](results/tables
 | RST-A: early unauthorized DMA reachability under fail-open assumptions | [m7_realcore_reset_matrix.csv](results/tables/m7_realcore_reset_matrix.csv) | `RESET_ASSUMPTION_DEPENDENCY` — not a vulnerability |
 | RST-B: fail-closed behavior in real-core simulation | same + release-order tables | `SIMULATION_EVIDENCE` |
 | Abstract RST-B: formal evidence under stated assumptions | [m510_guarantee_matrix.csv](results/tables/m510_guarantee_matrix.csv) | `FORMAL_PROOF` (abstract model; **not** full-Ibex formal proof) |
+| IF01-A exactly-once DMA write RESOLVED/PASS (1 admit / 1 grant / 1 SRAM write, `0x600d00c1`) | [m7_if01_a_final_ledger.csv](results/tables/m7_if01_a_final_ledger.csv) | `SIMULATION_EVIDENCE` — not unbounded proof |
+| Any-address IOPMP no-regrant BMC + k-induction PASS (depth 20, induction step 11) | [PROOF_STATISTICS.csv](results/ieee_access_final/formal/PROOF_STATISTICS.csv) | `FORMAL_PROOF` on the staged formal cone |
+| SP-08 RST-B k-induction PASS (depth 20, induction step 3) | same proof-statistics file | `FORMAL_PROOF` (production IOPMP `dd7fe6…` this rerun) |
+| ARB-1–ARB-10 v2 **one** proof cone PASS (depth 24, induction step 19) | same; `prod_arbiter_v2_prove.sby` | `FORMAL_PROOF` — do not split into ten runtimes |
 
 ### Physical design (main comparison)
 
-Post-route **open-source RTL-to-GDS implementation estimate** on **SKY130HD**, common **20 ns** clock, identical memory policy, identical ORFS image, `LEC_CHECK=0` for all variants. This is **not** silicon measurement or ASIC validation.
+Post-route **open-source RTL-to-GDS implementation estimate** on **SKY130HD**, common **20 ns** clock, identical memory policy, identical ORFS image `openroad/orfs@sha256:817b608c69a71fafc7b61baec11b4dc073fb8efb9d2714f9bd3316db4beba277`, `FLOW_VARIANT=final_dd7fe6`, `LEC_CHECK=0`. This is **not** silicon measurement or ASIC validation.
 
-From [m7_journal_ppa_main.csv](results/tables/m7_journal_ppa_main.csv) and [m7_full_ibex_ppa_20ns_overhead.csv](results/tables/m7_full_ibex_ppa_20ns_overhead.csv):
+Headline J2/J3 values are the **final** production-RTL rerun (IOPMP `dd7fe6…`, arbiter `20477634…`). From [m7_journal_ppa_main.csv](results/tables/m7_journal_ppa_main.csv) and [m7_full_ibex_ppa_20ns_overhead.csv](results/tables/m7_full_ibex_ppa_20ns_overhead.csv):
 
 | Variant | Post-route stdcell area | Overhead |
 |---------|-------------------------|----------|
-| J0 | 157366 | baseline |
-| J1 | 241200 | J1 vs J0 **+53.27%** |
-| J2 | 279752 | J2 vs J1 **+15.98%** |
-| J3 | 280749 | J3 vs J2 **+0.36%**; J3 vs J0 **+78.41%** |
+| J0 | 157366 µm² | baseline (D.3, not re-run) |
+| J1 | 241200 µm² | J1 vs J0 **+53.27%** (D.3, not re-run) |
+| J2 | **277641 µm²** | J2 vs J1 **+15.11%** |
+| J3 | **280331 µm²** | J3 vs J2 **+0.97%**; J3 vs J0 **+78.14%** |
 
-J3 vs J2 is **near area-neutral at post-route in this flow**. Mapping/synthesis cell counts can move in the opposite direction (J3 vs J2 synth cells −1.62%); that fluctuation is not a claim that fail-closed reset reduces hardware cost.
+| | J2 | J3 |
+|--|----|----|
+| Setup WNS / TNS | +0.91848 ns / 0 | +1.26437 ns / 0 |
+| Hold WNS / TNS | +0.298201 ns / 0 | +0.174777 ns / 0 |
+| DRC | 0 | 0 |
+| Route / GDS | completed | completed |
+| Wall time | 1710 s | 1415 s |
+
+The superseded D.3 pair **279752 / 280749 (+0.36%)** is historical only: [results/historical/public_v1_headline/](results/historical/public_v1_headline/). Do not use it as the current headline.
 
 Demonstrated post-route Fmax (shortest full post-route PASS), from [m7_journal_timing_summary.csv](results/tables/m7_journal_timing_summary.csv):
 
@@ -208,18 +222,28 @@ Primary reported comparison is common 20 ns SKY130HD post-route area. Methodolog
 
 ## Frozen Results
 
-Experimental freeze:
+Authoritative evidence packages (cleanup supersedes conflicts):
 
-- commit `07ee8931f8e7e75d48168914fffddb31a5e0a091`
-- internal tag `checkpoint-m7-phase-d3-ppa-final`
+- `IEEE_Access_Experimental_Evidence_Release_Candidate.zip` SHA-256 `67d82af4705cd9f8f19564f6c22ce60cd6e8647bfd561c8f40184d50e240f486`
+- `IEEE_Access_Final_Evidence_Cleanup.zip` SHA-256 `7a91a075719e73eb4cad35450c737fa594f7b1b1135936015994d4d60ce31d91`
+
+Public experimental freeze tag: `access-2026-41377-experimental-freeze` (this commit). Preserve `artifact-v1.0` as the earlier public snapshot. Internal D.3 freeze `07ee8931f8e7e75d48168914fffddb31a5e0a091` is historical.
+
+Final production RTL:
+
+- `rtl/iopmp/iopmp.v` SHA-256 `dd7fe6a89f22a9c830615528733b2d51ccfb852ca0966d3991ab1172d06c82c8`
+- `m7/rtl/m7_research_arbiter.sv` SHA-256 `204776349008176d2cc2934c0304a27497302cfbe522011ff9358dadf81b4519`
+
+The staged formal arbiter file hash differs (`4ee4c3fd…`) because of FORMAL observation ports. The functional body is equal after stripping FORMAL-only instrumentation. **No synthesized functional difference** was found. Not byte-identical.
 
 Verify:
 
 ```bash
+python3 scripts/artifact/check_artifact.py
 sha256sum -c results/FROZEN_EVIDENCE_MANIFEST.sha256
 ```
 
-Details: [docs/FROZEN_EVIDENCE.md](docs/FROZEN_EVIDENCE.md), [PROVENANCE.md](PROVENANCE.md).
+Details: [docs/FROZEN_EVIDENCE.md](docs/FROZEN_EVIDENCE.md), [PROVENANCE.md](PROVENANCE.md), [docs/FINAL_FREEZE_AUDIT.md](docs/FINAL_FREEZE_AUDIT.md).
 
 ## External Dependencies
 
@@ -239,13 +263,13 @@ Pinned in [third_party/README.md](third_party/README.md) and [docs/TOOLCHAIN.md]
 - Power is omitted.
 - LEC was disabled in ORFS because the validated Kepler-formal binary required unavailable AVX-512 support on the host.
 - I0/I1 FIX-2 standalone PPA was not run.
-- IF01-A remains `INCONCLUSIVE` because REQUESTED→ADMITTED is a zero-width synchronous window in the evaluated implementation.
+- Historical IF01-A `INCONCLUSIVE` (zero-width REQUESTED→ADMITTED classification) is superseded. Current IF01-A on IOPMP `dd7fe6…` is RESOLVED/PASS: 1 DMA admission, 1 arbiter DMA grant (cyc 32), 1 actual DMA protected-SRAM write (cyc 43), `RES=0x600d00c1`, no `DUPLICATE_SRAM_WRITE`. The monitor counts the actual target write event, not `PROT_COMMIT` / `mem_changed`. Historical inconclusive row: [results/historical/public_v1_headline/m7_inflight_reset_matrix.csv](results/historical/public_v1_headline/m7_inflight_reset_matrix.csv).
 
 ## Artifact Availability
 
 https://github.com/MMR000/riscv-pmp-iopmp-compositional-verification
 
-Public snapshot tag: [`artifact-v1.0`](https://github.com/MMR000/riscv-pmp-iopmp-compositional-verification/tree/artifact-v1.0). See [docs/PAPER_ARTIFACT_TEXT.md](docs/PAPER_ARTIFACT_TEXT.md).
+Public snapshot tags: [`access-2026-41377-experimental-freeze`](https://github.com/MMR000/riscv-pmp-iopmp-compositional-verification/tree/access-2026-41377-experimental-freeze) (current) and historical [`artifact-v1.0`](https://github.com/MMR000/riscv-pmp-iopmp-compositional-verification/tree/artifact-v1.0). See [docs/PAPER_ARTIFACT_TEXT.md](docs/PAPER_ARTIFACT_TEXT.md).
 
 
 ## License

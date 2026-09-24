@@ -19,4 +19,13 @@ The accompanying artifact, including RTL, formal models, real-core experiments, 
 | Public commit | `5c8e2448c2d02835ce8047e428ee70a43278f881` |
 | Internal scientific freeze | `07ee8931f8e7e75d48168914fffddb31a5e0a091` (`checkpoint-m7-phase-d3-ppa-final`) |
 
-The exact public commit SHA is the peel of `artifact-v1.0` (`git rev-parse artifact-v1.0^{commit}`).
+The exact public commit SHA of the earlier snapshot is the peel of `artifact-v1.0` (`git rev-parse artifact-v1.0^{commit}`).
+
+## Current experimental freeze (Access-2026-41377)
+
+| Field | Value |
+|-------|-------|
+| Public tag | `access-2026-41377-experimental-freeze` |
+| Notes | Points to the synchronized final-evidence commit, not `07ee8931…` |
+
+`artifact-v1.0` is preserved as a historical public snapshot.

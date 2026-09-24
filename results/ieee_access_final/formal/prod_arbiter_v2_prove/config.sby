@@ -1,0 +1,22 @@
+[options]
+mode prove
+depth 24
+wait on
+
+[engines]
+smtbmc z3
+
+[script]
+read -incdir . -formal formal_helpers.vh
+read -incdir . -formal bus_pkg.vh
+read -formal sram.v
+read -formal -D FORMAL m7_research_arbiter.v
+read -formal formal_prod_arbiter_tb.v
+prep -top formal_prod_arbiter_tb
+
+[files]
+stage_v2/bus_pkg.vh
+stage_v2/formal_helpers.vh
+stage_v2/sram.v
+stage_v2/m7_research_arbiter.v
+stage_v2/formal_prod_arbiter_tb.v

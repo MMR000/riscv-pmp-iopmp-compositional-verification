@@ -78,6 +78,7 @@ module m7_c5_harness (
     integer thru_last_done;
     integer log_fd;
     integer wait_n;
+    integer tight_driver; // 0=original re-arm (wait_n>=3); 1=earliest legal (wait_n>=1)
     integer epoch_base;
 
     reg pmp_seen, iopmp_ready_seen, secure_seen;
@@ -134,6 +135,7 @@ module m7_c5_harness (
         rel_cpu = 10; rel_dma = 20; rel_iopmp = 12; rel_sec = 12; rel_ic = 8;
         delay_n = 0;
         dma_n = 1;
+        tight_driver = 0;
         void'($value$plusargs("C5_TEST=%d", c5_test));
         void'($value$plusargs("REL_CPU=%d", rel_cpu));
         void'($value$plusargs("REL_DMA=%d", rel_dma));
@@ -142,10 +144,11 @@ module m7_c5_harness (
         void'($value$plusargs("REL_IC=%d", rel_ic));
         void'($value$plusargs("TARGET_DELAY=%d", delay_n));
         void'($value$plusargs("DMA_N=%d", dma_n));
+        void'($value$plusargs("TIGHT_DRIVER=%d", tight_driver));
         log_fd = $fopen("m7_c5_harness.log", "w");
         $fwrite(log_fd,
-            "C5_TEST=%0d REL_CPU=%0d REL_DMA=%0d REL_IOPMP=%0d REL_SEC=%0d REL_IC=%0d DELAY=%0d DMA_N=%0d\n",
-            c5_test, rel_cpu, rel_dma, rel_iopmp, rel_sec, rel_ic, delay_n, dma_n);
+            "C5_TEST=%0d REL_CPU=%0d REL_DMA=%0d REL_IOPMP=%0d REL_SEC=%0d REL_IC=%0d DELAY=%0d DMA_N=%0d TIGHT_DRIVER=%0d\n",
+            c5_test, rel_cpu, rel_dma, rel_iopmp, rel_sec, rel_ic, delay_n, dma_n, tight_driver);
     end
     final $fclose(log_fd);
 
@@ -566,6 +569,9 @@ module m7_c5_harness (
                             "IF_OUTCOME PEEK=0x%08x ADMIT=%0d COMMIT=%0d RST=%0d REQ=%0d DONE=%0d ERR=%0d\n",
                             prot_mem_word0, stamp_dma_admit, stamp_dma_commit, stamp_reset_pulse,
                             stamp_dma_req, stamp_dma_done, dma_error);
+                        if (c5_test == 123)
+                            $fwrite(log_fd, "EARLY ERR=%0d PEEK=0x%08x REASON=SEC_RESET_NO_DMA_ISSUE\n",
+                                dma_error, prot_mem_word0);
                         st <= ST_FINISH;
                     end
                 end
@@ -613,6 +619,8 @@ module m7_c5_harness (
                         wait_n <= 0;
                     end else if (wait_n > 20000) begin
                         $fwrite(log_fd, "EARLY_ISSUE_TIMEOUT\n");
+                        $fwrite(log_fd, "EARLY ERR=NOT_ISSUED PEEK=0x%08x REASON=IC_DOWN\n",
+                            prot_mem_word0);
                         st <= ST_FINISH;
                     end
                 end
@@ -755,14 +763,16 @@ module m7_c5_harness (
 
                 ST_THRU_ARM: begin
                     wait_n <= wait_n + 1;
-                    if (wait_n == 1) begin
-                        if (thru_left == 0) begin
-                            thru_left <= (dma_n < 1) ? 1 : dma_n;
-                            thru_first_req <= 0;
-                            thru_last_done <= 0;
-                            $fwrite(log_fd, "THRU_BEGIN DMA_N=%0d CYC=%0d\n", dma_n, cycle_o);
-                        end
-                    end else if (wait_n >= 3) begin
+                    // Initialize transfer count once we have entered ARM.
+                    if (wait_n >= 1 && thru_left == 0) begin
+                        thru_left <= (dma_n < 1) ? 1 : dma_n;
+                        thru_first_req <= 0;
+                        thru_last_done <= 0;
+                        $fwrite(log_fd, "THRU_BEGIN DMA_N=%0d CYC=%0d\n", dma_n, cycle_o);
+                    end
+                    // Original: wait_n>=3 before arm (~extra idle after ARM entry).
+                    // TIGHT_DRIVER=1: arm at wait_n>=1 (earliest legal in this FSM).
+                    if (wait_n >= (tight_driver ? 1 : 3)) begin
                         arm_dma(8'h01, 32'hA11D_00C5, PROT_WORD);
                         if (thru_first_req == 0)
                             thru_first_req <= cycle_o;

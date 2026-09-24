@@ -1,0 +1,21 @@
+comparison,metric,baseline,variant,raw_delta,pct_delta,notes
+J1_vs_J0,synth_cells,15267,25220,9953.0,65.19,architectural PMP
+J1_vs_J0,postroute_stdcell_area_um2,157366,241200,83834.0,53.27,architectural PMP
+J1_vs_J0,core_area_um2,271002,416927,145925.0,53.85,architectural PMP
+J1_vs_J0,buffer_count,690,1232,542.0,78.55,architectural PMP
+J1_vs_J0,wirelength,659360,1220671,561311.0,85.13,architectural PMP
+J2_vs_J1,synth_cells,25220,28594,3374.0,13.38,DMA/IOPMP composition
+J2_vs_J1,postroute_stdcell_area_um2,241200,279752,38552.0,15.98,DMA/IOPMP composition
+J2_vs_J1,core_area_um2,416927,482413,65486.0,15.71,DMA/IOPMP composition
+J2_vs_J1,buffer_count,1232,1498,266.0,21.59,DMA/IOPMP composition
+J2_vs_J1,wirelength,1220671,1338125,117454.0,9.62,DMA/IOPMP composition
+J3_vs_J2,synth_cells,28594,28130,-464.0,-1.62,fail-closed RST-B + domain reset
+J3_vs_J2,postroute_stdcell_area_um2,279752,280749,997.0,0.36,fail-closed RST-B + domain reset
+J3_vs_J2,core_area_um2,482413,482732,319.0,0.07,fail-closed RST-B + domain reset
+J3_vs_J2,buffer_count,1498,1510,12.0,0.8,fail-closed RST-B + domain reset
+J3_vs_J2,wirelength,1338125,1351910,13785.0,1.03,fail-closed RST-B + domain reset
+J3_vs_J0,synth_cells,15267,28130,12863.0,84.25,complete evaluated security composition
+J3_vs_J0,postroute_stdcell_area_um2,157366,280749,123383.0,78.41,complete evaluated security composition
+J3_vs_J0,core_area_um2,271002,482732,211730.0,78.13,complete evaluated security composition
+J3_vs_J0,buffer_count,690,1510,820.0,118.84,complete evaluated security composition
+J3_vs_J0,wirelength,659360,1351910,692550.0,105.03,complete evaluated security composition

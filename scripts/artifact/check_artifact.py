@@ -45,6 +45,16 @@ REQUIRED = [
     "results/tables/m7_realcore_release_order_matrix.csv",
     "results/tables/m7_realcore_release_order_random.csv",
     "results/tables/m7_reset_evidence_levels.csv",
+    "results/tables/m7_if01_a_final_ledger.csv",
+    "results/ieee_access_final/formal/PROOF_STATISTICS.csv",
+    "results/ieee_access_final/arbiter_diff/FORMAL_VS_PRODUCTION_ARBITER.md",
+    "docs/IF01_A.md",
+    "docs/FINAL_FREEZE_AUDIT.md",
+    "docs/CLAIM_TO_EVIDENCE.csv",
+    "docs/history/README.md",
+    "formal/sby/sp08_rstb_prove.sby",
+    "formal/sby/prod_arbiter_v2_prove.sby",
+    "formal/sby/noregrant_any_prove.sby",
     "scripts/setup/fetch_dependencies.sh",
     "scripts/figures/generate_journal_figures.py",
     "scripts/artifact/check_artifact.py",
@@ -64,6 +74,8 @@ KEY_CSVS = [
     "results/tables/m7_realcore_reset_random.csv",
     "results/tables/m7_realcore_release_order_random.csv",
     "results/tables/m510_guarantee_matrix.csv",
+    "results/tables/m7_if01_a_final_ledger.csv",
+    "results/tables/m7_inflight_reset_matrix.csv",
 ]
 
 FORBIDDEN_DIR_MARKERS = [
@@ -190,6 +202,62 @@ def check_sizes(root: Path, errors: list[str], warnings: list[str]) -> None:
             warnings.append(f"file exceeds 50 MB (needs justification): {rel} ({size} bytes)")
 
 
+IOPMP_EXPECT = "dd7fe6a89f22a9c830615528733b2d51ccfb852ca0966d3991ab1172d06c82c8"
+ARB_EXPECT = "204776349008176d2cc2934c0304a27497302cfbe522011ff9358dadf81b4519"
+
+
+def _file_sha256(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def check_final_headlines(root: Path, errors: list[str]) -> None:
+    iopmp = root / "rtl/iopmp/iopmp.v"
+    arb = root / "m7/rtl/m7_research_arbiter.sv"
+    if iopmp.is_file() and _file_sha256(iopmp) != IOPMP_EXPECT:
+        fail(f"production IOPMP hash mismatch: {_file_sha256(iopmp)}", errors)
+    if arb.is_file() and _file_sha256(arb) != ARB_EXPECT:
+        fail(f"production arbiter hash mismatch: {_file_sha256(arb)}", errors)
+
+    ppa = root / "results/tables/m7_journal_ppa_main.csv"
+    areas = {}
+    if ppa.is_file():
+        with ppa.open(newline="", encoding="utf-8") as fh:
+            for row in csv.DictReader(fh):
+                areas[row["variant"]] = str(int(float(row["post_route_area"])))
+    if areas.get("J2") != "277641":
+        fail(f"headline J2 area is {areas.get('J2')!r}, expected 277641", errors)
+    if areas.get("J3") != "280331":
+        fail(f"headline J3 area is {areas.get('J3')!r}, expected 280331", errors)
+
+    oh = root / "results/tables/m7_full_ibex_ppa_20ns_overhead.csv"
+    if oh.is_file():
+        with oh.open(newline="", encoding="utf-8") as fh:
+            for row in csv.DictReader(fh):
+                if (
+                    row["comparison"] == "J3_vs_J2"
+                    and row["metric"] == "postroute_stdcell_area_um2"
+                    and row["pct_delta"] != "0.97"
+                ):
+                    fail(f"headline J3/J2 pct_delta is {row['pct_delta']!r}, expected 0.97", errors)
+
+    inflight = root / "results/tables/m7_inflight_reset_matrix.csv"
+    if inflight.is_file():
+        with inflight.open(newline="", encoding="utf-8") as fh:
+            for row in csv.DictReader(fh):
+                if row.get("test_id") == "IF01-A" and row.get("result") == "INCONCLUSIVE":
+                    fail("IF01-A is still listed as current INCONCLUSIVE", errors)
+                if row.get("test_id") == "IF03-C" and "err= " in row.get("observed", ""):
+                    fail("IF03-C still has empty err= in current matrix", errors)
+
+    readme = (root / "README.md").read_text(encoding="utf-8")
+    if "277641" not in readme or "280331" not in readme or "+0.97%" not in readme:
+        fail("README missing final J2/J3 headline 277641 / 280331 / +0.97%", errors)
+    if re.search(r"J3 vs J2 \*\*\+0\.36%\*\*", readme):
+        fail("README still presents +0.36% as the current J3/J2 headline", errors)
+    if re.search(r"IF01-A remains `INCONCLUSIVE`", readme):
+        fail("README still lists IF01-A as current INCONCLUSIVE", errors)
+
+
 def check_forbidden(root: Path, errors: list[str]) -> None:
     for rel in FORBIDDEN_DIR_MARKERS:
         if (root / rel).exists():
@@ -206,6 +274,7 @@ def main() -> int:
     check_csvs(root, errors)
     check_manifest(root, errors)
     check_readme_links(root, errors)
+    check_final_headlines(root, errors)
     check_sizes(root, errors, warnings)
     check_forbidden(root, errors)
     for w in warnings:

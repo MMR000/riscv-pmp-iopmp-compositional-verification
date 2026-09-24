@@ -1,0 +1,17 @@
+suite,reset_model,iopmp_sha256,arbiter_sha256,source_log,result,classification,n_admit,n_arb_gnt,n_sram_dma,n_dup_write,sb_fail,notes
+IF01-A,RST-B,dd7fe6a89f22a9c830615528733b2d51ccfb852ca0966d3991ab1172d06c82c8,204776349008176d2cc2934c0304a27497302cfbe522011ff9358dadf81b4519,evidence/simulation/c5_full_regression_anyaddr.log + m7_inflight_reset_matrix_anyaddr.csv,PASS,SIMULATION_EVIDENCE,1,1,1,0,0,admit=29 commit_auth=44 peek=0x11111111
+IF01-B,RST-B,dd7fe6…,20477634…,same,PASS,SIMULATION_EVIDENCE,1,1,1,0,0,ModelA_completes_after_reset
+IF01-C,RST-B,dd7fe6…,20477634…,same,PASS,SIMULATION_EVIDENCE,1,1,1,0,0,ModelA_completes_after_reset
+IF01-D,RST-B,dd7fe6…,20477634…,same,PASS,SIMULATION_EVIDENCE,1,0,0,0,0,no_auth_commit_after_reset peek=0x5151A5A5
+IF02-A,RST-B,dd7fe6…,20477634…,same + IF02-A_RST-B_anyaddr.log,PASS (suite),SIMULATION_EVIDENCE,0,,,,"1 in event log",suite auth_cpu_commits=1; event log has SCOREBOARD_FAIL — see historical table
+IF02-B,RST-B,dd7fe6…,20477634…,same,PASS,SIMULATION_EVIDENCE,,,,,,
+IF02-C,RST-B,dd7fe6…,20477634…,same,PASS,SIMULATION_EVIDENCE,,,,,,
+IF03-A,RST-A,dd7fe6…,20477634…,same,PASS,RESET_ASSUMPTION_DEPENDENCY,,,,,"err=0 peek=0xDADA0120"
+IF03-A,RST-B,dd7fe6…,20477634…,same,PASS,SIMULATION_EVIDENCE,,,,,"err=1 peek=0x5151A5A5"
+IF03-B,RST-B,dd7fe6…,20477634…,same,PASS,SIMULATION_EVIDENCE,,,,,"err=1 peek=0x5151A5A5"
+IF03-C,RST-B,dd7fe6…,20477634…,same,PASS,SIMULATION_EVIDENCE,,,,,"observed field has empty err= ; ic_down"
+IF03-D,RST-B,dd7fe6…,20477634…,same,PASS,SIMULATION_EVIDENCE,,,,,"observed field has empty err= ; sec_reset_after_pmp"
+STALE-01,RST-B,dd7fe6…,20477634…,same,PASS,SIMULATION_EVIDENCE,,,,,"stale_post_err=1;no_stale_allow"
+ORD-A..H x RST-A/B,both,dd7fe6…,20477634…,m7_realcore_release_order_matrix_anyaddr.csv,all 16 PASS,RST-A RESET_ASSUMPTION_DEPENDENCY / RST-B SIMULATION_EVIDENCE,,,,,,16 rows; RST-A early ALLOW expected; RST-B early DENY expected
+RAND-ORD,200 seeds alternating RST-A/B,dd7fe6…,20477634…,c5_full_regression_anyaddr.log + 200 RAND-ORD_s*.log in source package,PASS (no FAIL lines; 200 logs present),SIMULATION_EVIDENCE / RESET_ASSUMPTION_DEPENDENCY,,,,,,Source package has no release_order_random.csv. Console printed seeds 0,25,50,75,100,125,150,175 only.
+C5-PRODSEC-50,50 seeds,ec77c2a999e5f65e28f3eee43ed1c5b18cfc45e6c8c41b29c88f7fa1c7609485,20477634…,c5_full_regression_prodsec_50seed.log + m7_realcore_release_order_random_prodsec_50.csv,PASS,HISTORICAL (pre-anyaddr IOPMP),,,,,,50 data rows in random CSV. Not the final IOPMP.

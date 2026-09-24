@@ -21,7 +21,7 @@ from matplotlib.lines import Line2D
 from matplotlib.patches import Patch, Rectangle
 from PIL import Image
 
-ROOT = Path("/home/mmr/ricv_paper")
+ROOT = Path(__file__).resolve().parents[2]
 TABLES = ROOT / "results" / "tables"
 FIG = ROOT / "results" / "figures"
 PDF_DIR = FIG / "pdf"

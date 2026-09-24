@@ -1,0 +1,11 @@
+result_id,class,rtl,rtl_sha256,config,source_in_this_package
+IF02-A-rerun,SIMULATION,m7_c5_event_monitor.sv + production iopmp/arbiter,monitor cfaa2ea2…; iopmp dd7fe6…; arbiter 20477634…,C5_TEST=110 RST-B DELAY=8 rebuilt Verilator,simulation/tests/IF02-A_RST-B.log
+IF03-C-rerun,SIMULATION,same C.5 tree,same,C5_TEST=122 RST-B,simulation/tests/IF03-C_RST-B.log
+IF03-D-rerun,SIMULATION,same C.5 tree,same,C5_TEST=123 RST-B,simulation/tests/IF03-D_RST-B.log
+IF01-A-sanity,SIMULATION,same C.5 tree,same,C5_TEST=101 RST-B,simulation/tests/IF01-A_RST-B.log
+SP-08-RST-B,FORMAL,iopmp.v (current production) in sby src,dd7fe6…,sp08_rstb_prove.sby smtbmc z3 4.13.4 -t 20,formal/sp08_rstb_prove/
+ARB-v2,FORMAL,staged m7_research_arbiter.v,4ee4c3fd… (FORMAL ports only vs 20477634… .sv),prod_arbiter_v2_prove.sby depth 24,formal/prod_arbiter_v2_prove/
+noregrant-any,FORMAL,staged iopmp + staged arbiter,iopmp dd7fe6…; arbiter 4ee4c3fd…,noregrant_any_prove.sby depth 20,formal/noregrant_any_prove/
+J2-final,PPA,J2 filelist incl. iopmp.v + arbiter.sv,dd7fe6… + 20477634…,FLOW_VARIANT=final_dd7fe6 CLOCK=20 sky130hd image 817b608c…,ppa/j2_final_dd7fe6_*
+J3-final,PPA,J3 filelist same + domain reset / RST_B,dd7fe6… + 20477634…,same image/period/variant,ppa/j3_final_dd7fe6_*
+baseline-zip,FROZEN_BASELINE,N/A,67d82af4705cd9f8f19564f6c22ce60cd6e8647bfd561c8f40184d50e240f486,IEEE_Access_Experimental_Evidence_Release_Candidate.zip,SOURCE_HASHES.txt

@@ -1,0 +1,83 @@
+SBY 10:12:17 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] Removing directory '/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby'.
+SBY 10:12:17 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] Copy '/home/mmr/ricv_paper/IEEE_Access_Any_Address_Regrant_Repair_and_Proof/formal/configurations/stage_any/bus_pkg.vh' to '/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby/src/bus_pkg.vh'.
+SBY 10:12:17 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] Copy '/home/mmr/ricv_paper/IEEE_Access_Any_Address_Regrant_Repair_and_Proof/formal/configurations/stage_any/formal_helpers.vh' to '/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby/src/formal_helpers.vh'.
+SBY 10:12:17 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] Copy '/home/mmr/ricv_paper/IEEE_Access_Any_Address_Regrant_Repair_and_Proof/formal/configurations/stage_any/sram.v' to '/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby/src/sram.v'.
+SBY 10:12:17 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] Copy '/home/mmr/ricv_paper/IEEE_Access_Any_Address_Regrant_Repair_and_Proof/formal/configurations/stage_any/iopmp.v' to '/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby/src/iopmp.v'.
+SBY 10:12:17 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] Copy '/home/mmr/ricv_paper/IEEE_Access_Any_Address_Regrant_Repair_and_Proof/formal/configurations/stage_any/m7_research_arbiter.v' to '/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby/src/m7_research_arbiter.v'.
+SBY 10:12:17 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] Copy '/home/mmr/ricv_paper/IEEE_Access_Any_Address_Regrant_Repair_and_Proof/formal/configurations/stage_any/formal_iopmp_noregrant_tb.v' to '/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby/src/formal_iopmp_noregrant_tb.v'.
+SBY 10:12:17 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0: smtbmc z3
+SBY 10:12:17 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] base: starting process "cd /home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 10:12:17 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] base: Warning: Replacing memory \mem with list of registers. See sram.v:48
+SBY 10:12:18 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] base: finished (returncode=0)
+SBY 10:12:18 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] prep: starting process "cd /home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby/model; yosys -ql design_prep.log design_prep.ys"
+SBY 10:12:18 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] prep: finished (returncode=0)
+SBY 10:12:18 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] smt2: starting process "cd /home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY 10:12:18 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] smt2: finished (returncode=0)
+SBY 10:12:18 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.basecase: starting process "cd /home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby; yosys-smtbmc -s z3 --presat --noprogress -t 20  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2"
+SBY 10:12:18 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.induction: starting process "cd /home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby; yosys-smtbmc -s z3 --presat -i --noprogress -t 20  --append 0 --dump-vcd engine_0/trace_induct.vcd --dump-yw engine_0/trace_induct.yw --dump-vlogtb engine_0/trace_induct_tb.v --dump-smtc engine_0/trace_induct.smtc model/design_smt2.smt2"
+SBY 10:12:18 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.basecase: ##   0:00:00  Solver: z3
+SBY 10:12:18 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.induction: ##   0:00:00  Solver: z3
+SBY 10:12:19 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.induction: ##   0:00:00  Trying induction in step 20..
+SBY 10:12:19 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.basecase: ##   0:00:00  Checking assumptions in step 0..
+SBY 10:12:19 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.induction: ##   0:00:00  Trying induction in step 19..
+SBY 10:12:19 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.basecase: ##   0:00:00  Checking assertions in step 0..
+SBY 10:12:19 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.basecase: ##   0:00:00  Checking assumptions in step 1..
+SBY 10:12:19 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.basecase: ##   0:00:00  Checking assertions in step 1..
+SBY 10:12:19 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.basecase: ##   0:00:00  Checking assumptions in step 2..
+SBY 10:12:19 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.basecase: ##   0:00:00  Checking assertions in step 2..
+SBY 10:12:19 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.basecase: ##   0:00:00  Checking assumptions in step 3..
+SBY 10:12:19 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.basecase: ##   0:00:00  Checking assertions in step 3..
+SBY 10:12:19 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.basecase: ##   0:00:00  Checking assumptions in step 4..
+SBY 10:12:19 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.basecase: ##   0:00:00  Checking assertions in step 4..
+SBY 10:12:19 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.basecase: ##   0:00:00  Checking assumptions in step 5..
+SBY 10:12:19 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.basecase: ##   0:00:00  Checking assertions in step 5..
+SBY 10:12:19 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.basecase: ##   0:00:00  Checking assumptions in step 6..
+SBY 10:12:19 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.basecase: ##   0:00:00  Checking assertions in step 6..
+SBY 10:12:19 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.basecase: ##   0:00:00  Checking assumptions in step 7..
+SBY 10:12:19 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.basecase: ##   0:00:00  Checking assertions in step 7..
+SBY 10:12:19 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.basecase: ##   0:00:00  Checking assumptions in step 8..
+SBY 10:12:19 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.basecase: ##   0:00:01  Checking assertions in step 8..
+SBY 10:12:20 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.basecase: ##   0:00:01  Checking assumptions in step 9..
+SBY 10:12:20 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.basecase: ##   0:00:01  Checking assertions in step 9..
+SBY 10:12:20 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.basecase: ##   0:00:01  Checking assumptions in step 10..
+SBY 10:12:20 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.induction: ##   0:00:01  Trying induction in step 18..
+SBY 10:12:20 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.basecase: ##   0:00:01  Checking assertions in step 10..
+SBY 10:12:20 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.basecase: ##   0:00:01  Checking assumptions in step 11..
+SBY 10:12:21 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.induction: ##   0:00:02  Trying induction in step 17..
+SBY 10:12:25 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.induction: ##   0:00:06  Trying induction in step 16..
+SBY 10:12:29 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.induction: ##   0:00:10  Trying induction in step 15..
+SBY 10:12:29 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.basecase: ##   0:00:10  Checking assertions in step 11..
+SBY 10:12:29 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.basecase: ##   0:00:10  Checking assumptions in step 12..
+SBY 10:12:31 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.induction: ##   0:00:12  Trying induction in step 14..
+SBY 10:12:40 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.basecase: ##   0:00:21  Checking assertions in step 12..
+SBY 10:12:40 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.basecase: ##   0:00:21  Checking assumptions in step 13..
+SBY 10:12:41 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.basecase: ##   0:00:22  Checking assertions in step 13..
+SBY 10:12:41 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.basecase: ##   0:00:22  Checking assumptions in step 14..
+SBY 10:12:42 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.basecase: ##   0:00:23  Checking assertions in step 14..
+SBY 10:12:42 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.basecase: ##   0:00:23  Checking assumptions in step 15..
+SBY 10:12:43 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.basecase: ##   0:00:24  Checking assertions in step 15..
+SBY 10:12:44 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.basecase: ##   0:00:25  Checking assumptions in step 16..
+SBY 10:12:48 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.induction: ##   0:00:29  Trying induction in step 13..
+SBY 10:12:49 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.basecase: ##   0:00:30  Checking assertions in step 16..
+SBY 10:12:49 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.induction: ##   0:00:30  Trying induction in step 12..
+SBY 10:12:50 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.basecase: ##   0:00:31  Checking assumptions in step 17..
+SBY 10:12:51 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.induction: ##   0:00:32  Trying induction in step 11..
+SBY 10:12:53 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.induction: ##   0:00:34  Temporal induction successful.
+SBY 10:12:53 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.induction: ##   0:00:34  Status: passed
+SBY 10:12:53 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.induction: finished (returncode=0)
+SBY 10:12:53 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.induction: Status returned by engine for induction: pass
+SBY 10:12:57 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.basecase: ##   0:00:38  Checking assertions in step 17..
+SBY 10:12:58 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.basecase: ##   0:00:39  Checking assumptions in step 18..
+SBY 10:13:04 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.basecase: ##   0:00:45  Checking assertions in step 18..
+SBY 10:13:04 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.basecase: ##   0:00:45  Checking assumptions in step 19..
+SBY 10:13:06 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.basecase: ##   0:00:47  Checking assertions in step 19..
+SBY 10:13:06 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.basecase: ##   0:00:47  Status: passed
+SBY 10:13:06 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.basecase: finished (returncode=0)
+SBY 10:13:06 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] engine_0.basecase: Status returned by engine for basecase: pass
+SBY 10:13:06 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:48 (48)
+SBY 10:13:06 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] summary: Elapsed process time [H:MM:SS (secs)]: 0:01:22 (82)
+SBY 10:13:06 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] summary: engine_0 (smtbmc z3) returned pass for basecase
+SBY 10:13:06 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] summary: engine_0 (smtbmc z3) returned pass for induction
+SBY 10:13:06 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] summary: engine_0 did not produce any traces
+SBY 10:13:06 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] summary: successful proof by k-induction.
+SBY 10:13:06 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/noregrant_any_prove/sby] DONE (PASS, rc=0)

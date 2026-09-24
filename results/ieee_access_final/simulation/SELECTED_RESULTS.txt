@@ -1,0 +1,4 @@
+IF01-A PASS SIMULATION_EVIDENCE admit=29 commit_auth=44 rst=29 peek=0x11111111 n_auth_commits=1 n_admit=1 n_arb_gnt=1 n_delay_dma=1 n_sram_dma=1 n_dup_write=0 n_orphan=0 sb_fail=0;single_admit_single_independent_sram_write
+IF02-A PASS SIMULATION_EVIDENCE auth_cpu_commits=1 before_rst=0 after_rst=1 rst=123 peek=0xB0040004 sb_fail=0;ModelA_or_safe
+IF03-C PASS SIMULATION_EVIDENCE err=NOT_ISSUED peek=0x5151A5A5 model=RST-B;ic_down
+IF03-D PASS SIMULATION_EVIDENCE err=0 peek=0x5151A5A5 model=RST-B;sec_reset_after_pmp

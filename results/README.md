@@ -47,7 +47,10 @@ Replay commands in the random CSV may contain historical absolute paths; use `$R
 
 | Files | Meaning | Class | Regenerate |
 |-------|---------|-------|------------|
-| `tables/m7_inflight_reset_matrix.csv` | In-flight reset; IF01-A `INCONCLUSIVE` | mixed | `make m7-ibex-reset-inflight` |
+| `tables/m7_inflight_reset_matrix.csv` | In-flight reset; IF01-A **RESOLVED/PASS** | mixed | `make m7-ibex-reset-inflight` |
+| `tables/m7_if01_a_final_ledger.csv` | Independent 1/1/1 ledger `0x600d00c1` | `SIMULATION_EVIDENCE` | same |
+| `ieee_access_final/` | Cleanup + RC logs, final proofs, J2/J3 `final_dd7fe6` | supporting | n/a |
+| `historical/public_v1_headline/` | Superseded IF01-A INCONCLUSIVE + D.3 PPA | historical | n/a |
 | `tables/m7_realcore_release_order_matrix.csv` | 16 deterministic orders | mixed | `make m7-ibex-release-orders` |
 | `tables/m7_realcore_release_order_random.csv` | 200 seeds | mixed | same |
 | `tables/m7_reset_evidence_levels.csv` | Evidence-level legend | meta | n/a |
@@ -56,7 +59,7 @@ Replay commands in the random CSV may contain historical absolute paths; use `$R
 
 | Files | Meaning | Class | Regenerate |
 |-------|---------|-------|------------|
-| `tables/m7_journal_ppa_main.csv`, `m7_full_ibex_ppa_20ns.csv`, `m7_full_ibex_ppa_20ns_overhead.csv` | Common 20 ns SKY130HD post-route area | open-source RTL-to-GDS estimate | `make m7-ppa-full` (Tier 4) |
+| `tables/m7_journal_ppa_main.csv`, `m7_full_ibex_ppa_20ns.csv`, `m7_full_ibex_ppa_20ns_overhead.csv` | Common 20 ns SKY130HD post-route area; headline J2=277641 J3=280331 +0.97% (`final_dd7fe6`) | open-source RTL-to-GDS estimate | `FLOW_VARIANT=final_dd7fe6` J2/J3 rerun |
 | `tables/m7_journal_timing_summary.csv`, `m7_full_ibex_fmax_sweep.csv`, `m7_critical_paths.csv` | Demonstrated Fmax / stress / paths | same; J1 cause not definitive | same |
 | `m7/ppa_full/orfs/J*/metrics*.json`, `fairness_check*.md` | Compact physical-design metrics | supporting | same |
 

@@ -7,12 +7,14 @@ This GitHub repository is a **curated public artifact snapshot** of an internal 
 | Item | Value |
 |------|-------|
 | Internal working tree (not public) | local research checkout used to produce this snapshot |
-| Scientific freeze commit | `07ee8931f8e7e75d48168914fffddb31a5e0a091` |
-| Scientific freeze tag | `checkpoint-m7-phase-d3-ppa-final` |
+| Internal D.3 scientific freeze (historical) | `07ee8931f8e7e75d48168914fffddb31a5e0a091` / `checkpoint-m7-phase-d3-ppa-final` |
+| Authoritative RC package | `IEEE_Access_Experimental_Evidence_Release_Candidate.zip` `67d82af4705cd9f8f19564f6c22ce60cd6e8647bfd561c8f40184d50e240f486` |
+| Authoritative cleanup package | `IEEE_Access_Final_Evidence_Cleanup.zip` `7a91a075719e73eb4cad35450c737fa594f7b1b1135936015994d4d60ce31d91` |
 | Public default branch | `main` |
-| Public citation tag | `artifact-v1.0` (created on the public snapshot) |
+| Current public freeze tag | `access-2026-41377-experimental-freeze` |
+| Earlier public snapshot | `artifact-v1.0` at `5c8e2448c2d02835ce8047e428ee70a43278f881` (preserved) |
 
-The freeze commit is **not rewritten**. Later public-repository commits may contain only documentation, packaging, artifact metadata, figure scripts, paper references, and reproducibility improvements unless explicitly noted otherwise.
+The D.3 freeze commit is **not rewritten**. This synchronization updates the public snapshot to the final verified engineering evidence. Cleanup values supersede conflicting earlier packages.
 
 Internal experimental branches and `checkpoint-*` tags remain in the private research history and are **not** pushed by default.
 
@@ -36,7 +38,7 @@ Additional earlier internal tags exist (`checkpoint-m3-partial`, `checkpoint-m35
 
 ## What this snapshot contains
 
-Research-created RTL, formal harnesses, real-Ibex software, scripts, compact frozen tables/metrics, selected small waveforms, documentation, and figure sources corresponding to the D.3 freeze plus later documentation / figure / packaging files.
+Research-created RTL (final production IOPMP `dd7fe6…`, arbiter `20477634…`), formal harnesses, real-Ibex software, scripts, compact frozen tables/metrics, selected small waveforms, documentation, figure sources, and the IEEE Access final evidence tree under `results/ieee_access_final/`.
 
 ## What this snapshot omits
 
@@ -45,6 +47,6 @@ Research-created RTL, formal harnesses, real-Ibex software, scripts, compact fro
 - Toolchains, PDKs, Docker filesystems, conda/venv trees
 - Verilator `sim-verilator/` and `obj_dir/` rebuilds
 - Raw GDS / routed databases
-- Formal solver model dumps
+- Formal solver model dumps (`*.smt2`, `*.il`)
 
 See `docs/publication/repository_size_audit.md`.

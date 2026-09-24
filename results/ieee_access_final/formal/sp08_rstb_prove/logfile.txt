@@ -1,0 +1,410 @@
+SBY 10:10:02 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] Removing directory '/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby'.
+SBY 10:10:02 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] Copy '/home/mmr/ricv_paper/formal/sby/../../rtl/common/bus_pkg.vh' to '/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby/src/bus_pkg.vh'.
+SBY 10:10:02 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] Copy '/home/mmr/ricv_paper/formal/sby/../../rtl/soc/security_config.v' to '/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby/src/security_config.v'.
+SBY 10:10:02 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] Copy '/home/mmr/ricv_paper/formal/sby/../../rtl/iopmp/iopmp.v' to '/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby/src/iopmp.v'.
+SBY 10:10:02 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] Copy '/home/mmr/ricv_paper/formal/sby/../../rtl/interconnect/interconnect.v' to '/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby/src/interconnect.v'.
+SBY 10:10:02 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] Copy '/home/mmr/ricv_paper/formal/sby/../../rtl/memory/sram.v' to '/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby/src/sram.v'.
+SBY 10:10:02 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] Copy '/home/mmr/ricv_paper/formal/sby/../harness/formal_helpers.vh' to '/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby/src/formal_helpers.vh'.
+SBY 10:10:02 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] Copy '/home/mmr/ricv_paper/formal/sby/../harness/formal_reset_rstb_tb.v' to '/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby/src/formal_reset_rstb_tb.v'.
+SBY 10:10:02 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0: smtbmc z3
+SBY 10:10:02 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: starting process "cd /home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 10:10:02 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Replacing memory \mem with list of registers. See sram.v:48
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [31] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [30] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [29] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [28] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [27] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [26] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [25] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [24] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [23] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [22] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [21] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [20] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [19] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [18] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [17] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [16] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [15] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [14] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [13] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [12] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [11] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [10] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [9] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [8] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [7] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [6] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [5] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [4] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [3] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [2] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [1] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_addr [0] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [31] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [30] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [29] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [28] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [27] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [26] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [25] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [24] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [23] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [22] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [21] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [20] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [19] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [18] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [17] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [16] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [15] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [14] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [13] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [12] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [11] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [10] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [9] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [8] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [7] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [6] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [5] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [4] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [3] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [2] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [1] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [0] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\sec_rst_n is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [31] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [30] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [29] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [28] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [27] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [26] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [25] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [24] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [23] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [22] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [21] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [20] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [19] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [18] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [17] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [16] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [15] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [14] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [13] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [12] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [11] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [10] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [9] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [8] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [7] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [6] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [5] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [4] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [3] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [2] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [1] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_addr [0] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_write is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [31] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [30] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [29] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [28] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [27] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [26] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [25] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [24] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [23] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [22] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [21] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [20] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [19] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [18] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [17] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [16] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [15] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [14] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [13] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [12] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [11] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [10] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [9] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [8] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [7] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [6] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [5] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [4] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [3] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [2] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [1] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_wdata [0] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_requester_id [7] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_requester_id [6] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_requester_id [5] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_requester_id [4] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_requester_id [3] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_requester_id [2] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_requester_id [1] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_requester_id [0] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_length [15] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_length [14] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_length [13] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_length [12] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_length [11] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_length [10] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_length [9] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_length [8] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_length [7] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_length [6] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_length [5] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_length [4] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_length [3] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_length [2] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_length [1] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_length [0] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\iopmp_rst_n is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_rst_n is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\ic_rst_n is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\cfg_write is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: Warning: Wire formal_reset_rstb_tb.\dma_req is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] base: finished (returncode=0)
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: starting process "cd /home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby/model; yosys -ql design_prep.log design_prep.ys"
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [31] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [30] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [29] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [28] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [27] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [26] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [25] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [24] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [23] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [22] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [21] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [20] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [19] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [18] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [17] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [16] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [15] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [14] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [13] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [12] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [11] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [10] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [9] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [8] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [7] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [6] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [5] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [4] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [3] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [2] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [1] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_wdata [0] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [31] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [30] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [29] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [28] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [27] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [26] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [25] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [24] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [23] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [22] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [21] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [20] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [19] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [18] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [17] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [16] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [15] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [14] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [13] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [12] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [11] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [10] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [9] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [8] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [7] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [6] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [5] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [4] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [3] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [2] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [1] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_addr [0] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_write is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [31] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [30] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [29] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [28] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [27] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [26] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [25] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [24] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [23] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [22] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [21] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [20] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [19] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [18] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [17] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [16] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [15] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [14] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [13] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [12] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [11] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [10] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [9] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [8] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [7] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [6] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [5] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [4] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [3] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [2] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [1] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_wdata [0] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_requester_id [7] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_requester_id [6] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_requester_id [5] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_requester_id [4] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_requester_id [3] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_requester_id [2] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_requester_id [1] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_requester_id [0] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_length [15] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_length [14] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_length [13] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_length [12] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_length [11] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_length [10] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_length [9] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_length [8] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_length [7] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_length [6] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_length [5] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_length [4] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_length [3] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_length [2] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_length [1] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_length [0] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [31] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [30] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [29] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [28] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [27] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [26] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [25] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [24] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [23] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [22] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [21] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [20] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [19] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [18] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [17] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [16] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [15] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [14] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [13] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [12] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [11] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [10] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [9] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [8] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [7] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [6] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [5] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [4] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [3] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [2] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [1] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_addr [0] is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\cfg_write is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\ic_rst_n is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_rst_n is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\dma_req is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\iopmp_rst_n is used but has no driver.
+SBY 10:10:03 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: Warning: Wire formal_reset_rstb_tb.\sec_rst_n is used but has no driver.
+SBY 10:10:04 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] prep: finished (returncode=0)
+SBY 10:10:04 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] smt2: starting process "cd /home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY 10:10:04 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] smt2: finished (returncode=0)
+SBY 10:10:04 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.basecase: starting process "cd /home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby; yosys-smtbmc -s z3 --presat --noprogress -t 20  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2"
+SBY 10:10:04 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.induction: starting process "cd /home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby; yosys-smtbmc -s z3 --presat -i --noprogress -t 20  --append 0 --dump-vcd engine_0/trace_induct.vcd --dump-yw engine_0/trace_induct.yw --dump-vlogtb engine_0/trace_induct_tb.v --dump-smtc engine_0/trace_induct.smtc model/design_smt2.smt2"
+SBY 10:10:04 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.basecase: ##   0:00:00  Solver: z3
+SBY 10:10:04 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.induction: ##   0:00:00  Solver: z3
+SBY 10:10:04 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.induction: ##   0:00:00  Trying induction in step 20..
+SBY 10:10:04 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.basecase: ##   0:00:00  Checking assumptions in step 0..
+SBY 10:10:04 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.induction: ##   0:00:00  Trying induction in step 19..
+SBY 10:10:04 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.basecase: ##   0:00:00  Checking assertions in step 0..
+SBY 10:10:04 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.basecase: ##   0:00:00  Checking assumptions in step 1..
+SBY 10:10:04 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.basecase: ##   0:00:00  Checking assertions in step 1..
+SBY 10:10:04 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.basecase: ##   0:00:00  Checking assumptions in step 2..
+SBY 10:10:04 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.basecase: ##   0:00:00  Checking assertions in step 2..
+SBY 10:10:04 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.basecase: ##   0:00:00  Checking assumptions in step 3..
+SBY 10:10:04 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.basecase: ##   0:00:00  Checking assertions in step 3..
+SBY 10:10:04 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.basecase: ##   0:00:00  Checking assumptions in step 4..
+SBY 10:10:04 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.basecase: ##   0:00:00  Checking assertions in step 4..
+SBY 10:10:04 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.basecase: ##   0:00:00  Checking assumptions in step 5..
+SBY 10:10:04 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.basecase: ##   0:00:00  Checking assertions in step 5..
+SBY 10:10:04 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.basecase: ##   0:00:00  Checking assumptions in step 6..
+SBY 10:10:04 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.basecase: ##   0:00:00  Checking assertions in step 6..
+SBY 10:10:04 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.basecase: ##   0:00:00  Checking assumptions in step 7..
+SBY 10:10:04 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.basecase: ##   0:00:00  Checking assertions in step 7..
+SBY 10:10:04 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.basecase: ##   0:00:00  Checking assumptions in step 8..
+SBY 10:10:04 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.induction: ##   0:00:00  Trying induction in step 18..
+SBY 10:10:04 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.induction: ##   0:00:00  Trying induction in step 17..
+SBY 10:10:04 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.induction: ##   0:00:00  Trying induction in step 16..
+SBY 10:10:04 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.basecase: ##   0:00:00  Checking assertions in step 8..
+SBY 10:10:04 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.basecase: ##   0:00:00  Checking assumptions in step 9..
+SBY 10:10:05 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.induction: ##   0:00:01  Trying induction in step 15..
+SBY 10:10:05 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.basecase: ##   0:00:01  Checking assertions in step 9..
+SBY 10:10:05 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.basecase: ##   0:00:01  Checking assumptions in step 10..
+SBY 10:10:05 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.induction: ##   0:00:01  Trying induction in step 14..
+SBY 10:10:05 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.basecase: ##   0:00:01  Checking assertions in step 10..
+SBY 10:10:05 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.basecase: ##   0:00:01  Checking assumptions in step 11..
+SBY 10:10:05 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.basecase: ##   0:00:01  Checking assertions in step 11..
+SBY 10:10:05 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.basecase: ##   0:00:01  Checking assumptions in step 12..
+SBY 10:10:06 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.basecase: ##   0:00:01  Checking assertions in step 12..
+SBY 10:10:06 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.induction: ##   0:00:01  Trying induction in step 13..
+SBY 10:10:06 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.basecase: ##   0:00:01  Checking assumptions in step 13..
+SBY 10:10:06 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.induction: ##   0:00:02  Trying induction in step 12..
+SBY 10:10:06 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.induction: ##   0:00:02  Trying induction in step 11..
+SBY 10:10:06 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.induction: ##   0:00:02  Trying induction in step 10..
+SBY 10:10:06 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.basecase: ##   0:00:02  Checking assertions in step 13..
+SBY 10:10:07 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.basecase: ##   0:00:02  Checking assumptions in step 14..
+SBY 10:10:08 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.basecase: ##   0:00:03  Checking assertions in step 14..
+SBY 10:10:08 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.basecase: ##   0:00:03  Checking assumptions in step 15..
+SBY 10:10:09 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.basecase: ##   0:00:05  Checking assertions in step 15..
+SBY 10:10:09 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.basecase: ##   0:00:05  Checking assumptions in step 16..
+SBY 10:10:10 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.basecase: ##   0:00:06  Checking assertions in step 16..
+SBY 10:10:11 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.basecase: ##   0:00:07  Checking assumptions in step 17..
+SBY 10:10:11 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.basecase: ##   0:00:07  Checking assertions in step 17..
+SBY 10:10:12 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.basecase: ##   0:00:08  Checking assumptions in step 18..
+SBY 10:10:12 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.basecase: ##   0:00:08  Checking assertions in step 18..
+SBY 10:10:12 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.basecase: ##   0:00:08  Checking assumptions in step 19..
+SBY 10:10:13 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.basecase: ##   0:00:09  Checking assertions in step 19..
+SBY 10:10:13 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.basecase: ##   0:00:09  Status: passed
+SBY 10:10:13 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.basecase: finished (returncode=0)
+SBY 10:10:13 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.basecase: Status returned by engine for basecase: pass
+SBY 10:10:18 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.induction: ##   0:00:14  Trying induction in step 9..
+SBY 10:10:21 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.induction: ##   0:00:17  Trying induction in step 8..
+SBY 10:10:22 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.induction: ##   0:00:18  Trying induction in step 7..
+SBY 10:10:22 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.induction: ##   0:00:18  Trying induction in step 6..
+SBY 10:10:23 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.induction: ##   0:00:19  Trying induction in step 5..
+SBY 10:10:24 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.induction: ##   0:00:19  Trying induction in step 4..
+SBY 10:10:30 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.induction: ##   0:00:25  Trying induction in step 3..
+SBY 10:10:31 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.induction: ##   0:00:26  Temporal induction successful.
+SBY 10:10:31 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.induction: ##   0:00:26  Status: passed
+SBY 10:10:31 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.induction: finished (returncode=0)
+SBY 10:10:31 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] engine_0.induction: Status returned by engine for induction: pass
+SBY 10:10:31 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:28 (28)
+SBY 10:10:31 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:37 (37)
+SBY 10:10:31 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] summary: engine_0 (smtbmc z3) returned pass for basecase
+SBY 10:10:31 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] summary: engine_0 (smtbmc z3) returned pass for induction
+SBY 10:10:31 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] summary: engine_0 did not produce any traces
+SBY 10:10:31 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] summary: successful proof by k-induction.
+SBY 10:10:31 [/home/mmr/ricv_paper/results/m7/evidence_cleanup/formal/sp08_rstb_prove/sby] DONE (PASS, rc=0)

@@ -36,9 +36,12 @@ Layout is the working research layout. Paths were **not** renamed for cosmetics 
 ├── docs/                        # methodology, assumptions, evidence notes
 ├── paper/                       # LaTeX manuscript sources (no IEEEtran.cls)
 ├── results/
-│   ├── tables/                  # frozen CSV matrices
+│   ├── tables/                  # frozen CSV matrices (headline)
+│   ├── historical/              # superseded public-v1 / D.3 headline copies
+│   ├── ieee_access_final/       # cleanup + RC evidence used for Access-2026-41377
 │   ├── figures/                 # generated PDF/SVG (+ data)
 │   └── m7/                      # compact logs, PPA metrics, Phase A–D records
+├── docs/history/                # historical classifications and Option A note
 └── third_party/
     ├── README.md
     └── pins/                    # exact commits / Docker digest

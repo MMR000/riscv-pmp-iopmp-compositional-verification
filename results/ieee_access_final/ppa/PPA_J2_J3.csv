@@ -1,0 +1,23 @@
+metric,J2_final_dd7fe6,J3_final_dd7fe6
+iopmp_sha256,dd7fe6a89f22a9c830615528733b2d51ccfb852ca0966d3991ab1172d06c82c8,dd7fe6a89f22a9c830615528733b2d51ccfb852ca0966d3991ab1172d06c82c8
+arbiter_sha256,204776349008176d2cc2934c0304a27497302cfbe522011ff9358dadf81b4519,204776349008176d2cc2934c0304a27497302cfbe522011ff9358dadf81b4519
+orfs_image,openroad/orfs@sha256:817b608c69a71fafc7b61baec11b4dc073fb8efb9d2714f9bd3316db4beba277,openroad/orfs@sha256:817b608c69a71fafc7b61baec11b4dc073fb8efb9d2714f9bd3316db4beba277
+flow_variant,final_dd7fe6,final_dd7fe6
+clock_period_ns,20.0,20.0
+pdk,sky130hd,sky130hd
+top,m7_ppa_j2_top,m7_ppa_j3_top
+synth_cells,28002,28258
+synth_area,241367.7408,243129.4304
+synth_hierarchy,"flattened top + Ibex ALU_* HAN_CARLSON instances (iopmp/arbiter not named after flatten)","same flatten pattern; J3 top includes domain-reset / RST-B"
+post_route_stdcell_area,277641,280331
+setup_wns_ns,0.91848,1.26437
+setup_tns_ns,0,0
+hold_wns_ns,0.298201,0.174777
+hold_tns_ns,0,0
+timing_pass,PASS,PASS
+route_drc,0,0
+gds,YES,YES
+grt_status,DONE,DONE
+result,PASS,PASS
+exit_code,0,0
+elapsed_sec,1710,1415

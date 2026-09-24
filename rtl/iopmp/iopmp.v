@@ -41,6 +41,17 @@ module iopmp (
     output reg  [15:0]              txn_length,
     output reg  [3:0]               txn_age,
     output wire                     busy
+`ifdef FORMAL
+    // Formal-only observation ports. Yosys hierarchical refs such as
+    // u_dut.state become undriven implicit wires; these ports are the
+    // supported non-vacuous observation path for SP-04/06/09 covers.
+    ,
+    output wire [1:0]               f_state,
+    output wire                     f_hold_authorized,
+    output wire [7:0]               f_hold_rid,
+    output wire [`ADDR_WIDTH-1:0]   f_hold_addr,
+    output wire                     f_hold_write
+`endif
 );
 
     localparam ST_IDLE    = 2'd0;
@@ -56,8 +67,19 @@ module iopmp (
     reg [15:0]               hold_length;
     reg                      hold_authorized;
     reg [7:0]                hold_epoch;
+    // Once the arbiter accepts (bus_gnt), drop dma_req_out while retaining hold_*
+    // until bus_valid. Holding req_out through completion caused the arbiter to
+    // re-enter S_IDLE and grant a duplicate single-beat transaction (IF01-A).
+    reg                      bus_accepted;
 
     assign busy = (state != ST_IDLE);
+`ifdef FORMAL
+    assign f_state           = state;
+    assign f_hold_authorized = hold_authorized;
+    assign f_hold_rid        = hold_rid;
+    assign f_hold_addr       = hold_addr;
+    assign f_hold_write      = hold_write;
+`endif
     function [15:0] effective_length;
         input [15:0] length_bytes;
         begin
@@ -173,6 +195,7 @@ module iopmp (
             txn_requester_id <= 8'h0;
             txn_length    <= 16'h0;
             txn_age       <= 4'h0;
+            bus_accepted  <= 1'b0;
         end else begin
             dma_gnt     <= 1'b0;
             dma_valid   <= 1'b0;
@@ -183,6 +206,7 @@ module iopmp (
                     dma_req_out <= 1'b0;
                     txn_valid   <= 1'b0;
                     txn_age     <= 4'h0;
+                    bus_accepted <= 1'b0;
                     if (dma_req) begin
                         if (dma_allowed(dma_addr, dma_length, dma_requester_id, dma_write)) begin
                             hold_addr       <= dma_addr;
@@ -218,9 +242,10 @@ module iopmp (
                     end
                 end
                 ST_HOLD: begin
-                    dma_req_out <= 1'b0;
-                    txn_age     <= 4'h1;
-                    state       <= ST_PENDING;
+                    dma_req_out  <= 1'b0;
+                    bus_accepted <= 1'b0;
+                    txn_age      <= 4'h1;
+                    state        <= ST_PENDING;
                 end
                 ST_PENDING: begin
                     txn_age <= 4'h2;
@@ -231,18 +256,33 @@ module iopmp (
                         dma_error   <= 1'b1;
                         dma_req_out <= 1'b0;
                         txn_valid   <= 1'b0;
+                        bus_accepted <= 1'b0;
                         state       <= ST_IDLE;
                     end else begin
 `endif
-                    dma_req_out   <= 1'b1;
+                    // Present request until arbiter grant is observed; withdraw
+                    // dma_req_out in the same cycle as sampling bus_gnt so a
+                    // one-cycle miss/complete path cannot re-sample the request.
+                    // Held addr/data remain stable for the in-flight accepted beat.
                     dma_addr_out  <= hold_addr;
                     dma_write_out <= hold_write;
                     dma_wdata_out <= hold_wdata;
+                    if (!bus_accepted) begin
+                        if (bus_gnt) begin
+                            bus_accepted <= 1'b1;
+                            dma_req_out  <= 1'b0;
+                        end else begin
+                            dma_req_out  <= 1'b1;
+                        end
+                    end else begin
+                        dma_req_out <= 1'b0;
+                    end
                     if (bus_valid) begin
                         dma_valid <= 1'b1;
                         dma_rdata <= bus_rdata;
                         dma_req_out <= 1'b0;
                         txn_valid <= 1'b0;
+                        bus_accepted <= 1'b0;
                         state     <= ST_IDLE;
                     end
 `ifdef RSDG_COMMIT_EPOCH

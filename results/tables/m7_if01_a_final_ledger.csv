@@ -1,0 +1,17 @@
+field,value
+status,RESOLVED/PASS
+classification,SIMULATION_EVIDENCE
+iopmp_sha256,dd7fe6a89f22a9c830615528733b2d51ccfb852ca0966d3991ab1172d06c82c8
+arbiter_sha256,204776349008176d2cc2934c0304a27497302cfbe522011ff9358dadf81b4519
+dma_admissions,1
+arbiter_dma_grants,1
+dma_protected_sram_writes,1
+admission_cycle,29
+grant_cycle,32
+dma_sram_write_cycle,43
+harness_result,0x600d00c1
+duplicate_sram_write,0
+write_event,protected_memory_reset_n && sram_prot_req && sram_prot_write
+not_a_write_proxy,PROT_COMMIT / mem_changed
+ledger,results/ieee_access_final/IF01_A_TRANSACTION_LEDGER.csv
+event_log,results/ieee_access_final/release_candidate/IF01_A_events_final.log

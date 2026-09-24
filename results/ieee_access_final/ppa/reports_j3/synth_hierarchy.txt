@@ -1,0 +1,43 @@
+=== design hierarchy ===
+
+        +----------------------------Count including submodules.
+        |        +-------------------Area including submodules.
+        |        |        +----------Local count, excluding submodules.
+        |        |        |        +-Local area, excluding submodules.
+        |        |        |        | 
+    28258 2.43E+05    19888 1.84E+05 m7_ppa_j3_top
+      110  788.256      110  788.256 ALU_30_0_32_0_32_unused_CO[30:0]_X_Y_HAN_CARLSON
+      129   907.12      129   907.12 ALU_30_0_32_0_32_unused_CO[30:0]_Y_HAN_CARLSON
+      126  903.366      126  903.366 ALU_32_0_29_0_32_unused_CO[30:0]_Y_HAN_CARLSON
+      129  919.632      129  919.632 ALU_32_0_30_0_32_unused_CO[30:0]_Y_HAN_CARLSON
+      131   948.41      131   948.41 ALU_32_0_32_0_32_unused_CO[30:0]_Y_HAN_CARLSON
+      286    2E+03      286    2E+03 ALU_33_0_33_0_33_HAN_CARLSON
+      266  2011.93      266  2011.93 ALU_33_0_33_0_33_unused_CO_X_Y[0]_HAN_CARLSON
+      284  1751.68      284  1751.68 ALU_34_0_34_0_34_HAN_CARLSON
+
+        +----------------------------Count including submodules.
+        |        +-------------------Area including submodules.
+        |        |        +----------Local count, excluding submodules.
+        |        |        |        +-Local area, excluding submodules.
+        |        |        |        | 
+    28573        -    21347        - wires
+    34138        -    21594        - wire bits
+      470        -      103        - public wires
+     6035        -      350        - public wire bits
+      396        -       29        - ports
+     5961        -      276        - port bits
+        -        -        -        - memories
+        -        -        -        - memory bits
+        -        -        -        - processes
+    28258 2.43E+05    19888 1.84E+05 cells
+        2   22.522        2   22.522   sky130_fd_sc_hd__a2111o_1
+       48  420.403       48  420.403   sky130_fd_sc_hd__a2111oi_0
+       38  332.819       14  122.618   sky130_fd_sc_hd__a211o_1
+      237 1.78E+03      167 1.25E+03   sky130_fd_sc_hd__a211oi_1
+        2   20.019        2   20.019   sky130_fd_sc_hd__a21bo_1
+       31  232.723       31  232.723   sky130_fd_sc_hd__a21boi_0
+      184 1.38E+03      104  780.749   sky130_fd_sc_hd__a21o_1
+     2576 1.29E+04     2295 1.15E+04   sky130_fd_sc_hd__a21oi_1
+       34  340.326       34  340.326   sky130_fd_sc_hd__a221o_1
+      263  2.3E+03      237 2.08E+03   sky130_fd_sc_hd__a221oi_1
+      120  1.2E+03      108 1.08E+03   sky130_fd_sc

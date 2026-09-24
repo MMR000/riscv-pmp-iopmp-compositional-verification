@@ -1,5 +1,6 @@
-// M7 Phase-B arbiter: Ibex-friendly grant-on-accept, then memory valid.
-// Separate from rtl/interconnect/interconnect.v so M1–M5 stay unchanged.
+// PRODUCTION REPAIR — m7_research_arbiter with exact-once target pulse.
+// Original sticky S_MEM held prot_req until valid observation → duplicate SRAM writes.
+// Installed into m7/rtl for Ibex C.5 / composed / PPA J2–J3 integration.
 `include "bus_pkg.vh"
 
 module m7_research_arbiter (
@@ -43,22 +44,24 @@ module m7_research_arbiter (
     reg [`ADDR_WIDTH-1:0] a_addr;
     reg                   a_write;
     reg [`DATA_WIDTH-1:0] a_wdata;
+    reg                   target_issued;
 
     wire hit_n = (a_addr >= `ADDR_NORMAL_SRAM_BASE) && (a_addr <= `ADDR_NORMAL_SRAM_LIMIT);
     wire hit_p = (a_addr >= `ADDR_PROTECT_SRAM_BASE) && (a_addr <= `ADDR_PROTECT_SRAM_LIMIT);
 
     always @(posedge clk or negedge rst_n) begin
         if (!rst_n) begin
-            state     <= S_IDLE;
-            serve_cpu <= 1'b0;
-            cpu_gnt   <= 1'b0;
-            dma_gnt   <= 1'b0;
-            cpu_valid <= 1'b0;
-            dma_valid <= 1'b0;
-            cpu_rdata <= 32'h0;
-            dma_rdata <= 32'h0;
-            norm_req  <= 1'b0;
-            prot_req  <= 1'b0;
+            state         <= S_IDLE;
+            serve_cpu     <= 1'b0;
+            target_issued <= 1'b0;
+            cpu_gnt       <= 1'b0;
+            dma_gnt       <= 1'b0;
+            cpu_valid     <= 1'b0;
+            dma_valid     <= 1'b0;
+            cpu_rdata     <= 32'h0;
+            dma_rdata     <= 32'h0;
+            norm_req      <= 1'b0;
+            prot_req      <= 1'b0;
         end else begin
             cpu_gnt   <= 1'b0;
             dma_gnt   <= 1'b0;
@@ -69,12 +72,13 @@ module m7_research_arbiter (
 
             unique case (state)
                 S_IDLE: begin
+                    target_issued <= 1'b0;
                     if (cpu_req) begin
                         serve_cpu <= 1'b1;
                         a_addr    <= cpu_addr;
                         a_write   <= cpu_write;
                         a_wdata   <= cpu_wdata;
-                        cpu_gnt   <= 1'b1; // grant-on-accept (Ibex LSU)
+                        cpu_gnt   <= 1'b1;
                         state     <= S_MEM;
                     end else if (dma_req) begin
                         serve_cpu <= 1'b0;
@@ -87,7 +91,6 @@ module m7_research_arbiter (
                 end
                 S_MEM: begin
                     if (hit_p) begin
-                        prot_req   <= 1'b1;
                         prot_addr  <= a_addr;
                         prot_write <= a_write;
                         prot_wdata <= a_wdata;
@@ -99,10 +102,13 @@ module m7_research_arbiter (
                                 dma_valid <= 1'b1;
                                 dma_rdata <= prot_rdata;
                             end
-                            state <= S_IDLE;
+                            state         <= S_IDLE;
+                            target_issued <= 1'b0;
+                        end else if (!target_issued) begin
+                            prot_req      <= 1'b1;
+                            target_issued <= 1'b1;
                         end
                     end else if (hit_n) begin
-                        norm_req   <= 1'b1;
                         norm_addr  <= a_addr;
                         norm_write <= a_write;
                         norm_wdata <= a_wdata;
@@ -114,10 +120,13 @@ module m7_research_arbiter (
                                 dma_valid <= 1'b1;
                                 dma_rdata <= norm_rdata;
                             end
-                            state <= S_IDLE;
+                            state         <= S_IDLE;
+                            target_issued <= 1'b0;
+                        end else if (!target_issued) begin
+                            norm_req      <= 1'b1;
+                            target_issued <= 1'b1;
                         end
                     end else begin
-                        // Decode miss: complete with zero data
                         if (serve_cpu) begin
                             cpu_valid <= 1'b1;
                             cpu_rdata <= 32'h0;
@@ -125,10 +134,14 @@ module m7_research_arbiter (
                             dma_valid <= 1'b1;
                             dma_rdata <= 32'h0;
                         end
-                        state <= S_IDLE;
+                        state         <= S_IDLE;
+                        target_issued <= 1'b0;
                     end
                 end
-                default: state <= S_IDLE;
+                default: begin
+                    state         <= S_IDLE;
+                    target_issued <= 1'b0;
+                end
             endcase
         end
     end

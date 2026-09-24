@@ -1,0 +1,21 @@
+[options]
+mode prove
+depth 20
+wait on
+[engines]
+smtbmc z3
+[script]
+read -incdir . -formal formal_helpers.vh
+read -incdir . -formal bus_pkg.vh
+read -formal -D FORMAL sram.v
+read -formal -D FORMAL iopmp.v
+read -formal -D FORMAL m7_research_arbiter.v
+read -formal formal_iopmp_noregrant_tb.v
+prep -top formal_iopmp_noregrant_tb
+[files]
+stage_any/bus_pkg.vh
+stage_any/formal_helpers.vh
+stage_any/sram.v
+stage_any/iopmp.v
+stage_any/m7_research_arbiter.v
+stage_any/formal_iopmp_noregrant_tb.v

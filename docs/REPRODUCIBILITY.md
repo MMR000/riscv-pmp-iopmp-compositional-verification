@@ -66,6 +66,30 @@ make m7-ppa-full
 
 Use the validated image digest in `third_party/pins/orfs_docker.digest`. `LEC_CHECK=0` for all reported J0–J3 runs (Kepler-formal on the validated image required AVX-512 that the experimental host did not provide).
 
+## Final IEEE Access formal / PPA entry points
+
+Pinned solver for the cleanup rerun: `tools/z3/bin/z3` (Z3 4.13.4, binary SHA-256 `e0385660ab6f1314049376c6188e70ab91692cdca4680b7b1cb42cac258ea836`). Yosys `0.68+` `832843ad0-dirty`. SymbiYosys `--version` reports `unknown SBY version`; git `v0.68` / `b1a1e98c…`.
+
+| Task | Config | Expected | Runtime |
+|------|--------|----------|---------|
+| SP-08 RST-B | `formal/sby/sp08_rstb_prove.sby` | PASS, depth 20, induction step 3 | GNU wall 0:28.24, RSS 322484 kB, 1 assert |
+| ARB-1–ARB-10 v2 (one cone) | `prod_arbiter_v2_prove.sby` (copy under `results/ieee_access_final/formal/prod_arbiter_v2_prove/`) | PASS, depth 24, induction step 19 | GNU wall 1:46.54, RSS 581920 kB, 34 asserts |
+| Any-address no-regrant | `noregrant_any_prove.sby` (copy under `results/ieee_access_final/formal/noregrant_any_prove/`) | PASS, depth 20, induction step 11 | GNU wall 0:49.05, RSS 515924 kB, 11 asserts |
+| IF01-A final ledger | rebuild C.5 then IF01-A RST-B DELAY=8 | 1/1/1, grant 32, write 43, `0x600d00c1` | individual Verilator wall in some logs prints 0 s (not useful); campaign aggregate `NOT_RECORDED` |
+| IF02-A corrected | same C.5 binary | suite PASS, `sb_fail=0`, TXN_ID 1 then 2 | `NOT_RECORDED` beyond log |
+| IF03-C / IF03-D | same | `err=NOT_ISSUED` / `err=0` | `NOT_RECORDED` |
+| J2 / J3 final_dd7fe6 | `FLOW_VARIANT=final_dd7fe6 CLOCK_PERIOD=20.0 bash scripts/ppa/run_orfs_m7_docker.sh J2\|J3` | area 277641 / 280331, DRC 0, GDS YES | 1710 s / 1415 s |
+
+Logs: `results/ieee_access_final/`. Do not change properties merely to obtain PASS.
+
+C.5 campaigns are **separate** (do not add counts):
+
+1. IF/STALE directed — `results/tables/m7_inflight_reset_matrix.csv`
+2. ORD-A..H × RST-A/B — `results/tables/m7_realcore_release_order_matrix.csv`
+3. 200-seed RAND-ORD — 200 files `results/m7/realcore_reset_c5/tests/RAND-ORD_s*.log` **and** `results/tables/m7_realcore_release_order_random.csv` (this public snapshot has the CSV; the any-address source zip did not)
+
+Finite campaign results are `SIMULATION_EVIDENCE`, not exhaustive proof.
+
 ## Environment snapshot
 
 `results/environment.txt` records host tools at an earlier date (Verilator 5.050, Yosys 0.68+, Python 3.13.9, …). Absolute conda paths in that file are historical.

@@ -1,0 +1,8 @@
+UTC=2026-09-24T05:10:02Z
+which_z3=/home/mmr/ricv_paper/tools/z3/bin/z3
+z3_version=Z3 version 4.13.4 - 64 bit
+yosys_version=Yosys 0.68+ (git sha1 832843ad0-dirty, Release, GNU /home/conda/feedstock_root/build_artifacts/yosys_1785933756519/_build_env/bin/x86_64-conda-linux-gnu-c++ 14.4.0) [github.com/conda-forge/yosys-feedstock at main]
+sby_version=unknown SBY version 
+sby_path=python3 /home/mmr/ricv_paper/tools/SymbiYosys/sbysrc/sby.py
+e0385660ab6f1314049376c6188e70ab91692cdca4680b7b1cb42cac258ea836  /home/mmr/ricv_paper/tools/z3/bin/z3
+sby_git=b1a1e98cba941ec8433f8dc27f416cd7bb7f14be tag=v0.68
